@@ -54,6 +54,9 @@
 
 
 /* Button */
+  button {
+    cursor: pointer;
+  }
 /* Tamanho dos botões */
   /* large */
   .cb_btn--large--primary, .cb_btn--large--secondary, .cb_btn--large--ghost {

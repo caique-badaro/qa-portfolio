@@ -39,6 +39,14 @@
 	.cb_carousel {
 		padding: 0px 16%;
 	}
+	.carousel-no-scroll {
+		padding: 0px 20%;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+	.carousel-no-scroll {
+		padding: 0px 10%;
+	}
 }
 @media (min-width: 769px) and (max-width: 1023px) {
 	.cb_carousel {
