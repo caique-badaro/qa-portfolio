@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // card heatmap mouse move
-  const button1 = document.getElementById("bottom-sheet-01");
-  // card heatmap clicks
-  const button2 = document.getElementById("bottom-sheet-02");
-  // card heatmap scroll
-  const button3 = document.getElementById("bottom-sheet-03");
+  const buttons = [
+    { id: "bottom-sheet-01", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_heatmap-move-mouse.html" },
+    { id: "bottom-sheet-02", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_heatmap-move-mouse.html" },
+    { id: "bottom-sheet-03", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_heatmap-scroll.html" },
+    { id: "bottom-sheet-04", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_pesquisa-matriz-csd.html" },
+    { id: "bottom-sheet-05", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_pesquisa-hipoteses.html" },
+    { id: "bottom-sheet-06", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_pesquisa-pesquisa-formulario.html" }
+  ];
 
   const popup = document.getElementById("cb_bottom-sheet--block-content");
   const overlay = document.getElementById("cb_overlay");
@@ -15,32 +17,25 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(url)
       .then(response => response.text())
       .then(html => {
-        contentDiv.innerHTML = html; // Insere o conteúdo dentro da div
+        contentDiv.innerHTML = html; // Insere o conteúdo na div
       })
-      .catch(error => {
-        console.error('Erro ao carregar o conteúdo:', error);
-      });
+      .catch(error => console.error("Erro ao carregar o conteúdo:", error));
   }
 
-  // Abre o popup e overlay e carrega o conteúdo do botão 1 = heatmap mouse move
-  button1.addEventListener("click", function () {
-    loadContent("content/bottom-sheet_modal_heatmap-move-mouse.html");
+  // Função para abrir o popup
+  function openPopup(url) {
+    loadContent(url);
+    contentDiv.scrollTop = 0;
     popup.style.display = "flex";
     overlay.style.display = "flex";
-  });
+  }
 
-  // Abre o popup e overlay e carrega o conteúdo do botão 2 = heatmap clicks
-  button2.addEventListener("click", function () {
-    loadContent("content/bottom-sheet_modal_heatmap-move-mouse.html");
-    popup.style.display = "flex";
-    overlay.style.display = "flex";
-  });
-
-  // Abre o popup e overlay e carrega o conteúdo do botão 3 = heatmap scroll
-  button3.addEventListener("click", function () {
-    loadContent("content/bottom-sheet_modal_heatmap-scroll.html");
-    popup.style.display = "flex";
-    overlay.style.display = "flex";
+  // Associa os eventos de clique aos botões
+  buttons.forEach(({ id, content }) => {
+    const button = document.getElementById(id);
+    if (button) {
+      button.addEventListener("click", () => openPopup(content));
+    }
   });
 
   // Fecha o popup ao clicar nele
@@ -55,3 +50,5 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.style.display = "none";
   });
 });
+
+

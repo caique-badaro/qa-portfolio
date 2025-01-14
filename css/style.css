@@ -441,8 +441,8 @@ spam:hover, a:hover {
 
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--gray-neutral-medium, #6C6C6C);
