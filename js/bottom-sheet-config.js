@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(url)
       .then(response => response.text())
       .then(html => {
-        contentDiv.innerHTML = html; // Insere o conteúdo na div
-        contentDiv.scrollTop = 0;   // Reinicia o scroll para o topo
+        contentDiv.innerHTML = html;
+        contentDiv.scrollTop = 0;
       })
       .catch(error => console.error("Erro ao carregar o conteúdo:", error));
   }
