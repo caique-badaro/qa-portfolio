@@ -104,6 +104,7 @@
 .cb--bottom-sheet--linear .col {
 	display: flex;
 	margin: 0 6% 5% 10%;
+	padding-right: 24px;
 	flex-direction: column;
 	align-items: flex-start;
 	align-self: stretch;
@@ -214,6 +215,8 @@
 		max-height: 80vh;
 		max-width: 90vw;
 		left: calc(10vw / 2);
+		bottom: 10vh;
+		border-radius: 24px;
 	}
 	.cb--bottom-sheet--linear .row--bottom-sheet--header {
 		padding: 5% 5% 5% 10%;
@@ -233,6 +236,8 @@
 		max-height: 80vh;
 		max-width: 70vw;
 		left: calc(30vw / 2);
+		bottom: 10vh;
+		border-radius: 24px;
 	}
 	.cb--bottom-sheet--linear .row--bottom-sheet--header {
 		padding: 5% 5% 5% 10%;

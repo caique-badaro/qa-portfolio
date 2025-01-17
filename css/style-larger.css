@@ -212,12 +212,16 @@
 
   /* Project */
   #cb_project-content {
-    background-image: url('imgs/bg/texture/bg-pattern-grocery.svg');
-      background-repeat: repeat;
-      background-size: auto;
-      background-position: top left;
-      width: 100%;
-      height: 100%;
+    background-image: url('../imgs/bg/texture/bg-pattern-grocery.svg');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top left;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0 0 0;
+  }
+  #cb_project-content .cb--block-intro {
+    padding: 2% 0 0 20%;
   }
   #cb_project-content .cb--block-intro .cb--block-tag-date .cb_tag-info {
     background-color: var(--gray-neutral-medium, #6C6C6C);
@@ -227,6 +231,9 @@
   }
   #cb_project-content .cb--block-intro .cb--block-tag-date .cb_tag-info .body-small--regular {
     color: var(--gray-neutral-bg, #FBFBFB);
+  }
+  #cb_project-content .cb--block-intro .content {
+    width: 36vw;
   }
   #cb_project-content .cb--block-intro .title .heading-3--bold {
     font-size: 44px;
@@ -244,8 +251,23 @@
     gap: 16px;
     margin-top: 24px;
   }
+  #cb_project-content .cb--block-intro .row-btn #bottom-sheet-09 {
+    display: none;
+  }
   #cb_project-content .cb--block-intro .row-btn .cb_btn--large--primary {
     width: 160px;
+  }
+  .cb--content #revisao-apoio-home-site_projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 42px;
+    align-self: stretch;
+  }
+  .cb--content #revisao-apoio-home-site_projeto img {
+    width: 56vw;
+    margin-top: -20vw;
   }
 
   /* Results */
@@ -595,6 +617,67 @@
   }
   #cb_benchmarking .cb_carousel .cb_carousel-card {
     gap: 0px;
+  }
+
+  /* Project */
+  #cb_project-content {
+    background-image: url('../imgs/bg/texture/bg-pattern-grocery.svg');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top left;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0 0 0;
+  }
+  #cb_project-content .cb--block-intro {
+    padding: 2% 0 0 10%;
+  }
+  #cb_project-content .cb--block-intro .cb--block-tag-date .cb_tag-info {
+    background-color: var(--gray-neutral-medium, #6C6C6C);
+  }
+  #cb_project-content .cb--block-intro .cb--block-tag-date .cb_tag-info svg path {
+    fill: var(--gray-neutral-bg, #FBFBFB);
+  }
+  #cb_project-content .cb--block-intro .cb--block-tag-date .cb_tag-info .body-small--regular {
+    color: var(--gray-neutral-bg, #FBFBFB);
+  }
+  #cb_project-content .cb--block-intro .content {
+    width: 34vw;
+  }
+  #cb_project-content .cb--block-intro .title .heading-3--bold {
+    font-size: 44px;
+  }
+  #cb_project-content .cb--block-intro .title .heading-3--bold,
+  #cb_project-content .cb--block-intro .title .heading-5--subtitle--medium {
+    color: var(--gray-neutral-bg, #FBFBFB);
+  }
+  #cb_project-content .cb--block-intro .paragraph .body-regular--regular,
+  #cb_project-content .cb--block-intro .paragraph .heading-5--subtitle--medium {
+    color: var(--gray-neutral-bg, #FBFBFB);
+  } 
+  #cb_project-content .cb--block-intro .row-btn {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    width: 100%;
+  }
+  #cb_project-content .cb--block-intro .row-btn #bottom-sheet-09 {
+    display: none;
+  }
+  #cb_project-content .cb--block-intro .row-btn .cb_btn--large--primary {
+    width: 160px;
+  }
+  .cb--content #revisao-apoio-home-site_projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 42px;
+    align-self: stretch;
+  }
+  .cb--content #revisao-apoio-home-site_projeto img {
+    width: 56vw;
+    margin-top: -56vw;
   }
 
 
