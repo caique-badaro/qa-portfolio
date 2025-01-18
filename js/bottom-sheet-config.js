@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const menuButtons = [
-    { id: "cb--menu-mobile--option-5", content: "content/menu-mobile/bottom-sheet_modal_menu-option-5.html" }
+    { id: "cb--menu-mobile--option-5", content: "content/menu-mobile/bottom-sheet_modal_menu-5.html" }
   ];
 
   const popup = document.getElementById("cb_bottom-sheet--block-content");
