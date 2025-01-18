@@ -101,11 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const menuButtons = [
-    { id: "cb--menu-mobile--option-5", content: "content/menu-mobile/bottom-sheet_modal_menu-mobile-5.html" },
-    { id: "cb--menu-mobile--option-4", content: "content/menu-mobile/bottom-sheet_modal_menu-mobile-4.html" },
-    { id: "cb--menu-mobile--option-3", content: "content/menu-mobile/bottom-sheet_modal_menu-mobile-3.html" },
-    { id: "cb--menu-mobile--option-2", content: "content/menu-mobile/bottom-sheet_modal_menu-mobile-2.html" },
-    { id: "cb--menu-mobile--option-1", content: "content/menu-mobile/bottom-sheet_modal_menu-mobile-1.html" }
+    { id: "cb--menu-mobile--option-5", content: "content/menu-mobile/bottom-sheet_modal_menu-mobile-5.html" }
   ];
 
   const popupMenu = document.getElementById("cb_bottom-sheet--block-content_menu-mobile");
