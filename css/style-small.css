@@ -201,6 +201,7 @@
   }
   #cb_project-content .cb--block-intro .row-btn .cb_btn--large--primary {
     width: 200px;
+    z-index: 2;
   }
   .cb--content #revisao-apoio-home-site_projeto {
     display: flex;

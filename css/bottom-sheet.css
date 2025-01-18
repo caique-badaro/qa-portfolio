@@ -127,6 +127,10 @@
 	align-items: center;
 	gap: 10px;
 }
+.cb--bottom-sheet--linear .col .row-image .image-validate-choice img {
+	width: 100%;
+	height: auto;
+}
 /* buttons */
 .cb--bottom-sheet--linear .col .row-btn {
 	display: flex;
@@ -136,6 +140,7 @@
 	gap: 12px;
 	align-self: stretch;
 }
+.cb--bottom-sheet--linear .col .row-btn button,
 .cb--bottom-sheet--linear .col .row-btn a {
 	width: 100%;
 }
@@ -151,6 +156,13 @@
 .cb--bottom-sheet--linear .col .additional-information .body-small--regular,
 .cb--bottom-sheet--linear .col .additional-information .body-small--bold {
 	align-self: stretch;
+	text-align: left;
+	color: var(--gray-neutral-medium, #6C6C6C);
+}
+.cb--bottom-sheet--linear .col .body-small--regular,
+.cb--bottom-sheet--linear .col .body-small--bold {
+	align-self: stretch;
+	text-align: center;
 	color: var(--gray-neutral-medium, #6C6C6C);
 }
 .cb--bottom-sheet--linear .col .cb--bottom-sheet--intro {

@@ -438,7 +438,6 @@ spam:hover, a:hover {
   line-height: 120%;
 }
 
-
 /* scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
@@ -456,4 +455,36 @@ spam:hover, a:hover {
 ::-webkit-scrollbar-track {
     background-color: var(--gray-neutral-lighter, #E2E2E2);
     border-radius: 6px;
+}
+
+/* Estilos iniciais do texto */
+.highlight-text {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+
+/* Efeito de marca-texto */
+.highlight-text::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 2px;
+  transform: translateY(-50%) scaleX(0);
+  width: 100%;
+  height: 100%;
+  background: var(--orange-support-200, #FFEED9);
+  z-index: -1;
+  transform-origin: left;
+  animation: highlight 1s ease-out forwards;
+}
+
+/* Animação do marca-texto */
+@keyframes highlight {
+  0% {
+    transform: translateY(-50%) scaleX(0);
+  }
+  100% {
+    transform: translateY(-50%) scaleX(1);
+  }
 }

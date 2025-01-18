@@ -203,11 +203,11 @@
     margin-top: 24px;
     width: 100%;
   }
-  #cb_project-content .cb--block-intro .row-btn #bottom-sheet-07,
-  #cb_project-content .cb--block-intro .row-btn #bottom-sheet-08 {
+  #cb_project-content .cb--block-intro .row-btn #bottom-sheet-09 {
     display: none;
   }
   #cb_project-content .cb--block-intro .row-btn .cb_btn--large--primary {
+    z-index: 2;
     width: 200px;
   }
   .cb--content #revisao-apoio-home-site_projeto {
