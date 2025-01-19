@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuPopup = document.getElementById("cb_bottom-sheet--block-content_menu-mobile");
   const overlay = document.getElementById("cb_overlay");
   const contentDiv = document.getElementById("content-bottom-sheet");
-  const menuContentDiv = document.getElementById("cb_bottom-sheet--block-content_menu-mobile");
+  const menuContentDiv = document.getElementById("menu-mobile--content--bottom-sheet");
   const closeButton = document.getElementById("cb_btn-icon-close--bottom-sheet");
   const menuCloseButton = document.getElementById("cb_btn-icon-close--bottom-sheet--menu-mobile");
 
@@ -86,4 +86,3 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.addEventListener("click", closePopup);
   }
 });
-
