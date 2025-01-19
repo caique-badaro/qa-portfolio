@@ -30,10 +30,16 @@
     bottom: 0;
   }
 
+  /* button back to top */
+  #cb_back-to-top {
+    bottom: 10%;
+    right: 3%;
+  }
 
   /* banner first fold */
   .cb--content--first-fold {
     display: flex;
+    z-index: 8;
     width: 100%;
     height: calc(100vh - 68px);
     flex-direction: column;
@@ -94,7 +100,7 @@
   .cb--content {
     display: flex;
     width: 100%;
-    padding: 10% 0px;
+    padding: 10% 0 20% 0;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -223,6 +229,36 @@
     margin-top: -64px;
     margin-right: -10%;
   }
+
+
+  /* image bg content - heatmap */
+  .cb--content #revisao-apoio-home-site_heatmap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 42px;
+    align-self: stretch;
+  }
+  .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_01,
+  .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_02,
+  .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_03 {
+    position: absolute;
+    width: 80vw;
+    transition: all 2s ease-out;
+    will-change: transform, right, margin-bottom;
+  }
+  .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_01 {
+    z-index: 3;
+  }
+  .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_02 {
+    z-index: 2;
+  }
+  .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_03 {
+    z-index: 1;
+  }
+
+
 
 
   /* Results */

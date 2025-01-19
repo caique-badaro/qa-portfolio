@@ -4,7 +4,7 @@
 	align-items: center;
 	gap: 16px;
 	align-self: stretch;
-/*	margin: 0 -56px;*/
+	z-index: 10;
 }
 .cb_carousel .carousel--arrow-left,
 .cb_carousel .carousel--arrow-right {
@@ -50,18 +50,33 @@
 }
 @media (min-width: 769px) and (max-width: 1023px) {
 	.cb_carousel {
-        padding: 0 10%;
+        padding: 0;
         margin: 0;
     }
 	.cb_carousel .carousel--arrow-left,
 	.cb_carousel .carousel--arrow-right{
     	display: none;
     }
+    .cb_carousel .cb_carousel-card {
+    	gap: 24px;
+    }
+    .cb_carousel .cb_carousel-card .cb_heatmap-card:first-child,
+    .cb_carousel .cb_carousel-card .cb_matrizCSD-card:first-child,
+    .cb_carousel .cb_carousel-card .cb_bench-card:first-child,
+    .cb_carousel .cb_carousel-card .cb_card-data--success:first-child {
+    	margin-left: 10%;
+    }
+    .cb_carousel .cb_carousel-card .cb_heatmap-card:last-child,
+    .cb_carousel .cb_carousel-card .cb_matrizCSD-card:last-child,
+    .cb_carousel .cb_carousel-card .cb_bench-card:last-child,
+    .cb_carousel .cb_carousel-card .cb_card-data--success:last-child {
+    	margin-right: 10%;
+    }
 }
 
 @media (max-width: 768px) {
     .cb_carousel {
-        padding: 0 10%;
+        padding: 0;
         margin: 0;
     }
     .cb_carousel .carousel--arrow-left,
@@ -70,5 +85,17 @@
     }
     .cb_carousel .cb_carousel-card {
         gap: 16px;
+    }
+    .cb_carousel .cb_carousel-card .cb_heatmap-card:first-child,
+    .cb_carousel .cb_carousel-card .cb_matrizCSD-card:first-child,
+    .cb_carousel .cb_carousel-card .cb_bench-card:first-child,
+    .cb_carousel .cb_carousel-card .cb_card-data--success:first-child {
+    	margin-left: 10%;
+    }
+    .cb_carousel .cb_carousel-card .cb_heatmap-card:last-child,
+    .cb_carousel .cb_carousel-card .cb_matrizCSD-card:last-child,
+    .cb_carousel .cb_carousel-card .cb_bench-card:last-child,
+    .cb_carousel .cb_carousel-card .cb_card-data--success:last-child {
+    	margin-right: 10%;
     }
 }

@@ -29,6 +29,12 @@
     bottom: 0;
   }
 
+  /* button back to top */
+  #cb_back-to-top {
+    bottom: 10%;
+    right: 3%;
+  }
+
 /* banner first fold */
   .cb--content--first-fold {
     display: flex;

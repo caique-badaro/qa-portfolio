@@ -1,5 +1,5 @@
 /* Tag info */
-.cb_tag-info {
+  .cb_tag-info {
     display: inline-flex;
     padding: 4px 12px 4px 8px;
     align-items: center;
@@ -14,6 +14,19 @@
   .cb_tag-info .body-small--regular {
     color: var(--gray-neutral-medium, #6C6C6C);
     line-height: 100%;
+  }
+
+/* button back to top */
+  #cb_back-to-top {
+    display: none;
+    position: fixed;
+    height: 44px;
+    width: 44px;
+    z-index: 80;
+    opacity: 90%;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 
 /* bottom menu */

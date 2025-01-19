@@ -37,51 +37,9 @@
   <script src="js/carousel-settings.js"></script>
   <script src="js/bottom-sheet-config.js"></script>
   <script src="js/date-info-values.js"></script>
+  <script src="js/scrolls-in-page.js"></script>
 </head>
 <body>
-  <!-- content bottom sheet -->
-  <div class="cb--bottom-sheet--linear" id="cb_bottom-sheet--block-content" style="display: none;">
-    <div class="row--bottom-sheet--header">
-      <div class="data-hotjar-analytics">
-        <div class="cb_tag-info">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12"><rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)">
-                  <path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
-          </svg>
-          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em 2022">2022</p>
-        </div>
-        <div class="cb_tag-info">
-          <p class="body-small--regular" alt="Revisão UX/UI Apoio Entrega" title="Revisão UX/UI">Revisão UX/UI Apoio Entrega</p>
-        </div>
-      </div>
-      <div class="close-modal" id="cb_btn-icon-close--bottom-sheet" alt="Fechar" title="Fechar" aria-label="Fechar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M7.99999 9.13562L4.02534 13.1103C3.87663 13.259 3.68736 13.3333 3.45753 13.3333C3.2277 13.3333 3.03843 13.259 2.88972 13.1103C2.74101 12.9616 2.66666 12.7723 2.66666 12.5425C2.66666 12.3126 2.74101 12.1234 2.88972 11.9747L6.86437 8L2.88972 4.02535C2.74101 3.87664 2.66666 3.68737 2.66666 3.45755C2.66666 3.22772 2.74101 3.03845 2.88972 2.88974C3.03843 2.74103 3.2277 2.66667 3.45753 2.66667C3.68736 2.66667 3.87663 2.74103 4.02534 2.88974L7.99999 6.86439L11.9746 2.88974C12.1234 2.74103 12.3126 2.66667 12.5424 2.66667C12.7723 2.66667 12.9615 2.74103 13.1103 2.88974C13.259 3.03845 13.3333 3.22772 13.3333 3.45755C13.3333 3.68737 13.259 3.87664 13.1103 4.02535L9.1356 8L13.1103 11.9747C13.259 12.1234 13.3333 12.3126 13.3333 12.5425C13.3333 12.7723 13.259 12.9616 13.1103 13.1103C12.9615 13.259 12.7723 13.3333 12.5424 13.3333C12.3126 13.3333 12.1234 13.259 11.9746 13.1103L7.99999 9.13562Z" fill="white"/>
-        </svg>
-      </div>
-    </div>
-    <!-- content -->
-    <div class="col" id="content-bottom-sheet">
-      <!-- content will be loaded here -->  
-    </div>
-  </div><!-- end bottom sheet -->
-  <!-- content bottom sheet - mobile menu -->
-  <div class="cb--bottom-sheet--linear" id="cb_bottom-sheet--block-content_menu-mobile" style="display: none;">
-    <div class="row--bottom-sheet--header">
-      <div class="data-hotjar-analytics">
-      </div>
-      <div class="close-modal" id="cb_btn-icon-close--bottom-sheet--menu-mobile" alt="Fechar" title="Fechar" aria-label="Fechar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M7.99999 9.13562L4.02534 13.1103C3.87663 13.259 3.68736 13.3333 3.45753 13.3333C3.2277 13.3333 3.03843 13.259 2.88972 13.1103C2.74101 12.9616 2.66666 12.7723 2.66666 12.5425C2.66666 12.3126 2.74101 12.1234 2.88972 11.9747L6.86437 8L2.88972 4.02535C2.74101 3.87664 2.66666 3.68737 2.66666 3.45755C2.66666 3.22772 2.74101 3.03845 2.88972 2.88974C3.03843 2.74103 3.2277 2.66667 3.45753 2.66667C3.68736 2.66667 3.87663 2.74103 4.02534 2.88974L7.99999 6.86439L11.9746 2.88974C12.1234 2.74103 12.3126 2.66667 12.5424 2.66667C12.7723 2.66667 12.9615 2.74103 13.1103 2.88974C13.259 3.03845 13.3333 3.22772 13.3333 3.45755C13.3333 3.68737 13.259 3.87664 13.1103 4.02535L9.1356 8L13.1103 11.9747C13.259 12.1234 13.3333 12.3126 13.3333 12.5425C13.3333 12.7723 13.259 12.9616 13.1103 13.1103C12.9615 13.259 12.7723 13.3333 12.5424 13.3333C12.3126 13.3333 12.1234 13.259 11.9746 13.1103L7.99999 9.13562Z" fill="white"/>
-        </svg>
-      </div>
-    </div>
-    <!-- content -->
-    <div class="col" id="menu-mobile--content--bottom-sheet">
-      <!-- content will be loaded here -->
-    </div>
-  </div><!-- end menu mobile -->
-  <!-- overlay -->
-  <div class="cb_overlay--bottom-sheet" id="cb_overlay" style="display: none;"></div>
   <!-- menu (desktop) -->
   <div class="header-menu">
     <!-- logo horizontal -->
@@ -152,6 +110,7 @@
         </a>
       </div>
   </div>
+  <!-- end, menu (desktop) -->
   <!-- bottom menu (mobile) -->
   <div class="cb_bottom-menu">
     <div class="option-menu--default">
@@ -205,8 +164,10 @@
       <p class="body-small--regular">Menu</p>
     </div>
   </div>
+  <!-- end, bottom menu (mobile) -->
+  
   <!-- banner first fold -->
-  <div class="cb--content--first-fold">
+  <div class="cb--content--first-fold" id="cb_banner--first-fold">
     <div class="content">
       <div class="description">
         <div class="title">
@@ -219,8 +180,11 @@
       <img class="banner--first-fold" src="imgs/banner-principal/design-interface-ux-ui-caique-badaro.png" alt="Design interface UX/UI Caique Badaró">
     </div>
   </div>
+
+  
+
   <!-- heatmaps -->
-  <div class="cb--content">
+  <div class="cb--content" id="cb_heatmap">
     <div class="cb--block-intro">
       <div class="content">
         <div class="title">
@@ -317,6 +281,17 @@
         </div>
       </div>
     </div>
+    <!-- image mockups heatmap -->
+
+
+    <div class="banner--projeto" id="revisao-apoio-home-site_heatmap">
+      <img src="imgs/revisao-ux-ui-apoio-entrega/teste.png" id="revisao-apoio-home-site_heatmap_01" alt="XXXXXX">
+      <img src="imgs/revisao-ux-ui-apoio-entrega/teste.png" id="revisao-apoio-home-site_heatmap_02" alt="XXXXXX">
+      <img src="imgs/revisao-ux-ui-apoio-entrega/teste.png" id="revisao-apoio-home-site_heatmap_03" alt="XXXXXX">
+    </div>
+
+
+
   </div>
   <!-- search -->
   <div class="cb--content">
@@ -554,15 +529,15 @@
     </div>
   </div>
 
-  <!-- corrigir o efeito de marca texto no protótipo mobile -->
 
-
-  <!-- menu desktop -->
+  <!-- adicionar mockup imagens animadas heatmap no breakpoint mobile /scrolls-in-page.js -->
   <!-- conteúdo do bottom sheet, e imagens desktop (proporção) -->
-  <!-- botao flutuante voltar ao topo -->
-  <!-- links do rodapé -->
+
+
   <!-- super banner mobile -->
   <!-- menu mobile, links -->
+  <!-- menu desktop, links -->
+  <!-- footer, links -->
   <!-- animação: seja bem vindo(a), welcome -->
 
 
@@ -788,6 +763,9 @@
       </a> -->
     </div>  
   </div>
+
+
+
   <!-- FAQ -->
   <div class="cb--content" id="cb_FAQ-content">
     <div class="cb--block-intro">
@@ -911,9 +889,70 @@
       </div>
     </div>
   </div>
+  <!-- end, FAQ -->
+  <!-- content bottom sheet -->
+  <div class="cb--bottom-sheet--linear" id="cb_bottom-sheet--block-content" style="display: none;">
+    <div class="row--bottom-sheet--header">
+      <div class="data-hotjar-analytics">
+        <div class="cb_tag-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12"><rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)">
+                  <path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+          </svg>
+          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em 2022">2022</p>
+        </div>
+        <div class="cb_tag-info">
+          <p class="body-small--regular" alt="Revisão UX/UI Apoio Entrega" title="Revisão UX/UI">Revisão UX/UI Apoio Entrega</p>
+        </div>
+      </div>
+      <div class="close-modal" id="cb_btn-icon-close--bottom-sheet" alt="Fechar" title="Fechar" aria-label="Fechar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M7.99999 9.13562L4.02534 13.1103C3.87663 13.259 3.68736 13.3333 3.45753 13.3333C3.2277 13.3333 3.03843 13.259 2.88972 13.1103C2.74101 12.9616 2.66666 12.7723 2.66666 12.5425C2.66666 12.3126 2.74101 12.1234 2.88972 11.9747L6.86437 8L2.88972 4.02535C2.74101 3.87664 2.66666 3.68737 2.66666 3.45755C2.66666 3.22772 2.74101 3.03845 2.88972 2.88974C3.03843 2.74103 3.2277 2.66667 3.45753 2.66667C3.68736 2.66667 3.87663 2.74103 4.02534 2.88974L7.99999 6.86439L11.9746 2.88974C12.1234 2.74103 12.3126 2.66667 12.5424 2.66667C12.7723 2.66667 12.9615 2.74103 13.1103 2.88974C13.259 3.03845 13.3333 3.22772 13.3333 3.45755C13.3333 3.68737 13.259 3.87664 13.1103 4.02535L9.1356 8L13.1103 11.9747C13.259 12.1234 13.3333 12.3126 13.3333 12.5425C13.3333 12.7723 13.259 12.9616 13.1103 13.1103C12.9615 13.259 12.7723 13.3333 12.5424 13.3333C12.3126 13.3333 12.1234 13.259 11.9746 13.1103L7.99999 9.13562Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="col" id="content-bottom-sheet">
+      <!-- content will be loaded here -->  
+    </div>
+  </div>
+  <!-- end bottom sheet -->
+  <!-- content bottom sheet - mobile menu -->
+  <div class="cb--bottom-sheet--linear" id="cb_bottom-sheet--block-content_menu-mobile" style="display: none;">
+    <div class="row--bottom-sheet--header">
+      <div class="data-hotjar-analytics">
+      </div>
+      <div class="close-modal" id="cb_btn-icon-close--bottom-sheet--menu-mobile" alt="Fechar" title="Fechar" aria-label="Fechar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M7.99999 9.13562L4.02534 13.1103C3.87663 13.259 3.68736 13.3333 3.45753 13.3333C3.2277 13.3333 3.03843 13.259 2.88972 13.1103C2.74101 12.9616 2.66666 12.7723 2.66666 12.5425C2.66666 12.3126 2.74101 12.1234 2.88972 11.9747L6.86437 8L2.88972 4.02535C2.74101 3.87664 2.66666 3.68737 2.66666 3.45755C2.66666 3.22772 2.74101 3.03845 2.88972 2.88974C3.03843 2.74103 3.2277 2.66667 3.45753 2.66667C3.68736 2.66667 3.87663 2.74103 4.02534 2.88974L7.99999 6.86439L11.9746 2.88974C12.1234 2.74103 12.3126 2.66667 12.5424 2.66667C12.7723 2.66667 12.9615 2.74103 13.1103 2.88974C13.259 3.03845 13.3333 3.22772 13.3333 3.45755C13.3333 3.68737 13.259 3.87664 13.1103 4.02535L9.1356 8L13.1103 11.9747C13.259 12.1234 13.3333 12.3126 13.3333 12.5425C13.3333 12.7723 13.259 12.9616 13.1103 13.1103C12.9615 13.259 12.7723 13.3333 12.5424 13.3333C12.3126 13.3333 12.1234 13.259 11.9746 13.1103L7.99999 9.13562Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+    <!-- content -->
+    <div class="col" id="menu-mobile--content--bottom-sheet">
+      <!-- content will be loaded here -->
+    </div>
+  </div>
+  <!-- end menu mobile -->
+  <!-- overlay -->
+  <div class="cb_overlay--bottom-sheet" id="cb_overlay" style="display: none;"></div>
+  <!-- end, overlay -->
+  <!-- back to top -->
+  <button type="button" class="cb_btn--medium--secondary" id="cb_back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <div class="icon-right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <mask id="mask0_1269_927" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+          <rect width="24" height="24" fill="#D9D9D9"/>
+        </mask>
+        <g mask="url(#mask0_1269_927)">
+          <path d="M18.875 12.7C18.6916 12.8833 18.4583 12.9793 18.175 12.988C17.8916 12.996 17.6583 12.9083 17.475 12.725L12.575 7.82501L12.575 19C12.575 19.2833 12.479 19.521 12.287 19.713C12.0956 19.9043 11.8583 20 11.575 20C11.2916 20 11.054 19.9043 10.862 19.713C10.6706 19.521 10.575 19.2833 10.575 19L10.575 7.82501L5.67497 12.725C5.49164 12.9083 5.2583 12.996 4.97497 12.988C4.69164 12.9793 4.4583 12.8833 4.27497 12.7C4.09164 12.5167 3.99997 12.2833 3.99997 12C3.99997 11.7167 4.09164 11.4833 4.27497 11.3L10.875 4.70001C10.9583 4.60001 11.0623 4.52901 11.187 4.48701C11.3123 4.44568 11.4416 4.42501 11.575 4.42501C11.7083 4.42501 11.8333 4.44568 11.95 4.48701C12.0666 4.52901 12.175 4.60001 12.275 4.70001L18.875 11.3C19.0583 11.4833 19.15 11.7167 19.15 12C19.15 12.2833 19.0583 12.5167 18.875 12.7Z" fill="#606060"/>
+        </g>
+      </svg>
+    </div>
+  </button>
+  <!-- end, back to top -->
 
   <!-- footer -->
-  <footer class="cb_footer">
+  <footer class="cb_footer" id="cb_footer--all">
     <div class="row">
       <div class="col-image">
         <svg alt="Caique Badaró, UX/UI Designer" title="Caique Badaró, UX/UI" xmlns="http://www.w3.org/2000/svg" width="209" height="56" viewBox="0 0 209 56" fill="none">
