@@ -54,14 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (viewportWidth >= 1600) {
       stylesStart = {
-        heatmap_01: { right: -700, marginBottom: 5, rotate: -25 },
-        heatmap_02: { right: -520, marginBottom: -6, rotate: 1 },
-        heatmap_03: { right: -210, marginBottom: -10, rotate: 20 },
+        heatmap_01: { right: -531, marginBottom: -1, rotate: -16 },
+        heatmap_02: { right: -374, marginBottom: -10, rotate: 3 },
+        heatmap_03: { right: -111, marginBottom: -14, rotate: 19 },
       };
       stylesEnd = {
-        heatmap_01: { right: -340, marginBottom: -8, rotate: -8 },
-        heatmap_02: { right: -220, marginBottom: -12, rotate: 6 },
-        heatmap_03: { right: -70, marginBottom: -14, rotate: 14 },
+        heatmap_01: { right: -356, marginBottom: -8, rotate: -8 },
+        heatmap_02: { right: -223, marginBottom: -15, rotate: 6 },
+        heatmap_03: { right: -10, marginBottom: -20, rotate: 19 },
       };
     } else if (viewportWidth >= 1024 && viewportWidth <= 1599) {
       stylesStart = {
@@ -76,25 +76,25 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     } else if (viewportWidth >= 768 && viewportWidth <= 1023) {
       stylesStart = {
-        heatmap_01: { right: -390, marginBottom: 15, rotate: -30 },
-        heatmap_02: { right: -190, marginBottom: -4, rotate: -8 },
-        heatmap_03: { right: -30, marginBottom: -10, rotate: -3 },
+        heatmap_01: { right: -371, marginBottom: -18, rotate: -24 },
+        heatmap_02: { right: -265, marginBottom: -33, rotate: -5 },
+        heatmap_03: { right: -84, marginBottom: -48, rotate: 17 },
       };
       stylesEnd = {
-        heatmap_01: { right: -140, marginBottom: -20, rotate: 2 },
-        heatmap_02: { right: 10, marginBottom: -26, rotate: 11 },
-        heatmap_03: { right: 160, marginBottom: -30, rotate: 23 },
+        heatmap_01: { right: -143, marginBottom: -33, rotate: -9 },
+        heatmap_02: { right: -1, marginBottom: -41, rotate: 13 },
+        heatmap_03: { right: 171, marginBottom: -45, rotate: 33 },
       };
     } else if (viewportWidth >= 200 && viewportWidth <= 767) {
       stylesStart = {
-        heatmap_01: { right: -300, marginBottom: 10, rotate: -50 },
-        heatmap_02: { right: -234, marginBottom: -19, rotate: -35 },
-        heatmap_03: { right: -140, marginBottom: -38, rotate: -13 },
+        heatmap_01: { right: -310, marginBottom: -38, rotate: -24 },
+        heatmap_02: { right: -245, marginBottom: -63, rotate: -9 },
+        heatmap_03: { right: -123, marginBottom: -78, rotate: 12 },
       };
       stylesEnd = {
-        heatmap_01: { right: -150, marginBottom: -47, rotate: -24 },
-        heatmap_02: { right: -54, marginBottom: -57, rotate: -2 },
-        heatmap_03: { right: 70, marginBottom: -60, rotate: 13 },
+        heatmap_01: { right: -127, marginBottom: -64, rotate: -8 },
+        heatmap_02: { right: -7, marginBottom: -77, rotate: 16 },
+        heatmap_03: { right: 148, marginBottom: -73, rotate: 36 },
       };
     } else {
       return; // Não aplica estilos fora dos breakpoints definidos
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const visibleHeight = Math.max(0, Math.min(viewportHeight, rect.bottom) - Math.max(0, rect.top));
     const visibilityPercentage = visibleHeight / rect.height;
 
-    if (visibilityPercentage >= 0.25) {
+    if (visibilityPercentage >= 0.3) {
       // Aplica os estilos interpolados
       Object.entries(heatmapElements).forEach(([key, element]) => {
         const start = stylesStart[key];
