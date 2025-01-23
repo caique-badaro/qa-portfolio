@@ -100,7 +100,7 @@
   .cb--content {
     display: flex;
     width: 100%;
-    padding: 10% 0 20% 0;
+    padding: 10% 0;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -244,7 +244,7 @@
   .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_02,
   .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_03 {
     position: absolute;
-    width: 80vw;
+    width: 60vw;
     transition: all 2s ease-out;
     will-change: transform, right, margin-bottom;
   }
@@ -256,6 +256,10 @@
   }
   .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_03 {
     z-index: 1;
+  }
+
+  #cb_heatmap {
+    padding: 10% 0 30% 0;
   }
 
 
