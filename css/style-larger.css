@@ -58,10 +58,18 @@
     flex: 1 0 0;
     align-self: stretch;
   }
-  .header-menu .navegation-links .cb_btn--small--ghost,
-  .header-menu .navegation-links .cb_btn--small--ghost:hover {
-    max-height: 24px;
-    min-height: 24px;
+  .header-menu .navegation-links .cb_btn--small--ghost {
+    background: var(--gray-neutral-white, #FFFFFF);
+    max-height: 32px;
+    min-height: 32px;
+  }
+  .header-menu .navegation-links .cb_btn--small--ghost:hover,
+  .header-menu .navegation-links .cb_btn--small--ghost:focus {
+    max-height: 32px;
+    min-height: 32px;
+    border: 0;
+    box-shadow: none;
+    background: var(--orange-support-100, #FFF6EC);
   }
   .header-menu .navegation-links .cb_btn--small--ghost .text .button--semibold-small {
     color: var(--gray-neutral-medium, #6c6c6c);
@@ -402,9 +410,13 @@
     flex: 1 0 0;
     align-self: stretch;
   }
-  .cb_footer .row .col-image svg {
+  .cb_footer .row .col-image a svg {
     width: auto;
     height: 56px;
+  }
+  .cb_footer .row .col-image a svg:hover path,
+  .cb_footer .row .col-image a svg:hover rect {
+    fill: var(--orange-brand-secondary, #F4C284);
   }
   .cb_footer .row .col {
     display: flex;
@@ -531,10 +543,18 @@
     flex: 1 0 0;
     align-self: stretch;
   }
-  .header-menu .navegation-links .cb_btn--small--ghost,
-  .header-menu .navegation-links .cb_btn--small--ghost:hover {
-    max-height: 24px;
-    min-height: 24px;
+  .header-menu .navegation-links .cb_btn--small--ghost {
+    background: var(--gray-neutral-white, #FFFFFF);
+    max-height: 32px;
+    min-height: 32px;
+  }
+  .header-menu .navegation-links .cb_btn--small--ghost:hover,
+  .header-menu .navegation-links .cb_btn--small--ghost:focus {
+    max-height: 32px;
+    min-height: 32px;
+    border: 0;
+    box-shadow: none;
+    background: var(--orange-support-100, #FFF6EC);
   }
   .header-menu .navegation-links .cb_btn--small--ghost .text .button--semibold-small {
     color: var(--gray-neutral-medium, #6c6c6c);
@@ -882,9 +902,13 @@
     flex: 1 0 0;
     align-self: stretch;
   }
-  .cb_footer .row .col-image svg {
+  .cb_footer .row .col-image a svg {
     width: auto;
     height: 56px;
+  }
+  .cb_footer .row .col-image a svg:hover path,
+  .cb_footer .row .col-image a svg:hover rect {
+    fill: var(--orange-brand-secondary, #F4C284);
   }
   .cb_footer .row .col {
     display: flex;
