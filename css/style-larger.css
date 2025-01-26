@@ -282,7 +282,8 @@
   }
 
   /* image bg content - heatmap */
-  .cb--content #revisao-apoio-home-site_heatmap {
+  .cb--content #revisao-apoio-home-site_heatmap,
+  .cb--content #revisao-apoio-home-site_search {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -306,6 +307,29 @@
   }
   .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_03 {
     z-index: 1;
+  }
+  /* image bg content - search */
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-3,
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-2,
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
+  }
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-3 {
+    width: 21vw;
+    right: 250px;
+    margin-bottom: 5vw;
+  }
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-2 {
+    width: 18vw;
+    right: -21px;
+    margin-bottom: 0;
+  }
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-1 {
+    width: 12vw;
+    right: 70px;
+    margin-bottom: 9vw;
   }
 
 
@@ -756,10 +780,38 @@
   .cb--content #revisao-apoio-home-site_heatmap #revisao-apoio-home-site_heatmap_03 {
     z-index: 1;
   }
+  /* image bg content - search */
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-3,
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-2,
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 50%;
+  }
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-3 {
+    width: 23vw;
+    right: 217px;
+    margin-bottom: 0;
+    margin-top: -9vw;
+  }
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-2 {
+    width: 20vw;
+    right: -17px;
+    margin-bottom: 0;
+    margin-top: 3vw;
+  }
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-1 {
+    width: 14vw;
+    right: 50px;
+    margin-bottom: 0vw;
+    margin-top: -12vw;
+  }
 
-#cb_heatmap {
-  padding: 10% 0 0 0;
-}
+
+
+  #cb_heatmap {
+    padding: 10% 0 0 0;
+  }
 
 
   /* Results */
