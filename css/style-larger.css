@@ -339,6 +339,14 @@
     right: 70px;
     margin-bottom: 9vw;
   }
+  /* image bg content - results */
+  .cb--content #revisao-apoio-home-site_results #revisao-apoio-home-site_results-mockup-bg {
+    position: absolute;
+    left: 62vw;
+    margin-top: -19vw;
+    width: 19vw;
+    transform: rotate(16deg);
+  }
 
 
 
@@ -825,6 +833,14 @@
     right: 50px;
     margin-bottom: 0vw;
     margin-top: -12vw;
+  }
+  /* image bg content - results */
+  .cb--content #revisao-apoio-home-site_results #revisao-apoio-home-site_results-mockup-bg {
+    position: absolute;
+    left: 74vw;
+    margin-top: -28vw;
+    width: 30vw;
+    transform: rotate(16deg);
   }
 
 

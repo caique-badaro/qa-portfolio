@@ -257,7 +257,8 @@
   /* image bg content - search */
   .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-3,
   .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-2,
-  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-1 {
+  .cb--content #revisao-apoio-home-site_search #revisao-apoio-home-site_search-1,
+  .cb--content #revisao-apoio-home-site_results #revisao-apoio-home-site_results-mockup-bg {
     display: none;
   }
 

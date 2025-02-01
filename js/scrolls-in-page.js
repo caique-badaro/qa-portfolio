@@ -146,7 +146,7 @@
 
         // Comportamento específico para o botão id="cb--menu-mobile--option-1"
         if (this.id === "cb--menu-mobile--option-1") {
-          window.location.href = "../index.html"; // Redirecionar para a página inicial
+          window.location.href = "index.html"; // Redirecionar para a página inicial
           return; // Interromper o restante do comportamento
         }
 
@@ -245,7 +245,7 @@
     if (btnLogo) {
       btnLogo.addEventListener("click", function () {
         // Redireciona para a página inicial
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
       });
     }
   });
