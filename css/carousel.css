@@ -10,8 +10,23 @@
 .cb_carousel .carousel--arrow-right {
 	max-width: 20px;
 	max-height: 20px;
-	height: 16px;
-	width: 16px;
+	min-height: 20px;
+	min-width: 20px;
+    border-radius: 999px;
+    padding: 8px 8px;
+    background: var(--neutral-bg, #EDE7E3);
+}
+.cb_carousel .carousel--arrow-left:hover,
+.cb_carousel .carousel--arrow-right:hover {
+    background: var(--neutral-gray, #F8F5F2);
+}
+.cb_carousel .carousel--arrow-left svg,
+.cb_carousel .carousel--arrow-right svg {
+    width: 24px;
+}
+.cb_carousel .carousel--arrow-left svg path,
+.cb_carousel .carousel--arrow-right svg path {
+    fill: var(--blue-brand-sedondary, #3A8DFF);
 }
 .cb_carousel .cb_carousel-card {
 	display: flex;
@@ -63,13 +78,19 @@
     .cb_carousel .cb_carousel-card .cb_heatmap-card:first-child,
     .cb_carousel .cb_carousel-card .cb_matrizCSD-card:first-child,
     .cb_carousel .cb_carousel-card .cb_bench-card:first-child,
-    .cb_carousel .cb_carousel-card .cb_card-data--success:first-child {
+    .cb_carousel .cb_carousel-card .cb_card-data--success:first-child,
+    .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:first-child,
+    .cb_carousel .cb_carousel-card .selector-button:first-child,
+    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:first-child {
     	margin-left: 10%;
     }
     .cb_carousel .cb_carousel-card .cb_heatmap-card:last-child,
     .cb_carousel .cb_carousel-card .cb_matrizCSD-card:last-child,
     .cb_carousel .cb_carousel-card .cb_bench-card:last-child,
-    .cb_carousel .cb_carousel-card .cb_card-data--success:last-child {
+    .cb_carousel .cb_carousel-card .cb_card-data--success:last-child,
+    .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:last-child,
+    .cb_carousel .cb_carousel-card .selector-button:last-child,
+    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:last-child {
     	margin-right: 10%;
     }
 }
@@ -89,13 +110,19 @@
     .cb_carousel .cb_carousel-card .cb_heatmap-card:first-child,
     .cb_carousel .cb_carousel-card .cb_matrizCSD-card:first-child,
     .cb_carousel .cb_carousel-card .cb_bench-card:first-child,
-    .cb_carousel .cb_carousel-card .cb_card-data--success:first-child {
+    .cb_carousel .cb_carousel-card .cb_card-data--success:first-child,
+    .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:first-child,
+    .cb_carousel .cb_carousel-card .selector-button:first-child,
+    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:first-child {
     	margin-left: 10%;
     }
     .cb_carousel .cb_carousel-card .cb_heatmap-card:last-child,
     .cb_carousel .cb_carousel-card .cb_matrizCSD-card:last-child,
     .cb_carousel .cb_carousel-card .cb_bench-card:last-child,
-    .cb_carousel .cb_carousel-card .cb_card-data--success:last-child {
+    .cb_carousel .cb_carousel-card .cb_card-data--success:last-child,
+    .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:last-child,
+    .cb_carousel .cb_carousel-card .selector-button:last-child,
+    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:last-child {
     	margin-right: 10%;
     }
 }

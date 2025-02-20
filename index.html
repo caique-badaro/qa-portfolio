@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Language" content="pt-br">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Caique Badaró | UX/UI Designer e UX Researcher</title>
+  <title>Caique Badaró | UX/UI Designer</title>
   <meta name="description" content="Caique Badaró, especialista em UX/UI Design e UX Research. Transformando insights em experiências digitais inovadoras e eficazes para fortalecer a conexão entre marcas e usuários.">
   <meta name="keywords" content="UX, UI, Design, Research, User Experience, User Interface, Prototyping, Usability Testing, Web Design">
   <meta name="author" content="Caique Badaró">
@@ -25,25 +25,27 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Caique Badaró | UX/UI Designer e UX Researcher">
   <meta name="twitter:description" content="Transformando insights de pesquisa em designs digitais eficazes e inovadores.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-larger.css">
-  <link rel="stylesheet" href="css/style-medium.css">
-  <link rel="stylesheet" href="css/style-small.css">
-  <link rel="stylesheet" href="css/style-buttons.css">
-  <link rel="stylesheet" href="css/carousel.css">
-  <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/bottom-sheet.css">
-  <script src="js/faq.js"></script>
-  <script src="js/carousel-settings.js"></script>
-  <script src="js/bottom-sheet-config.js"></script>
-  <script src="js/date-info-values.js"></script>
-  <script src="js/scrolls-in-page.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/grid-products-home.css">
+  <link rel="stylesheet" type="text/css" href="css/seletor-experiences-home.css">
+  <link rel="stylesheet" type="text/css" href="css/style-larger.css">
+  <link rel="stylesheet" type="text/css" href="css/style-medium.css">
+  <link rel="stylesheet" type="text/css" href="css/style-small.css">
+  <link rel="stylesheet" type="text/css" href="css/style-buttons.css">
+  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/cards.css">
+  <link rel="stylesheet" type="text/css" href="css/bottom-sheet.css">
+  <script type="text/javascript" src="js/faq.js"></script>
+  <script type="text/javascript" src="js/carousel-settings.js"></script>
+  <script type="text/javascript" src="js/bottom-sheet-config.js"></script>
+  <script type="text/javascript" src="js/date-info-values.js"></script>
+  <script type="text/javascript" src="js/scrolls-in-page.js"></script>
 </head>
 <body>
   <!-- menu (desktop) -->
-  <div class="header-menu">
+  <div class="header-menu" id="cb_header-menu--desktop">
     <!-- logo horizontal -->
-    <svg class="logo-horizontal" xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40" fill="none">
+    <svg class="logo-horizontal" id="cb--menu-desktop--logo" alt="Caique Badaró, UX/UI" title="Voltar a página inicial" xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40" fill="none">
       <rect x="112.578" y="23.3577" width="5.9854" height="2.33577" fill="#4A4A4A"/>
       <rect x="89.5127" y="23.3577" width="5.9854" height="2.33577" fill="#4A4A4A"/>
       <rect x="18.8559" y="23.3577" width="5.9854" height="2.33577" fill="#4A4A4A"/>
@@ -65,22 +67,22 @@
       <path d="M10.3524 34.1605C8.79423 34.1605 7.67392 33.8066 6.9915 33.0987C6.32045 32.3792 5.88256 31.2597 5.84844 29.635C5.85119 28.6861 5.85119 27.6642 5.8512 26.7153C5.85631 26.0237 5.8512 25.4014 5.8512 24.6715C5.84363 23.6136 5.84868 22.6373 5.8512 21.6058C5.85247 21.0872 5.8512 20.528 5.8512 20C5.8512 18.4217 5.83982 16.8453 5.8512 15.2554C5.85611 14.5638 5.86012 13.8405 5.8512 13.1386C5.83946 12.2153 5.83181 11.2946 5.8512 10.3649C5.87395 8.85632 6.30908 7.74254 6.9915 6.98824C7.6853 6.22233 8.8909 5.83938 10.415 5.83938C11.9732 5.83938 13.0025 6.19332 13.6963 6.90121C14.3901 7.59749 15.1142 8.72867 15.1711 10.3649C15.1711 10.6569 15.1711 10.9489 15.1711 11.3868C15.1697 11.6065 15.1711 11.8815 15.1711 12.1168C15.1711 12.267 15.1703 12.4122 15.1711 12.5547H12.8411C12.8403 12.4164 12.8411 12.2723 12.8411 12.1168C12.8411 11.8869 12.8398 11.5894 12.8411 11.3868C12.8436 11.0064 12.8411 10.7299 12.8411 10.3649C12.8297 9.541 12.5797 9.09562 12.2271 8.75909C11.8859 8.41095 11.1998 8.17515 10.415 8.17515C9.68706 8.17515 8.93269 8.41095 8.60286 8.75909C8.27302 9.09562 8.20392 9.541 8.18118 10.3649V15.1095C8.17359 16.2009 8.17865 17.3081 8.18118 18.3941C8.18244 18.9362 8.18118 19.459 8.18118 20C8.18118 20.5358 8.18243 21.0663 8.18118 21.6058C8.17864 22.6905 8.18118 23.7226 8.18118 24.8175C8.18118 25.9124 8.18614 26.8617 8.18118 27.8832C8.18512 28.4146 8.18118 29.0307 8.18118 29.635C8.20392 30.4357 8.27302 30.8811 8.60286 31.2408C8.94407 31.589 9.67569 31.8248 10.415 31.8248C11.2339 31.8248 11.8631 31.589 12.2271 31.2408C12.591 30.8811 12.8297 30.4357 12.8411 29.635C12.8484 29.2256 12.8435 28.9511 12.8411 28.6131C12.8398 28.4242 12.8411 28.2058 12.8411 27.9562C12.8411 27.7872 12.8403 27.6166 12.8411 27.4452H15.1711C15.1711 28.1751 15.1966 28.9051 15.1711 29.635C15.1142 31.2597 14.5152 32.3792 13.7986 33.0987C13.0935 33.8066 11.9447 34.1605 10.3524 34.1605Z" fill="#4A4A4A"/>
     </svg>
     <div class="navegation-links">
-      <a href="#" class="cb_btn--small--ghost">
-        <div class="text"><p class="button--semibold-small">Análise</p></div>
-      </a>
-      <a href="#" class="cb_btn--small--ghost">
-        <div class="text"><p class="button--semibold-small">Resultados</p></div>
-      </a>
-      <a href="#" class="cb_btn--small--ghost">
-        <div class="text"><p class="button--semibold-small">Projeto</p></div>
-      </a>
-      <a href="#" class="cb_btn--small--ghost">
-        <div class="text"><p class="button--semibold-small">Dúvidas</p></div>
-      </a>
+      <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-1">Análise</p></div>
+      </button>
+      <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-2">Resultados</p></div>
+      </button>
+      <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-3">Projeto</p></div>
+      </button>
+      <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-4">Dúvidas</p></div>
+      </button>
     </div>
       <div class="group-icons">
         <!-- #1 icon -->
-        <a href="https://www.linkedin.com/in/caique-badaro/" target="_blank" class="cb_btn--medium--secondary">
+        <a href="https://www.linkedin.com/in/caique-badaro/" target="_blank" class="cb_btn--medium--secondary" alt="LinkedIn" title="Ver perfil LinkedIn">
           <div class="icon-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M2.32834 8.64101H6.47433V22H2.32834V8.64101ZM4.40308 6.81456C5.72687 6.81456 6.80615 5.73688 6.80615 4.40728C6.80615 4.09115 6.744 3.77812 6.62323 3.48605C6.50247 3.19399 6.32546 2.92861 6.10231 2.70507C5.87916 2.48154 5.61425 2.30422 5.3227 2.18324C5.03114 2.06227 4.71866 2 4.40308 2C4.08751 2 3.77502 2.06227 3.48347 2.18324C3.19191 2.30422 2.927 2.48154 2.70385 2.70507C2.48071 2.92861 2.3037 3.19399 2.18293 3.48605C2.06217 3.77812 2.00001 4.09115 2.00001 4.40728C1.99652 5.73688 3.07231 6.81456 4.40308 6.81456ZM13.2155 15.3905C13.2155 13.648 13.5473 11.9615 15.7024 11.9615C17.8261 11.9615 17.8575 13.9524 17.8575 15.5024V22H22V14.6732C22 11.0763 21.2246 8.30861 17.0297 8.30861C15.0143 8.30861 13.6626 9.41777 13.1072 10.4675H13.0513V8.64101H9.07301V22H13.2155V15.3905Z" fill="#F4C284"/>
@@ -88,7 +90,7 @@
           </div>
         </a>
         <!-- #2 icon -->
-        <a href="https://api.whatsapp.com/send?phone=5531973004150&text=Ol%C3%A1!" target="_blank" class="cb_btn--medium--secondary">
+        <a href="https://api.whatsapp.com/send?phone=5531973004150&text=Ol%C3%A1!" target="_blank" class="cb_btn--medium--secondary" alt="WhatsApp" title="Conversar no WhatsApp">
           <div class="icon-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0859 4.90685C18.1634 3.98268 17.0658 3.24988 15.8567 2.75091C14.6476 2.25194 13.3511 1.99672 12.0421 2.00003C6.55351 2.00003 2.08541 6.44582 2.08319 11.9106C2.08319 13.6571 2.54132 15.3617 3.41209 16.8653L2 22L7.27897 20.6211C8.73919 21.4122 10.3751 21.8271 12.0377 21.8278H12.0421C17.5296 21.8278 21.9977 17.382 22 11.9172C22.0037 10.615 21.7481 9.32503 21.248 8.12175C20.7478 6.91847 20.013 5.82578 19.0859 4.90685M12.0421 20.1552H12.0388C10.5563 20.1554 9.10108 19.7584 7.82583 19.006L7.52412 18.8271L4.39156 19.6452L5.22684 16.6059L5.0305 16.2946C4.20165 14.9813 3.76287 13.4615 3.76483 11.9106C3.76705 7.36876 7.47974 3.67369 12.0455 3.67369C13.1328 3.67128 14.2098 3.88354 15.2142 4.29816C16.2186 4.71279 17.1304 5.32156 17.8968 6.08923C18.6673 6.85324 19.278 7.76166 19.6937 8.762C20.1093 9.76233 20.3216 10.8347 20.3183 11.9172C20.3161 16.4591 16.6034 20.1552 12.0421 20.1552ZM16.5823 13.985C16.3327 13.8602 15.1103 13.2619 14.8818 13.1791C14.6544 13.0963 14.4892 13.0554 14.3228 13.3027C14.1564 13.55 13.6794 14.1075 13.5341 14.2731C13.3888 14.4387 13.2435 14.4586 12.995 14.335C12.7465 14.2113 11.9445 13.9497 10.9939 13.1062C10.254 12.4493 9.75484 11.639 9.60952 11.3906C9.46421 11.1422 9.59399 11.0086 9.71934 10.885C9.83138 10.7746 9.96782 10.5957 10.0921 10.4511C10.2163 10.3065 10.2573 10.2038 10.3405 10.0382C10.4237 9.87262 10.3827 9.72799 10.3195 9.60435C10.2573 9.4796 9.75927 8.26079 9.55184 7.76509C9.35107 7.28485 9.14585 7.34889 8.99278 7.34226C8.83424 7.33581 8.67557 7.33286 8.5169 7.33343C8.39073 7.33663 8.26658 7.36574 8.15225 7.41893C8.03791 7.47213 7.93584 7.54826 7.85246 7.64255C7.62395 7.89095 6.98169 8.48931 6.98169 9.70812C6.98169 10.9269 7.87353 12.1049 7.99777 12.2705C8.12201 12.4361 9.75262 14.9366 12.2485 16.0097C12.843 16.2647 13.3067 16.4171 13.6672 16.5319C14.2629 16.7207 14.8053 16.6931 15.2346 16.6302C15.7127 16.5595 16.7066 16.0318 16.914 15.4533C17.1214 14.8748 17.1214 14.3791 17.0593 14.2753C16.9972 14.1716 16.8297 14.1086 16.5823 13.985" fill="#F4C284"/>
@@ -96,7 +98,7 @@
           </div>
         </a>
         <!-- #3 icon -->
-        <a href="mailto:caique.badaro@gmail.com" class="cb_btn--medium--secondary">
+        <a href="mailto:caique.badaro@gmail.com" class="cb_btn--medium--secondary" alt="E-mail" title="Conversar por E-mail">
           <div class="icon-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <mask id="mask0_1086_1115" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -230,226 +232,111 @@
     </div>
   </button>
   <!-- end, back to top -->
-  <!-- banner first fold -->
-  <div class="cb--content--first-fold" id="cb_banner--first-fold">
-    <div class="content">
-      <div class="description">
-        <div class="title">
-          <h3 class="heading-3--bold" aria-label="Projeto de UX/UI para o site Apoio Entrega">Revisão UX/UI no site Apoio Entrega</h3>
-        </div>
-        <div class="subtitle">
-          <h6 class="heading-6--subtitle--medium" aria-label="Objetivo do projeto foi melhorar a percepção da página em relação aos preços e promoções">Objetivo: Melhorar a percepção do site como uma plataforma de preços competitivos e promoções impactantes.</h6>
-        </div>
-      </div>
-      <img class="banner--first-fold" src="imgs/banner-principal/design-interface-ux-ui-caique-badaro.png" alt="Design interface UX/UI Caique Badaró">
-    </div>
-  </div>
-  <!-- end, back to top -->
-  <!-- heatmaps -->
-  <div class="cb--content" id="cb_heatmap">
-    <div class="cb--block-intro">
+
+
+
+  <!-- projects -->
+  <div class="cb--content" id="cb_grid-card-projects">
+    <!-- <div class="cb--block-intro">
       <div class="content">
         <div class="title">
-          <h3 class="heading-3--bold" aria-label="Análise de mapas de calor para UX/UI">Mapas de calor</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="A importância dos mapas de calor para UX/UI">Compreendendo o comportamento do usuário</h5>
+          <h3 class="heading-3--bold" aria-label="XXXXXXXXXXXXXXXXXXXXXXX">Projetos</h3>
+          <h5 class="heading-5--subtitle--medium" aria-label="XXXXXXXXXXXXXXXXXXX">Nonono nononono nononono nonon </h5>
         </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">A análise de mapas de calor realizada na página inicial do site Apoio Entrega (2022) forneceu insights valiosos sobre onde os usuários demonstram maior engajamento e interesse. Com base nesses dados, foi possível otimizar o design da página para melhorar a experiência do usuário (UX) e atingir os objetivos do projeto.</p>
-          <p class="body-regular--regular">Mapas de Calor são ferramentas essenciais para análise de interação do usuário em sites e aplicativos. Eles representam, de forma visual, padrões de comportamento, como cliques, movimento do mouse e scroll (rolagem), utilizando cores para destacar áreas com maior ou menor atividade.</p>
+        <div class="paragraph"></div>
+      </div>
+    </div> -->
+    <!-- grid projects -->
+    <div class="cb_grid-card-projects">
+      <div class="column-left">
+        <div class="row-top">
+          <!-- #1 -->
+          <div class="cb_card-project-preview--square" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- #2 -->
+          <div class="cb_card-project-preview--rectangle-small--vertical" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-bottom">
+          <!-- #3 -->
+          <div class="cb_card-project-preview--rectangle-larger--horizontal" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column-right">
+        <div class="row-top">
+          <!-- #4 -->
+          <div class="cb_card-project-preview--rectangle-small--horizontal" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-bottom">
+          <!-- #5 -->
+          <div class="cb_card-project-preview--square" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- end, grid projects -->
+
+
+
     <!-- carousel -->
     <div class="cb_carousel carousel-no-scroll carousel-container">
-      <!-- cards carousel -->
-      <div class="cb_carousel-card">
-        <!-- card heatmap #1-->
-        <div class="cb_heatmap-card">
-          <div class="title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <mask id="mask0_1137_1179" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1137_1179)">
-                <path d="M5.40386 15.6116V8.18269C5.40386 7.16604 5.76187 6.2997 6.47789 5.58367C7.19392 4.86765 8.06026 4.50964 9.07691 4.50964C10.0936 4.50964 10.9599 4.86765 11.6759 5.58367C12.392 6.2997 12.75 7.16604 12.75 8.18269V14.8269C12.75 15.4282 12.9618 15.9407 13.3855 16.3644C13.8093 16.7881 14.3218 17 14.9231 17C15.5243 17 16.0368 16.7881 16.4606 16.3644C16.8843 15.9407 17.0961 15.4282 17.0961 14.8269V7.39804L15.7884 8.70577C15.6397 8.85449 15.4631 8.92788 15.2586 8.92594C15.0542 8.92403 14.8743 8.8455 14.7192 8.69037C14.5743 8.53525 14.4993 8.35962 14.4942 8.16347C14.4891 7.96732 14.5641 7.79169 14.7192 7.63657L17.2134 5.14234C17.307 5.04874 17.4058 4.98272 17.5096 4.94427C17.6134 4.9058 17.7256 4.88657 17.8461 4.88657C17.9666 4.88657 18.0788 4.9058 18.1827 4.94427C18.2865 4.98272 18.3852 5.04874 18.4788 5.14234L20.973 7.63657C21.1218 7.78527 21.1952 7.9593 21.1932 8.15867C21.1913 8.35802 21.1179 8.53525 20.973 8.69037C20.8179 8.8455 20.6397 8.92564 20.4384 8.93077C20.2372 8.93589 20.059 8.86089 19.9038 8.70577L18.5961 7.39804V14.8269C18.5961 15.8436 18.2381 16.7099 17.5221 17.4259C16.8061 18.142 15.9397 18.5 14.9231 18.5C13.9064 18.5 13.0401 18.142 12.324 17.4259C11.608 16.7099 11.25 15.8436 11.25 14.8269V8.18269C11.25 7.58141 11.0382 7.06891 10.6144 6.64519C10.1907 6.22148 9.6782 6.00962 9.07691 6.00962C8.47563 6.00962 7.96313 6.22148 7.53941 6.64519C7.1157 7.06891 6.90384 7.58141 6.90384 8.18269V15.6116L8.21156 14.3038C8.36026 14.1551 8.53685 14.0817 8.74134 14.0836C8.94582 14.0856 9.12563 14.1641 9.28076 14.3192C9.42563 14.4744 9.50063 14.65 9.50576 14.8461C9.51088 15.0423 9.43588 15.2179 9.28076 15.373L6.78654 17.8673C6.69294 17.9609 6.59422 18.0269 6.49039 18.0653C6.38654 18.1038 6.27436 18.123 6.15384 18.123C6.03334 18.123 5.92116 18.1038 5.81731 18.0653C5.71346 18.0269 5.61475 17.9609 5.52116 17.8673L3.02694 15.373C2.87822 15.2243 2.80482 15.0503 2.80674 14.8509C2.80867 14.6516 2.88207 14.4744 3.02694 14.3192C3.18206 14.1641 3.36026 14.084 3.56154 14.0788C3.76282 14.0737 3.94102 14.1487 4.09614 14.3038L5.40386 15.6116Z" fill="#606060"/>
-              </g>
-            </svg>
-            <h6 class="heading-6--subtitle--medium" aria-label="Mapa de calor, movimento do mouse">Movimento</h6>
-          </div>
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-mapa-de-calor-move-map.png" alt="Mapa de calor, movimento do mouse" title="Movimento do mouse (mapa de calor)">
-          </div>
-          <div class="footer">
-            <div class="analyzed-device">
-              <p class="body-small--regular"></p>
-              <p class="body-small--regular">Desktop</p>
-            </div>
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-01" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-        <!-- card heatmap #2-->
-        <div class="cb_heatmap-card">
-          <div class="title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-              <mask id="mask0_1225_3659" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
-                <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1225_3659)">
-                <path d="M11.5558 17.9807C10.1289 17.8589 8.92951 17.2775 7.95773 16.2365C6.98593 15.1955 6.50003 13.95 6.50003 12.5C6.50003 10.9722 7.03476 9.67363 8.10421 8.6042C9.17364 7.53475 10.4722 7.00002 12 7.00002C13.45 7.00002 14.6955 7.48432 15.7365 8.4529C16.7775 9.42148 17.3589 10.6192 17.4807 12.0461L15.8904 11.575C15.6742 10.675 15.2087 9.9375 14.4938 9.3625C13.7789 8.7875 12.9477 8.5 12 8.5C10.9 8.5 9.95834 8.89167 9.17501 9.675C8.39167 10.4583 8.00001 11.4 8.00001 12.5C8.00001 13.45 8.28911 14.2833 8.86731 15C9.44552 15.7167 10.1814 16.1833 11.075 16.4L11.5558 17.9807ZM12 22C10.6858 22 9.45085 21.7506 8.29503 21.252C7.1392 20.7533 6.13378 20.0766 5.27878 19.2217C4.42378 18.3669 3.74691 17.3616 3.24816 16.206C2.74941 15.0504 2.50003 13.8156 2.50003 12.5017C2.50003 11.1877 2.74936 9.95271 3.24803 8.79657C3.7467 7.64042 4.42345 6.63474 5.27828 5.77952C6.13313 4.92429 7.13837 4.24723 8.29401 3.74835C9.44962 3.24947 10.6844 3.00002 11.9983 3.00002C13.3123 3.00002 14.5473 3.2494 15.7034 3.74815C16.8596 4.2469 17.8653 4.92377 18.7205 5.77877C19.5757 6.63377 20.2528 7.63919 20.7517 8.79502C21.2505 9.95084 21.5 11.1858 21.5 12.5V12.8731C21.5 12.9974 21.4865 13.1218 21.4596 13.2462L20 12.8V12.5C20 10.2667 19.225 8.375 17.675 6.825C16.125 5.275 14.2333 4.5 12 4.5C9.76667 4.5 7.87501 5.275 6.32501 6.825C4.77501 8.375 4.00001 10.2667 4.00001 12.5C4.00001 14.7333 4.77501 16.625 6.32501 18.175C7.87501 19.725 9.76667 20.5 12 20.5H12.3L12.7558 21.9596C12.6298 21.9865 12.5038 22 12.3779 22H12ZM19.8192 21.823L15.6057 17.5999L14.9807 19.4999C14.9023 19.714 14.7532 19.8169 14.5334 19.8085C14.3137 19.8002 14.1686 19.689 14.0981 19.4749L12.2558 13.3327C12.2019 13.1622 12.242 13.0099 12.376 12.8759C12.5099 12.742 12.6622 12.7019 12.8327 12.7558L18.9749 14.598C19.189 14.6685 19.3002 14.8137 19.3086 15.0334C19.3169 15.2532 19.214 15.4023 18.9999 15.4807L17.0999 16.1057L21.323 20.3192C21.4166 20.4105 21.4634 20.5169 21.4634 20.6386C21.4634 20.7603 21.4166 20.8679 21.323 20.9615L20.4615 21.823C20.3703 21.9166 20.2638 21.9634 20.1421 21.9634C20.0204 21.9634 19.9128 21.9166 19.8192 21.823Z" fill="#606060"/>
-              </g>
-            </svg>
-            <h6 class="heading-6--subtitle--medium" aria-label="Mapa de calor, cliques na página">Cliques</h6>
-          </div>
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-mapa-de-calor-click-map.png" alt="Mapa de calor, cliques" title="Cliques (mapa de calor)">
-          </div>
-          <div class="footer">
-            <div class="analyzed-device">
-              <p class="body-small--regular">Mobile</p>
-              <p class="body-small--regular">Desktop</p>
-            </div>
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-02" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-        <!-- card heatmap #3-->
-        <div class="cb_heatmap-card">
-          <div class="title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-              <mask id="mask0_1225_3658" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
-                <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1225_3658)">
-                <path d="M9.16312 13.1442C8.95054 13.1442 8.77245 13.0723 8.62887 12.9286C8.48529 12.7848 8.41349 12.6067 8.41349 12.3942V5.86343L6.09614 8.18078C5.96089 8.31923 5.79183 8.38845 5.58894 8.38845C5.38606 8.38845 5.20706 8.31672 5.05194 8.17325C4.89681 8.01674 4.81924 7.83784 4.81924 7.63655C4.81924 7.43527 4.89681 7.25707 5.05194 7.10195L8.52117 3.63273C8.61475 3.53915 8.71389 3.47312 8.81859 3.43465C8.92329 3.39619 9.03548 3.37695 9.15514 3.37695C9.27479 3.37695 9.38846 3.39633 9.49614 3.43508C9.60384 3.47385 9.70384 3.53973 9.79614 3.63273L13.2904 7.12695C13.4391 7.27567 13.5125 7.4481 13.5106 7.64425C13.5086 7.8404 13.4301 8.01674 13.275 8.17325C13.1199 8.31672 12.9442 8.39102 12.7481 8.39615C12.5519 8.40129 12.3763 8.32629 12.2212 8.17115L9.91344 5.86343V12.4039C9.91344 12.6136 9.84154 12.7895 9.69774 12.9314C9.55393 13.0733 9.37572 13.1442 9.16312 13.1442ZM14.8448 21.6134C14.7252 21.6134 14.6115 21.5941 14.5038 21.5553C14.3961 21.5166 14.2961 21.4507 14.2038 21.3577L10.7096 17.8634C10.5609 17.7147 10.4875 17.5423 10.4894 17.3462C10.4914 17.15 10.5699 16.9737 10.725 16.8172C10.8801 16.6737 11.0557 16.5994 11.2519 16.5942C11.448 16.5891 11.6237 16.6641 11.7788 16.8192L14.0865 19.127V12.5866C14.0865 12.3768 14.1584 12.2009 14.3022 12.059C14.4461 11.9171 14.6243 11.8462 14.8369 11.8462C15.0495 11.8462 15.2275 11.9181 15.3711 12.0618C15.5147 12.2056 15.5865 12.3837 15.5865 12.5962V19.127L17.9038 16.8096C18.0391 16.6712 18.2082 16.6019 18.411 16.6019C18.6139 16.6019 18.7929 16.6737 18.948 16.8172C19.1032 16.9737 19.1807 17.1526 19.1807 17.3538C19.1807 17.5551 19.1032 17.7333 18.948 17.8884L15.4788 21.3577C15.3852 21.4513 15.2861 21.5173 15.1814 21.5557C15.0767 21.5942 14.9645 21.6134 14.8448 21.6134Z" fill="#606060"/>
-              </g>
-            </svg>
-            <h6 class="heading-6--subtitle--medium" aria-label="Mapa de calor, scroll na página">Scroll na página</h6>
-          </div>
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-mapa-de-calor-scroll-map.png" alt="Mapa de calor, scroll na página" title="Scroll (mapa de calor)">
-          </div>
-          <div class="footer">
-            <div class="analyzed-device">
-              <p class="body-small--regular">Mobile</p>
-              <p class="body-small--regular">Desktop</p>
-            </div>
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-03" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- image mockups heatmap -->
-    <div class="banner--projeto" id="revisao-apoio-home-site_heatmap">
-      <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--heatmap_click.png" id="revisao-apoio-home-site_heatmap_01" alt="Relatórios mapa de calor">
-      <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--heatmap_scroll.png" id="revisao-apoio-home-site_heatmap_02" alt="Relatórios mapa de calor">
-      <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--heatmap_move.png" id="revisao-apoio-home-site_heatmap_03" alt="Relatórios mapa de calor">
-    </div>
-  </div>
-  <!-- end, heatmaps -->
-  <!-- search -->
-  <div class="cb--content" id="cb_search">
-    <div class="cb--block-intro">
-      <div class="content">
-        <div class="title">
-          <h3 class="heading-3--bold" aria-label="Pesquisa com usuários">Pesquisa com usuários</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="Insights para otimização do site Apoio Entrega">Insights para otimização do site Apoio Entrega</h5>
-        </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Durante o desenvolvimento do projeto, foi realizada uma pesquisa on-line com a base de clientes do site Apoio Entrega. O principal objetivo foi <span class="body-regular--bold">compreender a percepção dos usuários</span> sobre promoções, ferramentas e áreas de maior interesse disponíveis na plataforma.</p>
-          <p class="body-regular--regular">A pesquisa também desempenhou um papel essencial ao identificar funcionalidades e recursos desejados pelos usuários, oferecendo insights valiosos para otimizar a experiência do cliente e alinhar o site às suas expectativas.</p>
-          <p class="body-regular--regular">A pesquisa foi estruturada em três etapas, detalhadas a seguir:</p>
-        </div>
-      </div>
-    </div>
-    <!-- carousel -->
-    <div class="cb_carousel carousel-no-scroll carousel-container">
-      <!-- cards carousel -->
-      <div class="cb_carousel-card">
-        <!-- card matriz CSD -->
-        <div class="cb_matrizCSD-card">
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-pesquisa-usuarios-matriz-csd.png" alt="Matriz CSD" title="Matriz CSD">
-          </div>
-          <div class="title">
-            <p class="body-small--regular">Etapa 1</p>
-            <h6 class="heading-6--subtitle--medium" aria-label="Matriz CSD">Matriz CSD</h6>
-          </div>
-          <div class="paragraph">
-            <p class="body-regular--regular">Utilizada para identificar os elementos-chave e organizar de forma sistemática o conhecimento existente.</p>
-          </div>
-          <div class="footer">
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-04" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-        <!-- card hipóteses -->
-        <div class="cb_matrizCSD-card">
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-pesquisa-hipotese.png" alt="Hipóteses" title="Hipóteses">
-          </div>
-          <div class="title">
-            <p class="body-small--regular">Etapa 2</p>
-            <h6 class="heading-6--subtitle--medium" aria-label="Hipóteses">Hipóteses</h6>
-          </div>
-          <div class="paragraph">
-            <p class="body-regular--regular">Definição de hipóteses e suposições fundamentadas a partir dos dados extraídos na Matriz CSD.</p>
-          </div>
-          <div class="footer">
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-05" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-        <!-- card pesquisa -->
-        <div class="cb_matrizCSD-card">
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-pesquisa-formulario.png" alt="Formulário" title="Formulário">
-          </div>
-          <div class="title">
-            <p class="body-small--regular">Etapa 3</p>
-            <h6 class="heading-6--subtitle--medium" aria-label="Formulário da pesquisa">Pesquisa</h6>
-          </div>
-          <div class="paragraph">
-            <p class="body-regular--regular">Construção do formulário, seleção da base, acompanhamento e análise.</p>
-          </div>
-          <div class="footer">
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-06" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- image mockups heatmap -->
-      <div class="banner--projeto" id="revisao-apoio-home-site_search">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--search-3.png" id="revisao-apoio-home-site_search-3" alt="Planejamento Matriz CSD">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--search-2.png" id="revisao-apoio-home-site_search-2" alt="Planejamento Matriz CSD">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--search-1.png" id="revisao-apoio-home-site_search-1" alt="Planejamento Matriz CSD">
-      </div>
-    </div>
-  </div>
-  <!-- end, search -->
-  <!-- benchmarking -->
-  <div class="cb--content" id="cb_benchmarking">
-    <div class="cb--block-intro">
-      <div class="content">
-        <div class="title">
-          <h3 class="heading-3--bold" aria-label="Análise de mercado com Benchmarking">Benchmarking</h3>
-        </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Realizamos uma análise detalhada de benchmarking para comparar as práticas adotadas por concorrentes do setor. Essa avaliação forneceu insights valiosos sobre estratégias eficazes e oportunidades para aprimorar nossa plataforma.</p>
-          <p class="body-regular--regular">O benchmarking é reconhecido como uma estratégia essencial para <span class="body-regular--bold">identificar tendências, implementar melhorias e fortalecer a competitividade</span> de um projeto no mercado.</p>
-          <p class="body-regular--regular">Durante o desenvolvimento, foram seguidos os passos abaixo:</p>
-        </div>
-      </div>
-    </div>
-    <!-- carousel -->
-    <div class="cb_carousel carousel-container">
       <!-- carousel btn left -->
       <a href="#" class="cb_btn--small--primary carousel--arrow-left">
         <div class="icon-left">
@@ -465,116 +352,65 @@
       </a>
       <!-- cards carousel -->
       <div class="cb_carousel-card">
-        <!-- card benchmarking -->
-        <div class="cb_bench-card">
-          <div class="row-header">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                <mask id="mask0_1233_932" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
-                  <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
-                </mask>
-                <g mask="url(#mask0_1233_932)">
-                  <path d="M11.5557 17.9807C10.1288 17.8589 8.92951 17.2775 7.95772 16.2365C6.98592 15.1955 6.50002 13.95 6.50002 12.5C6.50002 10.9722 7.03475 9.67363 8.1042 8.6042C9.17363 7.53475 10.4722 7.00002 12 7.00002C13.45 7.00002 14.6955 7.48432 15.7365 8.4529C16.7775 9.42148 17.3589 10.6192 17.4807 12.0461L15.8904 11.575C15.6742 10.675 15.2087 9.9375 14.4938 9.3625C13.7789 8.7875 12.9476 8.5 12 8.5C10.9 8.5 9.95833 8.89167 9.175 9.675C8.39166 10.4583 8 11.4 8 12.5C8 13.45 8.2891 14.2833 8.8673 15C9.44551 15.7167 10.1814 16.1833 11.075 16.4L11.5557 17.9807ZM12 22C10.6858 22 9.45084 21.7506 8.29502 21.252C7.13919 20.7533 6.13377 20.0766 5.27877 19.2217C4.42377 18.3669 3.7469 17.3616 3.24815 16.206C2.7494 15.0504 2.50002 13.8156 2.50002 12.5017C2.50002 11.1877 2.74936 9.95271 3.24802 8.79657C3.74669 7.64042 4.42344 6.63474 5.27827 5.77952C6.13312 4.92429 7.13836 4.24723 8.294 3.74835C9.44962 3.24947 10.6844 3.00002 11.9983 3.00002C13.3123 3.00002 14.5473 3.2494 15.7034 3.74815C16.8596 4.2469 17.8653 4.92377 18.7205 5.77877C19.5757 6.63377 20.2528 7.63919 20.7516 8.79502C21.2505 9.95084 21.5 11.1858 21.5 12.5V12.8731C21.5 12.9974 21.4865 13.1218 21.4596 13.2462L20 12.8V12.5C20 10.2667 19.225 8.375 17.675 6.825C16.125 5.275 14.2333 4.5 12 4.5C9.76666 4.5 7.875 5.275 6.325 6.825C4.775 8.375 4 10.2667 4 12.5C4 14.7333 4.775 16.625 6.325 18.175C7.875 19.725 9.76666 20.5 12 20.5H12.3L12.7557 21.9596C12.6298 21.9865 12.5038 22 12.3779 22H12ZM19.8192 21.823L15.6057 17.5999L14.9807 19.4999C14.9023 19.714 14.7532 19.8169 14.5334 19.8085C14.3137 19.8002 14.1685 19.689 14.098 19.4749L12.2558 13.3327C12.2019 13.1622 12.242 13.0099 12.3759 12.8759C12.5099 12.742 12.6622 12.7019 12.8327 12.7558L18.9749 14.598C19.189 14.6685 19.3002 14.8137 19.3085 15.0334C19.3169 15.2532 19.214 15.4023 18.9999 15.4807L17.0999 16.1057L21.323 20.3192C21.4166 20.4105 21.4634 20.5169 21.4634 20.6386C21.4634 20.7603 21.4166 20.8679 21.323 20.9615L20.4615 21.823C20.3703 21.9166 20.2638 21.9634 20.1421 21.9634C20.0204 21.9634 19.9128 21.9166 19.8192 21.823Z" fill="#606060"/>
-                </g>
-              </svg>
-            </div>
-            <div class="line"></div>
+        <!-- card project-->
+        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+          <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
           </div>
-          <div class="row-content">
-            <div class="paragraph">
-              <h6 class="heading-6--subtitle--medium" aria-label="Identificação dos concorrentes">Definição de objetivos e escopo</h6>
-              <p class="body-regular--regular">Houve a definição do propósito e também das principais áreas de análise para o projeto.</p>
-            </div>
-          </div>          
         </div>
-        <!-- card benchmarking -->
-        <div class="cb_bench-card">
-          <div class="row-header">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <mask id="mask0_1145_940" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
-                  <rect width="32" height="32" fill="#D9D9D9"/>
-                </mask>
-                <g mask="url(#mask0_1145_940)">
-                  <path d="M3.33337 16C3.33337 14.2496 3.66628 12.6038 4.3321 11.0628C4.9979 9.5218 5.90089 8.18122 7.04107 7.04106C8.18122 5.90088 9.52181 4.99789 11.0628 4.33209C12.6039 3.66627 14.2496 3.33336 16 3.33336C18.8735 3.33336 21.4051 4.17738 23.5949 5.86543C25.7846 7.55347 27.2641 9.70348 28.0333 12.3155C28.1376 12.6163 28.1324 12.9108 28.0179 13.1988C27.9034 13.4868 27.7 13.6718 27.4077 13.7539C27.129 13.8223 26.8735 13.7783 26.641 13.6219C26.4086 13.4654 26.247 13.2479 26.1564 12.9693C25.7257 11.4223 24.9804 10.0458 23.9205 8.83976C22.8607 7.63376 21.5539 6.72307 20 6.10769V6.66666C20 7.39999 19.7389 8.02777 19.2167 8.54999C18.6944 9.07222 18.0667 9.33333 17.3333 9.33333H14.6667V12C14.6667 12.3778 14.5389 12.6944 14.2833 12.95C14.0278 13.2055 13.7111 13.3333 13.3333 13.3333H10.6667V16H12.0256C12.3692 16 12.656 16.1149 12.8859 16.3449C13.1158 16.5748 13.2308 16.8615 13.2308 17.2051V20H12L5.6 13.6C5.53333 14 5.47222 14.4 5.41667 14.8C5.36111 15.2 5.33333 15.6 5.33333 16C5.33333 18.7624 6.25556 21.1611 8.1 23.1962C9.94444 25.2312 12.2564 26.3744 15.0359 26.6256C15.3146 26.653 15.5449 26.7624 15.7269 26.9538C15.909 27.1453 16 27.3829 16 27.6666C16 27.9504 15.9 28.188 15.7 28.3794C15.5 28.5709 15.2607 28.6529 14.9821 28.6256C11.7017 28.3606 8.9402 27.026 6.69747 24.6218C4.45473 22.2175 3.33337 19.3436 3.33337 16ZM27.3795 27.4513L23.6487 23.7461C23.2162 24.0213 22.7504 24.2435 22.2513 24.4128C21.7521 24.582 21.2239 24.6666 20.6667 24.6666C19.1795 24.6666 17.9188 24.1495 16.8846 23.1154C15.8505 22.0812 15.3334 20.8205 15.3334 19.3333C15.3334 17.8462 15.8505 16.5855 16.8846 15.5513C17.9188 14.5171 19.1795 14 20.6667 14C22.1538 14 23.4145 14.5171 24.4487 15.5513C25.4829 16.5855 26 17.8462 26 19.3333C26 19.8991 25.9132 20.4337 25.7397 20.9372C25.5662 21.4406 25.3376 21.9085 25.0538 22.341L28.7846 26.0462C28.9778 26.2308 29.0743 26.4628 29.0743 26.7423C29.0743 27.0218 28.9778 27.2581 28.7846 27.4513C28.6 27.6359 28.3679 27.7282 28.0885 27.7282C27.809 27.7282 27.5727 27.6359 27.3795 27.4513ZM20.6667 22.6667C21.6 22.6667 22.3889 22.3444 23.0333 21.7C23.6778 21.0555 24 20.2667 24 19.3333C24 18.4 23.6778 17.6111 23.0333 16.9667C22.3889 16.3222 21.6 16 20.6667 16C19.7333 16 18.9444 16.3222 18.3 16.9667C17.6556 17.6111 17.3333 18.4 17.3333 19.3333C17.3333 20.2667 17.6556 21.0555 18.3 21.7C18.9444 22.3444 19.7333 22.6667 20.6667 22.6667Z" fill="#5AA0FF"/>
-                </g>
-              </svg>
-
-            </div>
-            <div class="line"></div>
+        <!-- card project-->
+        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+          <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
           </div>
-          <div class="row-content">
-            <div class="paragraph">
-              <h6 class="heading-6--subtitle--medium" aria-label="Análise da concorrência">Identificação dos concorrentes</h6>
-              <p class="body-regular--regular">Levantamento de empresas que se destacam no segmento, identificando boas práticas e estratégias.</p>
-            </div>
-          </div>          
         </div>
-        <!-- card benchmarking -->
-        <div class="cb_bench-card">
-          <div class="row-header">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <mask id="mask0_1232_949" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                  <rect width="24" height="24" fill="#D9D9D9"/>
-                </mask>
-                <g mask="url(#mask0_1232_949)">
-                  <path d="M10.9519 17.75C9.87627 17.75 8.87627 17.5506 7.95192 17.1519C7.02756 16.7532 6.21858 16.2083 5.525 15.5173C5.36987 15.3724 5.29582 15.1981 5.30287 14.9942C5.30992 14.7904 5.39614 14.616 5.56152 14.4712C5.72691 14.3327 5.91601 14.2708 6.12882 14.2856C6.34164 14.3003 6.53074 14.3801 6.69612 14.525C7.26151 15.0673 7.90317 15.4904 8.62112 15.7943C9.33907 16.0981 10.116 16.25 10.9519 16.25C12.6827 16.25 14.157 15.6411 15.375 14.4231C16.593 13.2051 17.2019 11.7308 17.2019 10C17.2019 8.26924 16.593 6.79487 15.375 5.57691C14.157 4.35896 12.6827 3.74998 10.9519 3.74998C9.45961 3.74998 8.14902 4.21473 7.02017 5.14423C5.89132 6.07373 5.17433 7.24105 4.8692 8.64618C4.8051 8.87181 4.69677 9.07053 4.54422 9.24233C4.39166 9.41411 4.20256 9.50001 3.97692 9.50001C3.75769 9.50001 3.58302 9.40674 3.4529 9.22021C3.32277 9.03367 3.28462 8.82759 3.33847 8.60196C3.67052 6.78144 4.54296 5.26766 5.95577 4.06061C7.36859 2.85356 9.03397 2.25003 10.9519 2.25003C13.1147 2.25003 14.9471 3.00099 16.449 4.50291C17.9509 6.00482 18.7019 7.83719 18.7019 10C18.7019 10.959 18.5471 11.8414 18.2375 12.6471C17.9279 13.4529 17.4904 14.2103 16.925 14.9192L21.3673 19.3616C21.5122 19.5064 21.583 19.6821 21.5798 19.8885C21.5766 20.0949 21.5058 20.2705 21.3673 20.4154C21.2224 20.5603 21.0452 20.6327 20.8356 20.6327C20.626 20.6327 20.4487 20.5603 20.3039 20.4154L15.8615 15.9731C15.1526 16.5384 14.3968 16.9759 13.5942 17.2856C12.7917 17.5952 11.9109 17.75 10.9519 17.75ZM10.6173 11.8693L11.6961 8.55193C11.7397 8.43783 11.8093 8.34296 11.9048 8.26733C12.0003 8.19168 12.1103 8.15386 12.2346 8.15386H12.7481C12.8622 8.15386 12.9628 8.18078 13.05 8.23463C13.1372 8.28848 13.2077 8.36732 13.2615 8.47116L14.6057 11.1539H14.7981C14.9699 11.1539 15.1122 11.2103 15.225 11.3231C15.3378 11.4359 15.3942 11.5782 15.3942 11.75C15.3942 11.9218 15.3378 12.0641 15.225 12.1769C15.1122 12.2897 14.9699 12.3462 14.7981 12.3462H14.2519C14.1442 12.3462 14.0407 12.3167 13.9413 12.2577C13.842 12.1987 13.7654 12.1154 13.7115 12.0077L12.5731 9.74613L11.3673 13.4385C11.3237 13.5628 11.2516 13.6619 11.1509 13.7356C11.0503 13.8093 10.9378 13.8462 10.8134 13.8462H10.4308C10.3 13.8462 10.1817 13.8067 10.076 13.7279C9.97021 13.649 9.89552 13.5474 9.85192 13.4231L8.31152 8.30958L7.03267 11.9519C6.98909 12.0763 6.91922 12.1731 6.82307 12.2423C6.72692 12.3115 6.61154 12.3462 6.47692 12.3462H2.70192C2.53012 12.3462 2.38782 12.2897 2.275 12.1769C2.16218 12.0641 2.10577 11.9218 2.10577 11.75C2.10577 11.5782 2.16219 11.4359 2.27502 11.3231C2.38782 11.2103 2.53012 11.1539 2.70192 11.1539H6.0577L7.56155 6.81156C7.60513 6.68719 7.67981 6.58815 7.78557 6.51443C7.89134 6.44072 8.00961 6.40386 8.14037 6.40386H8.53845C8.67948 6.40386 8.80032 6.44585 8.90095 6.52983C9.00158 6.6138 9.0737 6.72117 9.1173 6.85193L10.6173 11.8693Z" fill="#606060"/>
-                </g>
-              </svg>
-            </div>
-            <div class="line"></div>
+        <!-- card project-->
+        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+          <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
           </div>
-          <div class="row-content">
-            <div class="paragraph">
-              <h6 class="heading-6--subtitle--medium" aria-label="Mapeamento das informações coletadas">Análise dos sites</h6>
-              <p class="body-regular--regular">Avaliação da usabilidade, navegação e desempenho dos sites concorrentes em diferentes dispositivos.</p>
-            </div>
-          </div>          
         </div>
-        <!-- card benchmarking -->
-        <div class="cb_bench-card">
-          <div class="row-header">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <mask id="mask0_1232_950" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                  <rect width="24" height="24" fill="#D9D9D9"/>
-                </mask>
-                <g mask="url(#mask0_1232_950)">
-                  <path d="M9.94231 7.19233H17.0577C17.2702 7.19233 17.4483 7.26424 17.5921 7.40806C17.7358 7.55186 17.8077 7.73006 17.8077 7.94266C17.8077 8.15524 17.7358 8.33332 17.5921 8.47691C17.4483 8.62049 17.2702 8.69228 17.0577 8.69228H9.94231C9.72981 8.69228 9.55169 8.62038 9.40796 8.47658C9.26421 8.33276 9.19233 8.15457 9.19233 7.94198C9.19233 7.72938 9.26421 7.55129 9.40796 7.40771C9.55169 7.26412 9.72981 7.19233 9.94231 7.19233ZM9.94231 10.0769H17.0577C17.2702 10.0769 17.4483 10.1488 17.5921 10.2927C17.7358 10.4365 17.8077 10.6147 17.8077 10.8273C17.8077 11.0398 17.7358 11.2179 17.5921 11.3615C17.4483 11.5051 17.2702 11.5769 17.0577 11.5769H9.94231C9.72981 11.5769 9.55169 11.505 9.40796 11.3612C9.26421 11.2174 9.19233 11.0392 9.19233 10.8266C9.19233 10.614 9.26421 10.4359 9.40796 10.2923C9.55169 10.1487 9.72981 10.0769 9.94231 10.0769ZM11.9231 21.5H6.00001C5.30131 21.5 4.70996 21.258 4.22598 20.774C3.74201 20.29 3.50003 19.6987 3.50003 19V17.0192C3.50003 16.7632 3.58666 16.5485 3.75991 16.3753C3.93314 16.202 4.1478 16.1154 4.40388 16.1154H6.50003V4.30773C6.50003 3.81062 6.67704 3.38506 7.03106 3.03106C7.38506 2.67704 7.81061 2.50003 8.30773 2.50003H18.6923C19.1894 2.50003 19.615 2.67704 19.969 3.03106C20.323 3.38506 20.5 3.81062 20.5 4.30773V10.9577C20.2436 10.9436 19.9894 10.9593 19.7375 11.0048C19.4856 11.0503 19.2397 11.1256 19 11.2308V4.30773C19 4.21798 18.9712 4.14426 18.9135 4.08656C18.8558 4.02886 18.782 4.00001 18.6923 4.00001H8.30773C8.21798 4.00001 8.14426 4.02886 8.08656 4.08656C8.02886 4.14426 8.00001 4.21798 8.00001 4.30773V16.1154H13.6731L12.1731 17.6154H5.00001V19C5.00001 19.2833 5.09584 19.5208 5.28751 19.7125C5.47917 19.9042 5.71667 20 6.00001 20H11.9231V21.5ZM14.1154 20.5961V19.2346C14.1154 19.1169 14.1372 19.0028 14.1808 18.8925C14.2244 18.7821 14.293 18.6801 14.3866 18.5865L19.5442 13.4539C19.6686 13.3295 19.8029 13.242 19.947 13.1914C20.0912 13.1407 20.2353 13.1154 20.3795 13.1154C20.5367 13.1154 20.6888 13.1449 20.8358 13.2039C20.9827 13.2628 21.1163 13.3513 21.2365 13.4692L22.1615 14.4039C22.2692 14.5282 22.3525 14.6628 22.4115 14.8077C22.4705 14.9526 22.5 15.0974 22.5 15.2423C22.5 15.3872 22.4731 15.5346 22.4192 15.6846C22.3654 15.8346 22.2795 15.9718 22.1615 16.0961L17.0288 21.2288C16.9352 21.3224 16.8332 21.391 16.7229 21.4346C16.6125 21.4782 16.4985 21.5 16.3808 21.5H15.0192C14.7631 21.5 14.5485 21.4134 14.3753 21.2401C14.202 21.0669 14.1154 20.8522 14.1154 20.5961ZM15.3077 20.3077H16.2577L19.5039 17.0461L19.0442 16.5711L18.5789 16.1019L15.3077 19.3577V20.3077ZM19.0442 16.5711L18.5789 16.1019L19.5039 17.0461L19.0442 16.5711Z" fill="#606060"/>
-                </g>
-              </svg>
-            </div>
-            <div class="line"></div>
+        <!-- card project-->
+        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+          <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
           </div>
-          <div class="row-content">
-            <div class="paragraph">
-              <h6 class="heading-6--subtitle--medium" aria-label="Referências criativas">Mapeamento das informações</h6>
-              <p class="body-regular--regular">Organização dos dados coletados em categorias.</p>
-            </div>
-          </div>          
-        </div>
-        <!-- card benchmarking -->
-        <div class="cb_bench-card">
-          <div class="row-header">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <mask id="mask0_1232_947" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                  <rect width="24" height="24" fill="#D9D9D9"/>
-                </mask>
-                <g mask="url(#mask0_1232_947)">
-                  <path d="M12 20.9422C11.5987 20.9422 11.2439 20.8365 10.9356 20.6249C10.6273 20.4134 10.4116 20.1358 10.2885 19.7922H10C9.59104 19.7922 9.23881 19.6445 8.94331 19.349C8.64779 19.0535 8.50003 18.7012 8.50003 18.2923V15.0115C7.49106 14.4 6.69716 13.5801 6.11831 12.5519C5.53946 11.5237 5.25003 10.4231 5.25003 9.25001C5.25003 7.36797 5.90451 5.77246 7.21348 4.46348C8.52246 3.15451 10.118 2.50003 12 2.50003C13.882 2.50003 15.4775 3.15451 16.7865 4.46348C18.0955 5.77246 18.75 7.36797 18.75 9.25001C18.75 10.4436 18.4606 11.5494 17.8817 12.5673C17.3029 13.5853 16.5089 14.4 15.5 15.0115V18.2923C15.5 18.7012 15.3522 19.0535 15.0567 19.349C14.7612 19.6445 14.409 19.7922 14 19.7922H13.7115C13.5884 20.1358 13.3727 20.4134 13.0644 20.6249C12.7561 20.8365 12.4013 20.9422 12 20.9422ZM10 18.2923H14V17.3538H10V18.2923ZM10 16.4692H14V15.5H10V16.4692ZM9.80001 14H11.4039V11.0885L9.68078 9.36538C9.56283 9.24743 9.50226 9.10929 9.49906 8.95096C9.49586 8.79262 9.55643 8.65128 9.68078 8.52693C9.80515 8.40257 9.94489 8.34038 10.1 8.34038C10.2551 8.34038 10.3949 8.40257 10.5192 8.52693L12 10.0077L13.4808 8.52693C13.5987 8.40898 13.7369 8.34841 13.8952 8.34521C14.0535 8.34199 14.1949 8.40257 14.3192 8.52693C14.4436 8.65128 14.5058 8.79102 14.5058 8.94616C14.5058 9.10127 14.4436 9.24101 14.3192 9.36538L12.5962 11.0885V14H14.2C15.1 13.5667 15.8333 12.9292 16.4 12.0875C16.9667 11.2458 17.25 10.3 17.25 9.25001C17.25 7.78334 16.7417 6.54167 15.725 5.52501C14.7083 4.50834 13.4667 4.00001 12 4.00001C10.5333 4.00001 9.29167 4.50834 8.27501 5.52501C7.25834 6.54167 6.75001 7.78334 6.75001 9.25001C6.75001 10.3 7.03334 11.2458 7.60001 12.0875C8.16667 12.9292 8.90001 13.5667 9.80001 14Z" fill="#606060"/>
-                </g>
-              </svg>
-            </div>
-            <div class="line last-line"></div>
-          </div>
-          <div class="row-content">
-            <div class="paragraph">
-              <h6 class="heading-6--subtitle--medium" aria-label="Referências criativas">Referência criativa</h6>
-              <p class="body-regular--regular">Documentação das melhores práticas e inspirações obtidas no benchmarking.</p>
-            </div>
-          </div>          
         </div>
       </div>
       <!-- carousel btn right -->
@@ -592,102 +428,102 @@
       </a>
     </div>
   </div>
-  <!-- end, benchmarking -->
+  <!-- end, projects -->
 
-  
-  <!-- menu desktop, links ajustar nomes, aria label, alt text, title -->
-  <!-- footer, links -->
-  <!-- conteúdo do bottom sheet, e imagens desktop (proporção) -->
-  
-  <!-- Revisar conteúdo aplicando meu estilo pessoal de escrita, remover excessos de formalidade -->
-  <!-- super banner mobile -->
 
-  <!-- animação: seja bem vindo(a), welcome -->
 
-  <!-- project -->
-  <div class="cb--content" id="cb_project-content">
-    <div class="cb--block-intro">
-      <div class="cb--block-tag-date">
-        <div class="cb_tag-info">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-              <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
-          </svg>
-          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em 2022">Agosto de 2022</p>
+
+  <!-- banner first fold -->
+  <!-- <div class="cb--content--first-fold" id="cb_banner--first-fold">
+    <div class="content">
+      <div class="description">
+        <div class="title">
+          <h3 class="heading-3--bold" aria-label="Projeto de UX/UI para o site Apoio Entrega">Revisão UX/UI no site Apoio Entrega</h3>
+        </div>
+        <div class="subtitle">
+          <h6 class="heading-6--subtitle--medium" aria-label="Objetivo do projeto foi melhorar a percepção da página em relação aos preços e promoções">Objetivo: Melhorar a percepção do site como uma plataforma de preços competitivos e promoções impactantes.</h6>
         </div>
       </div>
+      <img class="banner--first-fold" src="imgs/banner-principal/design-interface-ux-ui-caique-badaro.webp" alt="Design interface UX/UI Caique Badaró">
+    </div>
+  </div> -->
+  <!-- end, back to top -->
+
+
+
+
+  <!-- 
+  0.0 Transformar grid em primeira dobra de página
+  0.1 Revisar estrutura página, id visual blocos para criar contraste
+  0.2 Atualizar botão card de cursos para versão ghost, ajustar layout
+
+  1.1 >OK< link cards, ajustar para clique abrir na mesma página, remover _blank; 
+  1.2 popular cards de projetos no grid e também no carrossel;
+  1.3 incluir informações nas tags: title, alt, aria-label;
+
+  2.1 >remover se der certo 0.0< revisar banner principal 
+
+  3.1 links menu: desktop e mobile;
+  3.2 script de scroll até as seções via menu;
+
+  4.1 seção experiências
+  4.2 criar script para opção selecionada das experiências, feedback visual;
+  4.3 configurar inserção do conteúdo de forma dinâmica via js;
+  4.4 configurar popup para abrir certificações;
+
+  5.1 >OK< seção postagens, replicar modelo de projetos mobile para todos os breakpoints;
+  5.2 popular carrossel postagens
+
+  6.1 margens top and bottom entre os blocos de conteúdo;
+
+  7.1 >OK< Graduações e Cursos
+  7.2 >OK< Popular carrossel
+  7.3 Configurar popup informações adicionais
+  7.4 Configurar seletor (filtro)
+  -->
+
+
+
+ 
+  
+  <!-- graduation academic-->
+  <div class="cb--content" id="cb_academic-graduation">
+    <div class="cb--block-intro">
       <div class="content">
         <div class="title">
-          <h3 class="heading-3--bold" aria-label="O projeto">O projeto</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="Objetivo: melhorar a percepção do site quanto aos preços e promoções.">Melhorar a percepção do site quanto aos preços e promoções.</h5>
+          <h3 class="heading-3--bold" aria-label="Formação acadêmica e cursos de especialização, Caique Badaró UX/UI Designer">Acadêmico</h3>
+          <h5 class="heading-5--subtitle--medium" aria-label="Formação acadêmica e cursos de especialização, Caique Badaró UX/UI Designer">Formação acadêmica, curos de especialização e certificações.</h5>
         </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Foram realizadas intervenções estratégicas, destacando as principais promoções logo na primeira seção da página. Trabalhamos também para dar maior evidência aos produtos com preços diferenciados, garantindo que eles se tornassem o centro das atenções para os usuários.</p>
-          <p class="body-regular--regular">Além disso, ampliamos a área de exposição dos produtos do folheto promocional, aumentando sua visibilidade dentro da estrutura da página inicial do site.</p>
-          <p class="body-regular--regular">Confira, a seguir, o material desenvolvido:</p>
-        </div>
-      </div>
-      <div class="row-btn">
-        <button type="button" class="cb_btn--large--primary" id="bottom-sheet-07" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-          <div class="text"><p class="button--semibold">Mobile</p></div>
-          <div class="icon-right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <mask id="mask0_1264_930" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1264_930)">
-                <path d="M10.5577 19.8269H13.4423C13.5628 19.8269 13.6667 19.7833 13.7539 19.6962C13.841 19.609 13.8846 19.5051 13.8846 19.3846C13.8846 19.2641 13.841 19.1603 13.7539 19.0731C13.6667 18.9859 13.5628 18.9423 13.4423 18.9423H10.5577C10.4372 18.9423 10.3333 18.9859 10.2462 19.0731C10.159 19.1603 10.1154 19.2641 10.1154 19.3846C10.1154 19.5051 10.159 19.609 10.2462 19.6962C10.3333 19.7833 10.4372 19.8269 10.5577 19.8269ZM7.30773 22.5C6.8026 22.5 6.37503 22.325 6.02503 21.975C5.67503 21.625 5.50003 21.1974 5.50003 20.6923V3.30773C5.50003 2.80259 5.67503 2.37502 6.02503 2.02502C6.37503 1.67502 6.8026 1.50002 7.30773 1.50002H16.6923C17.1974 1.50002 17.625 1.67502 17.975 2.02502C18.325 2.37502 18.5 2.80259 18.5 3.30773V20.6923C18.5 21.1974 18.325 21.625 17.975 21.975C17.625 22.325 17.1974 22.5 16.6923 22.5H7.30773ZM7.00001 17.7692V20.6923C7.00001 20.7692 7.03206 20.8397 7.09616 20.9039C7.16027 20.968 7.2308 21 7.30773 21H16.6923C16.7692 21 16.8397 20.968 16.9039 20.9039C16.968 20.8397 17 20.7692 17 20.6923V17.7692H7.00001ZM7.00001 16.2693H17V5.74998H7.00001V16.2693ZM7.00001 4.25002H17V3.30773C17 3.23079 16.968 3.16027 16.9039 3.09615C16.8397 3.03205 16.7692 3 16.6923 3H7.30773C7.2308 3 7.16027 3.03205 7.09616 3.09615C7.03206 3.16027 7.00001 3.23079 7.00001 3.30773V4.25002Z" fill="#606060"/>
-              </g>
-            </svg>
-          </div>
-        </button>
-        <button type="button" class="cb_btn--large--primary" id="bottom-sheet-08" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-          <div class="text"><p class="button--semibold">Desktop</p></div>
-          <div class="icon-right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <mask id="mask0_1264_929" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1264_929)">
-                <path d="M10.5 19V17H4.30773C3.8026 17 3.37503 16.825 3.02503 16.475C2.67503 16.125 2.50003 15.6974 2.50003 15.1923V5.30772C2.50003 4.80259 2.67503 4.37502 3.02503 4.02502C3.37503 3.67502 3.8026 3.50002 4.30773 3.50002H19.6923C20.1974 3.50002 20.625 3.67502 20.975 4.02502C21.325 4.37502 21.5 4.80259 21.5 5.30772V15.1923C21.5 15.6974 21.325 16.125 20.975 16.475C20.625 16.825 20.1974 17 19.6923 17H13.5V19H14.75C14.9628 19 15.141 19.0718 15.2846 19.2154C15.4282 19.359 15.5 19.5372 15.5 19.75C15.5 19.9628 15.4282 20.141 15.2846 20.2846C15.141 20.4282 14.9628 20.5 14.75 20.5H9.25003C9.03721 20.5 8.85901 20.4282 8.71543 20.2846C8.57183 20.141 8.50003 19.9628 8.50003 19.75C8.50003 19.5372 8.57183 19.359 8.71543 19.2154C8.85901 19.0718 9.03721 19 9.25003 19H10.5ZM4.30773 15.5H19.6923C19.7692 15.5 19.8397 15.468 19.9039 15.4039C19.968 15.3398 20 15.2693 20 15.1923V5.30772C20 5.23079 19.968 5.16027 19.9039 5.09615C19.8397 5.03205 19.7692 5 19.6923 5H4.30773C4.2308 5 4.16027 5.03205 4.09616 5.09615C4.03206 5.16027 4.00001 5.23079 4.00001 5.30772V15.1923C4.00001 15.2693 4.03206 15.3398 4.09616 15.4039C4.16027 15.468 4.2308 15.5 4.30773 15.5Z" fill="#606060"/>
-              </g>
-            </svg>
-          </div>
-        </button>
-        <button type="button" class="cb_btn--large--primary" id="bottom-sheet-09" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-          <div class="text"><p class="button--semibold">Visualizar protótipo</p></div>
-        </button>
-      </div>
-      <div class="banner--projeto" id="revisao-apoio-home-site_projeto">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-projeto-mockup.png" alt="Projeto site Apoio Entrega">
-      </div>
-    </div> 
-  </div>
-  <!-- end, project -->
-  <!-- results -->
-  <div class="cb--content" id="cb_results-content">
-    <div class="cb--block-intro">
-      <div class="cb--block-tag-date">
-        <div class="cb_tag-info">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-              <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
-          </svg>
-          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em 2022">Outubro de 2022</p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="title">
-          <h3 class="heading-3--bold" aria-label="Resultados do projeto">Resultados</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="Os novos componentes alcançaram o top 3 mais clicados">Os novos componentes alcançaram o top 3 mais clicados</h5>
-        </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Após a implementação do projeto, houve o acompanhamento da repercussão das mudanças no site Apoio Entrega, principalmente quanto ao objetivo de <span class="body-regular--bold">aprimorar a percepção do site como uma plataforma de preços competitivos e promoções impactantes</span>.</p>
-          <p class="body-regular--regular">Além disso, conseguimos mapear a influência do projeto na percepção de variedade de produtos em nossa página, conforme apresentado abaixo:</p>
-        </div>
+        <div class="paragraph"></div>
       </div>
     </div>
+    <!-- carousel select button -->
     <div class="cb_carousel carousel-no-scroll carousel-container">
+      <!-- cards carousel -->
+      <div class="cb_carousel-card">
+        <!-- list select button -->
+        <button type="button" class="cb_btn--medium--secondary selector-button selector-button--selected" id="academic-select-button_05" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">Todos</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="academic-select-button_04" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">Pós-graduação</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="academic-select-button_03" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">Graduação</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="academic-select-button_02" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">Cursos</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="academic-select-button_01" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">Certificações</p></div>
+        </button>
+      </div>
+    </div>
+    <!-- end, carousel select button -->
+    <!-- carousel -->
+    <div id="carousel-academic-graduation" class="cb_carousel carousel-no-scroll carousel-container">
       <!-- carousel btn left -->
-      <!-- <a href="#" class="cb_btn--small--primary carousel--arrow-left">
+      <a href="#" class="cb_btn--small--primary carousel--arrow-left">
         <div class="icon-left">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
             <mask id="mask0_1112_1131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
@@ -698,121 +534,333 @@
             </g>
           </svg>
         </div>
-      </a> -->
+      </a>
       <!-- cards carousel -->
       <div class="cb_carousel-card">
-        <!-- card objectives to success -->
-        <div class="cb_card-data--success">
-          <div class="objective-icon">
-            <!-- icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><mask id="mask0_1109_938" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48"><rect width="48" height="48" fill="#D9D9D9"/></mask>
-              <g mask="url(#mask0_1109_938)"><path d="M16.7001 29.7308C17.218 31.2154 17.9622 32.3949 18.9328 33.2692C19.9033 34.1436 21.1206 34.7513 22.5847 35.0923V36.25C22.5847 36.6141 22.7212 36.9327 22.9943 37.2057C23.2673 37.4788 23.5859 37.6153 23.95 37.6153C24.3141 37.6153 24.6327 37.4788 24.9058 37.2057C25.1788 36.9327 25.3154 36.6141 25.3154 36.25V35.1923C26.8666 34.982 28.2711 34.3993 29.5288 33.4442C30.7865 32.4891 31.4154 31.041 31.4154 29.1C31.4154 27.7 31.0025 26.4615 30.1769 25.3846C29.3513 24.3077 27.7385 23.3359 25.3385 22.4692C23.2359 21.7513 21.8397 21.1295 21.15 20.6038C20.4602 20.0782 20.1154 19.3436 20.1154 18.4C20.1154 17.4564 20.4686 16.6897 21.175 16.1C21.8814 15.5102 22.8564 15.2153 24.1 15.2153C25.141 15.2153 25.9808 15.4609 26.6193 15.9519C27.2577 16.4429 27.7487 17.0589 28.0923 17.7999L30.5615 16.8077C30.1435 15.7436 29.4621 14.8327 28.5173 14.075C27.5724 13.3173 26.5384 12.8949 25.4154 12.8077V11.75C25.4154 11.3859 25.2788 11.0673 25.0058 10.7942C24.7327 10.5212 24.4141 10.3846 24.05 10.3846C23.6859 10.3846 23.3673 10.5212 23.0943 10.7942C22.8212 11.0673 22.6847 11.3859 22.6847 11.75V12.8077C20.9795 13.1359 19.6699 13.8276 18.7558 14.8827C17.8417 15.9378 17.3847 17.1103 17.3847 18.4C17.3847 19.9026 17.8398 21.1115 18.7501 22.0269C19.6603 22.9423 21.1436 23.7692 23.2001 24.5077C25.3257 25.2872 26.7776 25.9865 27.5558 26.6057C28.334 27.225 28.7231 28.0564 28.7231 29.1C28.7231 30.3539 28.2705 31.2648 27.3654 31.8327C26.4603 32.4007 25.4417 32.6846 24.3096 32.6846C23.1776 32.6846 22.1673 32.3462 21.2789 31.6693C20.3904 30.9924 19.7077 30.0026 19.2308 28.7001L16.7001 29.7308ZM24.0034 43C21.3755 43 18.9054 42.5013 16.5932 41.5039C14.2809 40.5066 12.2695 39.1531 10.5591 37.4435C8.84859 35.7338 7.49448 33.7233 6.49671 31.412C5.49894 29.1008 5.00006 26.6312 5.00006 24.0033C5.00006 21.3755 5.49873 18.9054 6.49606 16.5931C7.49339 14.2808 8.84689 12.2695 10.5566 10.559C12.2663 8.84858 14.2767 7.49446 16.588 6.4967C18.8992 5.49893 21.3688 5.00005 23.9967 5.00005C26.6245 5.00005 29.0946 5.49871 31.4069 6.49605C33.7192 7.49338 35.7305 8.84688 37.441 10.5565C39.1514 12.2662 40.5055 14.2767 41.5033 16.588C42.5011 18.8992 43 21.3688 43 23.9966C43 26.6245 42.5013 29.0946 41.504 31.4068C40.5066 33.7191 39.1531 35.7305 37.4435 37.4409C35.7338 39.1514 33.7233 40.5055 31.412 41.5033C29.1008 42.5011 26.6312 43 24.0034 43ZM24 40C28.4667 40 32.25 38.45 35.35 35.35C38.45 32.25 40 28.4667 40 24C40 19.5333 38.45 15.75 35.35 12.65C32.25 9.55 28.4667 8 24 8C19.5333 8 15.75 9.55 12.65 12.65C9.55001 15.75 8.00001 19.5333 8.00001 24C8.00001 28.4667 9.55001 32.25 12.65 35.35C15.75 38.45 19.5333 40 24 40Z" fill="white"/></g>
-            </svg>
+        <!-- card project graduation academic PUCRS-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-pucrs.webp" title="PUCRS" alt="Pontifícia Universidade Católica do Rio Grande do Sul - PUCRS">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1338_1130" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1338_1130)">
+                  <path d="M11.625 7.37505C11.625 7.29172 11.6561 7.20144 11.7183 7.10422C11.7811 7.007 11.8542 6.93755 11.9375 6.89588C12.3542 6.72922 12.7814 6.60422 13.2192 6.52088C13.6564 6.43755 14.1111 6.39588 14.5833 6.39588C14.8611 6.39588 15.125 6.41338 15.375 6.44838C15.625 6.48283 15.8819 6.52783 16.1458 6.58338C16.2431 6.59727 16.3264 6.64588 16.3958 6.72922C16.4653 6.81255 16.5 6.90977 16.5 7.02088C16.5 7.21533 16.4408 7.35422 16.3225 7.43755C16.2047 7.52088 16.0556 7.54172 15.875 7.50005C15.6667 7.45838 15.455 7.43061 15.24 7.41672C15.0244 7.40283 14.8056 7.39588 14.5833 7.39588C14.1806 7.39588 13.7847 7.43394 13.3958 7.51005C13.0069 7.58672 12.6389 7.68755 12.2917 7.81255C12.0972 7.89588 11.9375 7.89588 11.8125 7.81255C11.6875 7.72922 11.625 7.58338 11.625 7.37505ZM11.625 11.9376C11.625 11.8403 11.6561 11.7431 11.7183 11.6459C11.7811 11.5487 11.8542 11.4792 11.9375 11.4376C12.3403 11.2709 12.7675 11.1459 13.2192 11.0626C13.6703 10.9792 14.125 10.9376 14.5833 10.9376C14.8611 10.9376 15.125 10.9551 15.375 10.9901C15.625 11.0245 15.8819 11.0695 16.1458 11.1251C16.2431 11.1528 16.3264 11.2084 16.3958 11.2917C16.4653 11.3751 16.5 11.4723 16.5 11.5834C16.5 11.7639 16.4408 11.8992 16.3225 11.9892C16.2047 12.0798 16.0556 12.1042 15.875 12.0626C15.6667 12.0209 15.455 11.9895 15.24 11.9684C15.0244 11.9478 14.8056 11.9376 14.5833 11.9376C14.1806 11.9376 13.7883 11.9756 13.4067 12.0517C13.0244 12.1284 12.6597 12.2362 12.3125 12.3751C12.1042 12.4584 11.9375 12.4548 11.8125 12.3642C11.6875 12.2742 11.625 12.132 11.625 11.9376ZM11.625 9.66672C11.625 9.5695 11.6561 9.47227 11.7183 9.37505C11.7811 9.27783 11.8542 9.20838 11.9375 9.16672C12.3542 9.00005 12.7814 8.87505 13.2192 8.79172C13.6564 8.70838 14.1111 8.66672 14.5833 8.66672C14.8611 8.66672 15.125 8.68394 15.375 8.71838C15.625 8.75338 15.8819 8.79866 16.1458 8.85422C16.2431 8.86811 16.3264 8.92005 16.3958 9.01005C16.4653 9.10061 16.5 9.20144 16.5 9.31255C16.5 9.49311 16.4408 9.62838 16.3225 9.71838C16.2047 9.80894 16.0556 9.82644 15.875 9.77088C15.6667 9.72922 15.455 9.70144 15.24 9.68755C15.0244 9.67366 14.8056 9.66672 14.5833 9.66672C14.1806 9.66672 13.7883 9.70505 13.4067 9.78172C13.0244 9.85783 12.6597 9.96533 12.3125 10.1042C12.1042 10.1876 11.9375 10.1839 11.8125 10.0934C11.6875 10.0034 11.625 9.86116 11.625 9.66672ZM5.41667 13.3542C6.11111 13.3542 6.78472 13.4306 7.4375 13.5834C8.09028 13.7362 8.73611 13.9792 9.375 14.3126V6.12505C8.79167 5.75005 8.15972 5.46533 7.47917 5.27088C6.79861 5.07644 6.11111 4.97922 5.41667 4.97922C4.91667 4.97922 4.44778 5.02088 4.01 5.10422C3.57278 5.18755 3.125 5.31255 2.66667 5.47922C2.61111 5.507 2.56944 5.54172 2.54167 5.58338C2.51389 5.62505 2.5 5.66672 2.5 5.70838V13.5834C2.5 13.6667 2.52778 13.7256 2.58333 13.7601C2.63889 13.7951 2.69444 13.7987 2.75 13.7709C3.15278 13.632 3.57278 13.5278 4.01 13.4584C4.44778 13.3889 4.91667 13.3542 5.41667 13.3542ZM10.625 14.3126C11.2639 13.9792 11.9097 13.7362 12.5625 13.5834C13.2153 13.4306 13.8889 13.3542 14.5833 13.3542C15.0833 13.3542 15.5522 13.3889 15.99 13.4584C16.4272 13.5278 16.8472 13.632 17.25 13.7709C17.3056 13.7987 17.3611 13.7951 17.4167 13.7601C17.4722 13.7256 17.5 13.6667 17.5 13.5834V5.70838C17.5 5.66672 17.4861 5.62505 17.4583 5.58338C17.4306 5.54172 17.3889 5.507 17.3333 5.47922C16.875 5.31255 16.4272 5.18755 15.99 5.10422C15.5522 5.02088 15.0833 4.97922 14.5833 4.97922C13.8889 4.97922 13.2014 5.07644 12.5208 5.27088C11.8403 5.46533 11.2083 5.75005 10.625 6.12505V14.3126ZM10 15.8126C9.83333 15.8126 9.68056 15.7917 9.54167 15.7501C9.40278 15.7084 9.27083 15.6528 9.14583 15.5834C8.57639 15.2639 7.97556 15.0209 7.34333 14.8542C6.71167 14.6876 6.06944 14.6042 5.41667 14.6042C4.90278 14.6042 4.40278 14.6598 3.91667 14.7709C3.43056 14.882 2.95833 15.0487 2.5 15.2709C2.20833 15.4098 1.92722 15.3889 1.65667 15.2084C1.38556 15.0278 1.25 14.7709 1.25 14.4376V5.39588C1.25 5.21533 1.29528 5.04505 1.38583 4.88505C1.47583 4.72561 1.61111 4.61116 1.79167 4.54172C2.34722 4.26394 2.93417 4.05894 3.5525 3.92672C4.17028 3.79505 4.79167 3.72922 5.41667 3.72922C6.22222 3.72922 7.01389 3.84033 7.79167 4.06255C8.56944 4.28477 9.30556 4.61116 10 5.04172C10.6944 4.61116 11.4306 4.28477 12.2083 4.06255C12.9861 3.84033 13.7778 3.72922 14.5833 3.72922C15.2083 3.72922 15.83 3.79505 16.4483 3.92672C17.0661 4.05894 17.6528 4.26394 18.2083 4.54172C18.3889 4.61116 18.5242 4.72561 18.6142 4.88505C18.7047 5.04505 18.75 5.21533 18.75 5.39588V14.4376C18.75 14.7709 18.6111 15.0245 18.3333 15.1984C18.0556 15.3717 17.7639 15.3889 17.4583 15.2501C17 15.0417 16.5314 14.882 16.0525 14.7709C15.5731 14.6598 15.0833 14.6042 14.5833 14.6042C13.9306 14.6042 13.2883 14.6876 12.6567 14.8542C12.0244 15.0209 11.4236 15.2639 10.8542 15.5834C10.7292 15.6528 10.5972 15.7084 10.4583 15.7501C10.3194 15.7917 10.1667 15.8126 10 15.8126Z" fill="#333333"/>
+                </g>
+              </svg>
+            </div>
           </div>
           <div class="content">
-            <p class="body-regular--bold">Crescimento da satisfação dos clientes com o preço dos produtos</p>
-            <p class="heading-1--bold"><span>+</span>18<span>%</span></p>
-          </div>
-          <div class="objective-validation">
-            <!-- icon sucess -->
-            <svg id="cb_success_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#56B962"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#56B962" stroke-width="2"/>
-              <mask id="mask0_1109_943" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24"><rect x="2" y="2" width="24" height="24" fill="#D9D9D9"/></mask>
-              <g mask="url(#mask0_1109_943)"><path d="M12.5061 16.2591L10.0607 13.8138C9.91499 13.668 9.7318 13.5935 9.51115 13.5901C9.2905 13.5867 9.10393 13.6613 8.95144 13.8138C8.79895 13.9663 8.7227 14.1512 8.7227 14.3684C8.7227 14.5857 8.79895 14.7706 8.95144 14.923L11.8401 17.8117C12.0304 18.002 12.2524 18.0971 12.5061 18.0971C12.7598 18.0971 12.9818 18.002 13.1721 17.8117L19.0284 11.9554C19.1741 11.8097 19.2487 11.6265 19.252 11.4059C19.2554 11.1852 19.1809 10.9986 19.0284 10.8461C18.8759 10.6936 18.691 10.6174 18.4737 10.6174C18.2565 10.6174 18.0716 10.6936 17.9191 10.8461L12.5061 16.2591ZM14.0018 24C12.6187 24 11.3187 23.7375 10.1017 23.2126C8.88467 22.6877 7.82606 21.9753 6.92583 21.0755C6.02558 20.1757 5.31289 19.1175 4.78774 17.9011C4.2626 16.6846 4.00003 15.3848 4.00003 14.0018C4.00003 12.6187 4.26249 11.3186 4.7874 10.1016C5.31231 8.88464 6.02468 7.82602 6.92451 6.92579C7.82436 6.02554 8.88251 5.31285 10.099 4.7877C11.3154 4.26256 12.6152 3.99999 13.9983 3.99999C15.3814 3.99999 16.6814 4.26245 17.8984 4.78736C19.1154 5.31228 20.174 6.02465 21.0742 6.92447C21.9745 7.82432 22.6872 8.88247 23.2123 10.0989C23.7375 11.3154 24 12.6151 24 13.9982C24 15.3813 23.7376 16.6814 23.2127 17.8983C22.6877 19.1153 21.9754 20.174 21.0756 21.0742C20.1757 21.9744 19.1176 22.6871 17.9011 23.2123C16.6847 23.7374 15.3849 24 14.0018 24ZM14 22.4211C16.3509 22.4211 18.3421 21.6053 19.9737 19.9737C21.6053 18.3421 22.4211 16.3509 22.4211 14C22.4211 11.6491 21.6053 9.65788 19.9737 8.02629C18.3421 6.39471 16.3509 5.57892 14 5.57892C11.6491 5.57892 9.65791 6.39471 8.02633 8.02629C6.39475 9.65788 5.57896 11.6491 5.57896 14C5.57896 16.3509 6.39475 18.3421 8.02633 19.9737C9.65791 21.6053 11.6491 22.4211 14 22.4211Z" fill="white"/></g>
-            </svg>
-            <!-- icon in progress -->
-            <svg id="cb_in-progress_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#F5D34D"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#F5D34D" stroke-width="2"/><mask id="mask0_1109_952" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24">
-                <rect x="2" y="2" width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_1109_952)"><path d="M7.75 14.05C7.75 14.3423 7.76983 14.6337 7.8095 14.924C7.84933 15.2145 7.91733 15.5007 8.0135 15.7827C8.0775 15.9956 8.07075 16.1991 7.99325 16.3932C7.91575 16.5874 7.784 16.7268 7.598 16.8115C7.40183 16.9063 7.20667 16.914 7.0125 16.8345C6.81833 16.755 6.68917 16.6089 6.625 16.3962C6.49167 16.0192 6.39583 15.6323 6.3375 15.2355C6.27917 14.8388 6.25 14.4437 6.25 14.05C6.25 11.8872 7.00258 10.0465 8.50775 8.528C10.0129 7.00933 11.8437 6.25 14 6.25H14.7808L13.4577 4.927C13.3192 4.7885 13.2484 4.61441 13.2453 4.40475C13.2421 4.19525 13.3129 4.018 13.4577 3.873C13.6026 3.72816 13.7782 3.65575 13.9845 3.65575C14.191 3.65575 14.3667 3.72816 14.5115 3.873L17.0057 6.36725C17.1866 6.54808 17.277 6.759 17.277 7C17.277 7.241 17.1866 7.45191 17.0057 7.63275L14.5115 10.127C14.373 10.2653 14.199 10.3362 13.9895 10.3395C13.7798 10.3427 13.6026 10.2718 13.4577 10.127C13.3129 9.982 13.2405 9.80633 13.2405 9.6C13.2405 9.39366 13.3129 9.218 13.4577 9.073L14.7808 7.75H14C12.2628 7.75 10.7868 8.3615 9.572 9.5845C8.35733 10.8077 7.75 12.2962 7.75 14.05ZM20.25 13.95C20.25 13.6577 20.2302 13.3663 20.1905 13.076C20.1507 12.7855 20.0827 12.4992 19.9865 12.2172C19.9225 12.0044 19.9293 11.8009 20.0068 11.6067C20.0843 11.4126 20.216 11.2732 20.402 11.1885C20.5982 11.0937 20.7917 11.086 20.9827 11.1655C21.1737 11.245 21.3012 11.3911 21.3652 11.6037C21.4986 11.9807 21.5961 12.3677 21.6578 12.7645C21.7193 13.1612 21.75 13.5563 21.75 13.95C21.75 16.1128 20.9974 17.9535 19.4923 19.472C17.9871 20.9907 16.1563 21.75 14 21.75H13.2192L14.5423 23.073C14.6808 23.2115 14.7516 23.3856 14.7548 23.5952C14.7579 23.8047 14.6871 23.982 14.5423 24.127C14.3974 24.2718 14.2218 24.3442 14.0155 24.3442C13.809 24.3442 13.6333 24.2718 13.4885 24.127L10.9942 21.6327C10.8134 21.4519 10.723 21.241 10.723 21C10.723 20.759 10.8134 20.5481 10.9942 20.3672L13.4885 17.873C13.627 17.7347 13.801 17.6638 14.0105 17.6605C14.2202 17.6573 14.3974 17.7282 14.5423 17.873C14.6871 18.018 14.7595 18.1937 14.7595 18.4C14.7595 18.6063 14.6871 18.782 14.5423 18.927L13.2192 20.25H14C15.7372 20.25 17.2132 19.6385 18.428 18.4155C19.6427 17.1923 20.25 15.7038 20.25 13.95Z" fill="#6C6C6C"/></g>
-            </svg>
-            <!-- icon failure -->
-            <svg id="cb_failure_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#F24A4A"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#F24A4A" stroke-width="2"/><path d="M9.83197 18.1683C9.98355 18.3199 10.1604 18.3957 10.3625 18.3957C10.5646 18.3957 10.7414 18.3199 10.893 18.1683L14.0004 15.061L17.133 18.1936C17.2678 18.3283 17.4406 18.3913 17.6514 18.3826C17.8616 18.3745 18.0341 18.3031 18.1688 18.1683C18.3204 18.0167 18.3962 17.8399 18.3962 17.6378C18.3962 17.4357 18.3204 17.2588 18.1688 17.1073L15.0614 13.9999L18.1941 10.8673C18.3288 10.7325 18.3918 10.5597 18.383 10.3489C18.375 10.1387 18.3035 9.96622 18.1688 9.83148C18.0172 9.6799 17.8404 9.60411 17.6383 9.60411C17.4362 9.60411 17.2593 9.6799 17.1078 9.83148L14.0004 12.9388L10.8678 9.80622C10.733 9.67148 10.5606 9.60816 10.3504 9.61624C10.1395 9.625 9.96671 9.69674 9.83197 9.83148C9.68039 9.98306 9.6046 10.1599 9.6046 10.362C9.6046 10.5641 9.68039 10.741 9.83197 10.8925L12.9393 13.9999L9.80671 17.1325C9.67197 17.2673 9.60898 17.4397 9.61774 17.6499C9.62582 17.8608 9.69723 18.0336 9.83197 18.1683ZM14.0004 23.5999C12.6699 23.5999 11.4195 23.3473 10.2493 22.842C9.07845 22.3367 8.06355 21.6546 7.2046 20.7957C6.34565 19.9367 5.66355 18.9218 5.15829 17.751C4.65302 16.5808 4.40039 15.3304 4.40039 13.9999C4.40039 12.6694 4.65302 11.4187 5.15829 10.2478C5.66355 9.07763 6.34565 8.06306 7.2046 7.20411C8.06355 6.34517 9.07845 5.66306 10.2493 5.1578C11.4195 4.65253 12.6699 4.3999 14.0004 4.3999C15.3309 4.3999 16.5816 4.65253 17.7525 5.1578C18.9227 5.66306 19.9372 6.34517 20.7962 7.20411C21.6551 8.06306 22.3372 9.07763 22.8425 10.2478C23.3478 11.4187 23.6004 12.6694 23.6004 13.9999C23.6004 15.3304 23.3478 16.5808 22.8425 17.751C22.3372 18.9218 21.6551 19.9367 20.7962 20.7957C19.9372 21.6546 18.9227 22.3367 17.7525 22.842C16.5816 23.3473 15.3309 23.5999 14.0004 23.5999ZM14.0004 22.0841C16.2404 22.0841 18.1479 21.2969 19.723 19.7225C21.2974 18.1474 22.0846 16.2399 22.0846 13.9999C22.0846 11.7599 21.2974 9.85237 19.723 8.27729C18.1479 6.70289 16.2404 5.91569 14.0004 5.91569C11.7604 5.91569 9.85319 6.70289 8.27879 8.27729C6.70372 9.85237 5.91618 11.7599 5.91618 13.9999C5.91618 16.2399 6.70372 18.1474 8.27879 19.7225C9.85319 21.2969 11.7604 22.0841 14.0004 22.0841Z" fill="white"/>
-            </svg>
-            <p class="body-regular--bold" id="cb_success_01">Realizado</p>
-            <p class="body-regular--bold" id="cb_in-progress_01">Em andamento</p>
-            <p class="body-regular--bold" id="cb_failure_01">Não realizado</p>
+            <div class="title">
+              <p class="label-regular--regular">Curso de extensão</p>
+              <p class="body-regular--semibold">Design Centrado no Usuário</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: 10 horas">Nov/24</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
           </div>
         </div>
-        <!-- card objectives to success -->
-        <div class="cb_card-data--success">
-          <div class="objective-icon">
-            <!-- icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 25" fill="none">
-              <mask id="mask0_1233_934" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
-                <rect y="0.5" width="24" height="24" fill="#FFFFFF"/>
-              </mask>
-              <g mask="url(#mask0_1233_934)">
-                <path d="M15.142 20L13.2654 21.8576C12.9185 22.2025 12.4962 22.3749 11.9985 22.3749C11.5008 22.3749 11.0795 22.2025 10.7346 21.8576L8.858 20H6.30772C5.8106 20 5.38505 19.823 5.03105 19.469C4.67703 19.115 4.50002 18.6894 4.50002 18.1923V15.642L2.64235 13.7654C2.29748 13.4185 2.12505 12.9962 2.12505 12.4985C2.12505 12.0008 2.29748 11.5795 2.64235 11.2346L4.50002 9.358V6.80773C4.50002 6.31061 4.67703 5.88505 5.03105 5.53105C5.38505 5.17703 5.8106 5.00002 6.30772 5.00002H8.858L10.7346 3.14235C11.0815 2.79748 11.5038 2.62505 12.0015 2.62505C12.4992 2.62505 12.9205 2.79748 13.2654 3.14235L15.142 5.00002H17.6923C18.1894 5.00002 18.6149 5.17703 18.9689 5.53105C19.323 5.88505 19.5 6.31061 19.5 6.80773V9.358L21.3576 11.2346C21.7025 11.5815 21.8749 12.0038 21.8749 12.5015C21.8749 12.9992 21.7025 13.4205 21.3576 13.7654L19.5 15.642V18.1923C19.5 18.6894 19.323 19.115 18.9689 19.469C18.6149 19.823 18.1894 20 17.6923 20H15.142ZM12 21L14.5 18.5H18V15L20.5 12.5L18 10V6.5H14.5L12 4L9.5 6.5H6V10L3.5 12.5L6 15V18.5H9.5L12 21ZM12 14.7635L13.775 15.8461C13.9391 15.95 14.1048 15.9442 14.2721 15.8288C14.4394 15.7134 14.5013 15.557 14.4577 15.3596L13.9865 13.3288L15.5691 11.9623C15.7243 11.8233 15.7702 11.6609 15.7067 11.475C15.6432 11.2891 15.5077 11.1878 15.3 11.1712L13.2288 10.9962L12.4115 9.0904C12.3354 8.90963 12.1985 8.81925 12.0006 8.81925C11.8028 8.81925 11.6654 8.90963 11.5885 9.0904L10.7711 10.9962L8.70002 11.1712C8.49232 11.1878 8.35675 11.2891 8.2933 11.475C8.22983 11.6609 8.27568 11.8233 8.43085 11.9623L10.0135 13.3288L9.54232 15.3596C9.49874 15.557 9.5606 15.7134 9.7279 15.8288C9.8952 15.9442 10.0609 15.95 10.225 15.8461L12 14.7635Z" fill="#FFFFFF"/>
-              </g>
-            </svg>
+        <!-- card project graduation academic HOTJAR III-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-hotjar.webp" title="Hotjar" alt="Hotjar Learning - Foundations Series">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1338_1130" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1338_1130)">
+                  <path d="M11.625 7.37505C11.625 7.29172 11.6561 7.20144 11.7183 7.10422C11.7811 7.007 11.8542 6.93755 11.9375 6.89588C12.3542 6.72922 12.7814 6.60422 13.2192 6.52088C13.6564 6.43755 14.1111 6.39588 14.5833 6.39588C14.8611 6.39588 15.125 6.41338 15.375 6.44838C15.625 6.48283 15.8819 6.52783 16.1458 6.58338C16.2431 6.59727 16.3264 6.64588 16.3958 6.72922C16.4653 6.81255 16.5 6.90977 16.5 7.02088C16.5 7.21533 16.4408 7.35422 16.3225 7.43755C16.2047 7.52088 16.0556 7.54172 15.875 7.50005C15.6667 7.45838 15.455 7.43061 15.24 7.41672C15.0244 7.40283 14.8056 7.39588 14.5833 7.39588C14.1806 7.39588 13.7847 7.43394 13.3958 7.51005C13.0069 7.58672 12.6389 7.68755 12.2917 7.81255C12.0972 7.89588 11.9375 7.89588 11.8125 7.81255C11.6875 7.72922 11.625 7.58338 11.625 7.37505ZM11.625 11.9376C11.625 11.8403 11.6561 11.7431 11.7183 11.6459C11.7811 11.5487 11.8542 11.4792 11.9375 11.4376C12.3403 11.2709 12.7675 11.1459 13.2192 11.0626C13.6703 10.9792 14.125 10.9376 14.5833 10.9376C14.8611 10.9376 15.125 10.9551 15.375 10.9901C15.625 11.0245 15.8819 11.0695 16.1458 11.1251C16.2431 11.1528 16.3264 11.2084 16.3958 11.2917C16.4653 11.3751 16.5 11.4723 16.5 11.5834C16.5 11.7639 16.4408 11.8992 16.3225 11.9892C16.2047 12.0798 16.0556 12.1042 15.875 12.0626C15.6667 12.0209 15.455 11.9895 15.24 11.9684C15.0244 11.9478 14.8056 11.9376 14.5833 11.9376C14.1806 11.9376 13.7883 11.9756 13.4067 12.0517C13.0244 12.1284 12.6597 12.2362 12.3125 12.3751C12.1042 12.4584 11.9375 12.4548 11.8125 12.3642C11.6875 12.2742 11.625 12.132 11.625 11.9376ZM11.625 9.66672C11.625 9.5695 11.6561 9.47227 11.7183 9.37505C11.7811 9.27783 11.8542 9.20838 11.9375 9.16672C12.3542 9.00005 12.7814 8.87505 13.2192 8.79172C13.6564 8.70838 14.1111 8.66672 14.5833 8.66672C14.8611 8.66672 15.125 8.68394 15.375 8.71838C15.625 8.75338 15.8819 8.79866 16.1458 8.85422C16.2431 8.86811 16.3264 8.92005 16.3958 9.01005C16.4653 9.10061 16.5 9.20144 16.5 9.31255C16.5 9.49311 16.4408 9.62838 16.3225 9.71838C16.2047 9.80894 16.0556 9.82644 15.875 9.77088C15.6667 9.72922 15.455 9.70144 15.24 9.68755C15.0244 9.67366 14.8056 9.66672 14.5833 9.66672C14.1806 9.66672 13.7883 9.70505 13.4067 9.78172C13.0244 9.85783 12.6597 9.96533 12.3125 10.1042C12.1042 10.1876 11.9375 10.1839 11.8125 10.0934C11.6875 10.0034 11.625 9.86116 11.625 9.66672ZM5.41667 13.3542C6.11111 13.3542 6.78472 13.4306 7.4375 13.5834C8.09028 13.7362 8.73611 13.9792 9.375 14.3126V6.12505C8.79167 5.75005 8.15972 5.46533 7.47917 5.27088C6.79861 5.07644 6.11111 4.97922 5.41667 4.97922C4.91667 4.97922 4.44778 5.02088 4.01 5.10422C3.57278 5.18755 3.125 5.31255 2.66667 5.47922C2.61111 5.507 2.56944 5.54172 2.54167 5.58338C2.51389 5.62505 2.5 5.66672 2.5 5.70838V13.5834C2.5 13.6667 2.52778 13.7256 2.58333 13.7601C2.63889 13.7951 2.69444 13.7987 2.75 13.7709C3.15278 13.632 3.57278 13.5278 4.01 13.4584C4.44778 13.3889 4.91667 13.3542 5.41667 13.3542ZM10.625 14.3126C11.2639 13.9792 11.9097 13.7362 12.5625 13.5834C13.2153 13.4306 13.8889 13.3542 14.5833 13.3542C15.0833 13.3542 15.5522 13.3889 15.99 13.4584C16.4272 13.5278 16.8472 13.632 17.25 13.7709C17.3056 13.7987 17.3611 13.7951 17.4167 13.7601C17.4722 13.7256 17.5 13.6667 17.5 13.5834V5.70838C17.5 5.66672 17.4861 5.62505 17.4583 5.58338C17.4306 5.54172 17.3889 5.507 17.3333 5.47922C16.875 5.31255 16.4272 5.18755 15.99 5.10422C15.5522 5.02088 15.0833 4.97922 14.5833 4.97922C13.8889 4.97922 13.2014 5.07644 12.5208 5.27088C11.8403 5.46533 11.2083 5.75005 10.625 6.12505V14.3126ZM10 15.8126C9.83333 15.8126 9.68056 15.7917 9.54167 15.7501C9.40278 15.7084 9.27083 15.6528 9.14583 15.5834C8.57639 15.2639 7.97556 15.0209 7.34333 14.8542C6.71167 14.6876 6.06944 14.6042 5.41667 14.6042C4.90278 14.6042 4.40278 14.6598 3.91667 14.7709C3.43056 14.882 2.95833 15.0487 2.5 15.2709C2.20833 15.4098 1.92722 15.3889 1.65667 15.2084C1.38556 15.0278 1.25 14.7709 1.25 14.4376V5.39588C1.25 5.21533 1.29528 5.04505 1.38583 4.88505C1.47583 4.72561 1.61111 4.61116 1.79167 4.54172C2.34722 4.26394 2.93417 4.05894 3.5525 3.92672C4.17028 3.79505 4.79167 3.72922 5.41667 3.72922C6.22222 3.72922 7.01389 3.84033 7.79167 4.06255C8.56944 4.28477 9.30556 4.61116 10 5.04172C10.6944 4.61116 11.4306 4.28477 12.2083 4.06255C12.9861 3.84033 13.7778 3.72922 14.5833 3.72922C15.2083 3.72922 15.83 3.79505 16.4483 3.92672C17.0661 4.05894 17.6528 4.26394 18.2083 4.54172C18.3889 4.61116 18.5242 4.72561 18.6142 4.88505C18.7047 5.04505 18.75 5.21533 18.75 5.39588V14.4376C18.75 14.7709 18.6111 15.0245 18.3333 15.1984C18.0556 15.3717 17.7639 15.3889 17.4583 15.2501C17 15.0417 16.5314 14.882 16.0525 14.7709C15.5731 14.6598 15.0833 14.6042 14.5833 14.6042C13.9306 14.6042 13.2883 14.6876 12.6567 14.8542C12.0244 15.0209 11.4236 15.2639 10.8542 15.5834C10.7292 15.6528 10.5972 15.7084 10.4583 15.7501C10.3194 15.7917 10.1667 15.8126 10 15.8126Z" fill="#333333"/>
+                </g>
+              </svg>
+            </div>
           </div>
           <div class="content">
-            <p class="body-regular--bold">Crescimento da satisfação dos clientes com ofertas e promoções</p>
-            <p class="heading-1--bold"><span>+</span>14<span>%</span></p>
-          </div>
-          <div class="objective-validation">
-            <!-- icon sucess -->
-            <svg id="cb_success_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#56B962"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#56B962" stroke-width="2"/>
-              <mask id="mask0_1109_943" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24"><rect x="2" y="2" width="24" height="24" fill="#FFFFFF"/></mask>
-              <g mask="url(#mask0_1109_943)"><path d="M12.5061 16.2591L10.0607 13.8138C9.91499 13.668 9.7318 13.5935 9.51115 13.5901C9.2905 13.5867 9.10393 13.6613 8.95144 13.8138C8.79895 13.9663 8.7227 14.1512 8.7227 14.3684C8.7227 14.5857 8.79895 14.7706 8.95144 14.923L11.8401 17.8117C12.0304 18.002 12.2524 18.0971 12.5061 18.0971C12.7598 18.0971 12.9818 18.002 13.1721 17.8117L19.0284 11.9554C19.1741 11.8097 19.2487 11.6265 19.252 11.4059C19.2554 11.1852 19.1809 10.9986 19.0284 10.8461C18.8759 10.6936 18.691 10.6174 18.4737 10.6174C18.2565 10.6174 18.0716 10.6936 17.9191 10.8461L12.5061 16.2591ZM14.0018 24C12.6187 24 11.3187 23.7375 10.1017 23.2126C8.88467 22.6877 7.82606 21.9753 6.92583 21.0755C6.02558 20.1757 5.31289 19.1175 4.78774 17.9011C4.2626 16.6846 4.00003 15.3848 4.00003 14.0018C4.00003 12.6187 4.26249 11.3186 4.7874 10.1016C5.31231 8.88464 6.02468 7.82602 6.92451 6.92579C7.82436 6.02554 8.88251 5.31285 10.099 4.7877C11.3154 4.26256 12.6152 3.99999 13.9983 3.99999C15.3814 3.99999 16.6814 4.26245 17.8984 4.78736C19.1154 5.31228 20.174 6.02465 21.0742 6.92447C21.9745 7.82432 22.6872 8.88247 23.2123 10.0989C23.7375 11.3154 24 12.6151 24 13.9982C24 15.3813 23.7376 16.6814 23.2127 17.8983C22.6877 19.1153 21.9754 20.174 21.0756 21.0742C20.1757 21.9744 19.1176 22.6871 17.9011 23.2123C16.6847 23.7374 15.3849 24 14.0018 24ZM14 22.4211C16.3509 22.4211 18.3421 21.6053 19.9737 19.9737C21.6053 18.3421 22.4211 16.3509 22.4211 14C22.4211 11.6491 21.6053 9.65788 19.9737 8.02629C18.3421 6.39471 16.3509 5.57892 14 5.57892C11.6491 5.57892 9.65791 6.39471 8.02633 8.02629C6.39475 9.65788 5.57896 11.6491 5.57896 14C5.57896 16.3509 6.39475 18.3421 8.02633 19.9737C9.65791 21.6053 11.6491 22.4211 14 22.4211Z" fill="white"/></g>
-            </svg>
-            <!-- icon in progress -->
-            <svg id="cb_in-progress_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#F5D34D"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#F5D34D" stroke-width="2"/><mask id="mask0_1109_952" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24">
-                <rect x="2" y="2" width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_1109_952)"><path d="M7.75 14.05C7.75 14.3423 7.76983 14.6337 7.8095 14.924C7.84933 15.2145 7.91733 15.5007 8.0135 15.7827C8.0775 15.9956 8.07075 16.1991 7.99325 16.3932C7.91575 16.5874 7.784 16.7268 7.598 16.8115C7.40183 16.9063 7.20667 16.914 7.0125 16.8345C6.81833 16.755 6.68917 16.6089 6.625 16.3962C6.49167 16.0192 6.39583 15.6323 6.3375 15.2355C6.27917 14.8388 6.25 14.4437 6.25 14.05C6.25 11.8872 7.00258 10.0465 8.50775 8.528C10.0129 7.00933 11.8437 6.25 14 6.25H14.7808L13.4577 4.927C13.3192 4.7885 13.2484 4.61441 13.2453 4.40475C13.2421 4.19525 13.3129 4.018 13.4577 3.873C13.6026 3.72816 13.7782 3.65575 13.9845 3.65575C14.191 3.65575 14.3667 3.72816 14.5115 3.873L17.0057 6.36725C17.1866 6.54808 17.277 6.759 17.277 7C17.277 7.241 17.1866 7.45191 17.0057 7.63275L14.5115 10.127C14.373 10.2653 14.199 10.3362 13.9895 10.3395C13.7798 10.3427 13.6026 10.2718 13.4577 10.127C13.3129 9.982 13.2405 9.80633 13.2405 9.6C13.2405 9.39366 13.3129 9.218 13.4577 9.073L14.7808 7.75H14C12.2628 7.75 10.7868 8.3615 9.572 9.5845C8.35733 10.8077 7.75 12.2962 7.75 14.05ZM20.25 13.95C20.25 13.6577 20.2302 13.3663 20.1905 13.076C20.1507 12.7855 20.0827 12.4992 19.9865 12.2172C19.9225 12.0044 19.9293 11.8009 20.0068 11.6067C20.0843 11.4126 20.216 11.2732 20.402 11.1885C20.5982 11.0937 20.7917 11.086 20.9827 11.1655C21.1737 11.245 21.3012 11.3911 21.3652 11.6037C21.4986 11.9807 21.5961 12.3677 21.6578 12.7645C21.7193 13.1612 21.75 13.5563 21.75 13.95C21.75 16.1128 20.9974 17.9535 19.4923 19.472C17.9871 20.9907 16.1563 21.75 14 21.75H13.2192L14.5423 23.073C14.6808 23.2115 14.7516 23.3856 14.7548 23.5952C14.7579 23.8047 14.6871 23.982 14.5423 24.127C14.3974 24.2718 14.2218 24.3442 14.0155 24.3442C13.809 24.3442 13.6333 24.2718 13.4885 24.127L10.9942 21.6327C10.8134 21.4519 10.723 21.241 10.723 21C10.723 20.759 10.8134 20.5481 10.9942 20.3672L13.4885 17.873C13.627 17.7347 13.801 17.6638 14.0105 17.6605C14.2202 17.6573 14.3974 17.7282 14.5423 17.873C14.6871 18.018 14.7595 18.1937 14.7595 18.4C14.7595 18.6063 14.6871 18.782 14.5423 18.927L13.2192 20.25H14C15.7372 20.25 17.2132 19.6385 18.428 18.4155C19.6427 17.1923 20.25 15.7038 20.25 13.95Z" fill="#6C6C6C"/></g>
-            </svg>
-            <!-- icon failure -->
-            <svg id="cb_failure_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#F24A4A"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#F24A4A" stroke-width="2"/><path d="M9.83197 18.1683C9.98355 18.3199 10.1604 18.3957 10.3625 18.3957C10.5646 18.3957 10.7414 18.3199 10.893 18.1683L14.0004 15.061L17.133 18.1936C17.2678 18.3283 17.4406 18.3913 17.6514 18.3826C17.8616 18.3745 18.0341 18.3031 18.1688 18.1683C18.3204 18.0167 18.3962 17.8399 18.3962 17.6378C18.3962 17.4357 18.3204 17.2588 18.1688 17.1073L15.0614 13.9999L18.1941 10.8673C18.3288 10.7325 18.3918 10.5597 18.383 10.3489C18.375 10.1387 18.3035 9.96622 18.1688 9.83148C18.0172 9.6799 17.8404 9.60411 17.6383 9.60411C17.4362 9.60411 17.2593 9.6799 17.1078 9.83148L14.0004 12.9388L10.8678 9.80622C10.733 9.67148 10.5606 9.60816 10.3504 9.61624C10.1395 9.625 9.96671 9.69674 9.83197 9.83148C9.68039 9.98306 9.6046 10.1599 9.6046 10.362C9.6046 10.5641 9.68039 10.741 9.83197 10.8925L12.9393 13.9999L9.80671 17.1325C9.67197 17.2673 9.60898 17.4397 9.61774 17.6499C9.62582 17.8608 9.69723 18.0336 9.83197 18.1683ZM14.0004 23.5999C12.6699 23.5999 11.4195 23.3473 10.2493 22.842C9.07845 22.3367 8.06355 21.6546 7.2046 20.7957C6.34565 19.9367 5.66355 18.9218 5.15829 17.751C4.65302 16.5808 4.40039 15.3304 4.40039 13.9999C4.40039 12.6694 4.65302 11.4187 5.15829 10.2478C5.66355 9.07763 6.34565 8.06306 7.2046 7.20411C8.06355 6.34517 9.07845 5.66306 10.2493 5.1578C11.4195 4.65253 12.6699 4.3999 14.0004 4.3999C15.3309 4.3999 16.5816 4.65253 17.7525 5.1578C18.9227 5.66306 19.9372 6.34517 20.7962 7.20411C21.6551 8.06306 22.3372 9.07763 22.8425 10.2478C23.3478 11.4187 23.6004 12.6694 23.6004 13.9999C23.6004 15.3304 23.3478 16.5808 22.8425 17.751C22.3372 18.9218 21.6551 19.9367 20.7962 20.7957C19.9372 21.6546 18.9227 22.3367 17.7525 22.842C16.5816 23.3473 15.3309 23.5999 14.0004 23.5999ZM14.0004 22.0841C16.2404 22.0841 18.1479 21.2969 19.723 19.7225C21.2974 18.1474 22.0846 16.2399 22.0846 13.9999C22.0846 11.7599 21.2974 9.85237 19.723 8.27729C18.1479 6.70289 16.2404 5.91569 14.0004 5.91569C11.7604 5.91569 9.85319 6.70289 8.27879 8.27729C6.70372 9.85237 5.91618 11.7599 5.91618 13.9999C5.91618 16.2399 6.70372 18.1474 8.27879 19.7225C9.85319 21.2969 11.7604 22.0841 14.0004 22.0841Z" fill="white"/>
-            </svg>
-            <p class="body-regular--bold" id="cb_success_01">Realizado</p>
-            <p class="body-regular--bold" id="cb_in-progress_01">Em andamento</p>
-            <p class="body-regular--bold" id="cb_failure_01">Não realizado</p>
+            <div class="title">
+              <p class="label-regular--regular">Curso</p>
+              <p class="body-regular--semibold">Foundations Series</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: 34 dias">Mai/24</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
           </div>
         </div>
-        <!-- card objectives to success -->
-        <div class="cb_card-data--success">
-          <div class="objective-icon">
-            <!-- icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
-              <mask id="mask0_1233_935" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#ffffff"/>
-              </mask>
-              <g mask="url(#mask0_1233_935)">
-                <path d="M12.3077 21.5C11.8026 21.5 11.375 21.325 11.025 20.975C10.675 20.625 10.5 20.1974 10.5 19.6923V12.3077C10.5 11.8026 10.675 11.375 11.025 11.025C11.375 10.675 11.8026 10.5 12.3077 10.5H19.6923C20.1974 10.5 20.625 10.675 20.975 11.025C21.325 11.375 21.5 11.8026 21.5 12.3077V19.6923C21.5 20.1974 21.325 20.625 20.975 20.975C20.625 21.325 20.1974 21.5 19.6923 21.5H12.3077ZM12.3077 20H19.6923C19.7692 20 19.8397 19.968 19.9039 19.9039C19.968 19.8397 20 19.7692 20 19.6923V12.3077C20 12.2308 19.968 12.1603 19.9039 12.0961C19.8397 12.032 19.7692 12 19.6923 12H12.3077C12.2308 12 12.1603 12.032 12.0962 12.0961C12.0321 12.1603 12 12.2308 12 12.3077V19.6923C12 19.7692 12.0321 19.8397 12.0962 19.9039C12.1603 19.968 12.2308 20 12.3077 20ZM6.50003 16.8654V8.30772C6.50003 7.80259 6.67503 7.37502 7.02503 7.02502C7.37503 6.67502 7.8026 6.50002 8.30773 6.50002H16.8654C17.0782 6.50002 17.2564 6.57182 17.4 6.71542C17.5436 6.85901 17.6154 7.03721 17.6154 7.25002C17.6154 7.46284 17.5436 7.64104 17.4 7.78462C17.2564 7.92821 17.0782 8 16.8654 8H8.30773C8.2308 8 8.16027 8.03205 8.09616 8.09615C8.03206 8.16027 8.00001 8.23079 8.00001 8.30772V16.8654C8.00001 17.0782 7.92821 17.2564 7.78463 17.4C7.64105 17.5436 7.46285 17.6153 7.25003 17.6153C7.03721 17.6153 6.85901 17.5436 6.71543 17.4C6.57183 17.2564 6.50003 17.0782 6.50003 16.8654ZM2.50003 12.8654V4.30772C2.50003 3.80259 2.67503 3.37502 3.02503 3.02502C3.37503 2.67502 3.8026 2.50002 4.30773 2.50002H12.8654C13.0782 2.50002 13.2564 2.57182 13.4 2.71542C13.5436 2.85901 13.6154 3.03721 13.6154 3.25002C13.6154 3.46284 13.5436 3.64104 13.4 3.78462C13.2564 3.92821 13.0782 4 12.8654 4H4.30773C4.2308 4 4.16027 4.03205 4.09616 4.09615C4.03206 4.16027 4.00001 4.23079 4.00001 4.30772V12.8654C4.00001 13.0782 3.92821 13.2564 3.78463 13.4C3.64105 13.5436 3.46285 13.6153 3.25003 13.6153C3.03721 13.6153 2.85901 13.5436 2.71543 13.4C2.57183 13.2564 2.50003 13.0782 2.50003 12.8654Z" fill="#FFFFFF"/>
-              </g>
-            </svg>
+        <!-- card project graduation academic HOTJAR III-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-hotjar.webp" title="Hotjar" alt="Hotjar Learning - Foundations Level II">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1338_1130" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1338_1130)">
+                  <path d="M11.625 7.37505C11.625 7.29172 11.6561 7.20144 11.7183 7.10422C11.7811 7.007 11.8542 6.93755 11.9375 6.89588C12.3542 6.72922 12.7814 6.60422 13.2192 6.52088C13.6564 6.43755 14.1111 6.39588 14.5833 6.39588C14.8611 6.39588 15.125 6.41338 15.375 6.44838C15.625 6.48283 15.8819 6.52783 16.1458 6.58338C16.2431 6.59727 16.3264 6.64588 16.3958 6.72922C16.4653 6.81255 16.5 6.90977 16.5 7.02088C16.5 7.21533 16.4408 7.35422 16.3225 7.43755C16.2047 7.52088 16.0556 7.54172 15.875 7.50005C15.6667 7.45838 15.455 7.43061 15.24 7.41672C15.0244 7.40283 14.8056 7.39588 14.5833 7.39588C14.1806 7.39588 13.7847 7.43394 13.3958 7.51005C13.0069 7.58672 12.6389 7.68755 12.2917 7.81255C12.0972 7.89588 11.9375 7.89588 11.8125 7.81255C11.6875 7.72922 11.625 7.58338 11.625 7.37505ZM11.625 11.9376C11.625 11.8403 11.6561 11.7431 11.7183 11.6459C11.7811 11.5487 11.8542 11.4792 11.9375 11.4376C12.3403 11.2709 12.7675 11.1459 13.2192 11.0626C13.6703 10.9792 14.125 10.9376 14.5833 10.9376C14.8611 10.9376 15.125 10.9551 15.375 10.9901C15.625 11.0245 15.8819 11.0695 16.1458 11.1251C16.2431 11.1528 16.3264 11.2084 16.3958 11.2917C16.4653 11.3751 16.5 11.4723 16.5 11.5834C16.5 11.7639 16.4408 11.8992 16.3225 11.9892C16.2047 12.0798 16.0556 12.1042 15.875 12.0626C15.6667 12.0209 15.455 11.9895 15.24 11.9684C15.0244 11.9478 14.8056 11.9376 14.5833 11.9376C14.1806 11.9376 13.7883 11.9756 13.4067 12.0517C13.0244 12.1284 12.6597 12.2362 12.3125 12.3751C12.1042 12.4584 11.9375 12.4548 11.8125 12.3642C11.6875 12.2742 11.625 12.132 11.625 11.9376ZM11.625 9.66672C11.625 9.5695 11.6561 9.47227 11.7183 9.37505C11.7811 9.27783 11.8542 9.20838 11.9375 9.16672C12.3542 9.00005 12.7814 8.87505 13.2192 8.79172C13.6564 8.70838 14.1111 8.66672 14.5833 8.66672C14.8611 8.66672 15.125 8.68394 15.375 8.71838C15.625 8.75338 15.8819 8.79866 16.1458 8.85422C16.2431 8.86811 16.3264 8.92005 16.3958 9.01005C16.4653 9.10061 16.5 9.20144 16.5 9.31255C16.5 9.49311 16.4408 9.62838 16.3225 9.71838C16.2047 9.80894 16.0556 9.82644 15.875 9.77088C15.6667 9.72922 15.455 9.70144 15.24 9.68755C15.0244 9.67366 14.8056 9.66672 14.5833 9.66672C14.1806 9.66672 13.7883 9.70505 13.4067 9.78172C13.0244 9.85783 12.6597 9.96533 12.3125 10.1042C12.1042 10.1876 11.9375 10.1839 11.8125 10.0934C11.6875 10.0034 11.625 9.86116 11.625 9.66672ZM5.41667 13.3542C6.11111 13.3542 6.78472 13.4306 7.4375 13.5834C8.09028 13.7362 8.73611 13.9792 9.375 14.3126V6.12505C8.79167 5.75005 8.15972 5.46533 7.47917 5.27088C6.79861 5.07644 6.11111 4.97922 5.41667 4.97922C4.91667 4.97922 4.44778 5.02088 4.01 5.10422C3.57278 5.18755 3.125 5.31255 2.66667 5.47922C2.61111 5.507 2.56944 5.54172 2.54167 5.58338C2.51389 5.62505 2.5 5.66672 2.5 5.70838V13.5834C2.5 13.6667 2.52778 13.7256 2.58333 13.7601C2.63889 13.7951 2.69444 13.7987 2.75 13.7709C3.15278 13.632 3.57278 13.5278 4.01 13.4584C4.44778 13.3889 4.91667 13.3542 5.41667 13.3542ZM10.625 14.3126C11.2639 13.9792 11.9097 13.7362 12.5625 13.5834C13.2153 13.4306 13.8889 13.3542 14.5833 13.3542C15.0833 13.3542 15.5522 13.3889 15.99 13.4584C16.4272 13.5278 16.8472 13.632 17.25 13.7709C17.3056 13.7987 17.3611 13.7951 17.4167 13.7601C17.4722 13.7256 17.5 13.6667 17.5 13.5834V5.70838C17.5 5.66672 17.4861 5.62505 17.4583 5.58338C17.4306 5.54172 17.3889 5.507 17.3333 5.47922C16.875 5.31255 16.4272 5.18755 15.99 5.10422C15.5522 5.02088 15.0833 4.97922 14.5833 4.97922C13.8889 4.97922 13.2014 5.07644 12.5208 5.27088C11.8403 5.46533 11.2083 5.75005 10.625 6.12505V14.3126ZM10 15.8126C9.83333 15.8126 9.68056 15.7917 9.54167 15.7501C9.40278 15.7084 9.27083 15.6528 9.14583 15.5834C8.57639 15.2639 7.97556 15.0209 7.34333 14.8542C6.71167 14.6876 6.06944 14.6042 5.41667 14.6042C4.90278 14.6042 4.40278 14.6598 3.91667 14.7709C3.43056 14.882 2.95833 15.0487 2.5 15.2709C2.20833 15.4098 1.92722 15.3889 1.65667 15.2084C1.38556 15.0278 1.25 14.7709 1.25 14.4376V5.39588C1.25 5.21533 1.29528 5.04505 1.38583 4.88505C1.47583 4.72561 1.61111 4.61116 1.79167 4.54172C2.34722 4.26394 2.93417 4.05894 3.5525 3.92672C4.17028 3.79505 4.79167 3.72922 5.41667 3.72922C6.22222 3.72922 7.01389 3.84033 7.79167 4.06255C8.56944 4.28477 9.30556 4.61116 10 5.04172C10.6944 4.61116 11.4306 4.28477 12.2083 4.06255C12.9861 3.84033 13.7778 3.72922 14.5833 3.72922C15.2083 3.72922 15.83 3.79505 16.4483 3.92672C17.0661 4.05894 17.6528 4.26394 18.2083 4.54172C18.3889 4.61116 18.5242 4.72561 18.6142 4.88505C18.7047 5.04505 18.75 5.21533 18.75 5.39588V14.4376C18.75 14.7709 18.6111 15.0245 18.3333 15.1984C18.0556 15.3717 17.7639 15.3889 17.4583 15.2501C17 15.0417 16.5314 14.882 16.0525 14.7709C15.5731 14.6598 15.0833 14.6042 14.5833 14.6042C13.9306 14.6042 13.2883 14.6876 12.6567 14.8542C12.0244 15.0209 11.4236 15.2639 10.8542 15.5834C10.7292 15.6528 10.5972 15.7084 10.4583 15.7501C10.3194 15.7917 10.1667 15.8126 10 15.8126Z" fill="#333333"/>
+                </g>
+              </svg>
+            </div>
           </div>
           <div class="content">
-            <p class="body-regular--bold">Crescimento na satisfação com a variedade de produtos</p>
-            <p class="heading-1--bold"><span>+</span>9<span>%</span></p>
-          </div>
-          <div class="objective-validation">
-            <!-- icon sucess -->
-            <svg id="cb_success_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#56B962"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#56B962" stroke-width="2"/>
-              <mask id="mask0_1109_943" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24"><rect x="2" y="2" width="24" height="24" fill="#D9D9D9"/></mask>
-              <g mask="url(#mask0_1109_943)"><path d="M12.5061 16.2591L10.0607 13.8138C9.91499 13.668 9.7318 13.5935 9.51115 13.5901C9.2905 13.5867 9.10393 13.6613 8.95144 13.8138C8.79895 13.9663 8.7227 14.1512 8.7227 14.3684C8.7227 14.5857 8.79895 14.7706 8.95144 14.923L11.8401 17.8117C12.0304 18.002 12.2524 18.0971 12.5061 18.0971C12.7598 18.0971 12.9818 18.002 13.1721 17.8117L19.0284 11.9554C19.1741 11.8097 19.2487 11.6265 19.252 11.4059C19.2554 11.1852 19.1809 10.9986 19.0284 10.8461C18.8759 10.6936 18.691 10.6174 18.4737 10.6174C18.2565 10.6174 18.0716 10.6936 17.9191 10.8461L12.5061 16.2591ZM14.0018 24C12.6187 24 11.3187 23.7375 10.1017 23.2126C8.88467 22.6877 7.82606 21.9753 6.92583 21.0755C6.02558 20.1757 5.31289 19.1175 4.78774 17.9011C4.2626 16.6846 4.00003 15.3848 4.00003 14.0018C4.00003 12.6187 4.26249 11.3186 4.7874 10.1016C5.31231 8.88464 6.02468 7.82602 6.92451 6.92579C7.82436 6.02554 8.88251 5.31285 10.099 4.7877C11.3154 4.26256 12.6152 3.99999 13.9983 3.99999C15.3814 3.99999 16.6814 4.26245 17.8984 4.78736C19.1154 5.31228 20.174 6.02465 21.0742 6.92447C21.9745 7.82432 22.6872 8.88247 23.2123 10.0989C23.7375 11.3154 24 12.6151 24 13.9982C24 15.3813 23.7376 16.6814 23.2127 17.8983C22.6877 19.1153 21.9754 20.174 21.0756 21.0742C20.1757 21.9744 19.1176 22.6871 17.9011 23.2123C16.6847 23.7374 15.3849 24 14.0018 24ZM14 22.4211C16.3509 22.4211 18.3421 21.6053 19.9737 19.9737C21.6053 18.3421 22.4211 16.3509 22.4211 14C22.4211 11.6491 21.6053 9.65788 19.9737 8.02629C18.3421 6.39471 16.3509 5.57892 14 5.57892C11.6491 5.57892 9.65791 6.39471 8.02633 8.02629C6.39475 9.65788 5.57896 11.6491 5.57896 14C5.57896 16.3509 6.39475 18.3421 8.02633 19.9737C9.65791 21.6053 11.6491 22.4211 14 22.4211Z" fill="white"/></g>
-            </svg>
-            <!-- icon in progress -->
-            <svg id="cb_in-progress_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#F5D34D"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#F5D34D" stroke-width="2"/><mask id="mask0_1109_952" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24">
-                <rect x="2" y="2" width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_1109_952)"><path d="M7.75 14.05C7.75 14.3423 7.76983 14.6337 7.8095 14.924C7.84933 15.2145 7.91733 15.5007 8.0135 15.7827C8.0775 15.9956 8.07075 16.1991 7.99325 16.3932C7.91575 16.5874 7.784 16.7268 7.598 16.8115C7.40183 16.9063 7.20667 16.914 7.0125 16.8345C6.81833 16.755 6.68917 16.6089 6.625 16.3962C6.49167 16.0192 6.39583 15.6323 6.3375 15.2355C6.27917 14.8388 6.25 14.4437 6.25 14.05C6.25 11.8872 7.00258 10.0465 8.50775 8.528C10.0129 7.00933 11.8437 6.25 14 6.25H14.7808L13.4577 4.927C13.3192 4.7885 13.2484 4.61441 13.2453 4.40475C13.2421 4.19525 13.3129 4.018 13.4577 3.873C13.6026 3.72816 13.7782 3.65575 13.9845 3.65575C14.191 3.65575 14.3667 3.72816 14.5115 3.873L17.0057 6.36725C17.1866 6.54808 17.277 6.759 17.277 7C17.277 7.241 17.1866 7.45191 17.0057 7.63275L14.5115 10.127C14.373 10.2653 14.199 10.3362 13.9895 10.3395C13.7798 10.3427 13.6026 10.2718 13.4577 10.127C13.3129 9.982 13.2405 9.80633 13.2405 9.6C13.2405 9.39366 13.3129 9.218 13.4577 9.073L14.7808 7.75H14C12.2628 7.75 10.7868 8.3615 9.572 9.5845C8.35733 10.8077 7.75 12.2962 7.75 14.05ZM20.25 13.95C20.25 13.6577 20.2302 13.3663 20.1905 13.076C20.1507 12.7855 20.0827 12.4992 19.9865 12.2172C19.9225 12.0044 19.9293 11.8009 20.0068 11.6067C20.0843 11.4126 20.216 11.2732 20.402 11.1885C20.5982 11.0937 20.7917 11.086 20.9827 11.1655C21.1737 11.245 21.3012 11.3911 21.3652 11.6037C21.4986 11.9807 21.5961 12.3677 21.6578 12.7645C21.7193 13.1612 21.75 13.5563 21.75 13.95C21.75 16.1128 20.9974 17.9535 19.4923 19.472C17.9871 20.9907 16.1563 21.75 14 21.75H13.2192L14.5423 23.073C14.6808 23.2115 14.7516 23.3856 14.7548 23.5952C14.7579 23.8047 14.6871 23.982 14.5423 24.127C14.3974 24.2718 14.2218 24.3442 14.0155 24.3442C13.809 24.3442 13.6333 24.2718 13.4885 24.127L10.9942 21.6327C10.8134 21.4519 10.723 21.241 10.723 21C10.723 20.759 10.8134 20.5481 10.9942 20.3672L13.4885 17.873C13.627 17.7347 13.801 17.6638 14.0105 17.6605C14.2202 17.6573 14.3974 17.7282 14.5423 17.873C14.6871 18.018 14.7595 18.1937 14.7595 18.4C14.7595 18.6063 14.6871 18.782 14.5423 18.927L13.2192 20.25H14C15.7372 20.25 17.2132 19.6385 18.428 18.4155C19.6427 17.1923 20.25 15.7038 20.25 13.95Z" fill="#6C6C6C"/></g>
-            </svg>
-            <!-- icon failure -->
-            <svg id="cb_failure_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <rect x="1" y="1" width="26" height="26" rx="13" fill="#F24A4A"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#F24A4A" stroke-width="2"/><path d="M9.83197 18.1683C9.98355 18.3199 10.1604 18.3957 10.3625 18.3957C10.5646 18.3957 10.7414 18.3199 10.893 18.1683L14.0004 15.061L17.133 18.1936C17.2678 18.3283 17.4406 18.3913 17.6514 18.3826C17.8616 18.3745 18.0341 18.3031 18.1688 18.1683C18.3204 18.0167 18.3962 17.8399 18.3962 17.6378C18.3962 17.4357 18.3204 17.2588 18.1688 17.1073L15.0614 13.9999L18.1941 10.8673C18.3288 10.7325 18.3918 10.5597 18.383 10.3489C18.375 10.1387 18.3035 9.96622 18.1688 9.83148C18.0172 9.6799 17.8404 9.60411 17.6383 9.60411C17.4362 9.60411 17.2593 9.6799 17.1078 9.83148L14.0004 12.9388L10.8678 9.80622C10.733 9.67148 10.5606 9.60816 10.3504 9.61624C10.1395 9.625 9.96671 9.69674 9.83197 9.83148C9.68039 9.98306 9.6046 10.1599 9.6046 10.362C9.6046 10.5641 9.68039 10.741 9.83197 10.8925L12.9393 13.9999L9.80671 17.1325C9.67197 17.2673 9.60898 17.4397 9.61774 17.6499C9.62582 17.8608 9.69723 18.0336 9.83197 18.1683ZM14.0004 23.5999C12.6699 23.5999 11.4195 23.3473 10.2493 22.842C9.07845 22.3367 8.06355 21.6546 7.2046 20.7957C6.34565 19.9367 5.66355 18.9218 5.15829 17.751C4.65302 16.5808 4.40039 15.3304 4.40039 13.9999C4.40039 12.6694 4.65302 11.4187 5.15829 10.2478C5.66355 9.07763 6.34565 8.06306 7.2046 7.20411C8.06355 6.34517 9.07845 5.66306 10.2493 5.1578C11.4195 4.65253 12.6699 4.3999 14.0004 4.3999C15.3309 4.3999 16.5816 4.65253 17.7525 5.1578C18.9227 5.66306 19.9372 6.34517 20.7962 7.20411C21.6551 8.06306 22.3372 9.07763 22.8425 10.2478C23.3478 11.4187 23.6004 12.6694 23.6004 13.9999C23.6004 15.3304 23.3478 16.5808 22.8425 17.751C22.3372 18.9218 21.6551 19.9367 20.7962 20.7957C19.9372 21.6546 18.9227 22.3367 17.7525 22.842C16.5816 23.3473 15.3309 23.5999 14.0004 23.5999ZM14.0004 22.0841C16.2404 22.0841 18.1479 21.2969 19.723 19.7225C21.2974 18.1474 22.0846 16.2399 22.0846 13.9999C22.0846 11.7599 21.2974 9.85237 19.723 8.27729C18.1479 6.70289 16.2404 5.91569 14.0004 5.91569C11.7604 5.91569 9.85319 6.70289 8.27879 8.27729C6.70372 9.85237 5.91618 11.7599 5.91618 13.9999C5.91618 16.2399 6.70372 18.1474 8.27879 19.7225C9.85319 21.2969 11.7604 22.0841 14.0004 22.0841Z" fill="white"/>
-            </svg>
-            <p class="body-regular--bold" id="cb_success_01">Realizado</p>
-            <p class="body-regular--bold" id="cb_in-progress_01">Em andamento</p>
-            <p class="body-regular--bold" id="cb_failure_01">Não realizado</p>
+            <div class="title">
+              <p class="label-regular--regular">Curso</p>
+              <p class="body-regular--semibold">Foundations Level II</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: 34 dias">Mar/24</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
           </div>
         </div>
+        <!-- card project graduation academic HOTJAR III-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-hotjar.webp" title="Hotjar" alt="Hotjar Learning - Foundations Level I">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1338_1130" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1338_1130)">
+                  <path d="M11.625 7.37505C11.625 7.29172 11.6561 7.20144 11.7183 7.10422C11.7811 7.007 11.8542 6.93755 11.9375 6.89588C12.3542 6.72922 12.7814 6.60422 13.2192 6.52088C13.6564 6.43755 14.1111 6.39588 14.5833 6.39588C14.8611 6.39588 15.125 6.41338 15.375 6.44838C15.625 6.48283 15.8819 6.52783 16.1458 6.58338C16.2431 6.59727 16.3264 6.64588 16.3958 6.72922C16.4653 6.81255 16.5 6.90977 16.5 7.02088C16.5 7.21533 16.4408 7.35422 16.3225 7.43755C16.2047 7.52088 16.0556 7.54172 15.875 7.50005C15.6667 7.45838 15.455 7.43061 15.24 7.41672C15.0244 7.40283 14.8056 7.39588 14.5833 7.39588C14.1806 7.39588 13.7847 7.43394 13.3958 7.51005C13.0069 7.58672 12.6389 7.68755 12.2917 7.81255C12.0972 7.89588 11.9375 7.89588 11.8125 7.81255C11.6875 7.72922 11.625 7.58338 11.625 7.37505ZM11.625 11.9376C11.625 11.8403 11.6561 11.7431 11.7183 11.6459C11.7811 11.5487 11.8542 11.4792 11.9375 11.4376C12.3403 11.2709 12.7675 11.1459 13.2192 11.0626C13.6703 10.9792 14.125 10.9376 14.5833 10.9376C14.8611 10.9376 15.125 10.9551 15.375 10.9901C15.625 11.0245 15.8819 11.0695 16.1458 11.1251C16.2431 11.1528 16.3264 11.2084 16.3958 11.2917C16.4653 11.3751 16.5 11.4723 16.5 11.5834C16.5 11.7639 16.4408 11.8992 16.3225 11.9892C16.2047 12.0798 16.0556 12.1042 15.875 12.0626C15.6667 12.0209 15.455 11.9895 15.24 11.9684C15.0244 11.9478 14.8056 11.9376 14.5833 11.9376C14.1806 11.9376 13.7883 11.9756 13.4067 12.0517C13.0244 12.1284 12.6597 12.2362 12.3125 12.3751C12.1042 12.4584 11.9375 12.4548 11.8125 12.3642C11.6875 12.2742 11.625 12.132 11.625 11.9376ZM11.625 9.66672C11.625 9.5695 11.6561 9.47227 11.7183 9.37505C11.7811 9.27783 11.8542 9.20838 11.9375 9.16672C12.3542 9.00005 12.7814 8.87505 13.2192 8.79172C13.6564 8.70838 14.1111 8.66672 14.5833 8.66672C14.8611 8.66672 15.125 8.68394 15.375 8.71838C15.625 8.75338 15.8819 8.79866 16.1458 8.85422C16.2431 8.86811 16.3264 8.92005 16.3958 9.01005C16.4653 9.10061 16.5 9.20144 16.5 9.31255C16.5 9.49311 16.4408 9.62838 16.3225 9.71838C16.2047 9.80894 16.0556 9.82644 15.875 9.77088C15.6667 9.72922 15.455 9.70144 15.24 9.68755C15.0244 9.67366 14.8056 9.66672 14.5833 9.66672C14.1806 9.66672 13.7883 9.70505 13.4067 9.78172C13.0244 9.85783 12.6597 9.96533 12.3125 10.1042C12.1042 10.1876 11.9375 10.1839 11.8125 10.0934C11.6875 10.0034 11.625 9.86116 11.625 9.66672ZM5.41667 13.3542C6.11111 13.3542 6.78472 13.4306 7.4375 13.5834C8.09028 13.7362 8.73611 13.9792 9.375 14.3126V6.12505C8.79167 5.75005 8.15972 5.46533 7.47917 5.27088C6.79861 5.07644 6.11111 4.97922 5.41667 4.97922C4.91667 4.97922 4.44778 5.02088 4.01 5.10422C3.57278 5.18755 3.125 5.31255 2.66667 5.47922C2.61111 5.507 2.56944 5.54172 2.54167 5.58338C2.51389 5.62505 2.5 5.66672 2.5 5.70838V13.5834C2.5 13.6667 2.52778 13.7256 2.58333 13.7601C2.63889 13.7951 2.69444 13.7987 2.75 13.7709C3.15278 13.632 3.57278 13.5278 4.01 13.4584C4.44778 13.3889 4.91667 13.3542 5.41667 13.3542ZM10.625 14.3126C11.2639 13.9792 11.9097 13.7362 12.5625 13.5834C13.2153 13.4306 13.8889 13.3542 14.5833 13.3542C15.0833 13.3542 15.5522 13.3889 15.99 13.4584C16.4272 13.5278 16.8472 13.632 17.25 13.7709C17.3056 13.7987 17.3611 13.7951 17.4167 13.7601C17.4722 13.7256 17.5 13.6667 17.5 13.5834V5.70838C17.5 5.66672 17.4861 5.62505 17.4583 5.58338C17.4306 5.54172 17.3889 5.507 17.3333 5.47922C16.875 5.31255 16.4272 5.18755 15.99 5.10422C15.5522 5.02088 15.0833 4.97922 14.5833 4.97922C13.8889 4.97922 13.2014 5.07644 12.5208 5.27088C11.8403 5.46533 11.2083 5.75005 10.625 6.12505V14.3126ZM10 15.8126C9.83333 15.8126 9.68056 15.7917 9.54167 15.7501C9.40278 15.7084 9.27083 15.6528 9.14583 15.5834C8.57639 15.2639 7.97556 15.0209 7.34333 14.8542C6.71167 14.6876 6.06944 14.6042 5.41667 14.6042C4.90278 14.6042 4.40278 14.6598 3.91667 14.7709C3.43056 14.882 2.95833 15.0487 2.5 15.2709C2.20833 15.4098 1.92722 15.3889 1.65667 15.2084C1.38556 15.0278 1.25 14.7709 1.25 14.4376V5.39588C1.25 5.21533 1.29528 5.04505 1.38583 4.88505C1.47583 4.72561 1.61111 4.61116 1.79167 4.54172C2.34722 4.26394 2.93417 4.05894 3.5525 3.92672C4.17028 3.79505 4.79167 3.72922 5.41667 3.72922C6.22222 3.72922 7.01389 3.84033 7.79167 4.06255C8.56944 4.28477 9.30556 4.61116 10 5.04172C10.6944 4.61116 11.4306 4.28477 12.2083 4.06255C12.9861 3.84033 13.7778 3.72922 14.5833 3.72922C15.2083 3.72922 15.83 3.79505 16.4483 3.92672C17.0661 4.05894 17.6528 4.26394 18.2083 4.54172C18.3889 4.61116 18.5242 4.72561 18.6142 4.88505C18.7047 5.04505 18.75 5.21533 18.75 5.39588V14.4376C18.75 14.7709 18.6111 15.0245 18.3333 15.1984C18.0556 15.3717 17.7639 15.3889 17.4583 15.2501C17 15.0417 16.5314 14.882 16.0525 14.7709C15.5731 14.6598 15.0833 14.6042 14.5833 14.6042C13.9306 14.6042 13.2883 14.6876 12.6567 14.8542C12.0244 15.0209 11.4236 15.2639 10.8542 15.5834C10.7292 15.6528 10.5972 15.7084 10.4583 15.7501C10.3194 15.7917 10.1667 15.8126 10 15.8126Z" fill="#333333"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <p class="label-regular--regular">Curso</p>
+              <p class="body-regular--semibold">Foundations Level I</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: 34 dias">Dez/23</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
+          </div>
+        </div>
+        <!-- card project graduation academic UNIBH UX-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-unibh.webp" title="UniBH" alt="Centro Universitário de Belo Horizonte - UniBH">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1334_1126" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1334_1126)">
+                  <path d="M9.99998 16.3334C9.87498 16.3334 9.75331 16.3162 9.63498 16.2817C9.5172 16.2467 9.39581 16.2015 9.27081 16.1459L5.37498 14.0209C5.12498 13.882 4.93054 13.6981 4.79165 13.4692C4.65276 13.2398 4.58331 12.9792 4.58331 12.6876V9.08339L2.91665 8.16673C2.77776 8.08339 2.6772 7.98617 2.61498 7.87506C2.5522 7.76395 2.52081 7.63895 2.52081 7.50006C2.52081 7.36117 2.5522 7.23617 2.61498 7.12506C2.6772 7.01395 2.77776 6.91673 2.91665 6.83339L9.27081 3.37506C9.39581 3.30562 9.5172 3.25701 9.63498 3.22923C9.75331 3.20145 9.87498 3.18756 9.99998 3.18756C10.125 3.18756 10.2466 3.20478 10.365 3.23923C10.4828 3.27423 10.6041 3.31951 10.7291 3.37506L17.8958 7.29173C18.0347 7.36117 18.1355 7.45478 18.1983 7.57256C18.2605 7.69089 18.2916 7.81951 18.2916 7.95839V12.8751C18.2916 13.0417 18.2328 13.1876 18.115 13.3126C17.9966 13.4376 17.8472 13.5001 17.6666 13.5001C17.5 13.5001 17.3541 13.4376 17.2291 13.3126C17.1041 13.1876 17.0416 13.0417 17.0416 12.8751V8.18756L15.4166 9.08339V12.6876C15.4166 12.9792 15.3472 13.2398 15.2083 13.4692C15.0694 13.6981 14.875 13.882 14.625 14.0209L10.7291 16.1459C10.6041 16.2015 10.4828 16.2467 10.365 16.2817C10.2466 16.3162 10.125 16.3334 9.99998 16.3334ZM9.89581 10.5417C9.93748 10.5556 9.9722 10.5626 9.99998 10.5626C10.0278 10.5626 10.0625 10.5556 10.1041 10.5417L15.7083 7.50006L10.1041 4.47923C10.0625 4.45145 10.0278 4.43756 9.99998 4.43756C9.9722 4.43756 9.93748 4.45145 9.89581 4.47923L4.29165 7.50006L9.89581 10.5417ZM9.89581 15.0626C9.93748 15.0765 9.9722 15.0834 9.99998 15.0834C10.0278 15.0834 10.0625 15.0765 10.1041 15.0626L14.0416 12.9376C14.0833 12.9098 14.1144 12.8784 14.135 12.8434C14.1561 12.809 14.1666 12.764 14.1666 12.7084V9.75006L10.7291 11.6251C10.618 11.6945 10.5 11.7431 10.375 11.7709C10.25 11.7987 10.125 11.8126 9.99998 11.8126C9.87498 11.8126 9.74998 11.7987 9.62498 11.7709C9.49998 11.7431 9.38192 11.6945 9.27081 11.6251L5.83331 9.75006V12.7084C5.83331 12.7501 5.84359 12.7917 5.86415 12.8334C5.88526 12.8751 5.91665 12.9098 5.95831 12.9376L9.89581 15.0626Z" fill="#4A4A4A"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <p class="label-regular--regular">Pós-graduação</p>
+              <p class="body-regular--semibold">User Experience</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: Agosto de 2022 até Agosto de 2023">Ago/22 - Ago/23</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
+          </div>
+        </div>
+        <!-- card project graduation academic UNIBH Design-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-unibh.webp" title="UniBH" alt="Centro Universitário de Belo Horizonte - UniBH">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1334_1126" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1334_1126)">
+                  <path d="M9.99998 16.3334C9.87498 16.3334 9.75331 16.3162 9.63498 16.2817C9.5172 16.2467 9.39581 16.2015 9.27081 16.1459L5.37498 14.0209C5.12498 13.882 4.93054 13.6981 4.79165 13.4692C4.65276 13.2398 4.58331 12.9792 4.58331 12.6876V9.08339L2.91665 8.16673C2.77776 8.08339 2.6772 7.98617 2.61498 7.87506C2.5522 7.76395 2.52081 7.63895 2.52081 7.50006C2.52081 7.36117 2.5522 7.23617 2.61498 7.12506C2.6772 7.01395 2.77776 6.91673 2.91665 6.83339L9.27081 3.37506C9.39581 3.30562 9.5172 3.25701 9.63498 3.22923C9.75331 3.20145 9.87498 3.18756 9.99998 3.18756C10.125 3.18756 10.2466 3.20478 10.365 3.23923C10.4828 3.27423 10.6041 3.31951 10.7291 3.37506L17.8958 7.29173C18.0347 7.36117 18.1355 7.45478 18.1983 7.57256C18.2605 7.69089 18.2916 7.81951 18.2916 7.95839V12.8751C18.2916 13.0417 18.2328 13.1876 18.115 13.3126C17.9966 13.4376 17.8472 13.5001 17.6666 13.5001C17.5 13.5001 17.3541 13.4376 17.2291 13.3126C17.1041 13.1876 17.0416 13.0417 17.0416 12.8751V8.18756L15.4166 9.08339V12.6876C15.4166 12.9792 15.3472 13.2398 15.2083 13.4692C15.0694 13.6981 14.875 13.882 14.625 14.0209L10.7291 16.1459C10.6041 16.2015 10.4828 16.2467 10.365 16.2817C10.2466 16.3162 10.125 16.3334 9.99998 16.3334ZM9.89581 10.5417C9.93748 10.5556 9.9722 10.5626 9.99998 10.5626C10.0278 10.5626 10.0625 10.5556 10.1041 10.5417L15.7083 7.50006L10.1041 4.47923C10.0625 4.45145 10.0278 4.43756 9.99998 4.43756C9.9722 4.43756 9.93748 4.45145 9.89581 4.47923L4.29165 7.50006L9.89581 10.5417ZM9.89581 15.0626C9.93748 15.0765 9.9722 15.0834 9.99998 15.0834C10.0278 15.0834 10.0625 15.0765 10.1041 15.0626L14.0416 12.9376C14.0833 12.9098 14.1144 12.8784 14.135 12.8434C14.1561 12.809 14.1666 12.764 14.1666 12.7084V9.75006L10.7291 11.6251C10.618 11.6945 10.5 11.7431 10.375 11.7709C10.25 11.7987 10.125 11.8126 9.99998 11.8126C9.87498 11.8126 9.74998 11.7987 9.62498 11.7709C9.49998 11.7431 9.38192 11.6945 9.27081 11.6251L5.83331 9.75006V12.7084C5.83331 12.7501 5.84359 12.7917 5.86415 12.8334C5.88526 12.8751 5.91665 12.9098 5.95831 12.9376L9.89581 15.0626Z" fill="#4A4A4A"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <p class="label-regular--regular">Pós-graduação</p>
+              <p class="body-regular--semibold">Design Exponencial</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: Agosto de 2019 até Agosto de 2021">Ago/19 - Ago/21</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
+          </div>
+        </div>
+        <!-- card project graduation academic UNIBH PP-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-ebac.webp" title="EBAC" alt="Escola Britânica de Artes Criativas - EBAC">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1338_1130" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1338_1130)">
+                  <path d="M11.625 7.37505C11.625 7.29172 11.6561 7.20144 11.7183 7.10422C11.7811 7.007 11.8542 6.93755 11.9375 6.89588C12.3542 6.72922 12.7814 6.60422 13.2192 6.52088C13.6564 6.43755 14.1111 6.39588 14.5833 6.39588C14.8611 6.39588 15.125 6.41338 15.375 6.44838C15.625 6.48283 15.8819 6.52783 16.1458 6.58338C16.2431 6.59727 16.3264 6.64588 16.3958 6.72922C16.4653 6.81255 16.5 6.90977 16.5 7.02088C16.5 7.21533 16.4408 7.35422 16.3225 7.43755C16.2047 7.52088 16.0556 7.54172 15.875 7.50005C15.6667 7.45838 15.455 7.43061 15.24 7.41672C15.0244 7.40283 14.8056 7.39588 14.5833 7.39588C14.1806 7.39588 13.7847 7.43394 13.3958 7.51005C13.0069 7.58672 12.6389 7.68755 12.2917 7.81255C12.0972 7.89588 11.9375 7.89588 11.8125 7.81255C11.6875 7.72922 11.625 7.58338 11.625 7.37505ZM11.625 11.9376C11.625 11.8403 11.6561 11.7431 11.7183 11.6459C11.7811 11.5487 11.8542 11.4792 11.9375 11.4376C12.3403 11.2709 12.7675 11.1459 13.2192 11.0626C13.6703 10.9792 14.125 10.9376 14.5833 10.9376C14.8611 10.9376 15.125 10.9551 15.375 10.9901C15.625 11.0245 15.8819 11.0695 16.1458 11.1251C16.2431 11.1528 16.3264 11.2084 16.3958 11.2917C16.4653 11.3751 16.5 11.4723 16.5 11.5834C16.5 11.7639 16.4408 11.8992 16.3225 11.9892C16.2047 12.0798 16.0556 12.1042 15.875 12.0626C15.6667 12.0209 15.455 11.9895 15.24 11.9684C15.0244 11.9478 14.8056 11.9376 14.5833 11.9376C14.1806 11.9376 13.7883 11.9756 13.4067 12.0517C13.0244 12.1284 12.6597 12.2362 12.3125 12.3751C12.1042 12.4584 11.9375 12.4548 11.8125 12.3642C11.6875 12.2742 11.625 12.132 11.625 11.9376ZM11.625 9.66672C11.625 9.5695 11.6561 9.47227 11.7183 9.37505C11.7811 9.27783 11.8542 9.20838 11.9375 9.16672C12.3542 9.00005 12.7814 8.87505 13.2192 8.79172C13.6564 8.70838 14.1111 8.66672 14.5833 8.66672C14.8611 8.66672 15.125 8.68394 15.375 8.71838C15.625 8.75338 15.8819 8.79866 16.1458 8.85422C16.2431 8.86811 16.3264 8.92005 16.3958 9.01005C16.4653 9.10061 16.5 9.20144 16.5 9.31255C16.5 9.49311 16.4408 9.62838 16.3225 9.71838C16.2047 9.80894 16.0556 9.82644 15.875 9.77088C15.6667 9.72922 15.455 9.70144 15.24 9.68755C15.0244 9.67366 14.8056 9.66672 14.5833 9.66672C14.1806 9.66672 13.7883 9.70505 13.4067 9.78172C13.0244 9.85783 12.6597 9.96533 12.3125 10.1042C12.1042 10.1876 11.9375 10.1839 11.8125 10.0934C11.6875 10.0034 11.625 9.86116 11.625 9.66672ZM5.41667 13.3542C6.11111 13.3542 6.78472 13.4306 7.4375 13.5834C8.09028 13.7362 8.73611 13.9792 9.375 14.3126V6.12505C8.79167 5.75005 8.15972 5.46533 7.47917 5.27088C6.79861 5.07644 6.11111 4.97922 5.41667 4.97922C4.91667 4.97922 4.44778 5.02088 4.01 5.10422C3.57278 5.18755 3.125 5.31255 2.66667 5.47922C2.61111 5.507 2.56944 5.54172 2.54167 5.58338C2.51389 5.62505 2.5 5.66672 2.5 5.70838V13.5834C2.5 13.6667 2.52778 13.7256 2.58333 13.7601C2.63889 13.7951 2.69444 13.7987 2.75 13.7709C3.15278 13.632 3.57278 13.5278 4.01 13.4584C4.44778 13.3889 4.91667 13.3542 5.41667 13.3542ZM10.625 14.3126C11.2639 13.9792 11.9097 13.7362 12.5625 13.5834C13.2153 13.4306 13.8889 13.3542 14.5833 13.3542C15.0833 13.3542 15.5522 13.3889 15.99 13.4584C16.4272 13.5278 16.8472 13.632 17.25 13.7709C17.3056 13.7987 17.3611 13.7951 17.4167 13.7601C17.4722 13.7256 17.5 13.6667 17.5 13.5834V5.70838C17.5 5.66672 17.4861 5.62505 17.4583 5.58338C17.4306 5.54172 17.3889 5.507 17.3333 5.47922C16.875 5.31255 16.4272 5.18755 15.99 5.10422C15.5522 5.02088 15.0833 4.97922 14.5833 4.97922C13.8889 4.97922 13.2014 5.07644 12.5208 5.27088C11.8403 5.46533 11.2083 5.75005 10.625 6.12505V14.3126ZM10 15.8126C9.83333 15.8126 9.68056 15.7917 9.54167 15.7501C9.40278 15.7084 9.27083 15.6528 9.14583 15.5834C8.57639 15.2639 7.97556 15.0209 7.34333 14.8542C6.71167 14.6876 6.06944 14.6042 5.41667 14.6042C4.90278 14.6042 4.40278 14.6598 3.91667 14.7709C3.43056 14.882 2.95833 15.0487 2.5 15.2709C2.20833 15.4098 1.92722 15.3889 1.65667 15.2084C1.38556 15.0278 1.25 14.7709 1.25 14.4376V5.39588C1.25 5.21533 1.29528 5.04505 1.38583 4.88505C1.47583 4.72561 1.61111 4.61116 1.79167 4.54172C2.34722 4.26394 2.93417 4.05894 3.5525 3.92672C4.17028 3.79505 4.79167 3.72922 5.41667 3.72922C6.22222 3.72922 7.01389 3.84033 7.79167 4.06255C8.56944 4.28477 9.30556 4.61116 10 5.04172C10.6944 4.61116 11.4306 4.28477 12.2083 4.06255C12.9861 3.84033 13.7778 3.72922 14.5833 3.72922C15.2083 3.72922 15.83 3.79505 16.4483 3.92672C17.0661 4.05894 17.6528 4.26394 18.2083 4.54172C18.3889 4.61116 18.5242 4.72561 18.6142 4.88505C18.7047 5.04505 18.75 5.21533 18.75 5.39588V14.4376C18.75 14.7709 18.6111 15.0245 18.3333 15.1984C18.0556 15.3717 17.7639 15.3889 17.4583 15.2501C17 15.0417 16.5314 14.882 16.0525 14.7709C15.5731 14.6598 15.0833 14.6042 14.5833 14.6042C13.9306 14.6042 13.2883 14.6876 12.6567 14.8542C12.0244 15.0209 11.4236 15.2639 10.8542 15.5834C10.7292 15.6528 10.5972 15.7084 10.4583 15.7501C10.3194 15.7917 10.1667 15.8126 10 15.8126Z" fill="#333333"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <p class="label-regular--regular">Curso especialização</p>
+              <p class="body-regular--semibold">UI Design</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: Janeiro de 2021 até Dezembro de 2021">Jan/21 - Dez/21</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
+          </div>
+        </div>
+        <!-- card project graduation academic NEWTON Adm-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-unibh.webp" title="UniBH" alt="Centro Universitário de Belo Horizonte - UniBH">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1334_1126" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1334_1126)">
+                  <path d="M9.99998 16.3334C9.87498 16.3334 9.75331 16.3162 9.63498 16.2817C9.5172 16.2467 9.39581 16.2015 9.27081 16.1459L5.37498 14.0209C5.12498 13.882 4.93054 13.6981 4.79165 13.4692C4.65276 13.2398 4.58331 12.9792 4.58331 12.6876V9.08339L2.91665 8.16673C2.77776 8.08339 2.6772 7.98617 2.61498 7.87506C2.5522 7.76395 2.52081 7.63895 2.52081 7.50006C2.52081 7.36117 2.5522 7.23617 2.61498 7.12506C2.6772 7.01395 2.77776 6.91673 2.91665 6.83339L9.27081 3.37506C9.39581 3.30562 9.5172 3.25701 9.63498 3.22923C9.75331 3.20145 9.87498 3.18756 9.99998 3.18756C10.125 3.18756 10.2466 3.20478 10.365 3.23923C10.4828 3.27423 10.6041 3.31951 10.7291 3.37506L17.8958 7.29173C18.0347 7.36117 18.1355 7.45478 18.1983 7.57256C18.2605 7.69089 18.2916 7.81951 18.2916 7.95839V12.8751C18.2916 13.0417 18.2328 13.1876 18.115 13.3126C17.9966 13.4376 17.8472 13.5001 17.6666 13.5001C17.5 13.5001 17.3541 13.4376 17.2291 13.3126C17.1041 13.1876 17.0416 13.0417 17.0416 12.8751V8.18756L15.4166 9.08339V12.6876C15.4166 12.9792 15.3472 13.2398 15.2083 13.4692C15.0694 13.6981 14.875 13.882 14.625 14.0209L10.7291 16.1459C10.6041 16.2015 10.4828 16.2467 10.365 16.2817C10.2466 16.3162 10.125 16.3334 9.99998 16.3334ZM9.89581 10.5417C9.93748 10.5556 9.9722 10.5626 9.99998 10.5626C10.0278 10.5626 10.0625 10.5556 10.1041 10.5417L15.7083 7.50006L10.1041 4.47923C10.0625 4.45145 10.0278 4.43756 9.99998 4.43756C9.9722 4.43756 9.93748 4.45145 9.89581 4.47923L4.29165 7.50006L9.89581 10.5417ZM9.89581 15.0626C9.93748 15.0765 9.9722 15.0834 9.99998 15.0834C10.0278 15.0834 10.0625 15.0765 10.1041 15.0626L14.0416 12.9376C14.0833 12.9098 14.1144 12.8784 14.135 12.8434C14.1561 12.809 14.1666 12.764 14.1666 12.7084V9.75006L10.7291 11.6251C10.618 11.6945 10.5 11.7431 10.375 11.7709C10.25 11.7987 10.125 11.8126 9.99998 11.8126C9.87498 11.8126 9.74998 11.7987 9.62498 11.7709C9.49998 11.7431 9.38192 11.6945 9.27081 11.6251L5.83331 9.75006V12.7084C5.83331 12.7501 5.84359 12.7917 5.86415 12.8334C5.88526 12.8751 5.91665 12.9098 5.95831 12.9376L9.89581 15.0626Z" fill="#4A4A4A"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <p class="label-regular--regular">Graduação</p>
+              <p class="body-regular--semibold">Publicidade e Propaganda</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: Agosto de 2013 até Agosto de 2017">Ago/13 - Ago/17</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
+          </div>
+        </div>
+        <!-- card project graduation academic EBAC-->
+        <div class="cb_course-and-graduation--card">
+          <div class="header">
+            <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-newton.webp" title="Newton" alt="Centro Universitário Newton">
+          </div>
+          <div class="row--course-icon">
+            <div class="course-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1334_1126" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect y="6.10352e-05" width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1334_1126)">
+                  <path d="M9.99998 16.3334C9.87498 16.3334 9.75331 16.3162 9.63498 16.2817C9.5172 16.2467 9.39581 16.2015 9.27081 16.1459L5.37498 14.0209C5.12498 13.882 4.93054 13.6981 4.79165 13.4692C4.65276 13.2398 4.58331 12.9792 4.58331 12.6876V9.08339L2.91665 8.16673C2.77776 8.08339 2.6772 7.98617 2.61498 7.87506C2.5522 7.76395 2.52081 7.63895 2.52081 7.50006C2.52081 7.36117 2.5522 7.23617 2.61498 7.12506C2.6772 7.01395 2.77776 6.91673 2.91665 6.83339L9.27081 3.37506C9.39581 3.30562 9.5172 3.25701 9.63498 3.22923C9.75331 3.20145 9.87498 3.18756 9.99998 3.18756C10.125 3.18756 10.2466 3.20478 10.365 3.23923C10.4828 3.27423 10.6041 3.31951 10.7291 3.37506L17.8958 7.29173C18.0347 7.36117 18.1355 7.45478 18.1983 7.57256C18.2605 7.69089 18.2916 7.81951 18.2916 7.95839V12.8751C18.2916 13.0417 18.2328 13.1876 18.115 13.3126C17.9966 13.4376 17.8472 13.5001 17.6666 13.5001C17.5 13.5001 17.3541 13.4376 17.2291 13.3126C17.1041 13.1876 17.0416 13.0417 17.0416 12.8751V8.18756L15.4166 9.08339V12.6876C15.4166 12.9792 15.3472 13.2398 15.2083 13.4692C15.0694 13.6981 14.875 13.882 14.625 14.0209L10.7291 16.1459C10.6041 16.2015 10.4828 16.2467 10.365 16.2817C10.2466 16.3162 10.125 16.3334 9.99998 16.3334ZM9.89581 10.5417C9.93748 10.5556 9.9722 10.5626 9.99998 10.5626C10.0278 10.5626 10.0625 10.5556 10.1041 10.5417L15.7083 7.50006L10.1041 4.47923C10.0625 4.45145 10.0278 4.43756 9.99998 4.43756C9.9722 4.43756 9.93748 4.45145 9.89581 4.47923L4.29165 7.50006L9.89581 10.5417ZM9.89581 15.0626C9.93748 15.0765 9.9722 15.0834 9.99998 15.0834C10.0278 15.0834 10.0625 15.0765 10.1041 15.0626L14.0416 12.9376C14.0833 12.9098 14.1144 12.8784 14.135 12.8434C14.1561 12.809 14.1666 12.764 14.1666 12.7084V9.75006L10.7291 11.6251C10.618 11.6945 10.5 11.7431 10.375 11.7709C10.25 11.7987 10.125 11.8126 9.99998 11.8126C9.87498 11.8126 9.74998 11.7987 9.62498 11.7709C9.49998 11.7431 9.38192 11.6945 9.27081 11.6251L5.83331 9.75006V12.7084C5.83331 12.7501 5.84359 12.7917 5.86415 12.8334C5.88526 12.8751 5.91665 12.9098 5.95831 12.9376L9.89581 15.0626Z" fill="#4A4A4A"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title">
+              <p class="label-regular--regular">Curso técnico</p>
+              <p class="body-regular--semibold">Administração</p>
+            </div>
+            <div class="date">
+              <div class="cb_tag-info">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                    <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+                </svg>
+                <p class="body-small--regular" alt="Duração do curso: Janeiro de 2011 até Dezembro de 2013">Jan/11 - Dez/13</p>
+              </div>
+            </div>
+            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+              <div class="text"><p class="button--semibold">+ detalhes</p></div>
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+
       </div>
       <!-- carousel btn right -->
-      <!-- <a href="#" class="cb_btn--small--primary carousel--arrow-right">
+      <a href="#" class="cb_btn--small--primary carousel--arrow-right">
         <div class="icon-left">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
             <mask id="mask0_1112_1163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
@@ -823,141 +871,217 @@
             </g>
           </svg>
         </div>
-      </a> -->
-    </div>  
+      </a>
+    </div>
   </div>
-  <!-- end, results -->
-    <!-- FAQ -->
-  <div class="cb--content" id="cb_FAQ-content">
+  <!-- end, graduation academic -->
+
+  <!-- work experiences-->
+  <div class="cb--content" id="cb_work-experiences">
     <div class="cb--block-intro">
       <div class="content">
         <div class="title">
-          <h3 class="heading-3--bold" aria-label="Informações complementares" title="FAQ">Informações complementares</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="Sobre o projeto, processos e ferramentas utilizadas">Sobre o projeto, processos e ferramentas utilizadas</h5>
+          <h3 class="heading-3--bold" aria-label="Experiências de trabalho, Caique Badaró">Experiências</h3>
+          <h5 class="heading-5--subtitle--medium" aria-label="Informações sobre a carreira de Caique Badaró">Compilado das experiências profissionais ao longo da minha carreira.</h5>
+        </div>
+        <div class="paragraph"></div>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="cb_carousel carousel-no-scroll carousel-container">
+      <!-- cards carousel -->
+      <div class="cb_carousel-card">
+        <!-- list select button -->
+        <button type="button" class="cb_btn--medium--secondary selector-button selector-button--selected" id="work-select-button_08" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">Atual</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="work-select-button_07" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">2020</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="work-select-button_06" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">2019</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="work-select-button_05" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">2017</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="work-select-button_04" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">2015</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="work-select-button_03" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">2015</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="work-select-button_02" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">2014</p></div>
+        </button>
+        <button type="button" class="cb_btn--medium--secondary selector-button" id="work-select-button_01" aria-label="Ver detalhes sobre a experiência">
+          <div class="text"><p class="button--semibold">2011</p></div>
+        </button>
+      </div>
+    </div>
+    <!-- end, carousel -->
+    <!-- cards work experiences resume -->
+    <!-- dynamic content -->
+    <div class="cb_block">
+      <div class="cb_work-experiences-card">
+        <div class="header">
+          <div class="title">
+            <h2 aria-label="Cargo exercido na empresa por Caique Badaró" class="heading-2--bold">Product Designer PL</h2>
+            <p class="label-regular--regular">Belo Horizonte, MG</p>
+            <!-- badge -->
+            <a href="#" class="link" title="Ver documento" alt="Carta de recomendação Exército">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <mask id="mask0_1306_1011" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                  <rect width="24" height="24" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1306_1011)">
+                  <path d="M15.142 19.5L13.2654 21.3577C12.9185 21.7025 12.4962 21.875 11.9985 21.875C11.5008 21.875 11.0795 21.7025 10.7346 21.3577L8.858 19.5H6.30772C5.8106 19.5 5.38505 19.323 5.03105 18.969C4.67703 18.615 4.50002 18.1894 4.50002 17.6923V15.142L2.64235 13.2654C2.29748 12.9185 2.12505 12.4962 2.12505 11.9985C2.12505 11.5008 2.29748 11.0795 2.64235 10.7346L4.50002 8.85801V6.30774C4.50002 5.81062 4.67703 5.38506 5.03105 5.03106C5.38505 4.67704 5.8106 4.50004 6.30772 4.50004H8.858L10.7346 2.64236C11.0815 2.29749 11.5038 2.12506 12.0015 2.12506C12.4992 2.12506 12.9205 2.29749 13.2654 2.64236L15.142 4.50004H17.6923C18.1894 4.50004 18.6149 4.67704 18.9689 5.03106C19.323 5.38506 19.5 5.81062 19.5 6.30774V8.85801L21.3576 10.7346C21.7025 11.0815 21.8749 11.5038 21.8749 12.0015C21.8749 12.4992 21.7025 12.9205 21.3576 13.2654L19.5 15.142V17.6923C19.5 18.1894 19.323 18.615 18.9689 18.969C18.6149 19.323 18.1894 19.5 17.6923 19.5H15.142ZM12 20.5L14.5 18H18V14.5L20.5 12L18 9.50001V6.00001H14.5L12 3.50001L9.5 6.00001H6V9.50001L3.5 12L6 14.5V18H9.5L12 20.5ZM12 14.2635L13.775 15.3461C13.9391 15.45 14.1048 15.4442 14.2721 15.3288C14.4394 15.2135 14.5013 15.057 14.4577 14.8596L13.9865 12.8289L15.5691 11.4623C15.7243 11.3233 15.7702 11.1609 15.7067 10.975C15.6432 10.7891 15.5077 10.6878 15.3 10.6712L13.2288 10.4962L12.4115 8.59041C12.3354 8.40964 12.1985 8.31926 12.0006 8.31926C11.8028 8.31926 11.6654 8.40964 11.5885 8.59041L10.7711 10.4962L8.70002 10.6712C8.49232 10.6878 8.35675 10.7891 8.2933 10.975C8.22983 11.1609 8.27568 11.3233 8.43085 11.4623L10.0135 12.8289L9.54232 14.8596C9.49874 15.057 9.5606 15.2135 9.7279 15.3288C9.8952 15.4442 10.0609 15.45 10.225 15.3461L12 14.2635Z" fill="#5AA0FF"/>
+                </g>
+              </svg>
+              <p class="body-regular--bold">Carta de recomendação</p>
+            </a>
+          </div>
+          <div class="business-logo">
+            <img src="imgs/pag-home/logo-experience/caique-badaro-design-interface-ux-ui_grupo-supernosso.webp" title="Grupo Supernosso" alt="Logo Grupo Supernosso">
+          </div>
+        </div>
+        <div class="paragraph">
+          <p class="body-regular--regular">
+            Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.
+            <br><br>
+            Análise de dados e ferramentas de mapeamento do comportamento dos usuários para identificar pontos de ajuste nas jornadas do produto. Aplicação de pesquisas para mapear tendências de mercado e comportamentos durante a navegação no site e aplicativo.
+            <br><br>
+            Desenvolvimento de testes para análise e validação da usabilidade, coletando feedbacks internos e externos sobre funcionalidades lançadas, identificando oportunidades de otimização das interfaces. Construção de wireframes de alta fidelidade e documentação dos componentes e processos de forma que facilite a implementação pelo time de front-end e back-end.
+          </p>
+        </div>
+        <div class="footer">
+          <div class="cb_tag-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+            </svg>
+            <p class="body-small--regular" alt="Duração da experiência: Fevereiro de 2022 até XXXXXXXXXXXXXXXXXXXXXXXXXXXXX">Fev/22 - Jul/20</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="faq-list">
-      <div class="cb_faq--default">
-        <!-- title -->
+    <!-- end, cards work experiences resume -->
+  </div>
+  <!-- end, work experiences -->
+  
+  <!-- posts -->
+  <div class="cb--content" id="cb_grid-card-posts">
+    <div class="cb--block-intro">
+      <div class="content">
         <div class="title">
-          <p class="body-regular--bold">Qual o principal objetivo do projeto?</p>
-          <!-- icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-              <rect width="24" height="24" fill="#D9D9D9"/>
+          <h3 class="heading-3--bold" aria-label="Artigos sobre UX/UI Designer, tendências e zeitgeist">Publicações</h3>
+          <h5 class="heading-5--subtitle--medium" aria-label="Diálogos sobre experiências dos usuários, tendências e espírito do tempo">Diálogos sobre experiências dos usuários, tendências e espírito do tempo</h5>
+        </div>
+        <div class="paragraph"></div>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="cb_carousel carousel-no-scroll carousel-container">
+      <!-- carousel btn left -->
+      <a href="#" class="cb_btn--small--primary carousel--arrow-left">
+        <div class="icon-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <mask id="mask0_1112_1131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+              <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
             </mask>
-            <g mask="url(#mask0_1087_1301)">
-              <path d="M6.875 14.5C6.725 14.3667 6.65 14.1957 6.65 13.987C6.65 13.779 6.725 13.6 6.875 13.45L11.375 8.975C11.4583 8.875 11.5543 8.804 11.663 8.762C11.771 8.72066 11.8833 8.7 12 8.7C12.1167 8.7 12.2293 8.72066 12.338 8.762C12.446 8.804 12.5417 8.875 12.625 8.975L17.15 13.475C17.2833 13.625 17.35 13.7957 17.35 13.987C17.35 14.179 17.275 14.35 17.125 14.5C16.975 14.65 16.8 14.725 16.6 14.725C16.4 14.725 16.225 14.65 16.075 14.5L12 10.45L7.9 14.525C7.76667 14.675 7.6 14.75 7.4 14.75C7.2 14.75 7.025 14.6667 6.875 14.5Z" fill="#5AA0FF"/>
+            <g mask="url(#mask0_1112_1131)">
+              <path d="M8.18332 13.3667C8.30554 13.2444 8.36954 13.0889 8.37532 12.9C8.38065 12.7111 8.32221 12.5556 8.19999 12.4333L4.93332 9.16667H12.3833C12.5722 9.16667 12.7307 9.10267 12.8587 8.97467C12.9862 8.84711 13.05 8.68889 13.05 8.5C13.05 8.31111 12.9862 8.15267 12.8587 8.02467C12.7307 7.89711 12.5722 7.83333 12.3833 7.83333H4.93332L8.19999 4.56667C8.32221 4.44445 8.38065 4.28889 8.37532 4.1C8.36954 3.91111 8.30554 3.75556 8.18332 3.63333C8.0611 3.51111 7.90554 3.45 7.71665 3.45C7.52777 3.45 7.37221 3.51111 7.24999 3.63333L2.84999 8.03333C2.78332 8.08889 2.73599 8.15822 2.70799 8.24133C2.68043 8.32489 2.66665 8.41111 2.66665 8.5C2.66665 8.58889 2.68043 8.67222 2.70799 8.75C2.73599 8.82778 2.78332 8.9 2.84999 8.96667L7.24999 13.3667C7.37221 13.4889 7.52777 13.55 7.71665 13.55C7.90554 13.55 8.0611 13.4889 8.18332 13.3667Z" fill="white"/>
             </g>
           </svg>
         </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Aprimorar a percepção do site como uma plataforma de preços competitivos e promoções impactantes.</p>
+      </a>
+      <!-- cards carousel -->
+      <div class="cb_carousel-card">
+        <!-- card project-->
+        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+          <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+          </div>
+        </div>
+        <!-- card project-->
+        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+          <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+          </div>
+        </div>
+        <!-- card project-->
+        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+          <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+          </div>
+        </div>
+        <!-- card project-->
+        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+          <div class="content">
+              <div class="title">
+                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+              </div>
+              <div class="footer">
+                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                </a>
+              </div>
+          </div>
         </div>
       </div>
-      <div class="cb_faq--default">
-        <!-- title -->
-        <div class="title">
-          <p class="body-regular--bold">Quais foram os principais desafios identificados</p>
-          <!-- icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-              <rect width="24" height="24" fill="#D9D9D9"/>
+      <!-- carousel btn right -->
+      <a href="#" class="cb_btn--small--primary carousel--arrow-right">
+        <div class="icon-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <mask id="mask0_1112_1163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+              <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
             </mask>
-            <g mask="url(#mask0_1087_1301)">
-              <path d="M6.875 14.5C6.725 14.3667 6.65 14.1957 6.65 13.987C6.65 13.779 6.725 13.6 6.875 13.45L11.375 8.975C11.4583 8.875 11.5543 8.804 11.663 8.762C11.771 8.72066 11.8833 8.7 12 8.7C12.1167 8.7 12.2293 8.72066 12.338 8.762C12.446 8.804 12.5417 8.875 12.625 8.975L17.15 13.475C17.2833 13.625 17.35 13.7957 17.35 13.987C17.35 14.179 17.275 14.35 17.125 14.5C16.975 14.65 16.8 14.725 16.6 14.725C16.4 14.725 16.225 14.65 16.075 14.5L12 10.45L7.9 14.525C7.76667 14.675 7.6 14.75 7.4 14.75C7.2 14.75 7.025 14.6667 6.875 14.5Z" fill="#5AA0FF"/>
+            <g mask="url(#mask0_1112_1163)">
+              <path d="M7.53335 13.3667C7.41113 13.2444 7.34713 13.0889 7.34135 12.9C7.33602 12.7111 7.39446 12.5556 7.51669 12.4333L10.7834 9.16667H3.33335C3.14446 9.16667 2.98602 9.10267 2.85802 8.97467C2.73046 8.84711 2.66669 8.68889 2.66669 8.5C2.66669 8.31111 2.73046 8.15267 2.85802 8.02467C2.98602 7.89711 3.14446 7.83333 3.33335 7.83333H10.7834L7.51669 4.56667C7.39446 4.44445 7.33602 4.28889 7.34135 4.1C7.34713 3.91111 7.41113 3.75556 7.53335 3.63333C7.65558 3.51111 7.81113 3.45 8.00002 3.45C8.18891 3.45 8.34446 3.51111 8.46669 3.63333L12.8667 8.03333C12.9334 8.08889 12.9807 8.15822 13.0087 8.24133C13.0362 8.32489 13.05 8.41111 13.05 8.5C13.05 8.58889 13.0362 8.67222 13.0087 8.75C12.9807 8.82778 12.9334 8.9 12.8667 8.96667L8.46669 13.3667C8.34446 13.4889 8.18891 13.55 8.00002 13.55C7.81113 13.55 7.65558 13.4889 7.53335 13.3667Z" fill="white"/>
             </g>
           </svg>
         </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Baixa visibilidade para as ofertas do site e falta de distinção clara entre produtos promocionados e ofertas abertas para o público geral.</p>
-        </div>
-      </div>
-      <div class="cb_faq--default">
-        <!-- title -->
-        <div class="title">
-          <p class="body-regular--bold">Como a proposta de revisão abordou esses desafios?</p>
-          <!-- icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-              <rect width="24" height="24" fill="#D9D9D9"/>
-            </mask>
-            <g mask="url(#mask0_1087_1301)">
-              <path d="M6.875 14.5C6.725 14.3667 6.65 14.1957 6.65 13.987C6.65 13.779 6.725 13.6 6.875 13.45L11.375 8.975C11.4583 8.875 11.5543 8.804 11.663 8.762C11.771 8.72066 11.8833 8.7 12 8.7C12.1167 8.7 12.2293 8.72066 12.338 8.762C12.446 8.804 12.5417 8.875 12.625 8.975L17.15 13.475C17.2833 13.625 17.35 13.7957 17.35 13.987C17.35 14.179 17.275 14.35 17.125 14.5C16.975 14.65 16.8 14.725 16.6 14.725C16.4 14.725 16.225 14.65 16.075 14.5L12 10.45L7.9 14.525C7.76667 14.675 7.6 14.75 7.4 14.75C7.2 14.75 7.025 14.6667 6.875 14.5Z" fill="#5AA0FF"/>
-            </g>
-          </svg>
-        </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Foi realizada uma intervenção para destacar as principais promoções na primeira seção da página, proporcionando maior visibilidade aos produtos com preços atrativos.
-            <br><br>Houve a ampliação da área de exibição dos produtos do folheto otimizando um comportamento mapeado durante a análise da jornada dos usuários. Reforçando a percepção do Apoio Entrega como uma plataforma de preços competitivos e promoções impactantes.</p>
-        </div>
-      </div>
-      <div class="cb_faq--default">
-        <!-- title -->
-        <div class="title">
-          <p class="body-regular--bold">Houve pesquisa de usuário envolvida no processo de revisão?</p>
-          <!-- icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-              <rect width="24" height="24" fill="#D9D9D9"/>
-            </mask>
-            <g mask="url(#mask0_1087_1301)">
-              <path d="M6.875 14.5C6.725 14.3667 6.65 14.1957 6.65 13.987C6.65 13.779 6.725 13.6 6.875 13.45L11.375 8.975C11.4583 8.875 11.5543 8.804 11.663 8.762C11.771 8.72066 11.8833 8.7 12 8.7C12.1167 8.7 12.2293 8.72066 12.338 8.762C12.446 8.804 12.5417 8.875 12.625 8.975L17.15 13.475C17.2833 13.625 17.35 13.7957 17.35 13.987C17.35 14.179 17.275 14.35 17.125 14.5C16.975 14.65 16.8 14.725 16.6 14.725C16.4 14.725 16.225 14.65 16.075 14.5L12 10.45L7.9 14.525C7.76667 14.675 7.6 14.75 7.4 14.75C7.2 14.75 7.025 14.6667 6.875 14.5Z" fill="#5AA0FF"/>
-            </g>
-          </svg>
-        </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Sim, foi realizada uma pesquisa em conjunto com a Matriz CSD para validar as expectativas e hábitos dos usuários.</p>
-        </div>
-      </div>
-      <div class="cb_faq--default">
-        <!-- title -->
-        <div class="title">
-          <p class="body-regular--bold">Quais métricas foram usadas para avaliar os resultados da revisão?</p>
-          <!-- icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-              <rect width="24" height="24" fill="#D9D9D9"/>
-            </mask>
-            <g mask="url(#mask0_1087_1301)">
-              <path d="M6.875 14.5C6.725 14.3667 6.65 14.1957 6.65 13.987C6.65 13.779 6.725 13.6 6.875 13.45L11.375 8.975C11.4583 8.875 11.5543 8.804 11.663 8.762C11.771 8.72066 11.8833 8.7 12 8.7C12.1167 8.7 12.2293 8.72066 12.338 8.762C12.446 8.804 12.5417 8.875 12.625 8.975L17.15 13.475C17.2833 13.625 17.35 13.7957 17.35 13.987C17.35 14.179 17.275 14.35 17.125 14.5C16.975 14.65 16.8 14.725 16.6 14.725C16.4 14.725 16.225 14.65 16.075 14.5L12 10.45L7.9 14.525C7.76667 14.675 7.6 14.75 7.4 14.75C7.2 14.75 7.025 14.6667 6.875 14.5Z" fill="#5AA0FF"/>
-            </g>
-          </svg>
-        </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Para avaliar o resultado das mudanças foi utilizada a pesquisa de CSAT ao final das compras e o monitoramento dos mapas de calor.</p>
-        </div>
-      </div>
-      <div class="cb_faq--default">
-        <!-- title -->
-        <div class="title">
-          <p class="body-regular--bold">Onde e como atua o Apoio Entrega?</p>
-          <!-- icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-              <rect width="24" height="24" fill="#D9D9D9"/>
-            </mask>
-            <g mask="url(#mask0_1087_1301)">
-              <path d="M6.875 14.5C6.725 14.3667 6.65 14.1957 6.65 13.987C6.65 13.779 6.725 13.6 6.875 13.45L11.375 8.975C11.4583 8.875 11.5543 8.804 11.663 8.762C11.771 8.72066 11.8833 8.7 12 8.7C12.1167 8.7 12.2293 8.72066 12.338 8.762C12.446 8.804 12.5417 8.875 12.625 8.975L17.15 13.475C17.2833 13.625 17.35 13.7957 17.35 13.987C17.35 14.179 17.275 14.35 17.125 14.5C16.975 14.65 16.8 14.725 16.6 14.725C16.4 14.725 16.225 14.65 16.075 14.5L12 10.45L7.9 14.525C7.76667 14.675 7.6 14.75 7.4 14.75C7.2 14.75 7.025 14.6667 6.875 14.5Z" fill="#5AA0FF"/>
-            </g>
-          </svg>
-        </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">O Apoio Mineiro é uma rede de supermercados do Grupo Supernosso, posicionado por toda Belo Horizonte (MG) e Região Metropolitana.
-            <br><br>O Apoio Mineiro atua com vendas em loja física e plataformas digitais, no ambiente digital utiliza o nome Apoio Entrega, oferencendo opções diversificas para os seus clientes abastecerem seus lares e negócios.</p>
-        </div>
-      </div>
+      </a>
     </div>
   </div>
-  <!-- end, FAQ -->
-  
+  <!-- end, posts -->
+
+
+
 
   <!-- footer -->
   <footer class="cb_footer" id="cb_footer--all">
     <div class="row">
       <div class="col-image">
-        <svg alt="Caique Badaró, UX/UI Designer" title="Caique Badaró, UX/UI" xmlns="http://www.w3.org/2000/svg" width="209" height="56" viewBox="0 0 209 56" fill="none">
+        <a href="#" alt="Caique Badaró, UX/UI" title="Voltar a página inicial">
+          <svg alt="Caique Badaró, UX/UI Designer" title="Caique Badaró, UX/UI" xmlns="http://www.w3.org/2000/svg" width="209" height="56" viewBox="0 0 209 56" fill="none">
           <rect x="157.61" y="32.7007" width="8.37957" height="3.27007" fill="white"/>
           <rect x="125.318" y="32.7007" width="8.37957" height="3.27007" fill="white"/>
           <rect x="26.398" y="32.7007" width="8.37956" height="3.27007" fill="white"/>
@@ -978,6 +1102,7 @@
           <path d="M171.679 47.8248V8.17516H177.392C179.558 8.17516 181.73 8.77297 182.702 9.76421C183.717 10.6277 184.438 12.4189 184.534 14.7153C184.581 16.1856 184.518 17.4978 184.534 18.8029C184.549 20.108 184.549 21.4471 184.534 22.6861C184.534 24.1168 184.581 25.1424 184.534 26.3649C184.486 27.9674 184.125 29.2263 183.491 30.2085C182.997 31.1502 181.794 31.7933 180.759 32.1898L184.534 47.8248H181.269L177.8 32.7007H174.944V47.8248H171.679ZM174.944 29.635H177.596C178.679 29.635 179.835 29.5477 180.313 29.0191C180.807 28.4904 181.017 27.6071 181.065 26.4671C181.113 25.162 181.151 23.9221 181.167 22.5839C181.183 21.2292 181.183 19.8345 181.167 18.4963C181.151 17.1581 181.118 15.8819 181.065 14.6131C181.017 13.4732 180.931 12.6892 180.453 12.1606C179.975 11.6319 178.679 11.4452 177.596 11.4452H174.944V29.635Z" fill="white"/>
           <path d="M14.4935 47.8248C12.3121 47.8248 10.7436 47.3293 9.78824 46.3382C8.84877 45.3309 8.23572 43.7635 8.18795 41.489C8.1918 40.1606 8.1918 38.7299 8.19181 37.4014C8.19896 36.4332 8.19181 35.562 8.19181 34.5401C8.18122 33.059 8.18828 31.6923 8.19181 30.2481C8.19359 29.5221 8.19181 28.7392 8.19181 28C8.19181 25.7904 8.17589 23.5834 8.19181 21.3576C8.19869 20.3894 8.2043 19.3767 8.19181 18.3941C8.17538 17.1015 8.16467 15.8124 8.19181 14.5109C8.22366 12.3989 8.83285 10.8396 9.78824 9.78356C10.7595 8.71129 12.4474 8.17516 14.5811 8.17516C16.7626 8.17516 18.2036 8.67067 19.1749 9.66171C20.1463 10.6365 21.16 12.2202 21.2396 14.5109C21.2396 14.9197 21.2396 15.3284 21.2396 15.9416C21.2378 16.2492 21.2396 16.6341 21.2396 16.9635C21.2396 17.1738 21.2385 17.3771 21.2396 17.5766H17.9777C17.9765 17.383 17.9777 17.1812 17.9777 16.9635C17.9777 16.6417 17.9758 16.2252 17.9777 15.9416C17.9811 15.409 17.9777 15.0219 17.9777 14.5109C17.9618 13.3574 17.6117 12.7339 17.1181 12.2627C16.6404 11.7753 15.6798 11.4452 14.5811 11.4452C13.562 11.4452 12.5059 11.7753 12.0441 12.2627C11.5824 12.7339 11.4856 13.3574 11.4538 14.5109V21.1533C11.4432 22.6813 11.4502 24.2314 11.4538 25.7518C11.4555 26.5107 11.4538 27.2427 11.4538 28C11.4538 28.7501 11.4555 29.4928 11.4538 30.2481C11.4502 31.7667 11.4538 33.2117 11.4538 34.7445C11.4538 36.2773 11.4607 37.6063 11.4538 39.0365C11.4593 39.7805 11.4538 40.6431 11.4538 41.489C11.4856 42.61 11.5824 43.2336 12.0441 43.7372C12.5218 44.2246 13.5461 44.5547 14.5811 44.5547C15.7276 44.5547 16.6085 44.2246 17.1181 43.7372C17.6276 43.2336 17.9618 42.61 17.9777 41.489C17.9879 40.9159 17.9811 40.5315 17.9777 40.0584C17.9758 39.7939 17.9777 39.4882 17.9777 39.1387C17.9777 38.9021 17.9765 38.6633 17.9777 38.4233H21.2396C21.2396 39.4452 21.2754 40.4671 21.2396 41.489C21.16 43.7635 20.3214 45.3309 19.3182 46.3382C18.331 47.3293 16.7228 47.8248 14.4935 47.8248Z" fill="white"/>
         </svg>
+        </a>
       </div>
       <!-- links -->
       <div class="col">
@@ -1002,7 +1127,7 @@
       </div>
       <div class="icons">
         <!-- #1 icon -->
-        <a href="https://www.linkedin.com/in/caique-badaro/" target="_blank" class="cb_btn--medium--secondary">
+        <a href="https://www.linkedin.com/in/caique-badaro/" target="_blank" class="cb_btn--medium--secondary" alt="LinkedIn" title="Ver perfil LinkedIn">
           <div class="icon-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M2.32834 8.64101H6.47433V22H2.32834V8.64101ZM4.40308 6.81456C5.72687 6.81456 6.80615 5.73688 6.80615 4.40728C6.80615 4.09115 6.744 3.77812 6.62323 3.48605C6.50247 3.19399 6.32546 2.92861 6.10231 2.70507C5.87916 2.48154 5.61425 2.30422 5.3227 2.18324C5.03114 2.06227 4.71866 2 4.40308 2C4.08751 2 3.77502 2.06227 3.48347 2.18324C3.19191 2.30422 2.927 2.48154 2.70385 2.70507C2.48071 2.92861 2.3037 3.19399 2.18293 3.48605C2.06217 3.77812 2.00001 4.09115 2.00001 4.40728C1.99652 5.73688 3.07231 6.81456 4.40308 6.81456ZM13.2155 15.3905C13.2155 13.648 13.5473 11.9615 15.7024 11.9615C17.8261 11.9615 17.8575 13.9524 17.8575 15.5024V22H22V14.6732C22 11.0763 21.2246 8.30861 17.0297 8.30861C15.0143 8.30861 13.6626 9.41777 13.1072 10.4675H13.0513V8.64101H9.07301V22H13.2155V15.3905Z" fill="#F4C284"/>
@@ -1010,7 +1135,7 @@
           </div>
         </a>
         <!-- #2 icon -->
-        <a href="https://api.whatsapp.com/send?phone=5531973004150&text=Ol%C3%A1!" target="_blank" class="cb_btn--medium--secondary">
+        <a href="https://api.whatsapp.com/send?phone=5531973004150&text=Ol%C3%A1!" target="_blank" class="cb_btn--medium--secondary" alt="WhatsApp" title="Conversar no WhatsApp">
           <div class="icon-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0859 4.90685C18.1634 3.98268 17.0658 3.24988 15.8567 2.75091C14.6476 2.25194 13.3511 1.99672 12.0421 2.00003C6.55351 2.00003 2.08541 6.44582 2.08319 11.9106C2.08319 13.6571 2.54132 15.3617 3.41209 16.8653L2 22L7.27897 20.6211C8.73919 21.4122 10.3751 21.8271 12.0377 21.8278H12.0421C17.5296 21.8278 21.9977 17.382 22 11.9172C22.0037 10.615 21.7481 9.32503 21.248 8.12175C20.7478 6.91847 20.013 5.82578 19.0859 4.90685M12.0421 20.1552H12.0388C10.5563 20.1554 9.10108 19.7584 7.82583 19.006L7.52412 18.8271L4.39156 19.6452L5.22684 16.6059L5.0305 16.2946C4.20165 14.9813 3.76287 13.4615 3.76483 11.9106C3.76705 7.36876 7.47974 3.67369 12.0455 3.67369C13.1328 3.67128 14.2098 3.88354 15.2142 4.29816C16.2186 4.71279 17.1304 5.32156 17.8968 6.08923C18.6673 6.85324 19.278 7.76166 19.6937 8.762C20.1093 9.76233 20.3216 10.8347 20.3183 11.9172C20.3161 16.4591 16.6034 20.1552 12.0421 20.1552ZM16.5823 13.985C16.3327 13.8602 15.1103 13.2619 14.8818 13.1791C14.6544 13.0963 14.4892 13.0554 14.3228 13.3027C14.1564 13.55 13.6794 14.1075 13.5341 14.2731C13.3888 14.4387 13.2435 14.4586 12.995 14.335C12.7465 14.2113 11.9445 13.9497 10.9939 13.1062C10.254 12.4493 9.75484 11.639 9.60952 11.3906C9.46421 11.1422 9.59399 11.0086 9.71934 10.885C9.83138 10.7746 9.96782 10.5957 10.0921 10.4511C10.2163 10.3065 10.2573 10.2038 10.3405 10.0382C10.4237 9.87262 10.3827 9.72799 10.3195 9.60435C10.2573 9.4796 9.75927 8.26079 9.55184 7.76509C9.35107 7.28485 9.14585 7.34889 8.99278 7.34226C8.83424 7.33581 8.67557 7.33286 8.5169 7.33343C8.39073 7.33663 8.26658 7.36574 8.15225 7.41893C8.03791 7.47213 7.93584 7.54826 7.85246 7.64255C7.62395 7.89095 6.98169 8.48931 6.98169 9.70812C6.98169 10.9269 7.87353 12.1049 7.99777 12.2705C8.12201 12.4361 9.75262 14.9366 12.2485 16.0097C12.843 16.2647 13.3067 16.4171 13.6672 16.5319C14.2629 16.7207 14.8053 16.6931 15.2346 16.6302C15.7127 16.5595 16.7066 16.0318 16.914 15.4533C17.1214 14.8748 17.1214 14.3791 17.0593 14.2753C16.9972 14.1716 16.8297 14.1086 16.5823 13.985" fill="#F4C284"/>
@@ -1018,7 +1143,7 @@
           </div>
         </a>
         <!-- #3 icon -->
-        <a href="mailto:caique.badaro@gmail.com" class="cb_btn--medium--secondary">
+        <a href="mailto:caique.badaro@gmail.com" class="cb_btn--medium--secondary" alt="E-mail" title="Conversar por E-mail">
           <div class="icon-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <mask id="mask0_1086_1115" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -1034,8 +1159,9 @@
     </div>
     <div class="row-text-seo">
       <p class="body-small--regular">Especialista em UX/UI Design e UX Research. Transformando insights em experiências digitais inovadoras e eficazes para fortalecer a conexão entre marcas e usuários.
-        <br><br>© <span id="current-year"></span> - Caique Badaró. Todos os direitos reservados.</p>
+        <br><br>© <span id="current-year"></span> - Caique Badaró</p>
     </div>
   </footer>
+  <!-- end, footer -->
 </body>
 </html>
