@@ -16,7 +16,7 @@
 	display: flex;
 	width: 100vw;
 	height: auto;
-	max-height: 70vh;
+	max-height: 90vh;
 	flex-direction: column;
 	align-items: flex-start;
 	border-radius: 24px 24px 0px 0px;
@@ -108,9 +108,9 @@
 .cb--bottom-sheet--linear .group-icons .cb_btn--medium--secondary {
     min-height: 32px;
     max-height: 32px;
-    background: var(--neutral-gray, #F8F5F2);
-    border-color: var(--orange-support-300, #F4A76F);
-    padding: 8px 8px;
+    background: var(--neutral-bg, #EDE7E3);
+    border-color: var(--orange-brand-primary, #E07B39);
+    padding: 4px 8px;
     box-shadow: none;
 }
 .cb--bottom-sheet--linear .group-icons .cb_btn--medium--secondary:hover {
@@ -121,12 +121,7 @@
     width: 20px;
 }
 .cb--bottom-sheet--linear .group-icons .cb_btn--medium--secondary svg path {
-    fill: var(--orange-support-300, #F4A76F);
-}
-.cb--bottom-sheet--linear .group-icons .cb_btn--medium--secondary {
-    background: var(--neutral-black, #1F1712);
-    width: 24px;
-    height: 24px;
+    fill: var(--orange-brand-primary, #E07B39);
 }
 .cb--bottom-sheet--linear .col {
 	display: flex;

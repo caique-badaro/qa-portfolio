@@ -8,7 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "bottom-sheet-06", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_pesquisa-pesquisa-formulario.html" },
     { id: "bottom-sheet-07", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_project-prototype-mobile.html" },
     { id: "bottom-sheet-08", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_project-prototype-desktop.html" },
-    { id: "bottom-sheet-09", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_project-prototype-link-to-all.html" }
+    { id: "bottom-sheet-09", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_project-prototype-link-to-all.html" },
+    { id: "bottom-sheet-10", content: "content/home/bottom-sheet_modal_graduation-01-pucrs.html" },
+    { id: "bottom-sheet-11", content: "content/home/bottom-sheet_modal_graduation-02-hotjar-level-3.html" },
+    { id: "bottom-sheet-12", content: "content/home/bottom-sheet_modal_graduation-03-hotjar-level-2.html" },
+    { id: "bottom-sheet-13", content: "content/home/bottom-sheet_modal_graduation-04-hotjar-level-1.html" },
+    { id: "bottom-sheet-14", content: "content/home/bottom-sheet_modal_graduation-05-unibh-ux.html" },
+    { id: "bottom-sheet-15", content: "content/home/bottom-sheet_modal_graduation-06-unibh-design.html" },
+    { id: "bottom-sheet-16", content: "content/home/bottom-sheet_modal_graduation-07-ebac-ui.html" },
+    { id: "bottom-sheet-17", content: "content/home/bottom-sheet_modal_graduation-08-unibh-pp.html" },
+    { id: "bottom-sheet-18", content: "content/home/bottom-sheet_modal_graduation-09-newton-adm.html" }
   ];
 
   const menuButtons = [

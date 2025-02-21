@@ -40,6 +40,7 @@
   <script type="text/javascript" src="js/bottom-sheet-config.js"></script>
   <script type="text/javascript" src="js/date-info-values.js"></script>
   <script type="text/javascript" src="js/scrolls-in-page.js"></script>
+  <script type="text/javascript" src="js/filter.js"></script>
 </head>
 <body>
   <!-- menu (desktop) -->
@@ -175,17 +176,7 @@
   <!-- content bottom sheet -->
   <div class="cb--bottom-sheet--linear" id="cb_bottom-sheet--block-content" style="display: none;">
     <div class="row--bottom-sheet--header">
-      <div class="data-hotjar-analytics">
-        <div class="cb_tag-info">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12"><rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)">
-                  <path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
-          </svg>
-          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em 2022">2022</p>
-        </div>
-        <div class="cb_tag-info">
-          <p class="body-small--regular" alt="Revisão UX/UI Apoio Entrega" title="Revisão UX/UI">Revisão UX/UI Apoio Entrega</p>
-        </div>
-      </div>
+      <div class="data-hotjar-analytics"></div>
       <div class="close-modal" id="cb_btn-icon-close--bottom-sheet" alt="Fechar" title="Fechar" aria-label="Fechar">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M7.99999 9.13562L4.02534 13.1103C3.87663 13.259 3.68736 13.3333 3.45753 13.3333C3.2277 13.3333 3.03843 13.259 2.88972 13.1103C2.74101 12.9616 2.66666 12.7723 2.66666 12.5425C2.66666 12.3126 2.74101 12.1234 2.88972 11.9747L6.86437 8L2.88972 4.02535C2.74101 3.87664 2.66666 3.68737 2.66666 3.45755C2.66666 3.22772 2.74101 3.03845 2.88972 2.88974C3.03843 2.74103 3.2277 2.66667 3.45753 2.66667C3.68736 2.66667 3.87663 2.74103 4.02534 2.88974L7.99999 6.86439L11.9746 2.88974C12.1234 2.74103 12.3126 2.66667 12.5424 2.66667C12.7723 2.66667 12.9615 2.74103 13.1103 2.88974C13.259 3.03845 13.3333 3.22772 13.3333 3.45755C13.3333 3.68737 13.259 3.87664 13.1103 4.02535L9.1356 8L13.1103 11.9747C13.259 12.1234 13.3333 12.3126 13.3333 12.5425C13.3333 12.7723 13.259 12.9616 13.1103 13.1103C12.9615 13.259 12.7723 13.3333 12.5424 13.3333C12.3126 13.3333 12.1234 13.259 11.9746 13.1103L7.99999 9.13562Z" fill="white"/>
@@ -194,7 +185,7 @@
     </div>
     <!-- content -->
     <div class="col" id="content-bottom-sheet">
-      <!-- content will be loaded here -->  
+      <!-- content will be loaded here -->
     </div>
   </div>
   <!-- end bottom sheet -->
@@ -232,267 +223,252 @@
     </div>
   </button>
   <!-- end, back to top -->
-
-
-
-  <!-- projects -->
-  <div class="cb--content" id="cb_grid-card-projects">
-    <!-- <div class="cb--block-intro">
+  <!-- first fold -->
+  <div class="first-fold">
+    <div class="cb--content--first-fold-home" id="cb--content--first-fold-home">
       <div class="content">
-        <div class="title">
-          <h3 class="heading-3--bold" aria-label="XXXXXXXXXXXXXXXXXXXXXXX">Projetos</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="XXXXXXXXXXXXXXXXXXX">Nonono nononono nononono nonon </h5>
+        <!-- logo horizontal -->
+        <svg class="logo-horizontal" id="cb--menu-desktop--logo" alt="Caique Badaró, UX/UI" title="Voltar a página inicial" xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40" fill="none">
+          <rect x="112.578" y="23.3577" width="5.9854" height="2.33577" fill="#4A4A4A"/>
+          <rect x="89.5127" y="23.3577" width="5.9854" height="2.33577" fill="#4A4A4A"/>
+          <rect x="18.8559" y="23.3577" width="5.9854" height="2.33577" fill="#4A4A4A"/>
+          <path d="M118.844 7.08026C118.26 6.6423 117.384 5.83938 115.705 5.83938C114.026 5.83938 113.223 6.56931 112.567 7.08026C111.866 7.79266 111.095 8.75909 111.095 10.3649V34.1605H113.431V26.1314C113.419 23.4335 113.419 20.5839 113.431 17.9562C113.436 16.7558 113.447 15.5573 113.442 14.4525C113.437 13.0849 113.43 11.8184 113.442 10.3649C113.442 10.332 113.444 10.3014 113.448 10.2729C113.533 9.10027 114.511 8.17515 115.705 8.17515C116.915 8.17515 117.894 9.09806 117.956 10.2919C117.958 10.3064 117.956 10.348 117.956 10.3649C117.969 11.8184 117.961 13.085 117.956 14.4525C117.952 15.5574 117.951 16.7558 117.956 17.9562C117.968 20.654 117.968 23.4335 117.956 26.1314C117.941 27.9431 117.951 29.7507 117.956 31.5328C117.959 32.4158 117.956 33.2899 117.956 34.1605H120.292C120.292 32.8562 120.293 31.5437 120.292 30.2189C120.291 27.5403 120.288 24.8329 120.292 22.1897L120.292 10.3649C120.292 8.75909 119.545 7.79266 118.844 7.08026Z" fill="#4A4A4A"/>
+          <rect x="29.0513" y="5.83938" width="2.33577" height="28.3212" fill="#4A4A4A"/>
+          <path d="M95.7783 7.08025C95.1944 6.6423 94.3185 5.83938 92.6396 5.83938C90.9608 5.83938 90.1579 6.56931 89.5009 7.08025C88.8002 7.79266 88.0293 8.75909 88.0293 10.3649V34.1605H90.3651V26.1313C90.3534 23.4335 90.3533 20.5839 90.3651 17.9562C90.3703 16.7558 90.3809 15.5573 90.3769 14.4525C90.3718 13.0849 90.3639 11.8184 90.3769 10.3649C90.3769 10.332 90.3789 10.3014 90.3828 10.2729C90.4673 9.10027 91.4454 8.17514 92.6396 8.17514C93.8491 8.17514 94.8282 9.09806 94.8906 10.2919C94.8925 10.3064 94.8905 10.348 94.8906 10.3649C94.9035 11.8184 94.8956 13.085 94.8906 14.4525C94.8865 15.5574 94.8854 16.7558 94.8906 17.9562C94.9023 20.654 94.9023 23.4335 94.8906 26.1313C94.875 27.9431 94.8854 29.7507 94.8906 31.5328C94.8932 32.4158 94.8906 33.2899 94.8906 34.1605H97.2264C97.2264 32.8562 97.227 31.5437 97.2264 30.2189C97.2251 27.5403 97.2225 24.8329 97.2264 22.1897L97.2264 10.3649C97.2264 8.75909 96.479 7.79266 95.7783 7.08025Z" fill="#4A4A4A"/>
+          <path d="M25.1213 7.08026C24.5373 6.6423 23.6614 5.83938 21.9826 5.83938C20.3038 5.83938 19.5008 6.56931 18.8439 7.08026C18.1432 7.79266 17.3723 8.75909 17.3723 10.3649V34.1605H19.708V26.1314C19.6963 23.4335 19.6962 20.5839 19.708 17.9562C19.7132 16.7558 19.7239 15.5573 19.7198 14.4525C19.7148 13.0849 19.7069 11.8184 19.7198 10.3649C19.7198 10.332 19.7218 10.3014 19.7257 10.2729C19.8102 9.10027 20.7884 8.17515 21.9826 8.17515C23.192 8.17515 24.1711 9.09806 24.2336 10.2919C24.2355 10.3064 24.2334 10.348 24.2336 10.3649C24.2465 11.8184 24.2386 13.085 24.2336 14.4525C24.2295 15.5574 24.2283 16.7558 24.2336 17.9562C24.2452 20.654 24.2452 23.4335 24.2336 26.1314C24.2179 27.9431 24.2284 29.7507 24.2336 31.5328C24.2361 32.4158 24.2336 33.2899 24.2336 34.1605H26.5693C26.5693 32.8562 26.57 31.5437 26.5693 30.2189C26.568 27.5403 26.5654 24.8329 26.5693 22.1897L26.5693 10.3649C26.5693 8.75909 25.822 7.79266 25.1213 7.08026Z" fill="#4A4A4A"/>
+          <path d="M46.7153 32.9197C47.2992 33.3576 48.1751 34.1606 49.854 34.1606C51.5328 34.1606 52.3357 33.4306 52.9927 32.9197C53.6934 32.2073 54.4525 31.2409 54.4525 29.635L54.4525 5.83939H52.1167V13.8686C52.1284 16.5664 52.1284 19.346 52.1167 22.0438C52.1115 23.2441 52.1156 24.3628 52.1197 25.4676C52.1247 26.8352 52.1297 28.1815 52.1167 29.635C52.1167 29.668 52.1147 29.6986 52.1108 29.727C52.0263 30.8997 51.0482 31.8248 49.854 31.8248C48.6445 31.8248 47.6567 30.876 47.5943 29.6821C47.5924 29.6676 47.5913 29.6519 47.5912 29.635C47.5783 28.1816 47.5832 26.8353 47.5882 25.4678C47.5923 24.3629 47.5964 23.2442 47.5912 22.0438C47.5795 19.346 47.5795 16.5664 47.5912 13.8686C47.6068 12.0568 47.6016 10.2528 47.5963 8.47069C47.5938 7.58767 47.5912 6.71001 47.5912 5.83939H45.2554C45.2554 7.1437 45.2561 8.46303 45.2567 9.78777C45.258 12.4664 45.2593 15.167 45.2554 17.8102V29.635C45.2554 31.2409 46.0146 32.2073 46.7153 32.9197Z" fill="#4A4A4A"/>
+          <path d="M41.2958 6.95479C41.3531 6.99897 41.4076 7.04108 41.4599 7.08026C42.1606 7.79266 42.9197 8.75909 42.9197 10.3649V22.1897C42.919 22.7229 42.9184 23.2584 42.918 23.7956H40.5911C40.5947 21.8471 40.5923 19.8808 40.584 17.9562C40.5788 16.7558 40.5829 15.637 40.5869 14.5322C40.592 13.1646 40.5969 11.8184 40.584 10.3649C40.5838 10.348 40.5828 10.3323 40.5808 10.3178C40.5184 9.12397 39.5306 8.17515 38.3212 8.17515C37.127 8.17515 36.1489 9.10027 36.0644 10.2729C36.0605 10.3014 36.0584 10.332 36.0584 10.3649C36.0455 11.8184 36.0505 13.1647 36.0555 14.5323C36.0595 15.6371 36.0636 16.7558 36.0584 17.9562C36.0501 19.8808 36.0477 21.8471 36.0513 23.7956H33.7227V10.3649C33.7227 8.75909 34.4818 7.79266 35.1825 7.08026C35.2273 7.04545 35.2727 7.00962 35.319 6.97308C35.9529 6.47324 36.7567 5.83938 38.3212 5.83938C39.8498 5.83938 40.7128 6.50507 41.2958 6.95479Z" fill="#4A4A4A"/>
+          <path d="M35.3466 33.0451C35.2893 33.001 35.2348 32.9589 35.1825 32.9197C34.4818 32.2073 33.7226 31.2408 33.7227 29.635L33.7227 17.8102C33.7234 17.277 33.724 16.7415 33.7244 16.2043H36.0513C36.0477 18.1528 36.0501 20.1191 36.0584 22.0438C36.0636 23.2441 36.0595 24.3629 36.0555 25.4678C36.0504 26.8353 36.0455 28.1816 36.0584 29.635C36.0586 29.6519 36.0596 29.6676 36.0615 29.6821C36.124 30.876 37.1118 31.8248 38.3212 31.8248C39.5154 31.8248 40.4935 30.8997 40.578 29.727C40.5819 29.6985 40.584 29.6679 40.584 29.635C40.5969 28.1815 40.5919 26.8352 40.5869 25.4676C40.5829 24.3628 40.5788 23.2441 40.584 22.0438C40.5923 20.1191 40.5947 18.1528 40.5911 16.2043H42.9197L42.9197 29.635C42.9197 31.2408 42.1606 32.2073 41.4599 32.9197C41.4151 32.9545 41.3697 32.9903 41.3234 33.0268C40.6895 33.5267 39.8856 34.1605 38.3212 34.1605C36.7925 34.1605 35.9296 33.4949 35.3466 33.0451Z" fill="#4A4A4A"/>
+          <path d="M141.734 33.0452C141.791 33.001 141.846 32.9589 141.898 32.9197C142.599 32.2073 143.358 31.2409 143.358 29.635L143.358 17.8102C143.357 17.277 143.356 16.7415 143.356 16.2044L141.029 16.2044C141.033 18.1529 141.03 20.1191 141.022 22.0438C141.017 23.2442 141.021 24.3629 141.025 25.4678C141.03 26.8353 141.035 28.1816 141.022 29.635C141.022 29.6519 141.021 29.6676 141.019 29.6821C140.956 30.876 139.969 31.8248 138.759 31.8248C137.565 31.8248 136.587 30.8997 136.502 29.727C136.498 29.6986 136.496 29.668 136.496 29.635C136.484 28.1815 136.488 26.8352 136.493 25.4676C136.498 24.3628 136.502 23.2441 136.496 22.0438C136.488 20.1191 136.486 18.1529 136.489 16.2044L134.161 16.2044L134.161 29.635C134.161 31.2409 134.92 32.2073 135.62 32.9197C135.665 32.9545 135.711 32.9903 135.757 33.0269C136.391 33.5267 137.195 34.1606 138.759 34.1606C140.288 34.1606 141.151 33.4949 141.734 33.0452Z" fill="#4A4A4A"/>
+          <path d="M135.785 6.95481C135.727 6.99899 135.673 7.04109 135.62 7.08027C134.92 7.79268 134.161 8.7591 134.161 10.3649L134.161 22.1898C134.161 22.7229 134.162 23.2584 134.162 23.7956L136.489 23.7956C136.486 21.8471 136.488 19.8808 136.496 17.9562C136.502 16.7558 136.498 15.637 136.493 14.5322C136.488 13.1646 136.483 11.8184 136.496 10.3649C136.497 10.348 136.498 10.3323 136.5 10.3179C136.562 9.12399 137.55 8.17516 138.759 8.17516C139.953 8.17516 140.932 9.10028 141.016 10.273C141.02 10.3014 141.022 10.332 141.022 10.3649C141.035 11.8184 141.03 13.1647 141.025 14.5323C141.021 15.6371 141.017 16.7559 141.022 17.9562C141.03 19.8808 141.033 21.8471 141.029 23.7956L143.358 23.7956L143.358 10.3649C143.358 8.7591 142.599 7.79268 141.898 7.08027C141.853 7.04546 141.808 7.00964 141.761 6.9731C141.127 6.47326 140.324 5.83939 138.759 5.83939C137.231 5.83939 136.368 6.50508 135.785 6.95481Z" fill="#4A4A4A"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M38.8588 32.4293C38.982 33.7773 39.6645 34.6308 40.2991 35.276C40.3513 35.3152 40.6994 35.5792 40.7566 35.6234L40.4632 35.4014C40.9778 35.7984 41.7036 36.3692 42.9198 36.4963V34.1606C42.0804 33.9668 41.4267 33.2687 41.2329 32.4293H38.8588Z" fill="#4A4A4A"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M139.297 7.57069C139.42 6.22263 140.102 5.36914 140.737 4.72397C140.789 4.6848 141.137 4.42074 141.195 4.37655L140.901 4.59851C141.416 4.20152 142.142 3.63074 143.358 3.50363L143.358 5.83939C142.518 6.03313 141.865 6.73128 141.671 7.57069L139.297 7.57069Z" fill="#4A4A4A"/>
+          <path d="M56.7884 34.1605V5.83938H67.0074V8.17515H59.1242V16.6423H63.2117V18.9781H59.1242V31.8248H67.0074V34.1605H56.7884Z" fill="#4A4A4A"/>
+          <path d="M76.3505 34.1605V5.83938H80.7537C82.4312 5.83938 83.6522 6.19339 84.417 6.90142C85.194 7.60945 85.5949 8.7836 85.6195 10.4239C85.6442 11.6039 85.6565 12.6365 85.6565 13.5215C85.6565 14.4065 85.6442 15.2562 85.6195 16.0704C85.5702 17.0616 85.3728 17.8346 85.0275 18.3892C84.6821 18.9438 84.0978 19.7404 83.3578 20C84.1225 20.236 84.7191 20.9027 85.0645 21.4691C85.4222 22.0355 85.6195 22.8144 85.6565 23.8056C85.6812 24.8441 85.6935 25.8058 85.6935 26.6908C85.6935 27.5759 85.6812 28.5376 85.6565 29.5761C85.5949 31.2045 85.1817 32.3787 84.417 33.0985C83.6646 33.8065 82.4435 34.1605 80.7537 34.1605H76.3505ZM78.6862 31.8248H80.73C81.5564 31.8248 82.1845 31.8359 82.5668 31.4346C82.9615 31.0334 83.2776 30.397 83.3023 29.5474C83.3393 28.5444 83.3578 27.6003 83.3578 26.7153C83.3578 25.8303 83.3393 24.8862 83.3023 23.8832C83.2776 22.8329 82.9554 22.0946 82.5483 21.6461C82.1536 21.1859 81.6181 21.1678 80.73 21.1678H78.6862V31.8248ZM78.6862 18.8321H80.73C81.5564 18.8321 82.1536 18.6193 82.5483 18.1591C82.943 17.6989 83.2724 16.9651 83.2848 16.0093C83.3341 14.9944 83.3588 14.0386 83.3588 13.1418C83.3588 12.2449 83.3341 11.295 83.2848 10.2919C83.2724 9.4777 82.943 8.90751 82.5483 8.52989C82.1536 8.15227 81.5317 8.17515 80.73 8.17515H78.6862V18.8321Z" fill="#4A4A4A"/>
+          <path d="M99.562 34.1605V5.83938H104.088C105.704 5.83938 106.841 6.20519 107.556 6.93682C108.282 7.66845 108.736 8.83524 108.759 10.5109C108.794 12.753 108.739 14.9258 108.75 16.9554C108.762 18.9851 108.762 21.0148 108.75 23.0445C108.739 25.0624 108.794 27.1009 108.759 29.343C108.736 31.0305 108.282 32.3315 107.556 33.0631C106.829 33.7947 105.652 34.1605 104.024 34.1605H99.562ZM101.898 31.8248H104.088C104.896 31.8248 105.418 31.8477 105.781 31.47C106.144 31.0806 106.412 30.4492 106.423 29.635C106.458 28.0183 106.412 26.4223 106.423 24.8175C106.435 23.2008 106.431 21.6048 106.431 20C106.431 18.3833 106.435 16.7873 106.423 15.1824C106.412 13.5658 106.458 11.9816 106.423 10.3649C106.412 9.55069 106.144 8.90751 105.781 8.52989C105.418 8.15227 104.872 8.17515 104.088 8.17515H101.898V31.8248Z" fill="#4A4A4A"/>
+          <path d="M122.628 34.1605V5.83938H126.709C128.256 5.83938 129.807 6.26639 130.501 6.97441C131.227 7.5912 131.741 8.87065 131.81 10.5109C131.844 11.5612 131.798 12.4984 131.81 13.4306C131.821 14.3629 131.821 15.3193 131.81 16.2043C131.81 17.2262 131.844 17.9588 131.81 18.8321C131.776 19.9767 131.518 20.8759 131.065 21.5775C130.712 22.2501 129.853 22.7095 129.113 22.9927L131.81 34.1605H129.478L127 23.3576H124.96V34.1605H122.628ZM124.96 21.1678H126.854C127.628 21.1678 128.453 21.1055 128.795 20.7279C129.148 20.3503 129.298 19.7193 129.332 18.9051C129.366 17.9728 129.393 17.0872 129.405 16.1314C129.416 15.1637 129.416 14.1675 129.405 13.2116C129.393 12.2558 129.37 11.3442 129.332 10.4379C129.298 9.62369 129.236 9.06371 128.895 8.68609C128.553 8.30848 127.628 8.17515 126.854 8.17515H124.96V21.1678Z" fill="#4A4A4A"/>
+          <path d="M10.3524 34.1605C8.79423 34.1605 7.67392 33.8066 6.9915 33.0987C6.32045 32.3792 5.88256 31.2597 5.84844 29.635C5.85119 28.6861 5.85119 27.6642 5.8512 26.7153C5.85631 26.0237 5.8512 25.4014 5.8512 24.6715C5.84363 23.6136 5.84868 22.6373 5.8512 21.6058C5.85247 21.0872 5.8512 20.528 5.8512 20C5.8512 18.4217 5.83982 16.8453 5.8512 15.2554C5.85611 14.5638 5.86012 13.8405 5.8512 13.1386C5.83946 12.2153 5.83181 11.2946 5.8512 10.3649C5.87395 8.85632 6.30908 7.74254 6.9915 6.98824C7.6853 6.22233 8.8909 5.83938 10.415 5.83938C11.9732 5.83938 13.0025 6.19332 13.6963 6.90121C14.3901 7.59749 15.1142 8.72867 15.1711 10.3649C15.1711 10.6569 15.1711 10.9489 15.1711 11.3868C15.1697 11.6065 15.1711 11.8815 15.1711 12.1168C15.1711 12.267 15.1703 12.4122 15.1711 12.5547H12.8411C12.8403 12.4164 12.8411 12.2723 12.8411 12.1168C12.8411 11.8869 12.8398 11.5894 12.8411 11.3868C12.8436 11.0064 12.8411 10.7299 12.8411 10.3649C12.8297 9.541 12.5797 9.09562 12.2271 8.75909C11.8859 8.41095 11.1998 8.17515 10.415 8.17515C9.68706 8.17515 8.93269 8.41095 8.60286 8.75909C8.27302 9.09562 8.20392 9.541 8.18118 10.3649V15.1095C8.17359 16.2009 8.17865 17.3081 8.18118 18.3941C8.18244 18.9362 8.18118 19.459 8.18118 20C8.18118 20.5358 8.18243 21.0663 8.18118 21.6058C8.17864 22.6905 8.18118 23.7226 8.18118 24.8175C8.18118 25.9124 8.18614 26.8617 8.18118 27.8832C8.18512 28.4146 8.18118 29.0307 8.18118 29.635C8.20392 30.4357 8.27302 30.8811 8.60286 31.2408C8.94407 31.589 9.67569 31.8248 10.415 31.8248C11.2339 31.8248 11.8631 31.589 12.2271 31.2408C12.591 30.8811 12.8297 30.4357 12.8411 29.635C12.8484 29.2256 12.8435 28.9511 12.8411 28.6131C12.8398 28.4242 12.8411 28.2058 12.8411 27.9562C12.8411 27.7872 12.8403 27.6166 12.8411 27.4452H15.1711C15.1711 28.1751 15.1966 28.9051 15.1711 29.635C15.1142 31.2597 14.5152 32.3792 13.7986 33.0987C13.0935 33.8066 11.9447 34.1605 10.3524 34.1605Z" fill="#4A4A4A"/>
+        </svg>
+        <!-- navegation links -->
+        <div class="navegation-links">
+          <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+            <div class="text">
+              <p class="button--semibold-small" id="cb--menu-desktop--option-1">Acadêmico</p>
+            </div>
+          </button>
+          <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+            <div class="text">
+              <p class="button--semibold-small" id="cb--menu-desktop--option-2">Experiências</p>
+            </div>
+          </button>
+          <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+            <div class="text">
+              <p class="button--semibold-small" id="cb--menu-desktop--option-3">Publicações</p>
+            </div>
+          </button>
+          <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+            <div class="text">
+              <p class="button--semibold-small" id="cb--menu-desktop--option-4">Contato</p>
+            </div>
+          </button>
         </div>
-        <div class="paragraph"></div>
+        <!-- vector bg -->
+        <img class="curve-text" id="curve-text-home" src="imgs/bg/texture/curve-text-home.svg" alt="Caique Badaró, Desinger UX/UI, Product Designer, UX Research, User Experience, User Interface">
       </div>
-    </div> -->
+    </div>
     <!-- grid projects -->
-    <div class="cb_grid-card-projects">
-      <div class="column-left">
-        <div class="row-top">
-          <!-- #1 -->
-          <div class="cb_card-project-preview--square" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
-            <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+    <div class="cb--content" id="cb_grid-card-projects">
+      <div class="cb_grid-card-projects">
+        <div class="column-left">
+          <div class="row-top">
+            <!-- #1 -->
+            <div class="cb_card-project-preview--square" onclick="window.location.href='https://caique-badaro.github.io/qa-portfolio/revisao-ux-ui-apoio-entrega.html';">
+              <div class="content">
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
               </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
+            </div>
+            <!-- #2 -->
+            <div class="cb_card-project-preview--rectangle-small--vertical" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+              <div class="content">
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <!-- #2 -->
-          <div class="cb_card-project-preview--rectangle-small--vertical" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
-            <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
-              </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
+          <div class="row-bottom">
+            <!-- #3 -->
+            <div class="cb_card-project-preview--rectangle-larger--horizontal" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+              <div class="content">
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row-bottom">
-          <!-- #3 -->
-          <div class="cb_card-project-preview--rectangle-larger--horizontal" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
-            <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+        <div class="column-right">
+          <div class="row-top">
+            <!-- #4 -->
+            <div class="cb_card-project-preview--rectangle-small--horizontal" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+              <div class="content">
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
               </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
+            </div>
+          </div>
+          <div class="row-bottom">
+            <!-- #5 -->
+            <div class="cb_card-project-preview--square" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+              <div class="content">
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="column-right">
-        <div class="row-top">
-          <!-- #4 -->
-          <div class="cb_card-project-preview--rectangle-small--horizontal" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+      <!-- end, grid projects -->
+
+
+
+      <!-- carousel -->
+      <div class="cb_carousel carousel-no-scroll carousel-container">
+        <!-- carousel btn left -->
+        <a href="#" class="cb_btn--small--primary carousel--arrow-left">
+          <div class="icon-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <mask id="mask0_1112_1131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_1112_1131)">
+                <path d="M8.18332 13.3667C8.30554 13.2444 8.36954 13.0889 8.37532 12.9C8.38065 12.7111 8.32221 12.5556 8.19999 12.4333L4.93332 9.16667H12.3833C12.5722 9.16667 12.7307 9.10267 12.8587 8.97467C12.9862 8.84711 13.05 8.68889 13.05 8.5C13.05 8.31111 12.9862 8.15267 12.8587 8.02467C12.7307 7.89711 12.5722 7.83333 12.3833 7.83333H4.93332L8.19999 4.56667C8.32221 4.44445 8.38065 4.28889 8.37532 4.1C8.36954 3.91111 8.30554 3.75556 8.18332 3.63333C8.0611 3.51111 7.90554 3.45 7.71665 3.45C7.52777 3.45 7.37221 3.51111 7.24999 3.63333L2.84999 8.03333C2.78332 8.08889 2.73599 8.15822 2.70799 8.24133C2.68043 8.32489 2.66665 8.41111 2.66665 8.5C2.66665 8.58889 2.68043 8.67222 2.70799 8.75C2.73599 8.82778 2.78332 8.9 2.84999 8.96667L7.24999 13.3667C7.37221 13.4889 7.52777 13.55 7.71665 13.55C7.90554 13.55 8.0611 13.4889 8.18332 13.3667Z" fill="white"/>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <!-- cards carousel -->
+        <div class="cb_carousel-card">
+          <!-- card project-->
+          <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
             <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
-              </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
-              </div>
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
+            </div>
+          </div>
+          <!-- card project-->
+          <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+            <div class="content">
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
+            </div>
+          </div>
+          <!-- card project-->
+          <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+            <div class="content">
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
+            </div>
+          </div>
+          <!-- card project-->
+          <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
+            <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
+            <div class="content">
+                <div class="title">
+                  <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
+                  <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
+                </div>
+                <div class="footer">
+                  <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
+                    <div class="text"><p class="button--semibold-small">Ver mais</p></div>
+                  </a>
+                </div>
             </div>
           </div>
         </div>
-        <div class="row-bottom">
-          <!-- #5 -->
-          <div class="cb_card-project-preview--square" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
-            <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
-              </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
-              </div>
-            </div>
+        <!-- carousel btn right -->
+        <a href="#" class="cb_btn--small--primary carousel--arrow-right">
+          <div class="icon-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <mask id="mask0_1112_1163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_1112_1163)">
+                <path d="M7.53335 13.3667C7.41113 13.2444 7.34713 13.0889 7.34135 12.9C7.33602 12.7111 7.39446 12.5556 7.51669 12.4333L10.7834 9.16667H3.33335C3.14446 9.16667 2.98602 9.10267 2.85802 8.97467C2.73046 8.84711 2.66669 8.68889 2.66669 8.5C2.66669 8.31111 2.73046 8.15267 2.85802 8.02467C2.98602 7.89711 3.14446 7.83333 3.33335 7.83333H10.7834L7.51669 4.56667C7.39446 4.44445 7.33602 4.28889 7.34135 4.1C7.34713 3.91111 7.41113 3.75556 7.53335 3.63333C7.65558 3.51111 7.81113 3.45 8.00002 3.45C8.18891 3.45 8.34446 3.51111 8.46669 3.63333L12.8667 8.03333C12.9334 8.08889 12.9807 8.15822 13.0087 8.24133C13.0362 8.32489 13.05 8.41111 13.05 8.5C13.05 8.58889 13.0362 8.67222 13.0087 8.75C12.9807 8.82778 12.9334 8.9 12.8667 8.96667L8.46669 13.3667C8.34446 13.4889 8.18891 13.55 8.00002 13.55C7.81113 13.55 7.65558 13.4889 7.53335 13.3667Z" fill="white"/>
+              </g>
+            </svg>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <!-- end, grid projects -->
-
-
-
-    <!-- carousel -->
-    <div class="cb_carousel carousel-no-scroll carousel-container">
-      <!-- carousel btn left -->
-      <a href="#" class="cb_btn--small--primary carousel--arrow-left">
-        <div class="icon-left">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-            <mask id="mask0_1112_1131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
-              <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
-            </mask>
-            <g mask="url(#mask0_1112_1131)">
-              <path d="M8.18332 13.3667C8.30554 13.2444 8.36954 13.0889 8.37532 12.9C8.38065 12.7111 8.32221 12.5556 8.19999 12.4333L4.93332 9.16667H12.3833C12.5722 9.16667 12.7307 9.10267 12.8587 8.97467C12.9862 8.84711 13.05 8.68889 13.05 8.5C13.05 8.31111 12.9862 8.15267 12.8587 8.02467C12.7307 7.89711 12.5722 7.83333 12.3833 7.83333H4.93332L8.19999 4.56667C8.32221 4.44445 8.38065 4.28889 8.37532 4.1C8.36954 3.91111 8.30554 3.75556 8.18332 3.63333C8.0611 3.51111 7.90554 3.45 7.71665 3.45C7.52777 3.45 7.37221 3.51111 7.24999 3.63333L2.84999 8.03333C2.78332 8.08889 2.73599 8.15822 2.70799 8.24133C2.68043 8.32489 2.66665 8.41111 2.66665 8.5C2.66665 8.58889 2.68043 8.67222 2.70799 8.75C2.73599 8.82778 2.78332 8.9 2.84999 8.96667L7.24999 13.3667C7.37221 13.4889 7.52777 13.55 7.71665 13.55C7.90554 13.55 8.0611 13.4889 8.18332 13.3667Z" fill="white"/>
-            </g>
-          </svg>
-        </div>
-      </a>
-      <!-- cards carousel -->
-      <div class="cb_carousel-card">
-        <!-- card project-->
-        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
-          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
-          <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
-              </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
-              </div>
-          </div>
-        </div>
-        <!-- card project-->
-        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
-          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
-          <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
-              </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
-              </div>
-          </div>
-        </div>
-        <!-- card project-->
-        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
-          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
-          <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
-              </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
-              </div>
-          </div>
-        </div>
-        <!-- card project-->
-        <div class="cb_card-project-preview--resposive-mobile" onclick="window.location.href='file:///C:/Users/conta/Desktop/caique-badaro/index.html';">
-          <img class="bg-card-project-preview--mobile" src="imgs/pag-home/design-interface-ux-ui-projetos-AAAAAA.webp" title="XXXXXXXXXx" alt="XXXXXXXXXXXXX">
-          <div class="content">
-              <div class="title">
-                <h4 class="heading-4--bold" aria-label="XXXXXXXXXXXX" title="XXXXXXXXXXX">Revisão UX/UI no site Apoio Entrega</h4>
-                <p class="body-small--regular">Contribuo com a estruturação de fluxos de navegação do site e aplicativo, revisitando-o constantemente em busca de melhorias.</p>
-              </div>
-              <div class="footer">
-                <a href="#" class="cb_btn--small--primary" aria-label="Abrir informações do botão" aria-controls="XXXXXXXXXXXXXXXXXX">
-                  <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-                </a>
-              </div>
-          </div>
-        </div>
-      </div>
-      <!-- carousel btn right -->
-      <a href="#" class="cb_btn--small--primary carousel--arrow-right">
-        <div class="icon-left">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-            <mask id="mask0_1112_1163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
-              <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
-            </mask>
-            <g mask="url(#mask0_1112_1163)">
-              <path d="M7.53335 13.3667C7.41113 13.2444 7.34713 13.0889 7.34135 12.9C7.33602 12.7111 7.39446 12.5556 7.51669 12.4333L10.7834 9.16667H3.33335C3.14446 9.16667 2.98602 9.10267 2.85802 8.97467C2.73046 8.84711 2.66669 8.68889 2.66669 8.5C2.66669 8.31111 2.73046 8.15267 2.85802 8.02467C2.98602 7.89711 3.14446 7.83333 3.33335 7.83333H10.7834L7.51669 4.56667C7.39446 4.44445 7.33602 4.28889 7.34135 4.1C7.34713 3.91111 7.41113 3.75556 7.53335 3.63333C7.65558 3.51111 7.81113 3.45 8.00002 3.45C8.18891 3.45 8.34446 3.51111 8.46669 3.63333L12.8667 8.03333C12.9334 8.08889 12.9807 8.15822 13.0087 8.24133C13.0362 8.32489 13.05 8.41111 13.05 8.5C13.05 8.58889 13.0362 8.67222 13.0087 8.75C12.9807 8.82778 12.9334 8.9 12.8667 8.96667L8.46669 13.3667C8.34446 13.4889 8.18891 13.55 8.00002 13.55C7.81113 13.55 7.65558 13.4889 7.53335 13.3667Z" fill="white"/>
-            </g>
-          </svg>
-        </div>
-      </a>
-    </div>
   </div>
-  <!-- end, projects -->
-
-
-
-
-  <!-- banner first fold -->
-  <!-- <div class="cb--content--first-fold" id="cb_banner--first-fold">
-    <div class="content">
-      <div class="description">
-        <div class="title">
-          <h3 class="heading-3--bold" aria-label="Projeto de UX/UI para o site Apoio Entrega">Revisão UX/UI no site Apoio Entrega</h3>
-        </div>
-        <div class="subtitle">
-          <h6 class="heading-6--subtitle--medium" aria-label="Objetivo do projeto foi melhorar a percepção da página em relação aos preços e promoções">Objetivo: Melhorar a percepção do site como uma plataforma de preços competitivos e promoções impactantes.</h6>
-        </div>
-      </div>
-      <img class="banner--first-fold" src="imgs/banner-principal/design-interface-ux-ui-caique-badaro.webp" alt="Design interface UX/UI Caique Badaró">
-    </div>
-  </div> -->
-  <!-- end, back to top -->
-
-
-
-
-  <!-- 
-  0.0 Transformar grid em primeira dobra de página
-  0.1 Revisar estrutura página, id visual blocos para criar contraste
-  0.2 Atualizar botão card de cursos para versão ghost, ajustar layout
-
-  1.1 >OK< link cards, ajustar para clique abrir na mesma página, remover _blank; 
-  1.2 popular cards de projetos no grid e também no carrossel;
-  1.3 incluir informações nas tags: title, alt, aria-label;
-
-  2.1 >remover se der certo 0.0< revisar banner principal 
-
-  3.1 links menu: desktop e mobile;
-  3.2 script de scroll até as seções via menu;
-
-  4.1 seção experiências
-  4.2 criar script para opção selecionada das experiências, feedback visual;
-  4.3 configurar inserção do conteúdo de forma dinâmica via js;
-  4.4 configurar popup para abrir certificações;
-
-  5.1 >OK< seção postagens, replicar modelo de projetos mobile para todos os breakpoints;
-  5.2 popular carrossel postagens
-
-  6.1 margens top and bottom entre os blocos de conteúdo;
-
-  7.1 >OK< Graduações e Cursos
-  7.2 >OK< Popular carrossel
-  7.3 Configurar popup informações adicionais
-  7.4 Configurar seletor (filtro)
-  -->
-
-
-
- 
-  
-  <!-- graduation academic-->
+  <!-- end, first fold -->
+   <!-- graduation academic-->
   <div class="cb--content" id="cb_academic-graduation">
     <div class="cb--block-intro">
       <div class="content">
         <div class="title">
           <h3 class="heading-3--bold" aria-label="Formação acadêmica e cursos de especialização, Caique Badaró UX/UI Designer">Acadêmico</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="Formação acadêmica e cursos de especialização, Caique Badaró UX/UI Designer">Formação acadêmica, curos de especialização e certificações.</h5>
+          <h5 class="heading-5--subtitle--medium" aria-label="Formação acadêmica e cursos de especialização, Caique Badaró UX/UI Designer">Formação acadêmica, cursos de especialização e certificações.</h5>
         </div>
         <div class="paragraph"></div>
       </div>
@@ -538,7 +514,7 @@
       <!-- cards carousel -->
       <div class="cb_carousel-card">
         <!-- card project graduation academic PUCRS-->
-        <div class="cb_course-and-graduation--card">
+        <div class="cb_course-and-graduation--card curso-geral">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-pucrs.webp" title="PUCRS" alt="Pontifícia Universidade Católica do Rio Grande do Sul - PUCRS">
           </div>
@@ -567,13 +543,13 @@
                 <p class="body-small--regular" alt="Duração do curso: 10 horas">Nov/24</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-10" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
         <!-- card project graduation academic HOTJAR III-->
-        <div class="cb_course-and-graduation--card">
+        <div class="cb_course-and-graduation--card curso-certificacao">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-hotjar.webp" title="Hotjar" alt="Hotjar Learning - Foundations Series">
           </div>
@@ -602,13 +578,13 @@
                 <p class="body-small--regular" alt="Duração do curso: 34 dias">Mai/24</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-11" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
         <!-- card project graduation academic HOTJAR III-->
-        <div class="cb_course-and-graduation--card">
+        <div class="cb_course-and-graduation--card curso-certificacao">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-hotjar.webp" title="Hotjar" alt="Hotjar Learning - Foundations Level II">
           </div>
@@ -637,13 +613,13 @@
                 <p class="body-small--regular" alt="Duração do curso: 34 dias">Mar/24</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-12" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
         <!-- card project graduation academic HOTJAR III-->
-        <div class="cb_course-and-graduation--card">
+        <div class="cb_course-and-graduation--card curso-certificacao">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-hotjar.webp" title="Hotjar" alt="Hotjar Learning - Foundations Level I">
           </div>
@@ -672,13 +648,13 @@
                 <p class="body-small--regular" alt="Duração do curso: 34 dias">Dez/23</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-13" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
         <!-- card project graduation academic UNIBH UX-->
-        <div class="cb_course-and-graduation--card">
+        <div class="cb_course-and-graduation--card curso-pos">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-unibh.webp" title="UniBH" alt="Centro Universitário de Belo Horizonte - UniBH">
           </div>
@@ -707,13 +683,13 @@
                 <p class="body-small--regular" alt="Duração do curso: Agosto de 2022 até Agosto de 2023">Ago/22 - Ago/23</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-14" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
         <!-- card project graduation academic UNIBH Design-->
-        <div class="cb_course-and-graduation--card">
+        <div class="cb_course-and-graduation--card curso-pos">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-unibh.webp" title="UniBH" alt="Centro Universitário de Belo Horizonte - UniBH">
           </div>
@@ -742,13 +718,13 @@
                 <p class="body-small--regular" alt="Duração do curso: Agosto de 2019 até Agosto de 2021">Ago/19 - Ago/21</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-15" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
-        <!-- card project graduation academic UNIBH PP-->
-        <div class="cb_course-and-graduation--card">
+        <!-- card project graduation academic EBAC-->
+        <div class="cb_course-and-graduation--card curso-geral">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-ebac.webp" title="EBAC" alt="Escola Britânica de Artes Criativas - EBAC">
           </div>
@@ -777,13 +753,13 @@
                 <p class="body-small--regular" alt="Duração do curso: Janeiro de 2021 até Dezembro de 2021">Jan/21 - Dez/21</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-16" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
-        <!-- card project graduation academic NEWTON Adm-->
-        <div class="cb_course-and-graduation--card">
+        <!-- card project graduation academic UNIBH PP-->
+        <div class="cb_course-and-graduation--card curso-graduacao">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-unibh.webp" title="UniBH" alt="Centro Universitário de Belo Horizonte - UniBH">
           </div>
@@ -812,13 +788,13 @@
                 <p class="body-small--regular" alt="Duração do curso: Agosto de 2013 até Agosto de 2017">Ago/13 - Ago/17</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-17" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
-        <!-- card project graduation academic EBAC-->
-        <div class="cb_course-and-graduation--card">
+        <!-- card project graduation academic NEWTON Adm-->
+        <div class="cb_course-and-graduation--card curso-geral">
           <div class="header">
             <img class="bg-course-and-graduation--card" width="180" height="64" src="imgs/pag-home/logo-course/design-interface-ux-ui-caique-badaro-graduacao-newton.webp" title="Newton" alt="Centro Universitário Newton">
           </div>
@@ -847,17 +823,11 @@
                 <p class="body-small--regular" alt="Duração do curso: Janeiro de 2011 até Dezembro de 2013">Jan/11 - Dez/13</p>
               </div>
             </div>
-            <button type="button" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
+            <button type="button" id="bottom-sheet-18" class="cb_btn--small--secondary" aria-label="Ver detalhes sobre o curso">
               <div class="text"><p class="button--semibold">+ detalhes</p></div>
             </button>
           </div>
         </div>
-
-
-
-
-
-
       </div>
       <!-- carousel btn right -->
       <a href="#" class="cb_btn--small--primary carousel--arrow-right">
@@ -875,6 +845,48 @@
     </div>
   </div>
   <!-- end, graduation academic -->
+
+
+  <!-- 
+  --- >OK< Transformar grid em primeira dobra de página
+  --- >OK< Revisar estrutura página, id visual blocos para criar contraste
+  --- >OK< Atualizar botão card de cursos para versão ghost, ajustar layout
+
+  --- >OK< link cards, ajustar para clique abrir na mesma página, remover _blank; 
+  1.2 popular cards de projetos no grid e também no carrossel;
+  1.3 incluir informações nas tags: title, alt, aria-label;
+  --- >OK< configurar script para header desktop ficar oculto na primeira dobra
+  --- >OK< configurar script para bottom menu ocultar quando houver scroll para baixo 
+
+  --- >OK< revisar banner principal 
+
+  3.1 links menu: desktop e mobile;
+  3.2 script de scroll até as seções via menu;
+
+  4.0 Duplicar Css para evitar conflito nos filtros;
+  4.1 seção experiências
+  4.2 criar script para opção selecionada das experiências, feedback visual;
+  4.3 configurar inserção do conteúdo de forma dinâmica via js;
+  4.4 configurar popup para abrir certificações;
+  
+
+  --- >OK< seção postagens, replicar modelo de projetos mobile para todos os breakpoints;
+  5.2 popular carrossel postagens
+
+  6.1 margens top and bottom entre os blocos de conteúdo;
+
+  --- >OK< Graduações e Cursos
+  --- >OK< Popular carrossel
+  --- >OK< Configurar popup informações adicionais
+  --- >OK< Configurar seletor (filtro)
+  7.5 Breadcrumbs página de projetos (detalhes)
+  -->
+
+
+
+ 
+  
+
 
   <!-- work experiences-->
   <div class="cb--content" id="cb_work-experiences">

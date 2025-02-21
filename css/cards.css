@@ -73,6 +73,7 @@
   }
   .cb_course-and-graduation--card .content .title .body-regular--semibold {
     display: -webkit-box;
+    height: 40px;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     align-self: stretch;

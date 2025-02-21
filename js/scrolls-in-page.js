@@ -1,38 +1,46 @@
 // Scroll to top
-  document.addEventListener("DOMContentLoaded", function () {
-    const backToTopButton = document.getElementById("cb_back-to-top");
-    const firstFoldBanner = document.getElementById("cb_banner--first-fold");
+document.addEventListener("DOMContentLoaded", function () {
+  const backToTopButton = document.getElementById("cb_back-to-top");
+  const firstFoldBanner = document.getElementById("cb_banner--first-fold");
+  const firstFoldContent = document.getElementById("cb--content--first-fold-home");
 
-    // Função para fazer o scroll suave para o topo
-    function scrollToTop() {
+  // Função para fazer o scroll suave para o topo
+  function scrollToTop() {
+    if (firstFoldBanner) {
       firstFoldBanner.scrollIntoView({ behavior: "smooth" });
+    } else if (firstFoldContent) {
+      firstFoldContent.scrollIntoView({ behavior: "smooth" });
     }
+  }
 
-    // Função para verificar se o banner está visível
-    function toggleBackToTopButton() {
-      const bannerRect = firstFoldBanner.getBoundingClientRect();
-      const isBannerVisible = bannerRect.bottom > 0 && bannerRect.top < window.innerHeight;
+  // Função para verificar se algum dos elementos está visível
+  function toggleBackToTopButton() {
+    const bannerRect = firstFoldBanner ? firstFoldBanner.getBoundingClientRect() : null;
+    const contentRect = firstFoldContent ? firstFoldContent.getBoundingClientRect() : null;
 
-      if (isBannerVisible) {
-        backToTopButton.style.display = "none"; // Oculta o botão
-      } else {
-        backToTopButton.style.display = "block"; // Exibe o botão
-      }
+    const isBannerVisible = bannerRect && bannerRect.bottom > 0 && bannerRect.top < window.innerHeight;
+    const isContentVisible = contentRect && contentRect.bottom > 0 && contentRect.top < window.innerHeight;
+
+    if (isBannerVisible || isContentVisible) {
+      backToTopButton.style.display = "none"; // Oculta o botão
+    } else {
+      backToTopButton.style.display = "block"; // Exibe o botão
     }
+  }
 
-    // Adiciona o evento de clique ao botão
-    if (backToTopButton) {
-      backToTopButton.addEventListener("click", scrollToTop);
-    }
+  // Adiciona o evento de clique ao botão
+  if (backToTopButton) {
+    backToTopButton.addEventListener("click", scrollToTop);
+  }
 
-    // Verifica a visibilidade do banner ao rolar a página
-    window.addEventListener("scroll", toggleBackToTopButton);
+  // Verifica a visibilidade ao rolar a página
+  window.addEventListener("scroll", toggleBackToTopButton);
 
-    // Inicializa a verificação ao carregar a página
-    toggleBackToTopButton();
-  });
+  // Inicializa a verificação ao carregar a página
+  toggleBackToTopButton();
+});
 // End, scroll to top
-// ********************************************
+
 
 // Bottom bar - Scroll e visibilidade
   document.addEventListener("DOMContentLoaded", function () {
@@ -160,3 +168,58 @@
   });
 // End, menu desktop
 // ********************************************
+
+// Ocultar menu página home quando estiver na primeira dobra
+document.addEventListener("DOMContentLoaded", function () {
+  const firstFoldContent = document.getElementById("cb--content--first-fold-home");
+  const headerMenu = document.getElementById("cb_header-menu--desktop");
+
+  if (!firstFoldContent || !headerMenu) return;
+
+  function toggleHeaderVisibility() {
+    const contentRect = firstFoldContent.getBoundingClientRect();
+    const isContentVisible = contentRect.bottom > 0 && contentRect.top < window.innerHeight;
+
+    if (isContentVisible) {
+      headerMenu.style.transition = "transform 0.3s linear, opacity 0.1s linear";
+      headerMenu.style.transform = "translateY(-100%)";
+      headerMenu.style.opacity = "0";
+    } else {
+      headerMenu.style.transform = "translateY(0)";
+      headerMenu.style.opacity = "1";
+    }
+  }
+
+  // Executa a função ao rolar a página
+  window.addEventListener("scroll", toggleHeaderVisibility);
+
+  // Executa a função ao carregar a página
+  toggleHeaderVisibility();
+});
+// End, ------------------------------------------------
+
+// Oculta o menu mobile ao realizar scrool vertical para baixo, exibe quando o comportamento for contrário
+document.addEventListener("DOMContentLoaded", function () {
+  const bottomMenu = document.getElementById("cb_bottom-menu--mobile");
+  let lastScrollY = window.scrollY;
+
+  if (!bottomMenu) return;
+
+  function handleScroll() {
+    if (window.scrollY > lastScrollY) {
+      // Scroll para baixo: oculta o menu
+      bottomMenu.style.transition = "transform 0.3s linear, opacity 0.3s linear";
+      bottomMenu.style.transform = "translateY(100%)";
+      bottomMenu.style.opacity = "0";
+    } else {
+      // Scroll para cima: exibe o menu
+      bottomMenu.style.transform = "translateY(0)";
+      bottomMenu.style.opacity = "1";
+    }
+
+    lastScrollY = window.scrollY;
+  }
+
+  window.addEventListener("scroll", handleScroll);
+});
+// End, -----------------------------------------------

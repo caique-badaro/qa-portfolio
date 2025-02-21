@@ -170,7 +170,7 @@
   }
   .cb--content .cb--block-intro {
     display: flex;
-    padding: 2% 20%;
+    padding: 2% 20% 0 20%;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
@@ -678,7 +678,7 @@
   }
   .cb--content .cb--block-intro {
     display: flex;
-    padding: 5% 10%;
+    padding: 5% 10% 0 10%;
     flex-direction: column;
     align-items: center;
     gap: 40px;
