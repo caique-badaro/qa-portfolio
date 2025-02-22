@@ -168,6 +168,19 @@
     justify-content: center;
     align-items: flex-start;
   }
+  /* pag home styles */
+  #cb_academic-graduation {
+    padding: 5% 0;
+  }
+  #cb_work-experiences {
+    padding: 5% 0 0 0;
+  }
+  #cb_work-experiences {
+    background: var(--neutral-gray, #F8F5F2);
+  }
+  #cb_grid-card-posts {
+    padding: 5% 0 10% 0;
+  }
   .cb--content .cb--block-intro {
     display: flex;
     padding: 2% 20% 0 20%;
@@ -504,7 +517,7 @@
   /* Página home */
   #cb_grid-card-posts .cb_carousel,
   #carousel-academic-graduation {
-    margin: 0 -56px 10% -56px;
+    margin: 0 -56px 0 -56px;
   }
 }/*End versão desktop*/
 
@@ -675,6 +688,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+  }
+  /* pag home styles */
+  #cb_academic-graduation {
+    padding: 10% 0;
+  }
+  #cb_work-experiences {
+    padding: 5% 0;
+  }
+  #cb_work-experiences {
+    background: var(--neutral-gray, #F8F5F2);
+  }
+  #cb_grid-card-posts {
+    padding: 5% 0 10% 0;
   }
   .cb--content .cb--block-intro {
     display: flex;
@@ -1022,7 +1048,7 @@
   /* Página home */
   #cb_grid-card-posts .cb_carousel,
   #carousel-academic-graduation {
-    margin: 0 -56px 10% -56px;
+    margin: 0 -56px 0 -56px;
   }
 }/*End versão desktop*/
 

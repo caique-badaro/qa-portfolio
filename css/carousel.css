@@ -81,6 +81,7 @@
     .cb_carousel .cb_carousel-card .cb_card-data--success:first-child,
     .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:first-child,
     .cb_carousel .cb_carousel-card .selector-button:first-child,
+    .cb_carousel .cb_carousel-card .selector-button-work:first-child,
     .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:first-child {
     	margin-left: 10%;
     }
@@ -90,6 +91,7 @@
     .cb_carousel .cb_carousel-card .cb_card-data--success:last-child,
     .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:last-child,
     .cb_carousel .cb_carousel-card .selector-button:last-child,
+    .cb_carousel .cb_carousel-card .selector-button-work:last-child,,
     .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:last-child {
     	margin-right: 10%;
     }
@@ -113,6 +115,7 @@
     .cb_carousel .cb_carousel-card .cb_card-data--success:first-child,
     .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:first-child,
     .cb_carousel .cb_carousel-card .selector-button:first-child,
+    .cb_carousel .cb_carousel-card .selector-button-work:first-child,
     .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:first-child {
     	margin-left: 10%;
     }
@@ -122,6 +125,7 @@
     .cb_carousel .cb_carousel-card .cb_card-data--success:last-child,
     .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:last-child,
     .cb_carousel .cb_carousel-card .selector-button:last-child,
+    .cb_carousel .cb_carousel-card .selector-button-work:last-child,
     .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:last-child {
     	margin-right: 10%;
     }

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const backToTopButton = document.getElementById("cb_back-to-top");
   const firstFoldBanner = document.getElementById("cb_banner--first-fold");
   const firstFoldContent = document.getElementById("cb--content--first-fold-home");
+  let lastScrollTop = window.scrollY;
 
   // Função para fazer o scroll suave para o topo
   function scrollToTop() {
@@ -22,10 +23,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const isContentVisible = contentRect && contentRect.bottom > 0 && contentRect.top < window.innerHeight;
 
     if (isBannerVisible || isContentVisible) {
-      backToTopButton.style.display = "none"; // Oculta o botão
+      backToTopButton.style.display = "none"; // Oculta o botão se estiver no topo
     } else {
-      backToTopButton.style.display = "block"; // Exibe o botão
+      backToTopButton.style.display = "block"; // Exibe o botão se já passou do topo
     }
+  }
+
+  // Função para ocultar/exibir o botão ao rolar
+  function handleScroll() {
+    let currentScroll = window.scrollY;
+
+    if (currentScroll > lastScrollTop) {
+      // Rolando para baixo -> Oculta o botão
+      backToTopButton.style.opacity = "0";
+      backToTopButton.style.pointerEvents = "none";
+    } else {
+      // Rolando para cima -> Exibe o botão
+      backToTopButton.style.opacity = "1";
+      backToTopButton.style.pointerEvents = "auto";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   }
 
   // Adiciona o evento de clique ao botão
@@ -34,7 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Verifica a visibilidade ao rolar a página
-  window.addEventListener("scroll", toggleBackToTopButton);
+  window.addEventListener("scroll", () => {
+    toggleBackToTopButton();
+    handleScroll();
+  });
 
   // Inicializa a verificação ao carregar a página
   toggleBackToTopButton();
@@ -55,8 +76,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Trocar classe ao clicar no botão
     buttons.forEach(button => {
       button.addEventListener("click", function () {
-        // Resetar classe dos botões
-        buttons.forEach(btn => btn.className = "option-menu--default");
+        // Se o botão clicado for "cb--menu-mobile--option-5", não alterar a classe
+        if (this.id === "cb--menu-mobile--option-5") return;
+
+        // Resetar classe dos botões (exceto o id="cb--menu-mobile--option-5")
+        buttons.forEach(btn => {
+          if (btn.id !== "cb--menu-mobile--option-5") {
+            btn.className = "option-menu--default";
+          }
+        });
 
         // Adicionar classe selecionada ao botão clicado
         this.className = "option-menu--selected";
@@ -88,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const buttonId = Object.keys(scrollTargets).find(key => scrollTargets[key] === entry.target);
         const button = buttonId ? document.getElementById(buttonId) : null;
 
-        if (button) {
+        if (button && button.id !== "cb--menu-mobile--option-5") {
           if (entry.isIntersecting) {
             button.className = "option-menu--selected";
           } else {
@@ -114,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 // End, Bottom bar
-// ********************************************
+
 
 // Menu desktop - Scroll
   document.addEventListener("DOMContentLoaded", function () {
