@@ -1,66 +1,67 @@
 // Scroll to top
-document.addEventListener("DOMContentLoaded", function () {
-  const backToTopButton = document.getElementById("cb_back-to-top");
-  const firstFoldBanner = document.getElementById("cb_banner--first-fold");
-  const firstFoldContent = document.getElementById("cb--content--first-fold-home");
-  let lastScrollTop = window.scrollY;
+  document.addEventListener("DOMContentLoaded", function () {
+    const backToTopButton = document.getElementById("cb_back-to-top");
+    const firstFoldBanner = document.getElementById("cb_banner--first-fold");
+    const firstFoldContent = document.getElementById("cb--content--first-fold-home");
+    let lastScrollTop = window.scrollY;
 
-  // Função para fazer o scroll suave para o topo
-  function scrollToTop() {
-    if (firstFoldBanner) {
-      firstFoldBanner.scrollIntoView({ behavior: "smooth" });
-    } else if (firstFoldContent) {
-      firstFoldContent.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-
-  // Função para verificar se algum dos elementos está visível
-  function toggleBackToTopButton() {
-    const bannerRect = firstFoldBanner ? firstFoldBanner.getBoundingClientRect() : null;
-    const contentRect = firstFoldContent ? firstFoldContent.getBoundingClientRect() : null;
-
-    const isBannerVisible = bannerRect && bannerRect.bottom > 0 && bannerRect.top < window.innerHeight;
-    const isContentVisible = contentRect && contentRect.bottom > 0 && contentRect.top < window.innerHeight;
-
-    if (isBannerVisible || isContentVisible) {
-      backToTopButton.style.display = "none"; // Oculta o botão se estiver no topo
-    } else {
-      backToTopButton.style.display = "block"; // Exibe o botão se já passou do topo
-    }
-  }
-
-  // Função para ocultar/exibir o botão ao rolar
-  function handleScroll() {
-    let currentScroll = window.scrollY;
-
-    if (currentScroll > lastScrollTop) {
-      // Rolando para baixo -> Oculta o botão
-      backToTopButton.style.opacity = "0";
-      backToTopButton.style.pointerEvents = "none";
-    } else {
-      // Rolando para cima -> Exibe o botão
-      backToTopButton.style.opacity = "1";
-      backToTopButton.style.pointerEvents = "auto";
+    // Função para fazer o scroll suave para o topo
+    function scrollToTop() {
+      if (firstFoldBanner) {
+        firstFoldBanner.scrollIntoView({ behavior: "smooth" });
+      } else if (firstFoldContent) {
+        firstFoldContent.scrollIntoView({ behavior: "smooth" });
+      }
     }
 
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-  }
+    // Função para verificar se algum dos elementos está visível
+    function toggleBackToTopButton() {
+      const bannerRect = firstFoldBanner ? firstFoldBanner.getBoundingClientRect() : null;
+      const contentRect = firstFoldContent ? firstFoldContent.getBoundingClientRect() : null;
 
-  // Adiciona o evento de clique ao botão
-  if (backToTopButton) {
-    backToTopButton.addEventListener("click", scrollToTop);
-  }
+      const isBannerVisible = bannerRect && bannerRect.bottom > 0 && bannerRect.top < window.innerHeight;
+      const isContentVisible = contentRect && contentRect.bottom > 0 && contentRect.top < window.innerHeight;
 
-  // Verifica a visibilidade ao rolar a página
-  window.addEventListener("scroll", () => {
+      if (isBannerVisible || isContentVisible) {
+        backToTopButton.style.display = "none"; // Oculta o botão se estiver no topo
+      } else {
+        backToTopButton.style.display = "block"; // Exibe o botão se já passou do topo
+      }
+    }
+
+    // Função para ocultar/exibir o botão ao rolar
+    function handleScroll() {
+      let currentScroll = window.scrollY;
+
+      if (currentScroll > lastScrollTop) {
+        // Rolando para baixo -> Oculta o botão
+        backToTopButton.style.opacity = "0";
+        backToTopButton.style.pointerEvents = "none";
+      } else {
+        // Rolando para cima -> Exibe o botão
+        backToTopButton.style.opacity = "1";
+        backToTopButton.style.pointerEvents = "auto";
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }
+
+    // Adiciona o evento de clique ao botão
+    if (backToTopButton) {
+      backToTopButton.addEventListener("click", scrollToTop);
+    }
+
+    // Verifica a visibilidade ao rolar a página
+    window.addEventListener("scroll", () => {
+      toggleBackToTopButton();
+      handleScroll();
+    });
+
+    // Inicializa a verificação ao carregar a página
     toggleBackToTopButton();
-    handleScroll();
   });
-
-  // Inicializa a verificação ao carregar a página
-  toggleBackToTopButton();
-});
 // End, scroll to top
+// ********************************************
 
 
 // Bottom bar - Scroll e visibilidade
@@ -68,9 +69,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const bottomMenu = document.getElementById("cb_bottom-menu--mobile");
     const buttons = bottomMenu.querySelectorAll(".option-menu--default");
     const scrollTargets = {
+      // pula o 1 (atalho para a home)
       "cb--menu-mobile--option-2": document.getElementById("cb_heatmap"),
       "cb--menu-mobile--option-3": document.getElementById("cb_project-content"),
       "cb--menu-mobile--option-4": document.getElementById("cb_results-content"),
+      // pula o 5 (menu mobile)
+      "cb--menu-mobile--option-6": document.getElementById("first-fold--home"),
+      "cb--menu-mobile--option-7": document.getElementById("cb_academic-graduation"),
+      "cb--menu-mobile--option-8": document.getElementById("cb_grid-card-posts"),
     };
 
     // Trocar classe ao clicar no botão
@@ -142,10 +148,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 // End, Bottom bar
+// ********************************************
 
 
-
-// Menu desktop - Scroll
+// Menu desktop e mobile - Scroll
   document.addEventListener("DOMContentLoaded", function () {
   // Mapeamento de botões e seções
   const menuLinks = {
@@ -165,7 +171,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "cb--menu-desktop--option-1": "cb_heatmap",
     "cb--menu-desktop--option-2": "cb_results-content",
     "cb--menu-desktop--option-3": "cb_project-content",
-    "cb--menu-desktop--option-4": "cb_FAQ-content"
+    "cb--menu-desktop--option-4": "cb_FAQ-content",
+    "cb--menu-popup--mobile--option-1": "first-fold--home",
+    "cb--menu-popup--mobile--option-2": "cb_grid-card-posts"
   };
 
   // Função de scroll suave
@@ -191,64 +199,65 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = "index.html";
     });
   }
-});
-
+  });
 // End, menu desktop
 // ********************************************
 
 
-
 // Ocultar menu página home quando estiver na primeira dobra
-document.addEventListener("DOMContentLoaded", function () {
-  const firstFoldContent = document.getElementById("cb--content--first-fold-home");
-  const headerMenu = document.getElementById("cb_header-menu--desktop");
+  document.addEventListener("DOMContentLoaded", function () {
+    const firstFoldContent = document.getElementById("cb--content--first-fold-home");
+    const headerMenu = document.getElementById("cb_header-menu--desktop");
 
-  if (!firstFoldContent || !headerMenu) return;
+    if (!firstFoldContent || !headerMenu) return;
 
-  function toggleHeaderVisibility() {
-    const contentRect = firstFoldContent.getBoundingClientRect();
-    const isContentVisible = contentRect.bottom > 0 && contentRect.top < window.innerHeight;
+    function toggleHeaderVisibility() {
+      const contentRect = firstFoldContent.getBoundingClientRect();
+      const isContentVisible = contentRect.bottom > 0 && contentRect.top < window.innerHeight;
 
-    if (isContentVisible) {
-      headerMenu.style.transition = "transform 0.3s linear, opacity 0.1s linear";
-      headerMenu.style.transform = "translateY(-100%)";
-      headerMenu.style.opacity = "0";
-    } else {
-      headerMenu.style.transform = "translateY(0)";
-      headerMenu.style.opacity = "1";
+      if (isContentVisible) {
+        headerMenu.style.transition = "transform 0.3s linear, opacity 0.1s linear";
+        headerMenu.style.transform = "translateY(-100%)";
+        headerMenu.style.opacity = "0";
+      } else {
+        headerMenu.style.transform = "translateY(0)";
+        headerMenu.style.opacity = "1";
+      }
     }
-  }
 
-  // Executa a função ao rolar a página
-  window.addEventListener("scroll", toggleHeaderVisibility);
+    // Executa a função ao rolar a página
+    window.addEventListener("scroll", toggleHeaderVisibility);
 
-  // Executa a função ao carregar a página
-  toggleHeaderVisibility();
-});
-// End, ------------------------------------------------
+    // Executa a função ao carregar a página
+    toggleHeaderVisibility();
+  });
+// End
+// ********************************************
+
 
 // Oculta o menu mobile ao realizar scrool vertical para baixo, exibe quando o comportamento for contrário
-document.addEventListener("DOMContentLoaded", function () {
-  const bottomMenu = document.getElementById("cb_bottom-menu--mobile");
-  let lastScrollY = window.scrollY;
+  document.addEventListener("DOMContentLoaded", function () {
+    const bottomMenu = document.getElementById("cb_bottom-menu--mobile");
+    let lastScrollY = window.scrollY;
 
-  if (!bottomMenu) return;
+    if (!bottomMenu) return;
 
-  function handleScroll() {
-    if (window.scrollY > lastScrollY) {
-      // Scroll para baixo: oculta o menu
-      bottomMenu.style.transition = "transform 0.3s linear, opacity 0.3s linear";
-      bottomMenu.style.transform = "translateY(100%)";
-      bottomMenu.style.opacity = "0";
-    } else {
-      // Scroll para cima: exibe o menu
-      bottomMenu.style.transform = "translateY(0)";
-      bottomMenu.style.opacity = "1";
+    function handleScroll() {
+      if (window.scrollY > lastScrollY) {
+        // Scroll para baixo: oculta o menu
+        bottomMenu.style.transition = "transform 0.3s linear, opacity 0.3s linear";
+        bottomMenu.style.transform = "translateY(100%)";
+        bottomMenu.style.opacity = "0";
+      } else {
+        // Scroll para cima: exibe o menu
+        bottomMenu.style.transform = "translateY(0)";
+        bottomMenu.style.opacity = "1";
+      }
+
+      lastScrollY = window.scrollY;
     }
 
-    lastScrollY = window.scrollY;
-  }
-
-  window.addEventListener("scroll", handleScroll);
-});
-// End, -----------------------------------------------
+    window.addEventListener("scroll", handleScroll);
+  });
+// End
+// ********************************************

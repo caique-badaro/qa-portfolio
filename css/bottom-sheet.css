@@ -1,8 +1,8 @@
 /* overlay */
 .cb_overlay--bottom-sheet {
 	z-index: 81;
-	width: 100%;
-	height: 100vh;
+	width: 120%;
+	height: 120vh;
 	background: rgba(34, 34, 34, 0.30);
 	backdrop-filter: blur(4px);
 	position: fixed;
@@ -80,6 +80,11 @@
 	gap: 12px;
 	align-self: stretch;
 	padding: 0 10%;
+}
+.cb--bottom-sheet--linear .menu-option .button-menu-mobile-links {
+	background: none;
+	border: none;
+
 }
 .cb--bottom-sheet--linear .menu-option .item-list {
 	display: flex;

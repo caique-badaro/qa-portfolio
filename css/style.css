@@ -48,7 +48,7 @@
   --gradiente-n-1: linear-gradient(0deg, #EDE7E3 15.01%, #FCE2D1 40.01%, #F4A76F 75%, #E07B39 100%);
   
   /* sombreamento cinza para bg em textos nos cards */
-  --gradiente-n-2: linear-gradient(180deg, rgba(34, 34, 34, 0.00) 0%, rgba(34, 34, 34, 0.70) 33.5%, rgba(34, 34, 34, 0.90) 100%);
+  --gradiente-n-2: linear-gradient(180deg, rgba(34, 34, 34, 0.00) 0%, rgba(34, 34, 34, 0.50) 50%, rgba(34, 34, 34, 0.7) 100%);
   
   /* botões */
   --gradiente-n-4: linear-gradient(180deg, #7BB7FF 0%, #3A8DFF 100%);

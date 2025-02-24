@@ -94,4 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
   if (overlay) {
     overlay.addEventListener("click", closePopup);
   }
+
+  // Captura todos os botões com a classe "button-menu-mobile-links"
+  const menuLinks = document.querySelectorAll(".button-menu-mobile-links");
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", closePopup);
+  });
 });

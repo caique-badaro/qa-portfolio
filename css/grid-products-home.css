@@ -14,7 +14,7 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    background-image: url('https://preview.redd.it/o1bdss5l02941.jpg?width=1080&crop=smart&auto=webp&s=cf86645f46bcbec63c2d7e444a3400561bb90726');
+	    background-image: url('../imgs/pag-home/projects/caique-badaro-design-interface-ux-ui_revisao-home-apoio-entrega_1.webp');
 	    background-position: top;
 	    background-size: cover;
 	    background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    background-image: url('https://preview.redd.it/o1bdss5l02941.jpg?width=1080&crop=smart&auto=webp&s=cf86645f46bcbec63c2d7e444a3400561bb90726');
+	    background-image: url('../imgs/pag-home/projects/caique-badaro-design-interface-ux-ui_default_1.webp');
 	    background-position: top;
 	    background-size: cover;
 	    background-repeat: no-repeat;
@@ -61,7 +61,7 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    background-image: url('https://preview.redd.it/o1bdss5l02941.jpg?width=1080&crop=smart&auto=webp&s=cf86645f46bcbec63c2d7e444a3400561bb90726');
+	    background-image: url('../imgs/pag-home/projects/caique-badaro-design-interface-ux-ui_default_1.webp');
 	    background-position: top;
 	    background-size: cover;
 	    background-repeat: no-repeat;
@@ -85,7 +85,7 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    background-image: url('https://preview.redd.it/o1bdss5l02941.jpg?width=1080&crop=smart&auto=webp&s=cf86645f46bcbec63c2d7e444a3400561bb90726');
+	    background-image: url('../imgs/pag-home/projects/caique-badaro-design-interface-ux-ui_default_1.webp');
 	    background-position: top right;
 	    background-size: cover;
 	    background-repeat: no-repeat;
@@ -109,7 +109,7 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    background-image: url('https://preview.redd.it/o1bdss5l02941.jpg?width=1080&crop=smart&auto=webp&s=cf86645f46bcbec63c2d7e444a3400561bb90726');
+	    background-image: url('../imgs/pag-home/projects/caique-badaro-design-interface-ux-ui_default_1.webp');
 	    background-position: top;
 	    background-size: cover;
 	    background-repeat: no-repeat;
@@ -904,7 +904,7 @@
 				height: auto;
 				position: absolute;
 				left: -8%;
-				bottom: -95%;
+				bottom: -104%;
 			}
 			@keyframes infinite-rotation { from { transform: rotate(0deg); }
 			  to { transform: rotate(360deg); }}
