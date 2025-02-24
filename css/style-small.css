@@ -149,7 +149,74 @@
     align-self: stretch;
     color: var(--neutral-medium, #64574F);
   }
-  
+
+
+  /* pag home styles */
+  #cb_academic-graduation {
+    padding: 10% 0;
+  }
+  #cb_work-experiences {
+    padding: 5% 0 20% 0;
+    background: var(--neutral-gray, #F8F5F2);
+  }
+  #cb_grid-card-posts {
+    padding: 5% 0;
+  }
+  /* contact me */
+  #cb_block-contact .cb--block-intro {
+    display: flex;
+    padding: 5% 10% 10% 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+  }
+  #cb_block-contact .cb--block-intro .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  #cb_block-contact .cb--block-intro .content .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+  }
+  #cb_block-contact .cb--block-intro .content .list-contact {
+    display: flex;
+    padding: 24px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+  #cb_block-contact .cb--block-intro .content .list-contact .contact {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  #cb_block-contact .cb--block-intro .content .list-contact .contact svg path,
+  #cb_block-contact .cb--block-intro .content .list-contact .contact .heading-6--subtitle--medium {
+    fill: var(--orange-brand-primary, #E07B39);
+    color: var(--orange-brand-primary, #E07B39);
+  }
+  #cb_block-contact .cb--block-intro .content .list-contact .contact .arrow-link {
+    padding-left: 8px;
+  }
+  #cb_block-contact .cb--block-intro .content .list-contact .contact .arrow-link path,
+  #cb_block-contact .cb--block-intro .content .list-contact .contact .arrow-link rect {
+    fill: var(--neutral-lighter, #C5B29B);
+  }
+  #cb_block-contact .cb--block-intro .contact-me--image-bg {
+    width: 220px;
+    height: auto;
+    aspect-ratio: 79 / 75;
+    position: absolute;
+    right: -2%;
+    margin-bottom: -100px;
+  }
 
   /* Benchmarking */
   #cb_benchmarking {

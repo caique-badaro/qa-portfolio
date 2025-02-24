@@ -353,6 +353,7 @@
 		/* cards */
 		.cb_card-project-preview--resposive-mobile {
 			min-width: 320px;
+			max-width: 320px;
 			height: 480px;
 		    border: 1px solid var(--neutral-gray, #F8F5F2);
 		    border-radius: 16px;
@@ -656,6 +657,7 @@
 		/* cards */
 		.cb_card-project-preview--resposive-mobile {
 			min-width: 320px;
+			max-width: 320px;
 			height: 480px;
 		    border: 1px solid var(--neutral-gray, #F8F5F2);
 		    border-radius: 16px;
@@ -786,6 +788,7 @@
 		/* cards */
 		.cb_card-project-preview--resposive-mobile {
 			min-width: 320px;
+			max-width: 320px;
 			height: 480px;
 		    border: 1px solid var(--neutral-gray, #F8F5F2);
 		    border-radius: 16px;
@@ -916,6 +919,7 @@
 		/* cards */
 		.cb_card-project-preview--resposive-mobile {
 			min-width: 280px;
+			max-width: 320px;
 			height: 440px;
 		    border: 1px solid var(--neutral-gray, #F8F5F2);
 		    border-radius: 16px;

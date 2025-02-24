@@ -144,58 +144,59 @@ document.addEventListener("DOMContentLoaded", function () {
 // End, Bottom bar
 
 
+
 // Menu desktop - Scroll
   document.addEventListener("DOMContentLoaded", function () {
-    // Referências aos botões do menu desktop
-    const menuDesktop = document.getElementById("cb_header-menu--desktop");
-    const btnHeatmap = document.getElementById("cb--menu-desktop--option-1");
-    const btnResults = document.getElementById("cb--menu-desktop--option-2");
-    const btnProject = document.getElementById("cb--menu-desktop--option-3");
-    const btnFAQ = document.getElementById("cb--menu-desktop--option-4");
-    const btnLogo = document.getElementById("cb--menu-desktop--logo");
+  // Mapeamento de botões e seções
+  const menuLinks = {
+    "cb--menu-desktop--home-1": "first-fold--home",
+    "cb--menu-desktop--home-2": "cb_academic-graduation",
+    "cb--menu-desktop--home-3": "cb_work-experiences",
+    "cb--menu-desktop--home-4": "cb_grid-card-posts",
+    "cb--menu-desktop--home-1-fold-1": "cb_block-contact",
+    "cb--menu-desktop--home-1-fold-2": "cb_academic-graduation",
+    "cb--menu-desktop--home-1-fold-3": "cb_work-experiences",
+    "cb--menu-desktop--home-1-fold-4": "cb_grid-card-posts",
+    "cb--menu-desktop--home-footer-1": "first-fold--home",
+    "cb--menu-desktop--home-footer-2": "cb_grid-card-posts",
+    "cb--menu-desktop--home-footer-3": "cb_work-experiences",
+    "cb--menu-desktop--home-footer-4": "cb_academic-graduation",
+    "cb--menu-desktop--home-footer-5": "cb_block-contact",
+    "cb--menu-desktop--option-1": "cb_heatmap",
+    "cb--menu-desktop--option-2": "cb_results-content",
+    "cb--menu-desktop--option-3": "cb_project-content",
+    "cb--menu-desktop--option-4": "cb_FAQ-content"
+  };
 
-    // Função de scroll suave
-    function smoothScrollTo(elementId) {
-      const targetElement = document.getElementById(elementId);
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+  // Função de scroll suave
+  function smoothScrollTo(elementId) {
+    const targetElement = document.getElementById(elementId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+  }
 
-    // Event listeners para os botões
-    if (btnHeatmap) {
-      btnHeatmap.addEventListener("click", function () {
-        smoothScrollTo("cb_heatmap");
-      });
-    }
-
-    if (btnResults) {
-      btnResults.addEventListener("click", function () {
-        smoothScrollTo("cb_results-content");
-      });
-    }
-
-    if (btnProject) {
-      btnProject.addEventListener("click", function () {
-        smoothScrollTo("cb_project-content");
-      });
-    }
-
-    if (btnFAQ) {
-      btnFAQ.addEventListener("click", function () {
-        smoothScrollTo("cb_FAQ-content");
-      });
-    }
-
-    if (btnLogo) {
-      btnLogo.addEventListener("click", function () {
-        // Redireciona para a página inicial
-        window.location.href = "index.html";
-      });
+  // Adiciona eventos de clique para os botões do menu
+  Object.keys(menuLinks).forEach((buttonId) => {
+    const button = document.getElementById(buttonId);
+    if (button) {
+      button.addEventListener("click", () => smoothScrollTo(menuLinks[buttonId]));
     }
   });
+
+  // Redireciona para a home ao clicar no logo
+  const btnLogo = document.getElementById("cb--menu-desktop--logo");
+  if (btnLogo) {
+    btnLogo.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  }
+});
+
 // End, menu desktop
 // ********************************************
+
+
 
 // Ocultar menu página home quando estiver na primeira dobra
 document.addEventListener("DOMContentLoaded", function () {
