@@ -119,7 +119,7 @@
   }
   .cb_card-data--success {
     border: 1px solid var(--green-feedback-success, #73C08B);
-    background: var(--green-feedback-success, #73C08B);
+    background: var(--green-support-600, #4DA35F);
   }
   .cb_card-data--in-progress {
     border: 1px solid var(--yellow-feedback-warning, #FFDD57);

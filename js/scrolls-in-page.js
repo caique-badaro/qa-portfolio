@@ -155,23 +155,37 @@
   document.addEventListener("DOMContentLoaded", function () {
   // Mapeamento de botões e seções
   const menuLinks = {
+    // Seções principais
     "cb--menu-desktop--home-1": "first-fold--home",
     "cb--menu-desktop--home-2": "cb_academic-graduation",
     "cb--menu-desktop--home-3": "cb_work-experiences",
     "cb--menu-desktop--home-4": "cb_grid-card-posts",
+
+    // Home - Primeira dobra
     "cb--menu-desktop--home-1-fold-1": "cb_block-contact",
     "cb--menu-desktop--home-1-fold-2": "cb_academic-graduation",
     "cb--menu-desktop--home-1-fold-3": "cb_work-experiences",
     "cb--menu-desktop--home-1-fold-4": "cb_grid-card-posts",
+
+    // Footer - Home
     "cb--menu-desktop--home-footer-1": "first-fold--home",
     "cb--menu-desktop--home-footer-2": "cb_grid-card-posts",
     "cb--menu-desktop--home-footer-3": "cb_work-experiences",
     "cb--menu-desktop--home-footer-4": "cb_academic-graduation",
     "cb--menu-desktop--home-footer-5": "cb_block-contact",
+
+    // Footer - Revisão de AP
+    "cb--menu-desktop--revAP-footer-1": "cb_heatmap",
+    "cb--menu-desktop--revAP-footer-2": "cb_results-content",
+    "cb--menu-desktop--revAP-footer-3": "cb_project-content",
+    "cb--menu-desktop--revAP-footer-4": "cb_FAQ-content",
+
+    // Opções do menu principal desktop
     "cb--menu-desktop--option-1": "cb_heatmap",
     "cb--menu-desktop--option-2": "cb_results-content",
     "cb--menu-desktop--option-3": "cb_project-content",
     "cb--menu-desktop--option-4": "cb_FAQ-content",
+    // Opções do menu principal mobile
     "cb--menu-popup--mobile--option-1": "first-fold--home",
     "cb--menu-popup--mobile--option-2": "cb_grid-card-posts"
   };

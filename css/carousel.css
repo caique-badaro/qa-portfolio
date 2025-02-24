@@ -57,11 +57,33 @@
 	.carousel-no-scroll {
 		padding: 0px 20%;
 	}
+    /* margem carrosseis página de projeto */
+    #cb_heatmap .cb_carousel-card,
+    #cb_search .cb_carousel-card,
+    #cb_benchmarking .cb_carousel-card,
+    #cb_results-content .cb_carousel-card,
+    #cb_FAQ-content .faq-list {
+        margin: 5% 0;
+    }
+    #cb_block-contact {
+        padding: 0 0 5% 0;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1599px) {
 	.carousel-no-scroll {
 		padding: 0px 10%;
 	}
+    /* margem carrosseis página de projeto */
+    #cb_heatmap .cb_carousel-card,
+    #cb_search .cb_carousel-card,
+    #cb_benchmarking .cb_carousel-card,
+    #cb_results-content .cb_carousel-card,
+    #cb_FAQ-content .faq-list {
+        margin: 5% 0;
+    }
+    #cb_block-contact {
+        padding: 0 0 5% 0;
+    }
 }
 @media (min-width: 769px) and (max-width: 1023px) {
 	.cb_carousel {
@@ -109,6 +131,18 @@
     .cb_carousel .cb_carousel-card {
         gap: 16px;
     }
+    /* margem carrosseis página de projeto */
+    #cb_heatmap .cb_carousel-card,
+    #cb_search .cb_carousel-card,
+    #cb_benchmarking .cb_carousel-card,
+    #cb_results-content .cb_carousel-card,
+    #cb_FAQ-content .faq-list {
+        margin: 10% 0;
+    }
+    #cb_block-contact {
+        padding: 0 0 5% 0;
+    }
+
     .cb_carousel .cb_carousel-card .cb_heatmap-card:first-child,
     .cb_carousel .cb_carousel-card .cb_matrizCSD-card:first-child,
     .cb_carousel .cb_carousel-card .cb_bench-card:first-child,
