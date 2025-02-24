@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = [
     { id: "bottom-sheet-01", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_heatmap-move-mouse.html" },
@@ -34,73 +33,72 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeButton = document.getElementById("cb_btn-icon-close--bottom-sheet");
   const menuCloseButton = document.getElementById("cb_btn-icon-close--bottom-sheet--menu-mobile");
 
-  // Função para carregar conteúdo HTML no popup
   function loadContent(url, targetDiv) {
     fetch(url)
-      .then(response => response.text())
+      .then(response => {
+        if (!response.ok) throw new Error(`Erro HTTP! Status: ${response.status}`);
+        return response.text();
+      })
       .then(html => {
         targetDiv.innerHTML = html;
         targetDiv.scrollTop = 0;
       })
-      .catch(error => console.error("Erro ao carregar o conteúdo:", error));
+      .catch(error => {
+        console.error("Erro ao carregar o conteúdo:", error);
+        targetDiv.innerHTML = "";
+      });
   }
 
-  // Função para abrir o popup
   function openPopup(url) {
-    loadContent(url, contentDiv);
-    popup.style.display = "flex";
-    overlay.style.display = "flex";
+    if (popup && overlay) {
+      loadContent(url, contentDiv);
+      popup.style.display = "flex";
+      overlay.style.display = "flex";
+    }
   }
 
-  // Função para abrir o popup do menu mobile
   function openMenuPopup(url) {
-    loadContent(url, menuContentDiv);
-    menuPopup.style.display = "flex";
-    overlay.style.display = "flex";
+    if (menuPopup && overlay) {
+      loadContent(url, menuContentDiv);
+      menuPopup.style.display = "flex";
+      overlay.style.display = "flex";
+    }
   }
 
-  // Associa os eventos de clique aos botões
+  function closePopup() {
+    if (popup) popup.style.display = "none";
+    if (menuPopup) menuPopup.style.display = "none";
+    if (overlay) overlay.style.display = "none";
+  }
+
   buttons.forEach(({ id, content }) => {
     const button = document.getElementById(id);
     if (button) {
       button.addEventListener("click", () => openPopup(content));
+    } else {
+      console.warn(`Elemento com ID "${id}" não encontrado.`);
     }
   });
 
-  // Associa os eventos de clique aos botões do menu mobile
   menuButtons.forEach(({ id, content }) => {
     const button = document.getElementById(id);
     if (button) {
       button.addEventListener("click", () => openMenuPopup(content));
+    } else {
+      console.warn(`Elemento com ID "${id}" não encontrado.`);
     }
   });
 
-  // Função para fechar o popup
-  function closePopup() {
-    popup.style.display = "none";
-    menuPopup.style.display = "none";
-    overlay.style.display = "none";
-  }
+  if (closeButton) closeButton.addEventListener("click", closePopup);
+  if (menuCloseButton) menuCloseButton.addEventListener("click", closePopup);
+  if (overlay) overlay.addEventListener("click", closePopup);
 
-  // Fecha o popup ao clicar no botão de fechar do conteúdo padrão
-  if (closeButton) {
-    closeButton.addEventListener("click", closePopup);
-  }
-
-  // Fecha o popup ao clicar no botão de fechar do menu mobile
-  if (menuCloseButton) {
-    menuCloseButton.addEventListener("click", closePopup);
-  }
-
-  // Fecha o popup ao clicar no overlay
-  if (overlay) {
-    overlay.addEventListener("click", closePopup);
-  }
-
-  // Captura todos os botões com a classe "button-menu-mobile-links"
   const menuLinks = document.querySelectorAll(".button-menu-mobile-links");
-
-  menuLinks.forEach(link => {
-    link.addEventListener("click", closePopup);
-  });
+  if (menuLinks.length > 0) {
+    menuLinks.forEach(link => {
+      link.addEventListener("click", closePopup);
+    });
+  } else {
+    console.warn("Nenhum link de menu mobile encontrado.");
+  }
 });

@@ -185,9 +185,7 @@
     "cb--menu-desktop--option-2": "cb_results-content",
     "cb--menu-desktop--option-3": "cb_project-content",
     "cb--menu-desktop--option-4": "cb_FAQ-content",
-    // Opções do menu principal mobile
-    "cb--menu-popup--mobile--option-1": "first-fold--home",
-    "cb--menu-popup--mobile--option-2": "cb_grid-card-posts"
+
   };
 
   // Função de scroll suave
