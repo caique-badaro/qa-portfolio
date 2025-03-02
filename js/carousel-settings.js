@@ -68,3 +68,21 @@ document.addEventListener("DOMContentLoaded", function () {
         console.warn("Nenhum elemento .cb_carousel-card encontrado no DOM.");
     }
 });
+
+
+// carrossel projeto new CAP (mobile)
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.getElementById("carousel-style-guide--new-cap");
+    const scrollSpeed = 3; // Velocidade do scroll (ajuste conforme necessário)
+    let scrollAmount = 0;
+
+    function autoScroll() {
+      if (carousel.scrollWidth - carousel.clientWidth <= carousel.scrollLeft) {
+        carousel.scrollLeft = 0; // Reinicia o scroll ao atingir o fim
+      } else {
+        carousel.scrollLeft += scrollSpeed;
+      }
+    }
+
+    setInterval(autoScroll, 30); // Intervalo do movimento
+  });

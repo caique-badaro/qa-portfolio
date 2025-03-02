@@ -97,6 +97,14 @@
     .cb_carousel .cb_carousel-card {
     	gap: 24px;
     }
+    /* margem carrosseis página de projeto */
+    #cb_heatmap .cb_carousel-card,
+    #cb_search .cb_carousel-card,
+    #cb_benchmarking .cb_carousel-card,
+    #cb_results-content .cb_carousel-card,
+    #cb_FAQ-content .faq-list {
+        margin: 10% 0 5% 0;
+    }
     .cb_carousel .cb_carousel-card .cb_heatmap-card:first-child,
     .cb_carousel .cb_carousel-card .cb_matrizCSD-card:first-child,
     .cb_carousel .cb_carousel-card .cb_bench-card:first-child,
@@ -104,8 +112,9 @@
     .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:first-child,
     .cb_carousel .cb_carousel-card .selector-button:first-child,
     .cb_carousel .cb_carousel-card .selector-button-work:first-child,
-    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:first-child {
-    	margin-left: 10%;
+    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:first-child,
+    .cb_carousel .cb_carousel-card .image-mockup:first-child {
+        margin-left: 10%;
     }
     .cb_carousel .cb_carousel-card .cb_heatmap-card:last-child,
     .cb_carousel .cb_carousel-card .cb_matrizCSD-card:last-child,
@@ -113,9 +122,10 @@
     .cb_carousel .cb_carousel-card .cb_card-data--success:last-child,
     .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:last-child,
     .cb_carousel .cb_carousel-card .selector-button:last-child,
-    .cb_carousel .cb_carousel-card .selector-button-work:last-child,,
-    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:last-child {
-    	margin-right: 10%;
+    .cb_carousel .cb_carousel-card .selector-button-work:last-child,
+    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:last-child,
+    .cb_carousel .cb_carousel-card .image-mockup:last-child {
+        margin-right: 10%;
     }
 }
 
@@ -150,7 +160,8 @@
     .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:first-child,
     .cb_carousel .cb_carousel-card .selector-button:first-child,
     .cb_carousel .cb_carousel-card .selector-button-work:first-child,
-    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:first-child {
+    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:first-child,
+    .cb_carousel .cb_carousel-card .image-mockup:first-child {
     	margin-left: 10%;
     }
     .cb_carousel .cb_carousel-card .cb_heatmap-card:last-child,
@@ -160,7 +171,8 @@
     .cb_carousel .cb_carousel-card .cb_card-project-preview--resposive-mobile:last-child,
     .cb_carousel .cb_carousel-card .selector-button:last-child,
     .cb_carousel .cb_carousel-card .selector-button-work:last-child,
-    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:last-child {
+    .cb_carousel .cb_carousel-card .cb_course-and-graduation--card:last-child,
+    .cb_carousel .cb_carousel-card .image-mockup:last-child {
     	margin-right: 10%;
     }
 }

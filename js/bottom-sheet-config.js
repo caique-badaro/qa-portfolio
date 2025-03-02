@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = [
+    // página projeto AP
     { id: "bottom-sheet-01", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_heatmap-move-mouse.html" },
     { id: "bottom-sheet-02", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_heatmap-click.html" },
     { id: "bottom-sheet-03", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_heatmap-scroll.html" },
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "bottom-sheet-07", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_project-prototype-mobile.html" },
     { id: "bottom-sheet-08", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_project-prototype-desktop.html" },
     { id: "bottom-sheet-09", content: "content/revisao-ux-ui-apoio-entrega/bottom-sheet_modal_project-prototype-link-to-all.html" },
+    // página home
     { id: "bottom-sheet-10", content: "content/home/bottom-sheet_modal_graduation-01-pucrs.html" },
     { id: "bottom-sheet-11", content: "content/home/bottom-sheet_modal_graduation-02-hotjar-level-3.html" },
     { id: "bottom-sheet-12", content: "content/home/bottom-sheet_modal_graduation-03-hotjar-level-2.html" },
@@ -17,7 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
     { id: "bottom-sheet-15", content: "content/home/bottom-sheet_modal_graduation-06-unibh-design.html" },
     { id: "bottom-sheet-16", content: "content/home/bottom-sheet_modal_graduation-07-ebac-ui.html" },
     { id: "bottom-sheet-17", content: "content/home/bottom-sheet_modal_graduation-08-unibh-pp.html" },
-    { id: "bottom-sheet-18", content: "content/home/bottom-sheet_modal_graduation-09-newton-adm.html" }
+    { id: "bottom-sheet-18", content: "content/home/bottom-sheet_modal_graduation-09-newton-adm.html" },
+    // página projeto new CAP
+    { id: "bottom-sheet-19", content: "content/revisao-app-clube-ap/bottom-sheet_modal_clube-ap-mobile--01.html" },
+    { id: "bottom-sheet-20", content: "content/revisao-app-clube-ap/bottom-sheet_modal_clube-ap-mobile--02.html" },
+    { id: "bottom-sheet-21", content: "content/revisao-app-clube-ap/bottom-sheet_modal_clube-ap-mobile--03.html" },
+    { id: "bottom-sheet-22", content: "content/revisao-app-clube-ap/bottom-sheet_modal_clube-ap-mobile--04.html" },
+    { id: "bottom-sheet-23", content: "content/revisao-app-clube-ap/bottom-sheet_modal_clube-ap-mobile--05.html" },
+    { id: "bottom-sheet-24", content: "content/revisao-app-clube-ap/bottom-sheet_modal_project_new-cap-files.html" },
+    { id: "bottom-sheet-25", content: "content/revisao-app-clube-ap/bottom-sheet_modal_project_new-cap-files.html" },
   ];
 
   const menuButtons = [

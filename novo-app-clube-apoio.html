@@ -32,16 +32,28 @@
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/bottom-sheet.css">
+  <link rel="stylesheet" href="css/tooltip-project.css">
+  <link rel="stylesheet" href="css/project.css">
   <script type="text/javascript" src="js/faq.js"></script>
   <script type="text/javascript" src="js/carousel-settings.js"></script>
   <script type="text/javascript" src="js/bottom-sheet-config.js"></script>
   <script type="text/javascript" src="js/date-info-values.js"></script>
   <script type="text/javascript" src="js/scrolls-in-page.js"></script>
-  <script type="text/javascript" src="js/effect-bg.js"></script>
+  <script type="text/javascript" src="js/tooltip-project.js"></script>
   <!-- Hotjar Tracking Code for Caique Badaró UX/UI -->
   <script>(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};h._hjSettings={hjid:2416068,hjsv:6};a=o.getElementsByTagName('head')[0];r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script>
 </head>
 <body>
+
+  <!-- PENDENCIAS 
+
+    2.0 Config tooltip desktop para abrir e ocultar informação
+    2.1 Config para ação de abrir e fechar informação mudar a foto
+    
+    imagens projeto mobile carrossel style guide
+
+  -->
+
 <!-- menu (desktop) -->
   <div class="header-menu" id="cb_header-menu--desktop">
     <!-- logo horizontal -->
@@ -68,16 +80,16 @@
     </svg>
     <div class="navegation-links">
       <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
-        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-1">Análise</p></div>
+        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-new-cap-1">Contexto</p></div>
+      </button>
+      <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-new-cap-2">Processo</p></div>
+      </button>
+      <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
+        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-new-cap-3">Projeto</p></div>
       </button>
       <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
         <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-2">Resultados</p></div>
-      </button>
-      <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
-        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-3">Projeto</p></div>
-      </button>
-      <button aria-label="Ir até a seção" aria-controls="scrolls-in-page" class="cb_btn--small--ghost">
-        <div class="text"><p class="button--semibold-small" id="cb--menu-desktop--option-4">Dúvidas</p></div>
       </button>
     </div>
       <div class="group-icons">
@@ -123,19 +135,19 @@
       <p class="body-small--regular">Home</p>
     </div>
     <!-- #2 -->
-    <div class="option-menu--default" id="cb--menu-mobile--option-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-        <mask id="mask0_1207_923" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
-          <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
+    <div class="option-menu--default" id="cb--menu-mobile--option-9">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <mask id="mask0_1367_1015" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+          <rect width="24" height="24" fill="#D9D9D9"/>
         </mask>
-        <g mask="url(#mask0_1207_923)">
-          <path d="M10.9519 18.25C9.87627 18.25 8.87627 18.0506 7.95192 17.6519C7.02756 17.2532 6.21858 16.7083 5.525 16.0173C5.36987 15.8724 5.29582 15.6981 5.30287 15.4942C5.30992 15.2904 5.39614 15.116 5.56152 14.9712C5.72691 14.8327 5.91601 14.7708 6.12882 14.7856C6.34164 14.8003 6.53074 14.8801 6.69612 15.025C7.26151 15.5673 7.90317 15.9904 8.62112 16.2943C9.33907 16.5981 10.116 16.75 10.9519 16.75C12.6827 16.75 14.157 16.1411 15.375 14.9231C16.593 13.7051 17.2019 12.2308 17.2019 10.5C17.2019 8.76923 16.593 7.29487 15.375 6.0769C14.157 4.85895 12.6827 4.24998 10.9519 4.24998C9.45961 4.24998 8.14902 4.71472 7.02017 5.64422C5.89132 6.57372 5.17433 7.74104 4.8692 9.14617C4.8051 9.37181 4.69677 9.57053 4.54422 9.74233C4.39166 9.91411 4.20256 10 3.97692 10C3.75769 10 3.58302 9.90673 3.4529 9.7202C3.32277 9.53367 3.28462 9.32758 3.33847 9.10195C3.67052 7.28143 4.54296 5.76765 5.95577 4.5606C7.36859 3.35355 9.03397 2.75002 10.9519 2.75002C13.1147 2.75002 14.9471 3.50098 16.449 5.0029C17.9509 6.50482 18.7019 8.33718 18.7019 10.5C18.7019 11.459 18.5471 12.3414 18.2375 13.1471C17.9279 13.9529 17.4904 14.7103 16.925 15.4192L21.3673 19.8616C21.5122 20.0064 21.583 20.1821 21.5798 20.3885C21.5766 20.5949 21.5058 20.7705 21.3673 20.9154C21.2224 21.0603 21.0452 21.1327 20.8356 21.1327C20.626 21.1327 20.4487 21.0603 20.3039 20.9154L15.8615 16.4731C15.1526 17.0384 14.3968 17.4759 13.5942 17.7856C12.7917 18.0952 11.9109 18.25 10.9519 18.25ZM10.6173 12.3693L11.6961 9.05193C11.7397 8.93783 11.8093 8.84296 11.9048 8.76733C12.0003 8.69168 12.1103 8.65385 12.2346 8.65385H12.7481C12.8622 8.65385 12.9628 8.68078 13.05 8.73463C13.1372 8.78848 13.2077 8.86732 13.2615 8.97115L14.6057 11.6539H14.7981C14.9699 11.6539 15.1122 11.7103 15.225 11.8231C15.3378 11.9359 15.3942 12.0782 15.3942 12.25C15.3942 12.4218 15.3378 12.5641 15.225 12.6769C15.1122 12.7897 14.9699 12.8462 14.7981 12.8462H14.2519C14.1442 12.8462 14.0407 12.8167 13.9413 12.7577C13.842 12.6987 13.7654 12.6154 13.7115 12.5077L12.5731 10.2461L11.3673 13.9385C11.3237 14.0628 11.2516 14.1619 11.1509 14.2356C11.0503 14.3093 10.9378 14.3462 10.8134 14.3462H10.4308C10.3 14.3462 10.1817 14.3067 10.076 14.2279C9.97021 14.149 9.89552 14.0474 9.85192 13.9231L8.31152 8.80958L7.03267 12.4519C6.98909 12.5763 6.91922 12.6731 6.82307 12.7423C6.72692 12.8115 6.61154 12.8462 6.47692 12.8462H2.70192C2.53012 12.8462 2.38782 12.7897 2.275 12.6769C2.16218 12.5641 2.10577 12.4218 2.10577 12.25C2.10577 12.0782 2.16219 11.9359 2.27502 11.8231C2.38782 11.7103 2.53012 11.6539 2.70192 11.6539H6.0577L7.56155 7.31155C7.60513 7.18718 7.67981 7.08814 7.78557 7.01443C7.89134 6.94071 8.00961 6.90385 8.14037 6.90385H8.53845C8.67948 6.90385 8.80032 6.94584 8.90095 7.02983C9.00158 7.11379 9.0737 7.22116 9.1173 7.35193L10.6173 12.3693Z" fill="#606060"/>
+        <g mask="url(#mask0_1367_1015)">
+          <path d="M9.94228 7.1923H17.0577C17.2702 7.1923 17.4483 7.26421 17.592 7.40803C17.7358 7.55183 17.8077 7.73003 17.8077 7.94263C17.8077 8.15521 17.7358 8.33329 17.592 8.47688C17.4483 8.62046 17.2702 8.69225 17.0577 8.69225H9.94228C9.72978 8.69225 9.55166 8.62035 9.40793 8.47655C9.26418 8.33273 9.1923 8.15453 9.1923 7.94195C9.1923 7.72935 9.26418 7.55126 9.40793 7.40768C9.55166 7.26409 9.72978 7.1923 9.94228 7.1923ZM9.94228 10.0769H17.0577C17.2702 10.0769 17.4483 10.1488 17.592 10.2926C17.7358 10.4364 17.8077 10.6146 17.8077 10.8272C17.8077 11.0398 17.7358 11.2179 17.592 11.3615C17.4483 11.5051 17.2702 11.5769 17.0577 11.5769H9.94228C9.72978 11.5769 9.55166 11.505 9.40793 11.3612C9.26418 11.2173 9.1923 11.0391 9.1923 10.8266C9.1923 10.614 9.26418 10.4359 9.40793 10.2923C9.55166 10.1487 9.72978 10.0769 9.94228 10.0769ZM11.9231 21.5H5.99997C5.30127 21.5 4.70993 21.258 4.22595 20.774C3.74198 20.29 3.5 19.6987 3.5 19V17.0192C3.5 16.7631 3.58662 16.5485 3.75987 16.3752C3.93311 16.202 4.14777 16.1154 4.40385 16.1154H6.5V4.3077C6.5 3.81058 6.67701 3.38503 7.03103 3.03103C7.38503 2.67701 7.81058 2.5 8.3077 2.5H18.6923C19.1894 2.5 19.6149 2.67701 19.9689 3.03103C20.3229 3.38503 20.5 3.81058 20.5 4.3077V10.9577C20.2435 10.9436 19.9894 10.9593 19.7375 11.0048C19.4855 11.0503 19.2397 11.1256 19 11.2307V4.3077C19 4.21795 18.9711 4.14423 18.9134 4.08653C18.8557 4.02883 18.782 3.99998 18.6923 3.99998H8.3077C8.21795 3.99998 8.14423 4.02883 8.08653 4.08653C8.02883 4.14423 7.99998 4.21795 7.99998 4.3077V16.1154H13.673L12.1731 17.6153H4.99997V19C4.99997 19.2833 5.09581 19.5208 5.28747 19.7125C5.47914 19.9041 5.71664 20 5.99997 20H11.9231V21.5ZM14.1154 20.5961V19.2346C14.1154 19.1169 14.1372 19.0028 14.1808 18.8925C14.2243 18.7821 14.2929 18.6801 14.3865 18.5865L19.5442 13.4538C19.6686 13.3295 19.8028 13.242 19.947 13.1913C20.0911 13.1407 20.2353 13.1154 20.3795 13.1154C20.5367 13.1154 20.6888 13.1449 20.8358 13.2038C20.9827 13.2628 21.1163 13.3513 21.2365 13.4692L22.1615 14.4038C22.2692 14.5282 22.3525 14.6628 22.4115 14.8077C22.4705 14.9525 22.5 15.0974 22.5 15.2423C22.5 15.3871 22.473 15.5346 22.4192 15.6846C22.3653 15.8346 22.2794 15.9718 22.1615 16.0961L17.0288 21.2288C16.9352 21.3224 16.8332 21.391 16.7228 21.4346C16.6125 21.4782 16.4984 21.5 16.3807 21.5H15.0192C14.7631 21.5 14.5485 21.4133 14.3752 21.2401C14.202 21.0668 14.1154 20.8522 14.1154 20.5961ZM15.3077 20.3077H16.2577L19.5038 17.0461L19.0442 16.5711L18.5788 16.1019L15.3077 19.3577V20.3077ZM19.0442 16.5711L18.5788 16.1019L19.5038 17.0461L19.0442 16.5711Z" fill="#606060"/>
         </g>
       </svg>
-      <p class="body-small--regular">Análise</p>
+      <p class="body-small--regular">Contexto</p>
     </div>
     <!-- #3 -->
-    <div class="option-menu--default" id="cb--menu-mobile--option-3">
+    <div class="option-menu--default" id="cb--menu-mobile--option-10">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
         <mask id="mask0_1207_920" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
           <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
@@ -180,10 +192,10 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12"><rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)">
                   <path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
           </svg>
-          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em 2022">2022</p>
+          <p class="body-small--regular" alt="Projetado em 2022/2023" title="Projetado em 2022/2023">2023</p>
         </div>
         <div class="cb_tag-info">
-          <p class="body-small--regular" alt="Revisão UX/UI Apoio Entrega" title="Revisão UX/UI">Revisão UX/UI Apoio Entrega</p>
+          <p class="body-small--regular" alt="Novo App Clube Apoio" title="Revisão UX/UI">Novo App Clube Apoio</p>
         </div>
       </div>
       <div class="close-modal" id="cb_btn-icon-close--bottom-sheet" alt="Fechar" title="Fechar" aria-label="Fechar">
@@ -194,8 +206,7 @@
     </div>
     <!-- content -->
     <div class="col" id="content-bottom-sheet">
-      <!-- content will be loaded here --> 
-
+      <!-- content will be loaded here -->
     </div>
   </div>
 <!-- end bottom sheet -->
@@ -215,7 +226,7 @@
       <!-- content will be loaded here -->
     </div>
   </div>
-<!-- end menu mobile -->
+<!-- end, menu mobile -->
 <!-- overlay -->
   <div class="cb_overlay--bottom-sheet" id="cb_overlay" style="display: none;"></div>
 <!-- end, overlay -->
@@ -238,216 +249,290 @@
     <div class="content">
       <div class="description">
         <div class="title">
-          <h3 class="heading-3--bold" aria-label="Projeto de UX/UI para o site Apoio Entrega">Revisão UX/UI no site Apoio Entrega</h3>
+          <h3 class="heading-3--bold" aria-label="Projeto de UX/UI para o novo app Clube Apoio">App Clube Apoio</h3>
         </div>
         <div class="subtitle">
-          <h6 class="heading-6--subtitle--medium" aria-label="Objetivo do projeto foi melhorar a percepção da página em relação aos preços e promoções">Objetivo: Melhorar a percepção do site como uma plataforma de preços competitivos e promoções impactantes.</h6>
+          <h6 class="heading-6--subtitle--medium" aria-label="Projeto desenvolvido do zero, acumulou mais de 13 mill pedidos no primeiro ano, mantendo um crescimento contínuo.">Projeto desenvolvido do zero, acumulou mais de 13,5 mil pedidos no primeiro ano, mantendo um crescimento contínuo.</h6>
         </div>
       </div>
-      <img class="banner--first-fold" src="imgs/banner-principal/design-interface-ux-ui-caique-badaro.webp" alt="Design interface UX/UI Caique Badaró">
+      <div class="row-btn-title-first-fold">
+        <button type="button" class="cb_btn--small--primary" id="cb--menu-desktop--home-1-fold-5" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
+          <div class="text"><p class="button--semibold-small">Ver apresentação</p></div>
+          <div class="icon-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <mask id="mask0_1367_1038" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+                <rect width="16" height="16" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_1367_1038)">
+                <path d="M6.34998 12.0167C6.12776 12.1611 5.90265 12.1693 5.67465 12.0413C5.44709 11.9138 5.33331 11.7167 5.33331 11.45V4.55001C5.33331 4.28335 5.44709 4.08601 5.67465 3.95801C5.90265 3.83046 6.12776 3.8389 6.34998 3.98335L11.7833 7.43335C11.9833 7.56668 12.0833 7.75557 12.0833 8.00001C12.0833 8.24446 11.9833 8.43335 11.7833 8.56668L6.34998 12.0167ZM6.66665 10.2333L10.1666 8.00001L6.66665 5.76668V10.2333Z" fill="#FBFBFB"/>
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+      <img class="banner--first-fold" id="mockup-banner-first-fold-new-clube-apoio" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_home-novo-app-clube-ap_banner-principal.webp" alt="Design interface UX/UI Caique Badaró">
     </div>
   </div>
 <!-- end, back to top -->
-<!-- heatmaps -->
-  <div class="cb--content" id="cb_heatmap">
+<!-- contexto -->
+  <div class="cb--content" id="cb_contexto--new-cap">
     <div class="cb--block-intro">
+      <div class="cb--block-tag-date">
+        <div class="cb_tag-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+              <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
+          </svg>
+          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em Dezembro de 2022 até Fevereiro de 2023">Dez/22 até Fev/23</p>
+        </div>
+      </div>
       <div class="content">
         <div class="title">
-          <h3 class="heading-3--bold" aria-label="Análise de mapas de calor para UX/UI">Mapas de calor</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="A importância dos mapas de calor para UX/UI">Compreendendo o comportamento do usuário</h5>
+          <h3 class="heading-3--bold" aria-label="Contexto do projeto">Contexto e desafio</h3>
+          <h5 class="heading-5--subtitle--medium" aria-label="Facilitar o abastecimento de lares e negócios">Facilitar o abastecimento de lares e negócios</h5>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">A análise de mapas de calor realizada na página inicial do site Apoio Entrega (2022) forneceu insights valiosos sobre onde os usuários demonstram maior engajamento e interesse. Com base nesses dados, foi possível otimizar o design da página para melhorar a experiência do usuário (UX) e atingir os objetivos do projeto.</p>
-          <p class="body-regular--regular">Mapas de Calor são ferramentas essenciais para análise de interação do usuário em sites e aplicativos. Eles representam, de forma visual, padrões de comportamento, como cliques, movimento do mouse e scroll (rolagem), utilizando cores para destacar áreas com maior ou menor atividade.</p>
+          <p class="body-regular--regular">Antes da criação do novo app, o Clube Apoio contava com uma versão defasada, limitada apenas a consultas de folhetos e sem opção de compra online.</p>
+          <p class="body-regular--regular">Os principais desafios do projeto incluíam <span class="body-regular--bold">aprimorar a experiência do usuário</span> e desenvolver um aplicativo robusto em um <span class="body-regular--bold">prazo curto de apenas três meses</span> - um desafio ainda maior, considerando que o desenvolvimento começou em dezembro, período marcado por pausar de fim de ano.</p>
         </div>
       </div>
     </div>
-    <!-- carousel -->
-    <div class="cb_carousel carousel-no-scroll carousel-container">
-      <!-- cards carousel -->
-      <div class="cb_carousel-card">
-        <!-- card heatmap #1-->
-        <div class="cb_heatmap-card">
-          <div class="title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <mask id="mask0_1137_1179" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1137_1179)">
-                <path d="M5.40386 15.6116V8.18269C5.40386 7.16604 5.76187 6.2997 6.47789 5.58367C7.19392 4.86765 8.06026 4.50964 9.07691 4.50964C10.0936 4.50964 10.9599 4.86765 11.6759 5.58367C12.392 6.2997 12.75 7.16604 12.75 8.18269V14.8269C12.75 15.4282 12.9618 15.9407 13.3855 16.3644C13.8093 16.7881 14.3218 17 14.9231 17C15.5243 17 16.0368 16.7881 16.4606 16.3644C16.8843 15.9407 17.0961 15.4282 17.0961 14.8269V7.39804L15.7884 8.70577C15.6397 8.85449 15.4631 8.92788 15.2586 8.92594C15.0542 8.92403 14.8743 8.8455 14.7192 8.69037C14.5743 8.53525 14.4993 8.35962 14.4942 8.16347C14.4891 7.96732 14.5641 7.79169 14.7192 7.63657L17.2134 5.14234C17.307 5.04874 17.4058 4.98272 17.5096 4.94427C17.6134 4.9058 17.7256 4.88657 17.8461 4.88657C17.9666 4.88657 18.0788 4.9058 18.1827 4.94427C18.2865 4.98272 18.3852 5.04874 18.4788 5.14234L20.973 7.63657C21.1218 7.78527 21.1952 7.9593 21.1932 8.15867C21.1913 8.35802 21.1179 8.53525 20.973 8.69037C20.8179 8.8455 20.6397 8.92564 20.4384 8.93077C20.2372 8.93589 20.059 8.86089 19.9038 8.70577L18.5961 7.39804V14.8269C18.5961 15.8436 18.2381 16.7099 17.5221 17.4259C16.8061 18.142 15.9397 18.5 14.9231 18.5C13.9064 18.5 13.0401 18.142 12.324 17.4259C11.608 16.7099 11.25 15.8436 11.25 14.8269V8.18269C11.25 7.58141 11.0382 7.06891 10.6144 6.64519C10.1907 6.22148 9.6782 6.00962 9.07691 6.00962C8.47563 6.00962 7.96313 6.22148 7.53941 6.64519C7.1157 7.06891 6.90384 7.58141 6.90384 8.18269V15.6116L8.21156 14.3038C8.36026 14.1551 8.53685 14.0817 8.74134 14.0836C8.94582 14.0856 9.12563 14.1641 9.28076 14.3192C9.42563 14.4744 9.50063 14.65 9.50576 14.8461C9.51088 15.0423 9.43588 15.2179 9.28076 15.373L6.78654 17.8673C6.69294 17.9609 6.59422 18.0269 6.49039 18.0653C6.38654 18.1038 6.27436 18.123 6.15384 18.123C6.03334 18.123 5.92116 18.1038 5.81731 18.0653C5.71346 18.0269 5.61475 17.9609 5.52116 17.8673L3.02694 15.373C2.87822 15.2243 2.80482 15.0503 2.80674 14.8509C2.80867 14.6516 2.88207 14.4744 3.02694 14.3192C3.18206 14.1641 3.36026 14.084 3.56154 14.0788C3.76282 14.0737 3.94102 14.1487 4.09614 14.3038L5.40386 15.6116Z" fill="#606060"/>
-              </g>
-            </svg>
-            <h6 class="heading-6--subtitle--medium" aria-label="Mapa de calor, movimento do mouse">Movimento</h6>
-          </div>
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-mapa-de-calor-move-map.webp" alt="Mapa de calor, movimento do mouse" title="Movimento do mouse (mapa de calor)">
-          </div>
-          <div class="footer">
-            <div class="analyzed-device">
-              <p class="body-small--regular"></p>
-              <p class="body-small--regular">Desktop</p>
+    <!-- tooltip project details - desktop -->
+    <div class="cb--block-details-mockup" id="desktop">
+      <div class="col">
+        <!-- tooltip #1L -->
+        <div class="cb_tooptip-left" id="tooltip-new-cap--01">
+          <div class="header">
+            <h6 class="heading-6--subtitle--medium">Implementar a compra on-line</h6>
+            <div class="tootip-icon">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
             </div>
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-01" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
+          </div>
+          <div class="tooltip-content">
+            <div class="point">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="8" viewBox="0 0 28 8" fill="none">
+                <path d="M14 0L0 8H28L14 0Z" fill="#FBFBFB"/>
+              </svg>
+            </div>
+            <div class="text-content">
+              <p class="body-regular--regular">A primeira versão do app não oferecia a opção de compra online, restringindo seu uso apenas à consulta de ofertas para a loja física.</p>
+            </div>
           </div>
         </div>
-        <!-- card heatmap #2-->
-        <div class="cb_heatmap-card">
-          <div class="title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-              <mask id="mask0_1225_3659" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
-                <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1225_3659)">
-                <path d="M11.5558 17.9807C10.1289 17.8589 8.92951 17.2775 7.95773 16.2365C6.98593 15.1955 6.50003 13.95 6.50003 12.5C6.50003 10.9722 7.03476 9.67363 8.10421 8.6042C9.17364 7.53475 10.4722 7.00002 12 7.00002C13.45 7.00002 14.6955 7.48432 15.7365 8.4529C16.7775 9.42148 17.3589 10.6192 17.4807 12.0461L15.8904 11.575C15.6742 10.675 15.2087 9.9375 14.4938 9.3625C13.7789 8.7875 12.9477 8.5 12 8.5C10.9 8.5 9.95834 8.89167 9.17501 9.675C8.39167 10.4583 8.00001 11.4 8.00001 12.5C8.00001 13.45 8.28911 14.2833 8.86731 15C9.44552 15.7167 10.1814 16.1833 11.075 16.4L11.5558 17.9807ZM12 22C10.6858 22 9.45085 21.7506 8.29503 21.252C7.1392 20.7533 6.13378 20.0766 5.27878 19.2217C4.42378 18.3669 3.74691 17.3616 3.24816 16.206C2.74941 15.0504 2.50003 13.8156 2.50003 12.5017C2.50003 11.1877 2.74936 9.95271 3.24803 8.79657C3.7467 7.64042 4.42345 6.63474 5.27828 5.77952C6.13313 4.92429 7.13837 4.24723 8.29401 3.74835C9.44962 3.24947 10.6844 3.00002 11.9983 3.00002C13.3123 3.00002 14.5473 3.2494 15.7034 3.74815C16.8596 4.2469 17.8653 4.92377 18.7205 5.77877C19.5757 6.63377 20.2528 7.63919 20.7517 8.79502C21.2505 9.95084 21.5 11.1858 21.5 12.5V12.8731C21.5 12.9974 21.4865 13.1218 21.4596 13.2462L20 12.8V12.5C20 10.2667 19.225 8.375 17.675 6.825C16.125 5.275 14.2333 4.5 12 4.5C9.76667 4.5 7.87501 5.275 6.32501 6.825C4.77501 8.375 4.00001 10.2667 4.00001 12.5C4.00001 14.7333 4.77501 16.625 6.32501 18.175C7.87501 19.725 9.76667 20.5 12 20.5H12.3L12.7558 21.9596C12.6298 21.9865 12.5038 22 12.3779 22H12ZM19.8192 21.823L15.6057 17.5999L14.9807 19.4999C14.9023 19.714 14.7532 19.8169 14.5334 19.8085C14.3137 19.8002 14.1686 19.689 14.0981 19.4749L12.2558 13.3327C12.2019 13.1622 12.242 13.0099 12.376 12.8759C12.5099 12.742 12.6622 12.7019 12.8327 12.7558L18.9749 14.598C19.189 14.6685 19.3002 14.8137 19.3086 15.0334C19.3169 15.2532 19.214 15.4023 18.9999 15.4807L17.0999 16.1057L21.323 20.3192C21.4166 20.4105 21.4634 20.5169 21.4634 20.6386C21.4634 20.7603 21.4166 20.8679 21.323 20.9615L20.4615 21.823C20.3703 21.9166 20.2638 21.9634 20.1421 21.9634C20.0204 21.9634 19.9128 21.9166 19.8192 21.823Z" fill="#606060"/>
-              </g>
-            </svg>
-            <h6 class="heading-6--subtitle--medium" aria-label="Mapa de calor, cliques na página">Cliques</h6>
-          </div>
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-mapa-de-calor-click-map.webp" alt="Mapa de calor, cliques" title="Cliques (mapa de calor)">
-          </div>
-          <div class="footer">
-            <div class="analyzed-device">
-              <p class="body-small--regular">Mobile</p>
-              <p class="body-small--regular">Desktop</p>
+        <!-- tooltip #2L -->
+        <div class="cb_tooptip-left" id="tooltip-new-cap--02">
+          <div class="header">
+            <h6 class="heading-6--subtitle--medium">Navegação e usabilidade</h6>
+            <div class="tootip-icon">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
             </div>
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-02" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
+          </div>
+          <div class="tooltip-content">
+            <div class="point">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="8" viewBox="0 0 28 8" fill="none">
+                <path d="M14 0L0 8H28L14 0Z" fill="#FBFBFB"/>
+              </svg>
+            </div>
+            <div class="text-content">
+              <p class="body-regular--regular">Apresentava uma navegação complexa e experiência de uso pouco intuitiva, dificultando as ações dos usuários.</p>
+            </div>
           </div>
         </div>
-        <!-- card heatmap #3-->
-        <div class="cb_heatmap-card">
-          <div class="title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-              <mask id="mask0_1225_3658" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
-                <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1225_3658)">
-                <path d="M9.16312 13.1442C8.95054 13.1442 8.77245 13.0723 8.62887 12.9286C8.48529 12.7848 8.41349 12.6067 8.41349 12.3942V5.86343L6.09614 8.18078C5.96089 8.31923 5.79183 8.38845 5.58894 8.38845C5.38606 8.38845 5.20706 8.31672 5.05194 8.17325C4.89681 8.01674 4.81924 7.83784 4.81924 7.63655C4.81924 7.43527 4.89681 7.25707 5.05194 7.10195L8.52117 3.63273C8.61475 3.53915 8.71389 3.47312 8.81859 3.43465C8.92329 3.39619 9.03548 3.37695 9.15514 3.37695C9.27479 3.37695 9.38846 3.39633 9.49614 3.43508C9.60384 3.47385 9.70384 3.53973 9.79614 3.63273L13.2904 7.12695C13.4391 7.27567 13.5125 7.4481 13.5106 7.64425C13.5086 7.8404 13.4301 8.01674 13.275 8.17325C13.1199 8.31672 12.9442 8.39102 12.7481 8.39615C12.5519 8.40129 12.3763 8.32629 12.2212 8.17115L9.91344 5.86343V12.4039C9.91344 12.6136 9.84154 12.7895 9.69774 12.9314C9.55393 13.0733 9.37572 13.1442 9.16312 13.1442ZM14.8448 21.6134C14.7252 21.6134 14.6115 21.5941 14.5038 21.5553C14.3961 21.5166 14.2961 21.4507 14.2038 21.3577L10.7096 17.8634C10.5609 17.7147 10.4875 17.5423 10.4894 17.3462C10.4914 17.15 10.5699 16.9737 10.725 16.8172C10.8801 16.6737 11.0557 16.5994 11.2519 16.5942C11.448 16.5891 11.6237 16.6641 11.7788 16.8192L14.0865 19.127V12.5866C14.0865 12.3768 14.1584 12.2009 14.3022 12.059C14.4461 11.9171 14.6243 11.8462 14.8369 11.8462C15.0495 11.8462 15.2275 11.9181 15.3711 12.0618C15.5147 12.2056 15.5865 12.3837 15.5865 12.5962V19.127L17.9038 16.8096C18.0391 16.6712 18.2082 16.6019 18.411 16.6019C18.6139 16.6019 18.7929 16.6737 18.948 16.8172C19.1032 16.9737 19.1807 17.1526 19.1807 17.3538C19.1807 17.5551 19.1032 17.7333 18.948 17.8884L15.4788 21.3577C15.3852 21.4513 15.2861 21.5173 15.1814 21.5557C15.0767 21.5942 14.9645 21.6134 14.8448 21.6134Z" fill="#606060"/>
-              </g>
-            </svg>
-            <h6 class="heading-6--subtitle--medium" aria-label="Mapa de calor, scroll na página">Scroll na página</h6>
-          </div>
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-mapa-de-calor-scroll-map.webp" alt="Mapa de calor, scroll na página" title="Scroll (mapa de calor)">
-          </div>
-          <div class="footer">
-            <div class="analyzed-device">
-              <p class="body-small--regular">Mobile</p>
-              <p class="body-small--regular">Desktop</p>
+        <!-- tooltip #3L -->
+        <div class="cb_tooptip-left" id="tooltip-new-cap--03">
+          <div class="header">
+            <h6 class="heading-6--subtitle--medium">Ofertas exclusivas</h6>
+            <div class="tootip-icon">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
             </div>
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-03" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
+          </div>
+          <div class="tooltip-content">
+            <div class="point">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="8" viewBox="0 0 28 8" fill="none">
+                <path d="M14 0L0 8H28L14 0Z" fill="#FBFBFB"/>
+              </svg>
+            </div>
+            <div class="text-content">
+              <p class="body-regular--regular">Não oferecia personalização de ofertas para clientes do Clube Apoio com promoções exclusivas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img id="cb_old-clube-ap--img-details" src="imgs/revisao-app-clube-ap/old/design-interface-ux-ui_old-app-clube-ap_0.webp" alt="Versão antiga do Clube Apoio">
+      <div class="col">
+        <!-- tooltip #1R -->
+        <div class="cb_tooptip-right" id="tooltip-new-cap--04">
+          <div class="header">
+            <div class="tootip-icon">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
+            </div>
+            <h6 class="heading-6--subtitle--medium">Conteúdo e experiência de uso</h6>
+          </div>
+          <div class="tooltip-content">
+            <div class="point">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="8" viewBox="0 0 28 8" fill="none">
+                <path d="M14 0L0 8H28L14 0Z" fill="#FBFBFB"/>
+              </svg>
+            </div>
+            <div class="text-content">
+              <p class="body-regular--regular">Dificultava a localização de ofertas da loja física, carecia de categorias organizadas e apresentava informações incompletas.</p>
+            </div>
+          </div>
+        </div>
+        <!-- tooltip #2R -->
+        <div class="cb_tooptip-right" id="tooltip-new-cap--05">
+          <div class="header">
+            <div class="tootip-icon">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
+            </div>
+            <h6 class="heading-6--subtitle--medium">Padronização da identidade visual</h6>
+          </div>
+          <div class="tooltip-content">
+            <div class="point">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="8" viewBox="0 0 28 8" fill="none">
+                <path d="M14 0L0 8H28L14 0Z" fill="#FBFBFB"/>
+              </svg>
+            </div>
+            <div class="text-content">
+              <p class="body-regular--regular">Possuía um design desatualizado, sem padronização visual e sem um Design System para guiar as implementações.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- image mockups heatmap -->
-    <div class="banner--projeto" id="revisao-apoio-home-site_heatmap">
-      <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--heatmap_click.webp" id="revisao-apoio-home-site_heatmap_01" alt="Relatórios mapa de calor">
-      <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--heatmap_scroll.webp" id="revisao-apoio-home-site_heatmap_02" alt="Relatórios mapa de calor">
-      <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--heatmap_move.webp" id="revisao-apoio-home-site_heatmap_03" alt="Relatórios mapa de calor">
+    <!-- tooltip project details - mobile -->
+    <div class="cb--block-details-mockup" id="mobile">
+      <img id="cb_old-clube-ap--img-details" src="imgs/revisao-app-clube-ap/old/design-interface-ux-ui_home-app-clube-ap-old-metade.webp" alt="Versão antiga do Clube Apoio">
+      <div class="col">
+        <!-- tooltip #1R -->
+        <div class="cb_tooptip-right">
+          <div class="header">
+            <div class="tootip-icon" id="bottom-sheet-19">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
+            </div>
+            <h6 class="heading-6--subtitle--medium">Implementar a compra on-line</h6>
+          </div>
+        </div>
+        <!-- tooltip #2R -->
+        <div class="cb_tooptip-right">
+          <div class="header">
+            <div class="tootip-icon" id="bottom-sheet-20">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
+            </div>
+            <h6 class="heading-6--subtitle--medium">Navegação e usabilidade</h6>
+          </div>
+        </div>
+        <!-- tooltip #3R -->
+        <div class="cb_tooptip-right">
+          <div class="header">
+            <div class="tootip-icon" id="bottom-sheet-21">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
+            </div>
+            <h6 class="heading-6--subtitle--medium">Ofertas exclusivas</h6>
+          </div>
+        </div>
+        <!-- tooltip #4R -->
+        <div class="cb_tooptip-right">
+          <div class="header">
+            <div class="tootip-icon" id="bottom-sheet-22">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
+            </div>
+            <h6 class="heading-6--subtitle--medium">Conteúdo e experiência de uso</h6>
+          </div>
+        </div>
+        <!-- tooltip #5R -->
+        <div class="cb_tooptip-right">
+          <div class="header">
+            <div class="tootip-icon" id="bottom-sheet-23">
+              <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <mask id="mask0_1370_1031" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                  <rect width="20" height="20" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1370_1031)">
+                  <path d="M10 15.625C9.81944 15.625 9.67028 15.5661 9.5525 15.4483C9.43417 15.33 9.375 15.1806 9.375 15V10.625H5C4.81944 10.625 4.67028 10.5658 4.5525 10.4475C4.43417 10.3297 4.375 10.1806 4.375 10C4.375 9.81944 4.43417 9.67 4.5525 9.55167C4.67028 9.43389 4.81944 9.375 5 9.375H9.375V5C9.375 4.81944 9.43417 4.67028 9.5525 4.5525C9.67028 4.43417 9.81944 4.375 10 4.375C10.1806 4.375 10.33 4.43417 10.4483 4.5525C10.5661 4.67028 10.625 4.81944 10.625 5V9.375H15C15.1806 9.375 15.33 9.43389 15.4483 9.55167C15.5661 9.67 15.625 9.81944 15.625 10C15.625 10.1806 15.5661 10.3297 15.4483 10.4475C15.33 10.5658 15.1806 10.625 15 10.625H10.625V15C10.625 15.1806 10.5661 15.33 10.4483 15.4483C10.33 15.5661 10.1806 15.625 10 15.625Z" fill="#64574F"/>
+                </g>
+              </svg>
+            </div>
+            <h6 class="heading-6--subtitle--medium">Padronização da identidade visual</h6>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-<!-- end, heatmaps -->
-<!-- search -->
-  <div class="cb--content" id="cb_search">
+<!-- end, contexto -->
+<!-- processo -->
+  <div class="cb--content" id="cb_processo--new-cap">
     <div class="cb--block-intro">
       <div class="content">
         <div class="title">
-          <h3 class="heading-3--bold" aria-label="Pesquisa com usuários">Pesquisa com usuários</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="Insights para otimização do site Apoio Entrega">Insights para otimização do site Apoio Entrega</h5>
+          <h3 class="heading-3--bold" aria-label="Processo de revisão do app Clube Apoio">Processo</h3>
+          <h5 class="heading-5--subtitle--medium" aria-label="Metodologias e otimização das entregas">Metodologias e otimização das entregas</h5>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">Durante o desenvolvimento do projeto, foi realizada uma pesquisa on-line com a base de clientes do site Apoio Entrega. O principal objetivo foi <span class="body-regular--bold">compreender a percepção dos usuários</span> sobre promoções, ferramentas e áreas de maior interesse disponíveis na plataforma.</p>
-          <p class="body-regular--regular">A pesquisa também desempenhou um papel essencial ao identificar funcionalidades e recursos desejados pelos usuários, oferecendo insights valiosos para otimizar a experiência do cliente e alinhar o site às suas expectativas.</p>
-          <p class="body-regular--regular">A pesquisa foi estruturada em três etapas, detalhadas a seguir:</p>
-        </div>
-      </div>
-    </div>
-    <!-- carousel -->
-    <div class="cb_carousel carousel-no-scroll carousel-container">
-      <!-- cards carousel -->
-      <div class="cb_carousel-card">
-        <!-- card matriz CSD -->
-        <div class="cb_matrizCSD-card">
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-pesquisa-usuarios-matriz-csd.webp" alt="Matriz CSD" title="Matriz CSD">
-          </div>
-          <div class="title">
-            <p class="body-small--regular">Etapa 1</p>
-            <h6 class="heading-6--subtitle--medium" aria-label="Matriz CSD">Matriz CSD</h6>
-          </div>
-          <div class="paragraph">
-            <p class="body-regular--regular">Utilizada para identificar os elementos-chave e organizar de forma sistemática o conhecimento existente.</p>
-          </div>
-          <div class="footer">
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-04" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-        <!-- card hipóteses -->
-        <div class="cb_matrizCSD-card">
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-pesquisa-hipotese.webp" alt="Hipóteses" title="Hipóteses">
-          </div>
-          <div class="title">
-            <p class="body-small--regular">Etapa 2</p>
-            <h6 class="heading-6--subtitle--medium" aria-label="Hipóteses">Hipóteses</h6>
-          </div>
-          <div class="paragraph">
-            <p class="body-regular--regular">Definição de hipóteses e suposições fundamentadas a partir dos dados extraídos na Matriz CSD.</p>
-          </div>
-          <div class="footer">
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-05" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-        <!-- card pesquisa -->
-        <div class="cb_matrizCSD-card">
-          <div class="image">
-            <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-pesquisa-formulario.webp" alt="Formulário" title="Formulário">
-          </div>
-          <div class="title">
-            <p class="body-small--regular">Etapa 3</p>
-            <h6 class="heading-6--subtitle--medium" aria-label="Formulário da pesquisa">Pesquisa</h6>
-          </div>
-          <div class="paragraph">
-            <p class="body-regular--regular">Construção do formulário, seleção da base, acompanhamento e análise.</p>
-          </div>
-          <div class="footer">
-            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-06" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-              <div class="text"><p class="button--semibold-small">Ver mais</p></div>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- image mockups heatmap -->
-      <div class="banner--projeto" id="revisao-apoio-home-site_search">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--search-3.webp" id="revisao-apoio-home-site_search-3" alt="Planejamento Matriz CSD">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--search-2.webp" id="revisao-apoio-home-site_search-2" alt="Planejamento Matriz CSD">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--bg--search-1.webp" id="revisao-apoio-home-site_search-1" alt="Planejamento Matriz CSD">
-      </div>
-    </div>
-  </div>
-<!-- end, search -->
-<!-- benchmarking -->
-  <div class="cb--content" id="cb_benchmarking">
-    <div class="cb--block-intro">
-      <div class="content">
-        <div class="title">
-          <h3 class="heading-3--bold" aria-label="Análise de mercado com Benchmarking">Benchmarking</h3>
-        </div>
-        <div class="paragraph">
-          <p class="body-regular--regular">Realizamos uma análise detalhada de benchmarking para comparar as práticas adotadas por concorrentes do setor. Essa avaliação forneceu insights valiosos sobre estratégias eficazes e oportunidades para aprimorar nossa plataforma.</p>
-          <p class="body-regular--regular">O benchmarking é reconhecido como uma estratégia essencial para <span class="body-regular--bold">identificar tendências, implementar melhorias e fortalecer a competitividade</span> de um projeto no mercado.</p>
-          <p class="body-regular--regular">Durante o desenvolvimento, foram seguidos os passos abaixo:</p>
+          <p class="body-regular--regular">O desenvolvimento do novo Clube Apoio exigiu um planejamento estratégico para equilibrar qualidade e prazos curtos. O foco foi <span class="body-regular--bold">garantir eficiência no desenvolvimento sem comprometer a experiência do usuário.</span></p>
+          <p class="body-regular--regular">Para isso, metodologias ágeis foram adaptadas conforme necessário, permitindo um <span class="body-regular--bold">ciclo contínuo de produção, desenvolvimento e validação</span>. Além disso, testes e análises constantes possibilitaram a identificação de melhorias ao longo do processo.</p>
         </div>
       </div>
     </div>
@@ -468,7 +553,7 @@
       </a>
       <!-- cards carousel -->
       <div class="cb_carousel-card">
-        <!-- card benchmarking -->
+        <!-- card processos -->
         <div class="cb_bench-card">
           <div class="row-header">
             <div class="icon">
@@ -595,85 +680,138 @@
       </a>
     </div>
   </div>
-<!-- end, benchmarking -->
+<!-- end, processo -->
 <!-- project -->
-  <div class="cb--content" id="cb_project-content">
+  <div class="cb--content" id="cb_project--new-cap">
     <div class="cb--block-intro">
-      <div class="cb--block-tag-date">
-        <div class="cb_tag-info">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-              <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
-          </svg>
-          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em 2022">Agosto de 2022</p>
-        </div>
-      </div>
       <div class="content">
         <div class="title">
-          <h3 class="heading-3--bold" aria-label="O projeto">O projeto</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="Objetivo: melhorar a percepção do site quanto aos preços e promoções.">Melhorar a percepção do site quanto aos preços e promoções.</h5>
+          <h3 class="heading-3--bold" aria-label="O projeto de revisão do app Clube Apoio">Projeto</h3>
+          <h5 class="heading-5--subtitle--medium" aria-label="Detalhes sobre as soluções e diferenciais">Detalhes sobre as soluções e diferenciais</h5>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">Foram realizadas intervenções estratégicas, destacando as principais promoções logo na primeira seção da página. Trabalhamos também para dar maior evidência aos produtos com preços diferenciados, garantindo que eles se tornassem o centro das atenções para os usuários.</p>
-          <p class="body-regular--regular">Além disso, ampliamos a área de exposição dos produtos do folheto promocional, aumentando sua visibilidade dentro da estrutura da página inicial do site.</p>
-          <p class="body-regular--regular">Confira, a seguir, o material desenvolvido:</p>
+          <p class="body-regular--regular">Para transformar a experiência dos clientes, o novo Clube Apoio passou por uma reformulação completa, <span class="body-regular--bold">criando um ambiente escalável e aprimorando significativamente a usabilidade</span>. O redesign aplicou fundamentos como as heurísticas de Nielsen, tornando a navegação mais intuitiva e reduzindo a carga cognitiva dos usuários.</p>
+          <p class="body-regular--regular">Além disso, a nova versão trouxe melhorias estruturais que garantiram maior estabilidade e adaptação às necessidades do público.</p>
         </div>
       </div>
-      <div class="row-btn">
-        <button type="button" class="cb_btn--large--primary" id="bottom-sheet-07" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-          <div class="text"><p class="button--semibold">Mobile</p></div>
-          <div class="icon-right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <mask id="mask0_1264_930" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1264_930)">
-                <path d="M10.5577 19.8269H13.4423C13.5628 19.8269 13.6667 19.7833 13.7539 19.6962C13.841 19.609 13.8846 19.5051 13.8846 19.3846C13.8846 19.2641 13.841 19.1603 13.7539 19.0731C13.6667 18.9859 13.5628 18.9423 13.4423 18.9423H10.5577C10.4372 18.9423 10.3333 18.9859 10.2462 19.0731C10.159 19.1603 10.1154 19.2641 10.1154 19.3846C10.1154 19.5051 10.159 19.609 10.2462 19.6962C10.3333 19.7833 10.4372 19.8269 10.5577 19.8269ZM7.30773 22.5C6.8026 22.5 6.37503 22.325 6.02503 21.975C5.67503 21.625 5.50003 21.1974 5.50003 20.6923V3.30773C5.50003 2.80259 5.67503 2.37502 6.02503 2.02502C6.37503 1.67502 6.8026 1.50002 7.30773 1.50002H16.6923C17.1974 1.50002 17.625 1.67502 17.975 2.02502C18.325 2.37502 18.5 2.80259 18.5 3.30773V20.6923C18.5 21.1974 18.325 21.625 17.975 21.975C17.625 22.325 17.1974 22.5 16.6923 22.5H7.30773ZM7.00001 17.7692V20.6923C7.00001 20.7692 7.03206 20.8397 7.09616 20.9039C7.16027 20.968 7.2308 21 7.30773 21H16.6923C16.7692 21 16.8397 20.968 16.9039 20.9039C16.968 20.8397 17 20.7692 17 20.6923V17.7692H7.00001ZM7.00001 16.2693H17V5.74998H7.00001V16.2693ZM7.00001 4.25002H17V3.30773C17 3.23079 16.968 3.16027 16.9039 3.09615C16.8397 3.03205 16.7692 3 16.6923 3H7.30773C7.2308 3 7.16027 3.03205 7.09616 3.09615C7.03206 3.16027 7.00001 3.23079 7.00001 3.30773V4.25002Z" fill="#606060"/>
-              </g>
-            </svg>
-          </div>
-        </button>
-        <button type="button" class="cb_btn--large--primary" id="bottom-sheet-08" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-          <div class="text"><p class="button--semibold">Desktop</p></div>
-          <div class="icon-right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <mask id="mask0_1264_929" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#D9D9D9"/>
-              </mask>
-              <g mask="url(#mask0_1264_929)">
-                <path d="M10.5 19V17H4.30773C3.8026 17 3.37503 16.825 3.02503 16.475C2.67503 16.125 2.50003 15.6974 2.50003 15.1923V5.30772C2.50003 4.80259 2.67503 4.37502 3.02503 4.02502C3.37503 3.67502 3.8026 3.50002 4.30773 3.50002H19.6923C20.1974 3.50002 20.625 3.67502 20.975 4.02502C21.325 4.37502 21.5 4.80259 21.5 5.30772V15.1923C21.5 15.6974 21.325 16.125 20.975 16.475C20.625 16.825 20.1974 17 19.6923 17H13.5V19H14.75C14.9628 19 15.141 19.0718 15.2846 19.2154C15.4282 19.359 15.5 19.5372 15.5 19.75C15.5 19.9628 15.4282 20.141 15.2846 20.2846C15.141 20.4282 14.9628 20.5 14.75 20.5H9.25003C9.03721 20.5 8.85901 20.4282 8.71543 20.2846C8.57183 20.141 8.50003 19.9628 8.50003 19.75C8.50003 19.5372 8.57183 19.359 8.71543 19.2154C8.85901 19.0718 9.03721 19 9.25003 19H10.5ZM4.30773 15.5H19.6923C19.7692 15.5 19.8397 15.468 19.9039 15.4039C19.968 15.3398 20 15.2693 20 15.1923V5.30772C20 5.23079 19.968 5.16027 19.9039 5.09615C19.8397 5.03205 19.7692 5 19.6923 5H4.30773C4.2308 5 4.16027 5.03205 4.09616 5.09615C4.03206 5.16027 4.00001 5.23079 4.00001 5.30772V15.1923C4.00001 15.2693 4.03206 15.3398 4.09616 15.4039C4.16027 15.468 4.2308 15.5 4.30773 15.5Z" fill="#606060"/>
-              </g>
-            </svg>
-          </div>
-        </button>
-        <button type="button" class="cb_btn--large--primary" id="bottom-sheet-09" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
-          <div class="text"><p class="button--semibold">Visualizar protótipo</p></div>
-        </button>
+    </div>
+    <!-- structure project -->
+    <div class="cb--block-details-project">
+      <!-- carousel -->
+      <div class="cb_carousel carousel-container style-guide">
+        <!-- cards carousel -->
+        <div class="cb_carousel-card" id="carousel-style-guide--new-cap">
+          <!-- image list -->
+          <img class="image-mockup-style-guide" src="imgs/revisao-app-clube-ap/wireframe-medium-fidelity-0.webp" alt="Guia de estilos App Clube Apoio" title="Guia de estilos">
+          <img class="image-mockup-style-guide" src="imgs/revisao-app-clube-ap/wireframe-medium-fidelity-1.webp" alt="Guia de estilos App Clube Apoio" title="Guia de estilos">
+          <img class="image-mockup-style-guide" src="imgs/revisao-app-clube-ap/wireframe-medium-fidelity-2.webp" alt="Guia de estilos App Clube Apoio" title="Guia de estilos">
+          <img class="image-mockup-style-guide" src="imgs/revisao-app-clube-ap/wireframe-medium-fidelity-3.webp" alt="Guia de estilos App Clube Apoio" title="Guia de estilos">
+          <img class="image-mockup-style-guide" src="imgs/revisao-app-clube-ap/wireframe-medium-fidelity-4.webp" alt="Guia de estilos App Clube Apoio" title="Guia de estilos">
+          <img class="image-mockup-style-guide" src="imgs/revisao-app-clube-ap/wireframe-medium-fidelity-5.webp" alt="Guia de estilos App Clube Apoio" title="Guia de estilos">
+          <img class="image-mockup-style-guide" src="imgs/revisao-app-clube-ap/wireframe-medium-fidelity-6.webp" alt="Guia de estilos App Clube Apoio" title="Guia de estilos">
+          <img class="image-mockup-style-guide" src="imgs/revisao-app-clube-ap/wireframe-medium-fidelity-7.webp" alt="Guia de estilos App Clube Apoio" title="Guia de estilos">
+        </div>
       </div>
-      <div class="banner--projeto" id="revisao-apoio-home-site_projeto">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui-projeto-mockup.webp" alt="Projeto site Apoio Entrega">
+      <!-- image -->
+      <img class="image-style-guide-example" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_image-guia-de-estilos.webp" alt="Ilustração demonstrando a organização do Guia de estilos" title="Guia de estilos Clube Apoio">
+      <!-- block + image -->
+      <div class="row">
+        <div class="column">
+          <img class="image-style-guide-example-square" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_image-guia-de-estilos_2.webp" alt="Ilustração demonstrando a organização do Guia de estilos" title="Guia de estilos Clube Apoio">
+        </div>
+        <div class="col-content">
+          <div class="title">
+            <h3 class="heading-3--bold" aria-label="Handoff">Handoff</h3>
+            <h5 class="heading-5--subtitle--medium" aria-label="Detalhes sobre as soluções e diferenciais">Detalhes sobre as soluções e diferenciais</h5>
+          </div>
+          <div class="paragraph">
+            <p class="body-regular--regular">Para garantir a continuidade e escalabilidade do projeto, um Handoff* bem estruturado foi essencial. E também, uma documentação detalhada do Style Guide** para que a identidade visual e os componentes sejam aplicados de forma correta e consistente em futuras implementações, reduzindo o tempo de desenvolvimento e proporcionando uma experiência facilitada aos usuários.</p>
+            <br/>
+            <p class="label-regular--regular">* Handoff é o processo de transferência do design finalizado de um produto para os times responsáveis pela implementação final da solução.</p>
+            <p class="label-regular--regular">** Style Guide é um conjunto de padrões, diretrizes e componentes que orientam o desenvolvimento de um produto ou projeto.</p>
+          </div>
+        </div>
       </div>
-    </div> 
+      <!-- block + image -->
+      <div class="row-bottom">
+        <div class="col-content">
+          <div class="title">
+            <h3 class="heading-3--bold" aria-label="App Clube Apoio">App Clube Apoio</h3>
+            <h5 class="heading-5--subtitle--medium" aria-label="Um facilitador para o abastecimento de lares e negócios">Um facilitador para o abastecimento de lares e negócios</h5>
+          </div>
+          <div class="paragraph">
+            <p class="body-regular--regular">Vários fatores influenciaram no sucesso do novo Clube Apoio, decisões que podemos classificar como simples como o design centrado no usuário, que garante um impacto significativo nos resultados.</p>
+            <p class="body-regular--regular">Atender a uma necessidade dos usuários que era a compra através do app, melhorar sua experiência de uso com uma jornada simplificada e intuitiva. E o principal, entregar valor para os usuários facilitando sua rotina diária, tornando o ato de realizar um pedido de supermercado simples, rápido e acessível de qualquer lugar.</p>
+            <p class="body-regular--regular">Abaixo, você pode acessar o arquivo do projeto e Style Guide:</p>
+          </div>
+          <div class="row-btn">
+            <button type="button" class="cb_btn--small--primary" id="bottom-sheet-24" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
+              <div class="text"><p class="button--semibold-small">Ver projeto</p></div>
+            </button>
+            <button type="button" class="cb_btn--small--secondary" id="bottom-sheet-25" aria-label="Abrir informações do botão" aria-controls="cb_bottom-sheet--block-content">
+              <div class="text"><p class="button--semibold-small">Documentação</p></div>
+            </button>
+          </div>
+        </div>
+        <div class="column">
+          <video autoplay loop muted playsinline>
+            <source src="imgs/revisao-app-clube-ap/design-interface-ux-ui_video-new-app-clube-ap.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+          </video>
+      </div>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="cb_carousel carousel-container">
+      <!-- carousel btn left -->
+      <a href="#" class="cb_btn--small--primary carousel--arrow-left">
+        <div class="icon-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <mask id="mask0_1112_1131" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+              <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_1112_1131)">
+              <path d="M8.18332 13.3667C8.30554 13.2444 8.36954 13.0889 8.37532 12.9C8.38065 12.7111 8.32221 12.5556 8.19999 12.4333L4.93332 9.16667H12.3833C12.5722 9.16667 12.7307 9.10267 12.8587 8.97467C12.9862 8.84711 13.05 8.68889 13.05 8.5C13.05 8.31111 12.9862 8.15267 12.8587 8.02467C12.7307 7.89711 12.5722 7.83333 12.3833 7.83333H4.93332L8.19999 4.56667C8.32221 4.44445 8.38065 4.28889 8.37532 4.1C8.36954 3.91111 8.30554 3.75556 8.18332 3.63333C8.0611 3.51111 7.90554 3.45 7.71665 3.45C7.52777 3.45 7.37221 3.51111 7.24999 3.63333L2.84999 8.03333C2.78332 8.08889 2.73599 8.15822 2.70799 8.24133C2.68043 8.32489 2.66665 8.41111 2.66665 8.5C2.66665 8.58889 2.68043 8.67222 2.70799 8.75C2.73599 8.82778 2.78332 8.9 2.84999 8.96667L7.24999 13.3667C7.37221 13.4889 7.52777 13.55 7.71665 13.55C7.90554 13.55 8.0611 13.4889 8.18332 13.3667Z" fill="white"/>
+            </g>
+          </svg>
+        </div>
+      </a>
+      <!-- cards carousel -->
+      <div class="cb_carousel-card">
+        <!-- image list -->
+        <img class="image-mockup" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_home-novo-app-clube-ap_6.webp" alt="Nova versão do app Clube Apoio" title="App Clube Apoio">
+        <img class="image-mockup" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_home-novo-app-clube-ap_5.webp" alt="Nova versão do app Clube Apoio" title="App Clube Apoio">
+        <img class="image-mockup" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_home-novo-app-clube-ap_4.webp" alt="Nova versão do app Clube Apoio" title="App Clube Apoio">
+        <img class="image-mockup" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_home-novo-app-clube-ap_3.webp" alt="Nova versão do app Clube Apoio" title="App Clube Apoio">
+        <img class="image-mockup" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_home-novo-app-clube-ap_2.webp" alt="Nova versão do app Clube Apoio" title="App Clube Apoio">
+        <img class="image-mockup" src="imgs/revisao-app-clube-ap/design-interface-ux-ui_home-novo-app-clube-ap_1.webp" alt="Nova versão do app Clube Apoio" title="App Clube Apoio">
+      </div>
+      <!-- carousel btn right -->
+      <a href="#" class="cb_btn--small--primary carousel--arrow-right">
+        <div class="icon-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <mask id="mask0_1112_1163" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+              <rect y="0.5" width="16" height="16" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_1112_1163)">
+              <path d="M7.53335 13.3667C7.41113 13.2444 7.34713 13.0889 7.34135 12.9C7.33602 12.7111 7.39446 12.5556 7.51669 12.4333L10.7834 9.16667H3.33335C3.14446 9.16667 2.98602 9.10267 2.85802 8.97467C2.73046 8.84711 2.66669 8.68889 2.66669 8.5C2.66669 8.31111 2.73046 8.15267 2.85802 8.02467C2.98602 7.89711 3.14446 7.83333 3.33335 7.83333H10.7834L7.51669 4.56667C7.39446 4.44445 7.33602 4.28889 7.34135 4.1C7.34713 3.91111 7.41113 3.75556 7.53335 3.63333C7.65558 3.51111 7.81113 3.45 8.00002 3.45C8.18891 3.45 8.34446 3.51111 8.46669 3.63333L12.8667 8.03333C12.9334 8.08889 12.9807 8.15822 13.0087 8.24133C13.0362 8.32489 13.05 8.41111 13.05 8.5C13.05 8.58889 13.0362 8.67222 13.0087 8.75C12.9807 8.82778 12.9334 8.9 12.8667 8.96667L8.46669 13.3667C8.34446 13.4889 8.18891 13.55 8.00002 13.55C7.81113 13.55 7.65558 13.4889 7.53335 13.3667Z" fill="white"/>
+            </g>
+          </svg>
+        </div>
+      </a>
+    </div>
   </div>
 <!-- end, project -->
 <!-- results -->
   <div class="cb--content" id="cb_results-content">
     <div class="cb--block-intro">
-      <div class="cb--block-tag-date">
-        <div class="cb_tag-info">
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"><mask id="mask0_1055_962" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-              <rect width="12" height="12" fill="#D9D9D9"/></mask><g mask="url(#mask0_1055_962)"><path d="M2.65 10.75C2.4 10.75 2.1875 10.6625 2.0125 10.4875C1.8375 10.3125 1.75 10.1 1.75 9.85V3.15C1.75 2.9 1.8375 2.6875 2.0125 2.5125C2.1875 2.3375 2.4 2.25 2.65 2.25H3.35V1.5625C3.35 1.45417 3.38533 1.3645 3.456 1.2935C3.527 1.22283 3.61667 1.1875 3.725 1.1875C3.84167 1.1875 3.93533 1.225 4.006 1.3C4.077 1.375 4.1125 1.46667 4.1125 1.575V2.25H7.9V1.55C7.9 1.45 7.9375 1.3645 8.0125 1.2935C8.0875 1.22283 8.175 1.1875 8.275 1.1875C8.38333 1.1875 8.47283 1.225 8.5435 1.3C8.6145 1.375 8.65 1.4625 8.65 1.5625V2.25H9.35C9.6 2.25 9.8125 2.3375 9.9875 2.5125C10.1625 2.6875 10.25 2.9 10.25 3.15V9.85C10.25 10.1 10.1625 10.3125 9.9875 10.4875C9.8125 10.6625 9.6 10.75 9.35 10.75H2.65ZM2.65 10H9.35C9.39167 10 9.42717 9.9855 9.4565 9.9565C9.4855 9.92717 9.5 9.89167 9.5 9.85V5.15H2.5V9.85C2.5 9.89167 2.51467 9.92717 2.544 9.9565C2.573 9.9855 2.60833 10 2.65 10ZM2.5 4.4H9.5V3.15C9.5 3.10833 9.4855 3.073 9.4565 3.044C9.42717 3.01467 9.39167 3 9.35 3H2.65C2.60833 3 2.573 3.01467 2.544 3.044C2.51467 3.073 2.5 3.10833 2.5 3.15V4.4Z" fill="#6C6C6C"/></g>
-          </svg>
-          <p class="body-small--regular" alt="Projetado em 2022" title="Projetado em 2022">Outubro de 2022</p>
-        </div>
-      </div>
       <div class="content">
         <div class="title">
           <h3 class="heading-3--bold" aria-label="Resultados do projeto">Resultados</h3>
-          <h5 class="heading-5--subtitle--medium" aria-label="Os novos componentes alcançaram o top 3 mais clicados">Os novos componentes alcançaram o top 3 mais clicados</h5>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">Após a implementação do projeto, houve o acompanhamento da repercussão das mudanças no site Apoio Entrega, principalmente quanto ao objetivo de <span class="body-regular--bold">aprimorar a percepção do site como uma plataforma de preços competitivos e promoções impactantes</span>.</p>
-          <p class="body-regular--regular">Além disso, conseguimos mapear a influência do projeto na percepção de variedade de produtos em nossa página, conforme apresentado abaixo:</p>
+          <p class="body-regular--regular">Após o lançamento do novo app Clube Apoio, foi implementado um acompanhamento contínuo da satisfação dos usuários por meio de pesquisas realizadas após a finalização dos pedidos — uma prática que não acontecia na versão anterior. Esse monitoramento permitiu identificar oportunidades de melhoria e avaliar a receptividade do público em relação aos novos recursos.</p>
+          <p class="body-regular--regular">Desde o primeiro mês, o retorno foi extremamente positivo, refletindo um <span class="body-regular--bold">crescimento constante e um alto nível de satisfação entre os usuários</span>, consolidando o sucesso do projeto.</p>
         </div>
       </div>
     </div>
@@ -697,13 +835,18 @@
         <div class="cb_card-data--success">
           <div class="objective-icon">
             <!-- icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><mask id="mask0_1109_938" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48"><rect width="48" height="48" fill="#D9D9D9"/></mask>
-              <g mask="url(#mask0_1109_938)"><path d="M16.7001 29.7308C17.218 31.2154 17.9622 32.3949 18.9328 33.2692C19.9033 34.1436 21.1206 34.7513 22.5847 35.0923V36.25C22.5847 36.6141 22.7212 36.9327 22.9943 37.2057C23.2673 37.4788 23.5859 37.6153 23.95 37.6153C24.3141 37.6153 24.6327 37.4788 24.9058 37.2057C25.1788 36.9327 25.3154 36.6141 25.3154 36.25V35.1923C26.8666 34.982 28.2711 34.3993 29.5288 33.4442C30.7865 32.4891 31.4154 31.041 31.4154 29.1C31.4154 27.7 31.0025 26.4615 30.1769 25.3846C29.3513 24.3077 27.7385 23.3359 25.3385 22.4692C23.2359 21.7513 21.8397 21.1295 21.15 20.6038C20.4602 20.0782 20.1154 19.3436 20.1154 18.4C20.1154 17.4564 20.4686 16.6897 21.175 16.1C21.8814 15.5102 22.8564 15.2153 24.1 15.2153C25.141 15.2153 25.9808 15.4609 26.6193 15.9519C27.2577 16.4429 27.7487 17.0589 28.0923 17.7999L30.5615 16.8077C30.1435 15.7436 29.4621 14.8327 28.5173 14.075C27.5724 13.3173 26.5384 12.8949 25.4154 12.8077V11.75C25.4154 11.3859 25.2788 11.0673 25.0058 10.7942C24.7327 10.5212 24.4141 10.3846 24.05 10.3846C23.6859 10.3846 23.3673 10.5212 23.0943 10.7942C22.8212 11.0673 22.6847 11.3859 22.6847 11.75V12.8077C20.9795 13.1359 19.6699 13.8276 18.7558 14.8827C17.8417 15.9378 17.3847 17.1103 17.3847 18.4C17.3847 19.9026 17.8398 21.1115 18.7501 22.0269C19.6603 22.9423 21.1436 23.7692 23.2001 24.5077C25.3257 25.2872 26.7776 25.9865 27.5558 26.6057C28.334 27.225 28.7231 28.0564 28.7231 29.1C28.7231 30.3539 28.2705 31.2648 27.3654 31.8327C26.4603 32.4007 25.4417 32.6846 24.3096 32.6846C23.1776 32.6846 22.1673 32.3462 21.2789 31.6693C20.3904 30.9924 19.7077 30.0026 19.2308 28.7001L16.7001 29.7308ZM24.0034 43C21.3755 43 18.9054 42.5013 16.5932 41.5039C14.2809 40.5066 12.2695 39.1531 10.5591 37.4435C8.84859 35.7338 7.49448 33.7233 6.49671 31.412C5.49894 29.1008 5.00006 26.6312 5.00006 24.0033C5.00006 21.3755 5.49873 18.9054 6.49606 16.5931C7.49339 14.2808 8.84689 12.2695 10.5566 10.559C12.2663 8.84858 14.2767 7.49446 16.588 6.4967C18.8992 5.49893 21.3688 5.00005 23.9967 5.00005C26.6245 5.00005 29.0946 5.49871 31.4069 6.49605C33.7192 7.49338 35.7305 8.84688 37.441 10.5565C39.1514 12.2662 40.5055 14.2767 41.5033 16.588C42.5011 18.8992 43 21.3688 43 23.9966C43 26.6245 42.5013 29.0946 41.504 31.4068C40.5066 33.7191 39.1531 35.7305 37.4435 37.4409C35.7338 39.1514 33.7233 40.5055 31.412 41.5033C29.1008 42.5011 26.6312 43 24.0034 43ZM24 40C28.4667 40 32.25 38.45 35.35 35.35C38.45 32.25 40 28.4667 40 24C40 19.5333 38.45 15.75 35.35 12.65C32.25 9.55 28.4667 8 24 8C19.5333 8 15.75 9.55 12.65 12.65C9.55001 15.75 8.00001 19.5333 8.00001 24C8.00001 28.4667 9.55001 32.25 12.65 35.35C15.75 38.45 19.5333 40 24 40Z" fill="white"/></g>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <mask id="mask0_1377_955" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
+                <rect width="48" height="48" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_1377_955)">
+                <path d="M12 43C10.6 43 9.41667 42.5167 8.45 41.55C7.48333 40.5834 7 39.4 7 38V33H13V5.40002L15.75 7.75002L18.6 5.40002L21.4 7.75002L24.2 5.40002L27 7.75002L29.8 5.40002L32.6 7.75002L35.4 5.40002L38.25 7.75002L41 5.40002V38C41 39.4 40.5167 40.5834 39.55 41.55C38.5833 42.5167 37.4 43 36 43H12ZM36 40C36.5667 40 37.0413 39.808 37.424 39.424C37.808 39.0414 38 38.5667 38 38V10H16V33H34V38C34 38.5667 34.192 39.0414 34.576 39.424C34.9587 39.808 35.4333 40 36 40ZM18.4 17.5V14.5H29.75V17.5H18.4ZM18.4 23.5V20.5H29.75V23.5H18.4ZM33.9 17.75C33.4 17.75 32.9747 17.5834 32.624 17.25C32.2747 16.9167 32.1 16.5 32.1 16C32.1 15.5 32.2747 15.0834 32.624 14.75C32.9747 14.4167 33.4 14.25 33.9 14.25C34.3667 14.25 34.7747 14.4167 35.124 14.75C35.4747 15.0834 35.65 15.5 35.65 16C35.65 16.5 35.4747 16.9167 35.124 17.25C34.7747 17.5834 34.3667 17.75 33.9 17.75ZM33.9 23.75C33.4 23.75 32.9747 23.5834 32.624 23.25C32.2747 22.9167 32.1 22.5 32.1 22C32.1 21.5 32.2747 21.0834 32.624 20.75C32.9747 20.4167 33.4 20.25 33.9 20.25C34.3667 20.25 34.7747 20.4167 35.124 20.75C35.4747 21.0834 35.65 21.5 35.65 22C35.65 22.5 35.4747 22.9167 35.124 23.25C34.7747 23.5834 34.3667 23.75 33.9 23.75ZM12 40H31V36H10V38C10 38.5667 10.1913 39.0414 10.574 39.424C10.958 39.808 11.4333 40 12 40Z" fill="#F8F5F2"/>
+              </g>
             </svg>
           </div>
           <div class="content">
-            <p class="body-regular--bold">Crescimento da satisfação dos clientes com o preço dos produtos</p>
-            <p class="heading-1--bold"><span>+</span>18<span>%</span></p>
+            <p class="body-regular--bold">Implementação da opção de compra online no aplicativo alcançando mais de</p>
+            <p class="heading-1--bold"><span>13K</span><span class="body-regular--regular" style="font-size: 16px;"> pedidos</span></p>
           </div>
           <div class="objective-validation">
             <!-- icon sucess -->
@@ -740,8 +883,8 @@
             </svg>
           </div>
           <div class="content">
-            <p class="body-regular--bold">Crescimento da satisfação dos clientes com ofertas e promoções</p>
-            <p class="heading-1--bold"><span>+</span>14<span>%</span></p>
+            <p class="body-regular--bold">Avaliação positiva do CSAT* desde o lançamento do app até os dias atuais</p>
+            <p class="heading-1--bold"><span></span>4,5<span class="body-regular--regular" style="font-size: 16px;"> máx.5</span></p>
           </div>
           <div class="objective-validation">
             <!-- icon sucess -->
@@ -768,24 +911,24 @@
         <div class="cb_card-data--success">
           <div class="objective-icon">
             <!-- icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
-              <mask id="mask0_1233_935" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                <rect width="24" height="24" fill="#ffffff"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 25" fill="none">
+              <mask id="mask0_1233_934" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
+                <rect y="0.5" width="24" height="24" fill="#FFFFFF"/>
               </mask>
-              <g mask="url(#mask0_1233_935)">
-                <path d="M12.3077 21.5C11.8026 21.5 11.375 21.325 11.025 20.975C10.675 20.625 10.5 20.1974 10.5 19.6923V12.3077C10.5 11.8026 10.675 11.375 11.025 11.025C11.375 10.675 11.8026 10.5 12.3077 10.5H19.6923C20.1974 10.5 20.625 10.675 20.975 11.025C21.325 11.375 21.5 11.8026 21.5 12.3077V19.6923C21.5 20.1974 21.325 20.625 20.975 20.975C20.625 21.325 20.1974 21.5 19.6923 21.5H12.3077ZM12.3077 20H19.6923C19.7692 20 19.8397 19.968 19.9039 19.9039C19.968 19.8397 20 19.7692 20 19.6923V12.3077C20 12.2308 19.968 12.1603 19.9039 12.0961C19.8397 12.032 19.7692 12 19.6923 12H12.3077C12.2308 12 12.1603 12.032 12.0962 12.0961C12.0321 12.1603 12 12.2308 12 12.3077V19.6923C12 19.7692 12.0321 19.8397 12.0962 19.9039C12.1603 19.968 12.2308 20 12.3077 20ZM6.50003 16.8654V8.30772C6.50003 7.80259 6.67503 7.37502 7.02503 7.02502C7.37503 6.67502 7.8026 6.50002 8.30773 6.50002H16.8654C17.0782 6.50002 17.2564 6.57182 17.4 6.71542C17.5436 6.85901 17.6154 7.03721 17.6154 7.25002C17.6154 7.46284 17.5436 7.64104 17.4 7.78462C17.2564 7.92821 17.0782 8 16.8654 8H8.30773C8.2308 8 8.16027 8.03205 8.09616 8.09615C8.03206 8.16027 8.00001 8.23079 8.00001 8.30772V16.8654C8.00001 17.0782 7.92821 17.2564 7.78463 17.4C7.64105 17.5436 7.46285 17.6153 7.25003 17.6153C7.03721 17.6153 6.85901 17.5436 6.71543 17.4C6.57183 17.2564 6.50003 17.0782 6.50003 16.8654ZM2.50003 12.8654V4.30772C2.50003 3.80259 2.67503 3.37502 3.02503 3.02502C3.37503 2.67502 3.8026 2.50002 4.30773 2.50002H12.8654C13.0782 2.50002 13.2564 2.57182 13.4 2.71542C13.5436 2.85901 13.6154 3.03721 13.6154 3.25002C13.6154 3.46284 13.5436 3.64104 13.4 3.78462C13.2564 3.92821 13.0782 4 12.8654 4H4.30773C4.2308 4 4.16027 4.03205 4.09616 4.09615C4.03206 4.16027 4.00001 4.23079 4.00001 4.30772V12.8654C4.00001 13.0782 3.92821 13.2564 3.78463 13.4C3.64105 13.5436 3.46285 13.6153 3.25003 13.6153C3.03721 13.6153 2.85901 13.5436 2.71543 13.4C2.57183 13.2564 2.50003 13.0782 2.50003 12.8654Z" fill="#FFFFFF"/>
+              <g mask="url(#mask0_1233_934)">
+                <path d="M15.142 20L13.2654 21.8576C12.9185 22.2025 12.4962 22.3749 11.9985 22.3749C11.5008 22.3749 11.0795 22.2025 10.7346 21.8576L8.858 20H6.30772C5.8106 20 5.38505 19.823 5.03105 19.469C4.67703 19.115 4.50002 18.6894 4.50002 18.1923V15.642L2.64235 13.7654C2.29748 13.4185 2.12505 12.9962 2.12505 12.4985C2.12505 12.0008 2.29748 11.5795 2.64235 11.2346L4.50002 9.358V6.80773C4.50002 6.31061 4.67703 5.88505 5.03105 5.53105C5.38505 5.17703 5.8106 5.00002 6.30772 5.00002H8.858L10.7346 3.14235C11.0815 2.79748 11.5038 2.62505 12.0015 2.62505C12.4992 2.62505 12.9205 2.79748 13.2654 3.14235L15.142 5.00002H17.6923C18.1894 5.00002 18.6149 5.17703 18.9689 5.53105C19.323 5.88505 19.5 6.31061 19.5 6.80773V9.358L21.3576 11.2346C21.7025 11.5815 21.8749 12.0038 21.8749 12.5015C21.8749 12.9992 21.7025 13.4205 21.3576 13.7654L19.5 15.642V18.1923C19.5 18.6894 19.323 19.115 18.9689 19.469C18.6149 19.823 18.1894 20 17.6923 20H15.142ZM12 21L14.5 18.5H18V15L20.5 12.5L18 10V6.5H14.5L12 4L9.5 6.5H6V10L3.5 12.5L6 15V18.5H9.5L12 21ZM12 14.7635L13.775 15.8461C13.9391 15.95 14.1048 15.9442 14.2721 15.8288C14.4394 15.7134 14.5013 15.557 14.4577 15.3596L13.9865 13.3288L15.5691 11.9623C15.7243 11.8233 15.7702 11.6609 15.7067 11.475C15.6432 11.2891 15.5077 11.1878 15.3 11.1712L13.2288 10.9962L12.4115 9.0904C12.3354 8.90963 12.1985 8.81925 12.0006 8.81925C11.8028 8.81925 11.6654 8.90963 11.5885 9.0904L10.7711 10.9962L8.70002 11.1712C8.49232 11.1878 8.35675 11.2891 8.2933 11.475C8.22983 11.6609 8.27568 11.8233 8.43085 11.9623L10.0135 13.3288L9.54232 15.3596C9.49874 15.557 9.5606 15.7134 9.7279 15.8288C9.8952 15.9442 10.0609 15.95 10.225 15.8461L12 14.7635Z" fill="#FFFFFF"/>
               </g>
             </svg>
           </div>
           <div class="content">
-            <p class="body-regular--bold">Crescimento na satisfação com a variedade de produtos</p>
-            <p class="heading-1--bold"><span>+</span>9<span>%</span></p>
+            <p class="body-regular--bold">Melhoria contínua na satisfação em relação a navegação no app passando de 3,9 para</p>
+            <p class="heading-1--bold"><span></span>4,1<span class="body-regular--regular" style="font-size: 16px;"> máx.5</span></p>
           </div>
           <div class="objective-validation">
             <!-- icon sucess -->
             <svg id="cb_success_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
               <rect x="1" y="1" width="26" height="26" rx="13" fill="#56B962"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#56B962" stroke-width="2"/>
-              <mask id="mask0_1109_943" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24"><rect x="2" y="2" width="24" height="24" fill="#D9D9D9"/></mask>
+              <mask id="mask0_1109_943" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24"><rect x="2" y="2" width="24" height="24" fill="#FFFFFF"/></mask>
               <g mask="url(#mask0_1109_943)"><path d="M12.5061 16.2591L10.0607 13.8138C9.91499 13.668 9.7318 13.5935 9.51115 13.5901C9.2905 13.5867 9.10393 13.6613 8.95144 13.8138C8.79895 13.9663 8.7227 14.1512 8.7227 14.3684C8.7227 14.5857 8.79895 14.7706 8.95144 14.923L11.8401 17.8117C12.0304 18.002 12.2524 18.0971 12.5061 18.0971C12.7598 18.0971 12.9818 18.002 13.1721 17.8117L19.0284 11.9554C19.1741 11.8097 19.2487 11.6265 19.252 11.4059C19.2554 11.1852 19.1809 10.9986 19.0284 10.8461C18.8759 10.6936 18.691 10.6174 18.4737 10.6174C18.2565 10.6174 18.0716 10.6936 17.9191 10.8461L12.5061 16.2591ZM14.0018 24C12.6187 24 11.3187 23.7375 10.1017 23.2126C8.88467 22.6877 7.82606 21.9753 6.92583 21.0755C6.02558 20.1757 5.31289 19.1175 4.78774 17.9011C4.2626 16.6846 4.00003 15.3848 4.00003 14.0018C4.00003 12.6187 4.26249 11.3186 4.7874 10.1016C5.31231 8.88464 6.02468 7.82602 6.92451 6.92579C7.82436 6.02554 8.88251 5.31285 10.099 4.7877C11.3154 4.26256 12.6152 3.99999 13.9983 3.99999C15.3814 3.99999 16.6814 4.26245 17.8984 4.78736C19.1154 5.31228 20.174 6.02465 21.0742 6.92447C21.9745 7.82432 22.6872 8.88247 23.2123 10.0989C23.7375 11.3154 24 12.6151 24 13.9982C24 15.3813 23.7376 16.6814 23.2127 17.8983C22.6877 19.1153 21.9754 20.174 21.0756 21.0742C20.1757 21.9744 19.1176 22.6871 17.9011 23.2123C16.6847 23.7374 15.3849 24 14.0018 24ZM14 22.4211C16.3509 22.4211 18.3421 21.6053 19.9737 19.9737C21.6053 18.3421 22.4211 16.3509 22.4211 14C22.4211 11.6491 21.6053 9.65788 19.9737 8.02629C18.3421 6.39471 16.3509 5.57892 14 5.57892C11.6491 5.57892 9.65791 6.39471 8.02633 8.02629C6.39475 9.65788 5.57896 11.6491 5.57896 14C5.57896 16.3509 6.39475 18.3421 8.02633 19.9737C9.65791 21.6053 11.6491 22.4211 14 22.4211Z" fill="white"/></g>
             </svg>
             <!-- icon in progress -->
@@ -802,6 +945,45 @@
             <p class="body-regular--bold" id="cb_failure_01">Não realizado</p>
           </div>
         </div>
+         <!-- card objectives to success -->
+        <div class="cb_card-data--success">
+          <div class="objective-icon">
+            <!-- icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 25" fill="none">
+              <mask id="mask0_1233_934" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
+                <rect y="0.5" width="24" height="24" fill="#FFFFFF"/>
+              </mask>
+              <g mask="url(#mask0_1233_934)">
+                <path d="M15.142 20L13.2654 21.8576C12.9185 22.2025 12.4962 22.3749 11.9985 22.3749C11.5008 22.3749 11.0795 22.2025 10.7346 21.8576L8.858 20H6.30772C5.8106 20 5.38505 19.823 5.03105 19.469C4.67703 19.115 4.50002 18.6894 4.50002 18.1923V15.642L2.64235 13.7654C2.29748 13.4185 2.12505 12.9962 2.12505 12.4985C2.12505 12.0008 2.29748 11.5795 2.64235 11.2346L4.50002 9.358V6.80773C4.50002 6.31061 4.67703 5.88505 5.03105 5.53105C5.38505 5.17703 5.8106 5.00002 6.30772 5.00002H8.858L10.7346 3.14235C11.0815 2.79748 11.5038 2.62505 12.0015 2.62505C12.4992 2.62505 12.9205 2.79748 13.2654 3.14235L15.142 5.00002H17.6923C18.1894 5.00002 18.6149 5.17703 18.9689 5.53105C19.323 5.88505 19.5 6.31061 19.5 6.80773V9.358L21.3576 11.2346C21.7025 11.5815 21.8749 12.0038 21.8749 12.5015C21.8749 12.9992 21.7025 13.4205 21.3576 13.7654L19.5 15.642V18.1923C19.5 18.6894 19.323 19.115 18.9689 19.469C18.6149 19.823 18.1894 20 17.6923 20H15.142ZM12 21L14.5 18.5H18V15L20.5 12.5L18 10V6.5H14.5L12 4L9.5 6.5H6V10L3.5 12.5L6 15V18.5H9.5L12 21ZM12 14.7635L13.775 15.8461C13.9391 15.95 14.1048 15.9442 14.2721 15.8288C14.4394 15.7134 14.5013 15.557 14.4577 15.3596L13.9865 13.3288L15.5691 11.9623C15.7243 11.8233 15.7702 11.6609 15.7067 11.475C15.6432 11.2891 15.5077 11.1878 15.3 11.1712L13.2288 10.9962L12.4115 9.0904C12.3354 8.90963 12.1985 8.81925 12.0006 8.81925C11.8028 8.81925 11.6654 8.90963 11.5885 9.0904L10.7711 10.9962L8.70002 11.1712C8.49232 11.1878 8.35675 11.2891 8.2933 11.475C8.22983 11.6609 8.27568 11.8233 8.43085 11.9623L10.0135 13.3288L9.54232 15.3596C9.49874 15.557 9.5606 15.7134 9.7279 15.8288C9.8952 15.9442 10.0609 15.95 10.225 15.8461L12 14.7635Z" fill="#FFFFFF"/>
+              </g>
+            </svg>
+          </div>
+          <div class="content">
+            <p class="body-regular--bold">Melhoria contínua na satisfação em relação a usabilidade no app passando de 3,9 para</p>
+            <p class="heading-1--bold"><span></span>4,2<span class="body-regular--regular" style="font-size: 16px;"> máx.5</span></p>
+          </div>
+          <div class="objective-validation">
+            <!-- icon sucess -->
+            <svg id="cb_success_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="1" y="1" width="26" height="26" rx="13" fill="#56B962"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#56B962" stroke-width="2"/>
+              <mask id="mask0_1109_943" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24"><rect x="2" y="2" width="24" height="24" fill="#FFFFFF"/></mask>
+              <g mask="url(#mask0_1109_943)"><path d="M12.5061 16.2591L10.0607 13.8138C9.91499 13.668 9.7318 13.5935 9.51115 13.5901C9.2905 13.5867 9.10393 13.6613 8.95144 13.8138C8.79895 13.9663 8.7227 14.1512 8.7227 14.3684C8.7227 14.5857 8.79895 14.7706 8.95144 14.923L11.8401 17.8117C12.0304 18.002 12.2524 18.0971 12.5061 18.0971C12.7598 18.0971 12.9818 18.002 13.1721 17.8117L19.0284 11.9554C19.1741 11.8097 19.2487 11.6265 19.252 11.4059C19.2554 11.1852 19.1809 10.9986 19.0284 10.8461C18.8759 10.6936 18.691 10.6174 18.4737 10.6174C18.2565 10.6174 18.0716 10.6936 17.9191 10.8461L12.5061 16.2591ZM14.0018 24C12.6187 24 11.3187 23.7375 10.1017 23.2126C8.88467 22.6877 7.82606 21.9753 6.92583 21.0755C6.02558 20.1757 5.31289 19.1175 4.78774 17.9011C4.2626 16.6846 4.00003 15.3848 4.00003 14.0018C4.00003 12.6187 4.26249 11.3186 4.7874 10.1016C5.31231 8.88464 6.02468 7.82602 6.92451 6.92579C7.82436 6.02554 8.88251 5.31285 10.099 4.7877C11.3154 4.26256 12.6152 3.99999 13.9983 3.99999C15.3814 3.99999 16.6814 4.26245 17.8984 4.78736C19.1154 5.31228 20.174 6.02465 21.0742 6.92447C21.9745 7.82432 22.6872 8.88247 23.2123 10.0989C23.7375 11.3154 24 12.6151 24 13.9982C24 15.3813 23.7376 16.6814 23.2127 17.8983C22.6877 19.1153 21.9754 20.174 21.0756 21.0742C20.1757 21.9744 19.1176 22.6871 17.9011 23.2123C16.6847 23.7374 15.3849 24 14.0018 24ZM14 22.4211C16.3509 22.4211 18.3421 21.6053 19.9737 19.9737C21.6053 18.3421 22.4211 16.3509 22.4211 14C22.4211 11.6491 21.6053 9.65788 19.9737 8.02629C18.3421 6.39471 16.3509 5.57892 14 5.57892C11.6491 5.57892 9.65791 6.39471 8.02633 8.02629C6.39475 9.65788 5.57896 11.6491 5.57896 14C5.57896 16.3509 6.39475 18.3421 8.02633 19.9737C9.65791 21.6053 11.6491 22.4211 14 22.4211Z" fill="white"/></g>
+            </svg>
+            <!-- icon in progress -->
+            <svg id="cb_in-progress_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="1" y="1" width="26" height="26" rx="13" fill="#F5D34D"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#F5D34D" stroke-width="2"/><mask id="mask0_1109_952" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="24" height="24">
+                <rect x="2" y="2" width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_1109_952)"><path d="M7.75 14.05C7.75 14.3423 7.76983 14.6337 7.8095 14.924C7.84933 15.2145 7.91733 15.5007 8.0135 15.7827C8.0775 15.9956 8.07075 16.1991 7.99325 16.3932C7.91575 16.5874 7.784 16.7268 7.598 16.8115C7.40183 16.9063 7.20667 16.914 7.0125 16.8345C6.81833 16.755 6.68917 16.6089 6.625 16.3962C6.49167 16.0192 6.39583 15.6323 6.3375 15.2355C6.27917 14.8388 6.25 14.4437 6.25 14.05C6.25 11.8872 7.00258 10.0465 8.50775 8.528C10.0129 7.00933 11.8437 6.25 14 6.25H14.7808L13.4577 4.927C13.3192 4.7885 13.2484 4.61441 13.2453 4.40475C13.2421 4.19525 13.3129 4.018 13.4577 3.873C13.6026 3.72816 13.7782 3.65575 13.9845 3.65575C14.191 3.65575 14.3667 3.72816 14.5115 3.873L17.0057 6.36725C17.1866 6.54808 17.277 6.759 17.277 7C17.277 7.241 17.1866 7.45191 17.0057 7.63275L14.5115 10.127C14.373 10.2653 14.199 10.3362 13.9895 10.3395C13.7798 10.3427 13.6026 10.2718 13.4577 10.127C13.3129 9.982 13.2405 9.80633 13.2405 9.6C13.2405 9.39366 13.3129 9.218 13.4577 9.073L14.7808 7.75H14C12.2628 7.75 10.7868 8.3615 9.572 9.5845C8.35733 10.8077 7.75 12.2962 7.75 14.05ZM20.25 13.95C20.25 13.6577 20.2302 13.3663 20.1905 13.076C20.1507 12.7855 20.0827 12.4992 19.9865 12.2172C19.9225 12.0044 19.9293 11.8009 20.0068 11.6067C20.0843 11.4126 20.216 11.2732 20.402 11.1885C20.5982 11.0937 20.7917 11.086 20.9827 11.1655C21.1737 11.245 21.3012 11.3911 21.3652 11.6037C21.4986 11.9807 21.5961 12.3677 21.6578 12.7645C21.7193 13.1612 21.75 13.5563 21.75 13.95C21.75 16.1128 20.9974 17.9535 19.4923 19.472C17.9871 20.9907 16.1563 21.75 14 21.75H13.2192L14.5423 23.073C14.6808 23.2115 14.7516 23.3856 14.7548 23.5952C14.7579 23.8047 14.6871 23.982 14.5423 24.127C14.3974 24.2718 14.2218 24.3442 14.0155 24.3442C13.809 24.3442 13.6333 24.2718 13.4885 24.127L10.9942 21.6327C10.8134 21.4519 10.723 21.241 10.723 21C10.723 20.759 10.8134 20.5481 10.9942 20.3672L13.4885 17.873C13.627 17.7347 13.801 17.6638 14.0105 17.6605C14.2202 17.6573 14.3974 17.7282 14.5423 17.873C14.6871 18.018 14.7595 18.1937 14.7595 18.4C14.7595 18.6063 14.6871 18.782 14.5423 18.927L13.2192 20.25H14C15.7372 20.25 17.2132 19.6385 18.428 18.4155C19.6427 17.1923 20.25 15.7038 20.25 13.95Z" fill="#6C6C6C"/></g>
+            </svg>
+            <!-- icon failure -->
+            <svg id="cb_failure_01" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect x="1" y="1" width="26" height="26" rx="13" fill="#F24A4A"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#F24A4A" stroke-width="2"/><path d="M9.83197 18.1683C9.98355 18.3199 10.1604 18.3957 10.3625 18.3957C10.5646 18.3957 10.7414 18.3199 10.893 18.1683L14.0004 15.061L17.133 18.1936C17.2678 18.3283 17.4406 18.3913 17.6514 18.3826C17.8616 18.3745 18.0341 18.3031 18.1688 18.1683C18.3204 18.0167 18.3962 17.8399 18.3962 17.6378C18.3962 17.4357 18.3204 17.2588 18.1688 17.1073L15.0614 13.9999L18.1941 10.8673C18.3288 10.7325 18.3918 10.5597 18.383 10.3489C18.375 10.1387 18.3035 9.96622 18.1688 9.83148C18.0172 9.6799 17.8404 9.60411 17.6383 9.60411C17.4362 9.60411 17.2593 9.6799 17.1078 9.83148L14.0004 12.9388L10.8678 9.80622C10.733 9.67148 10.5606 9.60816 10.3504 9.61624C10.1395 9.625 9.96671 9.69674 9.83197 9.83148C9.68039 9.98306 9.6046 10.1599 9.6046 10.362C9.6046 10.5641 9.68039 10.741 9.83197 10.8925L12.9393 13.9999L9.80671 17.1325C9.67197 17.2673 9.60898 17.4397 9.61774 17.6499C9.62582 17.8608 9.69723 18.0336 9.83197 18.1683ZM14.0004 23.5999C12.6699 23.5999 11.4195 23.3473 10.2493 22.842C9.07845 22.3367 8.06355 21.6546 7.2046 20.7957C6.34565 19.9367 5.66355 18.9218 5.15829 17.751C4.65302 16.5808 4.40039 15.3304 4.40039 13.9999C4.40039 12.6694 4.65302 11.4187 5.15829 10.2478C5.66355 9.07763 6.34565 8.06306 7.2046 7.20411C8.06355 6.34517 9.07845 5.66306 10.2493 5.1578C11.4195 4.65253 12.6699 4.3999 14.0004 4.3999C15.3309 4.3999 16.5816 4.65253 17.7525 5.1578C18.9227 5.66306 19.9372 6.34517 20.7962 7.20411C21.6551 8.06306 22.3372 9.07763 22.8425 10.2478C23.3478 11.4187 23.6004 12.6694 23.6004 13.9999C23.6004 15.3304 23.3478 16.5808 22.8425 17.751C22.3372 18.9218 21.6551 19.9367 20.7962 20.7957C19.9372 21.6546 18.9227 22.3367 17.7525 22.842C16.5816 23.3473 15.3309 23.5999 14.0004 23.5999ZM14.0004 22.0841C16.2404 22.0841 18.1479 21.2969 19.723 19.7225C21.2974 18.1474 22.0846 16.2399 22.0846 13.9999C22.0846 11.7599 21.2974 9.85237 19.723 8.27729C18.1479 6.70289 16.2404 5.91569 14.0004 5.91569C11.7604 5.91569 9.85319 6.70289 8.27879 8.27729C6.70372 9.85237 5.91618 11.7599 5.91618 13.9999C5.91618 16.2399 6.70372 18.1474 8.27879 19.7225C9.85319 21.2969 11.7604 22.0841 14.0004 22.0841Z" fill="white"/>
+            </svg>
+            <p class="body-regular--bold" id="cb_success_01">Realizado</p>
+            <p class="body-regular--bold" id="cb_in-progress_01">Em andamento</p>
+            <p class="body-regular--bold" id="cb_failure_01">Não realizado</p>
+          </div>
+        </div>
+        
       </div>
       <!-- carousel btn right -->
       <!-- <a href="#" class="cb_btn--small--primary carousel--arrow-right">
@@ -817,9 +999,13 @@
         </div>
       </a> -->
     </div>
+    <!-- additional information -->
+    <div class="additional-information">
+      <p class="body-small--regular">* CSAT (Customer Satisfaction Score) mede a satisfação dos clientes com base em sua experiência, em uma escala de 1 a 5.</p>
+    </div>
     <!-- image mockups heatmap -->
       <div class="banner--projeto" id="revisao-apoio-home-site_results">
-        <img src="imgs/revisao-ux-ui-apoio-entrega/design-interface-ux-ui--mockup--results.webp" id="revisao-apoio-home-site_results-mockup-bg" alt="Resultados do projeto">
+        <img src="imgs/revisao-app-clube-ap/design-interface-ux-ui_app-grocery-basket.webp" id="revisao-clube-ap-new-app_results" alt="Resultados do projeto">
       </div>
   </div>
 <!-- end, results -->
@@ -837,7 +1023,7 @@
       <div class="cb_faq--default">
         <!-- title -->
         <div class="title">
-          <p class="body-regular--bold">Qual o principal objetivo do projeto?</p>
+          <p class="body-regular--bold">O que é o Clube Apoio?</p>
           <!-- icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -849,13 +1035,13 @@
           </svg>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">Aprimorar a percepção do site como uma plataforma de preços competitivos e promoções impactantes.</p>
+          <p class="body-regular--regular">O Clube Apoio é um aplicativo de supermercado, do Grupo Supernosso, criado para facilitar o abastecimento de lares e negócios, oferecendo uma experiência de compra online intuitiva e personalizada.</p>
         </div>
       </div>
       <div class="cb_faq--default">
         <!-- title -->
         <div class="title">
-          <p class="body-regular--bold">Quais foram os principais desafios identificados</p>
+          <p class="body-regular--bold">O que mudou na nova versão do Clube Apoio?</p>
           <!-- icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -867,13 +1053,13 @@
           </svg>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">Baixa visibilidade para as ofertas do site e falta de distinção clara entre produtos promocionados e ofertas abertas para o público geral.</p>
+          <p class="body-regular--regular">A nova versão trouxe a funcionalidade de compra on-line, ofertas personalizadas, uma navegação mais intuitiva e maior estabilidade para suportar um grande volume de acessos.</p>
         </div>
       </div>
       <div class="cb_faq--default">
         <!-- title -->
         <div class="title">
-          <p class="body-regular--bold">Como a proposta de revisão abordou esses desafios?</p>
+          <p class="body-regular--bold">O aplicativo Clube Apoio está disponível para quais dispositivos?</p>
           <!-- icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -885,14 +1071,13 @@
           </svg>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">Foi realizada uma intervenção para destacar as principais promoções na primeira seção da página, proporcionando maior visibilidade aos produtos com preços atrativos.
-            <br><br>Houve a ampliação da área de exibição dos produtos do folheto otimizando um comportamento mapeado durante a análise da jornada dos usuários. Reforçando a percepção do Apoio Entrega como uma plataforma de preços competitivos e promoções impactantes.</p>
+          <p class="body-regular--regular">O app está disponível para download em dispositivos <a href="https://play.google.com/store/apps/details?id=br.com.supernosso.mauricio.ClubeApoio&hl=pt_BR" target="_blank">Android</a> e <a href="https://apps.apple.com/br/app/clube-apoio/id1370405288" target="_blank"> iOS</a>, garantindo uma experiência otimizada para ambos os sistemas.</p>
         </div>
       </div>
       <div class="cb_faq--default">
         <!-- title -->
         <div class="title">
-          <p class="body-regular--bold">Houve pesquisa de usuário envolvida no processo de revisão?</p>
+          <p class="body-regular--bold">Como foram realizadas as melhorias na usabilidade?</p>
           <!-- icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -904,13 +1089,13 @@
           </svg>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">Sim, foi realizada uma pesquisa em conjunto com a Matriz CSD para validar as expectativas e hábitos dos usuários.</p>
+          <p class="body-regular--regular">A equipe aplicou as heurísticas de Nielsen e princípios de UX para reduzir a carga cognitiva e tornar a navegação mais fluida e intuitiva.</p>
         </div>
       </div>
       <div class="cb_faq--default">
         <!-- title -->
         <div class="title">
-          <p class="body-regular--bold">Quais métricas foram usadas para avaliar os resultados da revisão?</p>
+          <p class="body-regular--bold">Como os usuários podem fornecer feedback sobre o app?</p>
           <!-- icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -922,13 +1107,13 @@
           </svg>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">Para avaliar o resultado das mudanças foi utilizada a pesquisa de CSAT ao final das compras e o monitoramento dos mapas de calor.</p>
+          <p class="body-regular--regular">Pesquisas de satisfação são realizadas após a finalização dos pedidos, permitindo que os usuários avaliem sua experiência e sugiram melhorias.</p>
         </div>
       </div>
       <div class="cb_faq--default">
         <!-- title -->
         <div class="title">
-          <p class="body-regular--bold">Onde e como atua o Apoio Entrega?</p>
+          <p class="body-regular--bold">Quais foram os principais resultados após o lançamento do novo app?</p>
           <!-- icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <mask id="mask0_1087_1301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
@@ -940,8 +1125,7 @@
           </svg>
         </div>
         <div class="paragraph">
-          <p class="body-regular--regular">O Apoio Mineiro é uma rede de supermercados do Grupo Supernosso, posicionado por toda Belo Horizonte (MG) e Região Metropolitana.
-            <br><br>O Apoio Mineiro atua com vendas em loja física e plataformas digitais, no ambiente digital utiliza o nome Apoio Entrega, oferencendo opções diversificas para os seus clientes abastecerem seus lares e negócios.</p>
+          <p class="body-regular--regular">Houve um crescimento expressivo nos pedidos, aumento na nota de satisfação dos clientes (CSAT) e redução de reclamações relacionadas à navegação e usabilidade.</p>
         </div>
       </div>
     </div>
@@ -1057,9 +1241,9 @@
           <p class="body-small--regular">Projeto</p>
         </div>
         <div class="list">
-          <a class="body-small--bold" id="cb--menu-desktop--revAP-footer-1">Análise</a>
+          <a class="body-small--bold" id="cb--menu-desktop--newCAP-footer-1">Contexto</a>
           <a class="body-small--bold" id="cb--menu-desktop--revAP-footer-2">Resultados</a>
-          <a class="body-small--bold" id="cb--menu-desktop--revAP-footer-3">Protótipo</a>
+          <a class="body-small--bold" id="cb--menu-desktop--newCAP-footer-1">Arquivos</a>
           <a class="body-small--bold" id="cb--menu-desktop--revAP-footer-4">Dúvidas</a>
           <a class="body-small--bold" id="cb--menu-desktop--home-footer-5">Contato</a>
         </div>

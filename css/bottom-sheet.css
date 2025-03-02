@@ -167,6 +167,11 @@
 	gap: 12px;
 	align-self: stretch;
 }
+/* popup para solicitar acesso aos arquivos */
+#cb_bottom-sheet--block-content .col .row-btn {
+	padding-top: 16px;
+}
+
 .cb--bottom-sheet--linear .col .row-btn button,
 .cb--bottom-sheet--linear .col .row-btn a {
 	width: 100%;
@@ -249,6 +254,9 @@
 	width: 80%;
 	height: auto;
 	mix-blend-mode: multiply;
+}
+.cb--bottom-sheet--linear .col .image .cb_mockup--clube-ap-image--bottom-sheet {
+	mix-blend-mode: normal;
 }
 @media (min-width: 1024px) and (max-width: 1599px) {
 	.cb--bottom-sheet--linear {

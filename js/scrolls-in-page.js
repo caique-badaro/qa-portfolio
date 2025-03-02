@@ -77,6 +77,9 @@
       "cb--menu-mobile--option-6": document.getElementById("first-fold--home"),
       "cb--menu-mobile--option-7": document.getElementById("cb_academic-graduation"),
       "cb--menu-mobile--option-8": document.getElementById("cb_grid-card-posts"),
+      // project new cap
+      "cb--menu-mobile--option-9": document.getElementById("cb_contexto--new-cap"),
+      "cb--menu-mobile--option-10": document.getElementById("cb_project--new-cap"),
     };
 
     // Trocar classe ao clicar no botão
@@ -161,11 +164,13 @@
     "cb--menu-desktop--home-3": "cb_work-experiences",
     "cb--menu-desktop--home-4": "cb_grid-card-posts",
 
-    // Home - Primeira dobra
+    // Home - Primeira dobra Home
     "cb--menu-desktop--home-1-fold-1": "cb_block-contact",
     "cb--menu-desktop--home-1-fold-2": "cb_academic-graduation",
     "cb--menu-desktop--home-1-fold-3": "cb_work-experiences",
     "cb--menu-desktop--home-1-fold-4": "cb_grid-card-posts",
+    // new cap (page)
+    "cb--menu-desktop--home-1-fold-5": "cb_contexto--new-cap",
 
     // Footer - Home
     "cb--menu-desktop--home-footer-1": "first-fold--home",
@@ -180,11 +185,18 @@
     "cb--menu-desktop--revAP-footer-3": "cb_project-content",
     "cb--menu-desktop--revAP-footer-4": "cb_FAQ-content",
 
-    // Opções do menu principal desktop
+    // Footer - New CAP
+    "cb--menu-desktop--newCAP-footer-1": "cb_contexto--new-cap",
+    "cb--menu-desktop--newCAP-footer-2": "cb_project--new-cap",
+
+    // Opções do menu desktop - page project
     "cb--menu-desktop--option-1": "cb_heatmap",
     "cb--menu-desktop--option-2": "cb_results-content",
     "cb--menu-desktop--option-3": "cb_project-content",
     "cb--menu-desktop--option-4": "cb_FAQ-content",
+    "cb--menu-desktop--option-new-cap-1": "cb_contexto--new-cap",
+    "cb--menu-desktop--option-new-cap-2": "cb_processo--new-cap",
+    "cb--menu-desktop--option-new-cap-3": "cb_project--new-cap",
 
   };
 
